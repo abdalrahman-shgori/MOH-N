@@ -1,0 +1,73 @@
+
+.landingPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.descriptionText {
+    color: #333333;
+    font-size: 36px;
+    font-weight: 300;
+    text-align: left; /* Default text alignment for all cases */
+    line-height: 44px;
+    text-align: left;
+
+}
+.walkImg{
+    width: 368px;
+    transform: rotate(-5deg);
+
+}
+.startBtn{
+    background-color: #F0C905;
+    border: #F0C905;
+    border-radius: 16px;
+    padding: 5px 10px 5px 10px;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-family: GE SS Unique;
+    font-weight: 700;
+    box-shadow: 0 -1px #333333, 1px 0 #333333; /* Box shadow on top and right */
+
+}
+.landingGroupImg{
+    position: relative;
+    margin-top: 30px;
+
+}
+.peopleImg{
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    
+}
+.shadowImg{
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width:600px) {
+    .descriptionText{
+        font-size: 16px;
+        line-height: 19px;
+        width: 340px;
+
+    }
+    .walkImg{
+        width: 144px;
+        height: 165px;
+    }
+    .landingGroupImg{
+    }
+    .startBtn{
+        font-size: 16px;
+    }
+    
+}
+
+html[lang="ar"] .descriptionText {
+    text-align: right; /* Right-align text when the lang attribute is set to "en" */
+}

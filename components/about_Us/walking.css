@@ -1,0 +1,93 @@
+.aboutWalkBg{
+    background-image: url("../assets/images/walkingLine.svg");
+    background-repeat: no-repeat;
+}
+.whatDiffrenceBg{
+    background-image: url("../assets/images/walkingLine.svg");
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+
+
+.walking{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutWalk{
+    color: #008056;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    font-family: GE SS Unique;
+}
+.QuestionWalk{
+    color: #008056;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 49px;
+    font-family: GE SS Unique;
+}
+.whatHappen{
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+}
+.whatDiffrence{
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+}
+.howtowalk{
+    font-family: GE SS Unique;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: justified;
+    color: #333333;
+    }
+    .whatHowWalk{
+        position: relative;
+    }
+li{
+    font-family: GE SS Unique;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: justified;
+    color: #333333;
+    
+}
+
+@media screen and (max-width:600px) {
+    .aboutWalk{
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .QuestionWalk{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .howtowalk{
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+    }
+    .whatHowWalk{
+        top: 0px;
+    }
+    li{
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 300;
+    }
+    .aboutWalkBg{
+        background-image: url("../assets/images/feet1.svg");
+    }
+    .whatDiffrenceBg{
+        background-image: url("");
+    }
+}
