@@ -26,10 +26,10 @@ const translations = {
         differenceBetweenWalking: "What is the difference between walking for exercise and regular walking?",
         properWalking: "Proper walking means covering approximately one and a half kilometers with brisk walking, not strolling, and you can use smartphone apps to track the distance.",
         aboutWalking: "About walking exercise",
-        walkPaths: "Walk paths for 30 minutes",
+        walkPaths: "Walk for 30 minutes",
         walkingPersonalityTitle: "Your Personality in Walking",
         walkingPersonalityDescription: "A test that measures an individual's level of walking exercise and provides solutions for continued progress",
-        walkingPersonalityBtnText: "Take the test now and discover your personality",
+        walkingPersonalityBtnText: "Take the test now",
         whoisPartners: "Who are our partners?",
         walkDescription: "Walking is a fun sport with many levels. It starts with walking for thirty minutes daily for five days a week."
 
