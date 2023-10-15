@@ -1,11 +1,14 @@
 body {
   background-color: #F5F5F5 !important;
-  font-family: 'GE SS Unique Light';
 
 }
 @font-face {
-  font-family: 'GE SS Unique Light';
+  font-family: 'GE SS Unique Bold';
   src: url('../GE\ SS\ Unique\ Light.otf');
+}
+@font-face {
+  font-family: 'GE SS Unique Light';
+  src: url('../GE\ SS\ Unique\ Bold.otf');
 }
 .whoPartners {
   display: flex;
@@ -27,6 +30,9 @@ body {
   letter-spacing: 0em;
   text-align: center;
   color: #008056;
+  font-family: 'GE SS Unique Light';
+
+
 }
 
 .container {

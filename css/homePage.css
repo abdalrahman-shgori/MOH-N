@@ -1,9 +1,14 @@
 body {
     background-color: #F5F5F5 !important;
 }
-@font-face {
-    font-family: 'GE SS Unique Lights';
+
+  @font-face {
+    font-family: 'GE SS Unique Bold';
     src: url('../GE\ SS\ Unique\ Light.otf');
+  }
+  @font-face {
+    font-family: 'GE SS Unique Light';
+    src: url('../GE\ SS\ Unique\ Bold.otf');
   }
 
 .WalkSport {
@@ -20,7 +25,7 @@ body {
     line-height: 44px;
     color: #333333;
     text-align: right;
-    font-family: 'GE SS Unique Lights';
+    font-family: 'GE SS Unique Bold';
 
 
 

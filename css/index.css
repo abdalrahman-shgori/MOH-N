@@ -1,11 +1,16 @@
 body {
     background-color: #F5F5F5 !important;
-    font-family: "GE SS Unique Light";
+    font-family: 'GE SS Unique Bold';
 
 }
-@font-face {
-    font-family: 'GE SS Unique Light';
+
+  @font-face {
+    font-family: 'GE SS Unique Bold';
     src: url('../GE\ SS\ Unique\ Light.otf');
+  }
+  @font-face {
+    font-family: 'GE SS Unique Light';
+    src: url('../GE\ SS\ Unique\ Bold.otf');
   }
 .landingPage {
     display: flex;

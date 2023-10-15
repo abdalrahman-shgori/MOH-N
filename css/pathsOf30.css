@@ -4,11 +4,11 @@ body {
 
 }
 @font-face {
-    font-family: 'GE SS Unique Light';
+    font-family: 'GE SS Unique Bold';
     src: url('../GE\ SS\ Unique\ Light.otf');
   }
   @font-face {
-    font-family: 'GE SS Unique Bold';
+    font-family: 'GE SS Unique Light';
     src: url('../GE\ SS\ Unique\ Bold.otf');
   }
 .PathsText {
@@ -52,8 +52,7 @@ html[lang="en"] .PathsTexts {
     line-height: 45px;
     letter-spacing: 0em;
     text-align: justified;
-    font-family: 'GE SS Unique Bold';
-
+    font-family: 'GE SS Unique Light';
     color: #333333;
 }
 
@@ -64,7 +63,7 @@ html[lang="en"] .PathsTexts {
     letter-spacing: 0em;
     color: #333333;
     text-align: right;
-    font-family: 'GE SS Unique Light' !important;
+    font-family: 'GE SS Unique Bold';
 
 }
 
@@ -79,7 +78,7 @@ html[lang="en"] .PathsDescription {
     border-radius: 24px;
     padding: 4px 30px 4px 30px;
     color: #FFFFFF;
-    font-family: 'GE SS Unique Light' !important;
+    font-family: 'GE SS Unique Bold';
 
 
 

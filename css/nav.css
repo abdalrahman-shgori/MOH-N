@@ -1,15 +1,16 @@
 
 @font-face {
-    font-family: 'GE SS Unique Light' !important;
+    font-family: 'GE SS Unique Light' ;
     src: url('../GE\ SS\ Unique\ Light.otf') !important;
   }
+
   @font-face {
-    font-family: 'GE SS Unique Light' !important;
-    src: url('../GE\ SS\ Unique\ Bold.otf') !important;
-  }
-  @font-face {
-    font-family: 'Montserrat' !important;
+    font-family: 'Montserrat' ;
     src: url('../Montserrat\ Semi\ Bold.otf');
+  }
+  .lang-shortcut{
+    font-family: 'Montserrat' ;
+
   }
 .dropdown-menu[data-bs-popper]{
     right: 0 !important;
@@ -83,6 +84,8 @@ transform: translateX(-48%);
     letter-spacing: 0em;
     text-align: justified;
     color: #333333;
+    font-family: 'GE SS Unique Light' !important;
+
 }
 .logoNav{
     width: 118px;

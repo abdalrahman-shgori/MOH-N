@@ -1,13 +1,12 @@
 body {
     background-color: #F5F5F5 !important;
-    font-family: 'GE SS Unique Light' !important;
 
 
 }
 @font-face {
     font-family: 'GE SS Unique Light';
-    src: url('../GE\ SS\ Unique\ Bold.otf') !important;
-  }
+    src: url('../GE\ SS\ Unique\ Bold.otf') ;
+}
 .aboutWalkBg {
     background-image: url("../assets/images/walkingLine.svg");
     background-repeat: no-repeat;
@@ -28,6 +27,10 @@ body {
 }
 .ideas-walk{
 width: 70%;
+}
+.wk{
+    font-family: 'GE SS Unique Light';
+
 }
 
 .aboutWalk {
