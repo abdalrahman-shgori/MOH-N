@@ -16,6 +16,9 @@
     justify-content: center;
     align-items: center;
 }
+.ideas-walk{
+width: 70%;
+}
 
 .aboutWalk {
     color: #008056;
@@ -103,5 +106,8 @@ li {
 
     .whatDiffrenceBg {
         background-image: url("");
+    }
+    .ideas-walk{
+        width: 100%;
     }
 }

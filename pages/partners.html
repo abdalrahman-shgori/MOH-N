@@ -51,27 +51,26 @@
 
     <script src="../js/includeNav.js"></script>
     <script src="../js/nav.js"></script>
-    <script>
+   <script>
+    function adjustLayout() {
         if (window.innerWidth < 767) {
+            document.getElementById("feet4Small").src = "../assets/images/feet5.svg";
+            document.getElementById("feet4Small").style.left = "0";
+            document.getElementById("feet4Small").style.bottom = "0";
 
-            document.getElementById("feet4Small").src = "../assets/images/feet5.svg"
-            document.getElementById("feet4Small").style.left = "0"
-            document.getElementById("feet4Small").style.bottom = "0"
+            document.getElementById("feet3Small").style.display = "none";
+        } else {
+            document.getElementById("feet4Small").src = "../assets/images/feet4.svg";
+            document.getElementById("feet4Small").style.right = "0";
+            document.getElementById("feet4Small").style.bottom = "0";
 
-
-
+            document.getElementById("feet3Small").style.display = "block";
         }
-        else {
-            document.getElementById("feet4Small").src = "../assets/images/feet4.svg"
-            document.getElementById("feet4Small").style.right = "0"
-            document.getElementById("feet4Small").style.bottom = "0"
-        }
+    }
+    adjustLayout();
+    window.onresize = adjustLayout;
+</script>
 
-        if (window.innerWidth < 767) {
-            document.getElementById("feet3Small").style.display = "none"
-
-        }
-    </script>
 </body>
 
 </html>

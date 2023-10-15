@@ -46,7 +46,7 @@
         </div>
         <div class=" container whatHappen ">
             <p class="QuestionWalk" data-translate="ideastowalk">أفكار للمشي خلال اليوم</p>
-            <ul class="col-8">
+            <ul class="ideas-walk">
                 <li data-translate="idea1">أوقف السيارة بعيد عن مكان وصولك</li>
                 <li data-translate="idea2">امش مع أصدقائك بدل الجلوس في مكان طوال الوقت</li>
                 <li data-translate="idea3"> اخرج للتنزه برفقة أحد أفراد عائلتك</li>
@@ -81,11 +81,16 @@
     <script>
         if (window.innerWidth < 767) {
 
-            document.getElementById("walkingLine").src = "../assets/images/feet2.svg"
-            document.getElementById("walkingLine").style.display = "none"
 
 
         }
+        function imgChange() {
+            document.getElementById("walkingLine").src = "../assets/images/feet2.svg"
+            document.getElementById("walkingLine").style.display = "none"
+
+        }
+        imgChange()
+        window.onresize = imgChange;
 
     </script>
 </body>
