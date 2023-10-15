@@ -28,10 +28,11 @@ body {
 .ideas-walk{
 width: 70%;
 }
-.wk{
+.fontWeight{
     font-family: 'GE SS Unique Light';
 
 }
+
 
 .aboutWalk {
     color: #008056;
@@ -87,6 +88,10 @@ li {
     .aboutWalk {
         font-size: 24px;
         line-height: 29px;
+    }
+    .fontWeight{
+        font-family: 'GE SS Unique Bold';
+
     }
 
     .QuestionWalk {
