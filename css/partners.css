@@ -1,5 +1,11 @@
 body {
   background-color: #F5F5F5 !important;
+  font-family: 'GE SS Unique Light';
+
+}
+@font-face {
+  font-family: 'GE SS Unique Light';
+  src: url('../GE\ SS\ Unique\ Light.otf');
 }
 .whoPartners {
   display: flex;
@@ -15,7 +21,6 @@ body {
 }
 
 .whoPartnerText {
-  font-family: GE SS Unique;
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;

@@ -1,3 +1,12 @@
+
+@font-face {
+    font-family: 'GE SS Unique Light';
+    src: url('../GE\ SS\ Unique\ Light.otf');
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../Montserrat\ Semi\ Bold.otf');
+  }
 .dropdown-menu[data-bs-popper]{
     right: 0 !important;
     left: unset !important;
@@ -6,6 +15,9 @@
     right: 0 !important;
     left: unset !important;
     --bs-dropdown-min-width:0 !important
+
+}
+.dropdown-text{
 
 }
 
@@ -22,7 +34,7 @@
 .current-lng{
     color: #008656;
     font-size: 16px;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -59,11 +71,17 @@ transform: translateX(-48%);
     position: absolute;
     transform: translateX(-48%);
 }
+
 .item-style{
-    color: #333333;
-    font-size: 22px !important;
+       font-size: 24px;
     font-weight: 700;
-    font-family:GE SS Unique;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: justified;
+    color: #333333;
+    font-family: 'GE SS Unique Light';
+
+    
     
 }
 .logoNav{

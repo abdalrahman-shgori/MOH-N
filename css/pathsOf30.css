@@ -1,13 +1,21 @@
 
 body {
     background-color: #F5F5F5 !important;
+
 }
+@font-face {
+    font-family: 'GE SS Unique Light';
+    src: url('../GE\ SS\ Unique\ Light.otf');
+  }
+  @font-face {
+    font-family: 'GE SS Unique Bold';
+    src: url('../GE\ SS\ Unique\ Bold.otf');
+  }
 .PathsText {
     color: #008056;
     font-size: 40px;
     font-weight: 700;
     line-height: 49px;
-    font-family: GE SS Unique;
 }
 
 .paths {
@@ -39,24 +47,25 @@ html[lang="en"] .PathsTexts {
 }
 
 .howYouWork {
-    font-family: GE SS Unique;
     font-size: 36px;
     font-weight: 700;
     line-height: 45px;
     letter-spacing: 0em;
     text-align: justified;
+    font-family: 'GE SS Unique Bold';
 
     color: #333333;
 }
 
 .PathsDescription {
-    font-family: GE SS Unique;
     font-size: 24px;
     font-weight: 300;
     line-height: 30px;
     letter-spacing: 0em;
     color: #333333;
     text-align: right;
+    font-family: 'GE SS Unique Light';
+
 }
 
 html[lang="en"] .PathsDescription {
@@ -70,6 +79,8 @@ html[lang="en"] .PathsDescription {
     border-radius: 24px;
     padding: 4px 30px 4px 30px;
     color: #FFFFFF;
+    font-family: 'GE SS Unique Light';
+
 
 
 }
