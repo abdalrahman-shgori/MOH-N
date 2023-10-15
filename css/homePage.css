@@ -57,10 +57,23 @@ body {
 .NameInput {
     background-color: #FFFFFF;
 }
+.NameInput::placeholder {
+    font-family: GE SS Unique;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: justified;
+    color: #333333;
+    display: flex;
+    position: relative;
+    top: 8px;
+
+    }
 
 input[type="text"] {
-    border: 2px solid #FFFFFF;
-    border-radius: 20px;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
     text-align: right;
     width: 60%;
     height: 62px;
@@ -98,6 +111,10 @@ input[type="text"] {
 }
 
 @media (max-width: 767px) {
+    input[type="text"] {
+        width: 88%;
+        height: 42px;
+    }
     .containers {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -123,12 +140,15 @@ input[type="text"] {
     grid-area: 1 / 1 / 2 / 2;
     display: flex;
     justify-content: center;
+ 
 }
 
 .div2 {
     grid-area: 1 / 2 / 2 / 3;
     display: flex;
     justify-content: center;
+    position: relative;
+    left: 30px;
 }
 
 .div3 {
@@ -147,6 +167,11 @@ input[type="text"] {
     grid-area: 2 / 1 / 3 / 3;
     display: flex;
     justify-content: center;
+}
+.imgs{
+    position: relative;
+    left: 20px;
+    bottom: 26px;
 }
 
 
@@ -183,6 +208,7 @@ input[type="text"] {
     .imgs {
         height: 312px;
         width: 330px;
+        bottom: 20px;
     }
 
 
