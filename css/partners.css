@@ -80,16 +80,17 @@ body {
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
+  grid-column-gap: 20px;
   grid-row-gap: 0px;
 }
 
 .div1 {
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 1 / 2 / 1;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .div2 {

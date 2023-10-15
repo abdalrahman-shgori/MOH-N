@@ -91,6 +91,10 @@ html[lang="en"] .PathsDescription {
     align-items: center;
 }
 
+html[lang = "en"] .center-content{
+    direction: rtl;
+}
+
 @media screen and (max-width:767px) {
     .PathsText{
         font-size: 24px;

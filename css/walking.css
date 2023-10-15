@@ -61,6 +61,8 @@ width: 70%;
     direction: rtl;
 }
 
+
+
 .whatDiffrence {
     display: flex;
     flex-direction: column;
@@ -122,7 +124,7 @@ li {
     }
 
     .aboutWalkBg {
-        background-image: url("../assets/images/feet1.svg");
+        background-image: url("");
     }
 
     .whatDiffrenceBg {
@@ -131,4 +133,5 @@ li {
     .ideas-walk{
         width: 100%;
     }
+
 }

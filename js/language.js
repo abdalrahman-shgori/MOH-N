@@ -32,7 +32,7 @@ const translations = {
         walkingPersonalityBtnText: "Take the test now",
         whoisPartners: "Who are our partners?",
         walkDescription: "Walking is a fun sport with many levels. It starts with walking for thirty minutes daily for five days a week.",
-        testPesonality:"Test your personality",
+        testPersonality:"Test your personality",
         walk30:"walk 30"
 
     },

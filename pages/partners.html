@@ -54,11 +54,9 @@
    <script>
     function adjustLayout() {
         if (window.innerWidth < 767) {
-            document.getElementById("feet4Small").src = "../assets/images/feet5.svg";
-            document.getElementById("feet4Small").style.left = "0";
-            document.getElementById("feet4Small").style.bottom = "0";
-
             document.getElementById("feet3Small").style.display = "none";
+            document.getElementById("feet4Small").style.display = "none";
+
         } else {
             document.getElementById("feet4Small").src = "../assets/images/feet4.svg";
             document.getElementById("feet4Small").style.right = "0";

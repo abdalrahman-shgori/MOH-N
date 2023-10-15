@@ -26,9 +26,9 @@ body {
     color: #333333;
     text-align: right;
     font-family: 'GE SS Unique Bold';
-
-
-
+}
+html[lang="en"] .WalkSportText{
+    text-align: left;
 }
 
 .startBtn {
