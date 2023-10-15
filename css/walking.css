@@ -1,5 +1,6 @@
 body {
     background-color: #F5F5F5 !important;
+ 
 
 }
 @font-face {
@@ -74,6 +75,7 @@ li {
     letter-spacing: 0em;
     text-align: justified;
     color: #333333;
+    
 
 }
 
