@@ -1,0 +1,83 @@
+.dropdown-menu[data-bs-popper]{
+    right: 0 !important;
+    left: unset !important;
+}
+.dropdown-menu{
+    right: 0 !important;
+    left: unset !important;
+    --bs-dropdown-min-width:0 !important
+
+}
+
+.dropdown-style{
+    background-color: #008656;
+    border: #008656;
+    width: 56px;
+    height: 48px;
+    border-radius: 4px;
+}
+.dropdown-toggle{
+    color: #008656;
+}
+.current-lng{
+    color: #008656;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 8px;
+}
+.dropdown-style::after{
+    content: "";
+background-color: #FFFFFF !important;
+width: 40px;
+height: 4px;
+top: 60%;
+border-radius: 20px;
+position: absolute;
+transform: translateX(-48%);
+}
+.dropdown-style::before{
+    content: "";
+background-color: white !important;
+border-radius: 1px;
+width: 40px;
+height: 4px;
+top: 30%;
+position: absolute;
+transform: translateX(-48%);
+}
+.third-split::after{
+    content: "";
+    background-color: white !important;
+    border-radius: 20px;
+    width: 40px;
+    height: 4px;
+    top: 45%;
+    position: absolute;
+    transform: translateX(-48%);
+}
+.item-style{
+    color: #333333;
+    font-size: 22px !important;
+    font-weight: 700;
+    font-family:GE SS Unique;
+    
+}
+.logoNav{
+    width: 118px;
+    height: 108px;
+}
+
+@media screen and (max-width:600px) {
+    .logoNav{
+        width: 87px;
+        height: 80px;
+    }
+    .dropdown-style{
+        width: 50px;
+        height: 42px;
+    }
+}
