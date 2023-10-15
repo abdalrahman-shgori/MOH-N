@@ -1,3 +1,6 @@
+body {
+    background-color: #F5F5F5 !important;
+}
 .aboutWalkBg {
     background-image: url("../assets/images/walkingLine.svg");
     background-repeat: no-repeat;

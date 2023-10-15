@@ -1,3 +1,6 @@
+body {
+    background-color: #F5F5F5 !important;
+}
 .landingPage {
     display: flex;
     flex-direction: column;
