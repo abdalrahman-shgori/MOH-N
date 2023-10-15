@@ -4,7 +4,7 @@ body {
 }
 @font-face {
     font-family: 'GE SS Unique Light';
-    src: url('../GE\ SS\ Unique\ Bold.otf');
+    src: url('../GE\ SS\ Unique\ Bold.otf') !important;
   }
 .aboutWalkBg {
     background-image: url("../assets/images/walkingLine.svg");
