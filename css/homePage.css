@@ -1,82 +1,114 @@
+body {
+    background-color: #F5F5F5 !important;
+}
 
-.WalkSport{
+.WalkSport {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
 }
-.WalkSportText{
-font-size: 36px;
-font-weight: 300;
-line-height: 45px;
-letter-spacing: 0em;
-text-align: justified;
-color: #333333;
-text-align: right;
+
+.WalkSportText {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: justified;
+    color: #333333;
+    text-align: right;
 }
-.startBtn{
+
+.startBtn {
     width: 57px;
     height: 55px;
 }
 
 
-.whoPartners{
+.whoPartners {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.PartnersTextImg{
+
+.PartnersTextImg {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
 }
-.whoPartnerText{
+
+.whoPartnerText {
     font-family: GE SS Unique;
-font-size: 40px;
-font-weight: 700;
-line-height: 50px;
-letter-spacing: 0em;
-text-align: center;
-color: #008056;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #008056;
 }
 
-    .containers { 
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto; /* Changed second row to 'auto' */
-        gap: 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
+.NameInput {
+    background-color: #FFFFFF;
+}
+
+input[type="text"] {
+    border: 2px solid #FFFFFF;
+    /* Change the color (#ff0000) to your desired color */
+    border-radius: 20px;
+    text-align: right;
+    width: 60%;
+    height: 62px;
+    box-shadow: 0px -4px 2px 0px #C1C1C1;
+    padding: 10px;
+}
+
+.containers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    /* Changed second row to 'auto' */
+    gap: 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
         "first-area second-area thrid"
         "fourth fifth .";
-    }
+}
 
-  .child {
+.child {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .first-are { grid-area: first-are; }
-  
-  .second-area { grid-area: second-area; }
-  
-  .thrid { grid-area: thrid; }
-  
-  @media (max-width: 767px) {
+}
+
+.first-are {
+    grid-area: first-are;
+}
+
+.second-area {
+    grid-area: second-area;
+}
+
+.thrid {
+    grid-area: thrid;
+}
+
+@media (max-width: 767px) {
     .containers {
-      grid-template-columns: 1fr 1fr; /* 2 columns for small screens */
-      grid-template-rows: 1fr 1fr 1fr; /* 3 rows for small screens */
-      grid-template-areas:
-        "first-area second-area"
-        "fourth fifth"
-        "thrid .";
-    
+        grid-template-columns: 1fr 1fr;
+        /* 2 columns for small screens */
+        grid-template-rows: 1fr 1fr 1fr;
+        /* 3 rows for small screens */
+        grid-template-areas:
+            "first-area second-area"
+            "fourth fifth"
+            "thrid .";
+
     }
-  }
-  .parents {
+}
+
+.parents {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -84,48 +116,73 @@ color: #008056;
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    }
-    
-    .div1 { grid-area: 1 / 1 / 2 / 2;display: flex;justify-content: center; }
-    .div2 { grid-area: 1 / 2 / 2 / 3;display: flex;justify-content: center; }
-    .div3 { grid-area: 1 / 3 / 2 / 4; display: flex;justify-content: center;}
-    .div4 { grid-area: 2 / 2 / 3 / 4; display: flex;justify-content: center;}
-    .div5 { grid-area: 2 / 1 / 3 / 3; display: flex;justify-content: center;}
-  
-  
-    @media (max-width: 767px) {
-        .parents {
-            display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-        }
-                img {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 121px;
-                    height: 115px;
-                }
+}
 
-                .WalkSportText{
-                    font-size: 16px;
-                    line-height: 19px;
-                    text-align: right;
-                }
-                .startBtn{
-                    width: 42px;
-                    height: 40px;
-                }
-               .ww{
-                height: 312px;
-                width: 330px;
-               }
-    
-        
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: center;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    justify-content: center;
+}
+
+.div3 {
+    grid-area: 1 / 3 / 2 / 4;
+    display: flex;
+    justify-content: center;
+}
+
+.div4 {
+    grid-area: 2 / 2 / 3 / 4;
+    display: flex;
+    justify-content: center;
+}
+
+.div5 {
+    grid-area: 2 / 1 / 3 / 3;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 767px) {
+    .parents {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
     }
-  
-  
+
+    img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 121px;
+        height: 115px;
+    }
+
+    .WalkSportText {
+        font-size: 16px;
+        line-height: 19px;
+        text-align: right;
+    }
+
+    .startBtn {
+        width: 42px;
+        height: 40px;
+    }
+
+    .imgs {
+        height: 312px;
+        width: 330px;
+    }
+
+
+}

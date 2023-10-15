@@ -1,45 +1,51 @@
-.aboutWalkBg{
+.aboutWalkBg {
     background-image: url("../assets/images/walkingLine.svg");
     background-repeat: no-repeat;
 }
-.whatDiffrenceBg{
+
+.whatDiffrenceBg {
     background-image: url("../assets/images/walkingLine.svg");
     background-repeat: no-repeat;
     height: 40vh;
 }
 
 
-.walking{
+.walking {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.aboutWalk{
+
+.aboutWalk {
     color: #008056;
     font-size: 40px;
     font-weight: 700;
     line-height: 49px;
     font-family: GE SS Unique;
 }
-.QuestionWalk{
+
+.QuestionWalk {
     color: #008056;
     font-size: 36px;
     font-weight: 700;
     line-height: 49px;
     font-family: GE SS Unique;
 }
-.whatHappen{
+
+.whatHappen {
     display: flex;
     flex-direction: column;
     direction: rtl;
 }
-.whatDiffrence{
+
+.whatDiffrence {
     display: flex;
     flex-direction: column;
     direction: rtl;
 }
-.howtowalk{
+
+.howtowalk {
     font-family: GE SS Unique;
     font-size: 24px;
     font-weight: 700;
@@ -47,11 +53,13 @@
     letter-spacing: 0em;
     text-align: justified;
     color: #333333;
-    }
-    .whatHowWalk{
-        position: relative;
-    }
-li{
+}
+
+.whatHowWalk {
+    position: relative;
+}
+
+li {
     font-family: GE SS Unique;
     font-size: 24px;
     font-weight: 700;
@@ -59,35 +67,41 @@ li{
     letter-spacing: 0em;
     text-align: justified;
     color: #333333;
-    
+
 }
 
 @media screen and (max-width:600px) {
-    .aboutWalk{
+    .aboutWalk {
         font-size: 24px;
         line-height: 29px;
     }
-    .QuestionWalk{
+
+    .QuestionWalk {
         font-size: 16px;
         line-height: 19px;
     }
-    .howtowalk{
+
+    .howtowalk {
         font-size: 16px;
         font-weight: 300;
         line-height: 19px;
     }
-    .whatHowWalk{
+
+    .whatHowWalk {
         top: 0px;
     }
-    li{
+
+    li {
         font-size: 16px;
         line-height: 19px;
         font-weight: 300;
     }
-    .aboutWalkBg{
+
+    .aboutWalkBg {
         background-image: url("../assets/images/feet1.svg");
     }
-    .whatDiffrenceBg{
+
+    .whatDiffrenceBg {
         background-image: url("");
     }
 }
