@@ -94,7 +94,10 @@ html[lang="en"] .PathsDescription {
 
     .pathsBtn {
         font-size: 16px;
+        width: 100%;
         line-height: 19px;
+        padding: 4px 10px 4px 10px;
+
     }
 
     .pathsImg {
