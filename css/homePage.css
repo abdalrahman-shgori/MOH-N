@@ -1,9 +1,8 @@
 body {
     background-color: #F5F5F5 !important;
-    font-family: 'GE SS Unique Light' !important
 }
 @font-face {
-    font-family: 'GE SS Unique Light' !important;
+    font-family: 'GE SS Unique Lights';
     src: url('../GE\ SS\ Unique\ Light.otf');
   }
 
@@ -18,11 +17,13 @@ body {
 .WalkSportText {
     font-size: 36px;
     font-weight: 300;
-    line-height: 45px;
-    letter-spacing: 0em;
-    text-align: justified;
+    line-height: 44px;
     color: #333333;
     text-align: right;
+    font-family: 'GE SS Unique Lights';
+
+
+
 }
 
 .startBtn {
@@ -59,7 +60,6 @@ body {
 
 input[type="text"] {
     border: 2px solid #FFFFFF;
-    /* Change the color (#ff0000) to your desired color */
     border-radius: 20px;
     text-align: right;
     width: 60%;
@@ -72,7 +72,6 @@ input[type="text"] {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
-    /* Changed second row to 'auto' */
     gap: 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -101,9 +100,7 @@ input[type="text"] {
 @media (max-width: 767px) {
     .containers {
         grid-template-columns: 1fr 1fr;
-        /* 2 columns for small screens */
         grid-template-rows: 1fr 1fr 1fr;
-        /* 3 rows for small screens */
         grid-template-areas:
             "first-area second-area"
             "fourth fifth"
