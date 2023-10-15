@@ -7,6 +7,10 @@ body {
     font-family: 'GE SS Unique Light';
     src: url('../GE\ SS\ Unique\ Bold.otf') ;
 }
+@font-face {
+    font-family: 'GE SS Unique Bold';
+    src: url('../GE\ SS\ Unique\ Light.otf') ;
+}
 .aboutWalkBg {
     background-image: url("../assets/images/walkingLine.svg");
     background-repeat: no-repeat;
@@ -39,6 +43,7 @@ width: 70%;
     font-size: 40px;
     font-weight: 700;
     line-height: 49px;
+    font-family: 'GE SS Unique Light';
 }
 
 .QuestionWalk {
@@ -46,6 +51,8 @@ width: 70%;
     font-size: 36px;
     font-weight: 700;
     line-height: 49px;
+    font-family: 'GE SS Unique Light';
+
 }
 
 .whatHappen {
@@ -91,7 +98,6 @@ li {
     }
     .fontWeight{
         font-family: 'GE SS Unique Bold';
-
     }
 
     .QuestionWalk {

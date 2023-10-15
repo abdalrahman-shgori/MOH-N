@@ -31,7 +31,9 @@ const translations = {
         walkingPersonalityDescription: "A test that measures an individual's level of walking exercise and provides solutions for continued progress",
         walkingPersonalityBtnText: "Take the test now",
         whoisPartners: "Who are our partners?",
-        walkDescription: "Walking is a fun sport with many levels. It starts with walking for thirty minutes daily for five days a week."
+        walkDescription: "Walking is a fun sport with many levels. It starts with walking for thirty minutes daily for five days a week.",
+        testPesonality:"Test your personality",
+        walk30:"walk 30"
 
     },
     ar: {
@@ -67,7 +69,10 @@ const translations = {
         walkingPersonalityDescription: "اختبار يقيس مستوى الشخص في ممارسة المشي، ويقدم حلول للستمرار",
         walkingPersonalityBtnText: "اختبر الآن واعرف شخصيتك",
         whoisPartners: "من هم شركاؤنا",
-        walkDescription: "رياضة المشي رياضة ممتعة ولها مستويات كثيرة تبدأ بالمشي ثلاثين دقيقة يومياً لمدة خمسة أيام في الأسبوع."
+        walkDescription: "رياضة المشي رياضة ممتعة ولها مستويات كثيرة تبدأ بالمشي ثلاثين دقيقة يومياً لمدة خمسة أيام في الأسبوع.",
+        testPersonality:"اختبر شخصيتك",
+        walk30:"امش 30"
+
     },
 };
 
