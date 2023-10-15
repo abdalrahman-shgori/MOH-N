@@ -58,7 +58,7 @@ body {
     background-color: #FFFFFF;
 }
 .NameInput::placeholder {
-    font-family: GE SS Unique;
+    font-family: 'GE SS Unique Lights';
     font-size: 36px;
     font-weight: 700;
     line-height: 45px;
@@ -115,6 +115,13 @@ input[type="text"] {
         width: 88%;
         height: 42px;
     }
+    .NameInput::placeholder {
+       font-size: 12px;
+       font-weight: 300;
+       line-height: 15px;
+       top: 0px;
+    
+        }
     .containers {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -209,6 +216,9 @@ input[type="text"] {
         height: 312px;
         width: 330px;
         bottom: 20px;
+    }
+    .div2{
+        left: 16px;
     }
 
 
