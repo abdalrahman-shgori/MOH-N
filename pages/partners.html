@@ -2,7 +2,7 @@
 <html lang="ar">
 
 <head>
-    <link rel="stylesheet" href="../css/partners.css">
+    <link rel="stylesheet" href="../css/pathsOf30.css">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -22,53 +22,92 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <title>Partners</title>
+    <title>Paths</title>
 </head>
 
 <body>
+    <img id="img" src="../assets/images/rings.svg" style="position: absolute;top: 0px;right: 0;"></img>
     <div id="navbar-container"></div>
-    <div style="position: relative;">
-        <img id="feet3Small" src="../assets/images/feet3.svg" style="position: absolute;"></img>
-        <div class="PartnersTextImg">
-            <div class="whoPartners">
-                <p class="whoPartnerText" data-translate="whoisPartners">من هم شركاؤنا</p>
-
-            </div>
-            <div class="parent containers mx-auto">
-                <div class="div1"><img src="../assets/images/sport.svg"></img></div>
-                <div class="div2"><img src="../assets/images/gsk.svg"></img></div>
-                <div class="div3"><img src="../assets/images/aquafina.svg"></img></div>
-                <div class="div4"><img src="../assets/images/Sa.svg"></img></div>
-                <div class="div5"><img src="../assets/images/nupco.svg"></img></div>
-            </div>
-
-
+    <div class="paths" style="position: relative;">
+        <span class="PathsText" data-translate="walkPaths">مسارات امش 30</span>
+        <div id="output" class="">
 
         </div>
 
     </div>
-    <img id="feet4Small" style="position: absolute;"></img>
-
     <script src="../js/includeNav.js"></script>
     <script src="../js/nav.js"></script>
     <script>
-        function adjustLayout() {
+        function img() {
             if (window.innerWidth < 767) {
-                document.getElementById("feet3Small").style.display = "none";
-                document.getElementById("feet4Small").style.display = "none";
+                document.getElementById("img").src = "../assets/images/ringsSmall.svg"
+            }
+            else {
+                document.getElementById("img").src = "../assets/images/rings.svg"
 
-            } else {
-                document.getElementById("feet4Small").src = "../assets/images/feet4.svg";
-                document.getElementById("feet4Small").style.right = "0";
-                document.getElementById("feet4Small").style.bottom = "0";
-
-                document.getElementById("feet3Small").style.display = "block";
             }
         }
-        adjustLayout();
-        window.onresize = adjustLayout;
-    </script>
+        img()
+        window.onresize = img;
 
+        const myArray = [
+            { title: "شخصيتك في  المشي", description: "اختبار يقيس مستوى الشخص في ممارسة المشي، ويقدم حلول للستمرار", img: "../assets/images/animateWalking.svg", btnText: "اختبر الآن واعرف شخصيتك" },
+            { title: "شخصيتك في  المشي", description: "اختبار يقيس مستوى الشخص في ممارسة المشي، ويقدم حلول للستمرار", img: "../assets/images/runPath30.svg", btnText: "اختبر الآن واعرف شخصيتك" },
+            { title: "شخصيتك في  المشي", description: "اختبار يقيس مستوى الشخص في ممارسة المشي، ويقدم حلول للستمرار", img: "../assets/images/maps.svg", btnText: "اختبر الآن واعرف شخصيتك" },
+            { title: "شخصيتك في  المشي", description: "اختبار يقيس مستوى الشخص في ممارسة المشي، ويقدم حلول للستمرار", img: "../assets/images/goal.svg", btnText: "اختبر الآن واعرف شخصيتك" },
+
+        ];
+        const outputElement = document.getElementById("output");
+
+        myArray.map(function (item, index) {
+            const div = document.createElement("div");
+            div.innerHTML = `
+     <div class="pathsCard col-lg-12 mx-auto center-content">
+             <div class="PathsTexts ">
+                <span class="howYouWork" id="wk" data-translate="walkingPersonalityTitle">${item.title}</span>
+                <span class="PathsDescription" data-translate="walkingPersonalityDescription">
+${item.description}
+                    </span>
+                
+                <div class=""> 
+                    <button class="pathsBtn " data-translate="walkingPersonalityBtnText">
+${item.btnText}
+                        </button>
+            </div>
+             </div>
+             <div class="GroupImg">
+                <img class="pathsImg" src=${item.img}></img>
+
+             </div>
+            </div>
+  `;
+            outputElement.appendChild(div);
+        });
+    </script>
+    <script>
+        function addContainerClass() {
+            var outputDiv = document.getElementById("output");
+
+            if (window.innerWidth < 768) {
+                outputDiv.classList.add("container");
+            } else {
+                outputDiv.classList.remove("container");
+            }
+        }
+
+        addContainerClass();
+
+        window.addEventListener("resize", addContainerClass);
+
+
+
+
+
+
+
+
+
+    </script>
 </body>
 
-</html>
+</html
