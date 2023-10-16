@@ -15,6 +15,7 @@
 .dropdown-menu[data-bs-popper]{
     right: 0 !important;
     left: unset !important;
+    
 }
 
 .dropdown-menu {
@@ -25,6 +26,7 @@
     border-radius: 24px 0px 0px 24px !important;
     max-height: 200px;
     overflow-y: auto;
+    
 }
 
 .dropdown-menu::-webkit-scrollbar {

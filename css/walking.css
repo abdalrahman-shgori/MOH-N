@@ -181,5 +181,9 @@ li {
     .stepsWalkingImg{
         display: none;
     }
+    .walking{
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
 
 }
