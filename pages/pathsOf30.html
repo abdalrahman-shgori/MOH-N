@@ -38,9 +38,19 @@
     <script src="../js/includeNav.js"></script>
     <script src="../js/nav.js"></script>
     <script>
-        if (window.innerWidth < 767) {
+        function img() {
+            if (window.innerWidth < 767) {
             document.getElementById("img").src = "../assets/images/ringsSmall.svg"
         }
+        else {
+            document.getElementById("img").src = "../assets/images/rings.svg"
+
+        }
+
+        }
+        img()
+        window.onresize=img
+      
         const myArray = [
             { title: "شخصيتك في  المشي", description: "اختبار يقيس مستوى الشخص في ممارسة المشي، ويقدم حلول للستمرار", img: "../assets/images/animateWalking.svg", btnText: "اختبر الآن واعرف شخصيتك" },
             { title: "شخصيتك في  المشي", description: "اختبار يقيس مستوى الشخص في ممارسة المشي، ويقدم حلول للستمرار", img: "../assets/images/runPath30.svg", btnText: "اختبر الآن واعرف شخصيتك" },
