@@ -16,16 +16,7 @@
     right: 0 !important;
     left: unset !important;
 }
-.dropdown-menu {
-    right: 0 !important;
-    background-color: #F5F5F5;
-    left: unset !important;
-    --bs-dropdown-min-width: 0 !important;
-    border-radius: 24px 0px 0px 24px !important;
-    
-    max-height: 140px; /* Set the maximum height as per your requirements */
-    overflow-y: auto; /* Enable vertical scrolling if content exceeds the max height */
-}
+
 .dropdown-menu {
     right: 0 !important;
     background-color: #F5F5F5;
@@ -36,19 +27,16 @@
     overflow-y: auto;
 }
 
-/* Customize the scrollbar track */
 .dropdown-menu::-webkit-scrollbar {
     width: 10px;
-    height: 100px; /* Set the height as needed */
+    height: 100px;
 }
 
-/* Customize the scrollbar thumb (the draggable part) */
 .dropdown-menu::-webkit-scrollbar-thumb {
     background-color: #C6C6C6;
     border-radius: 6px 0px 0px 6px;
 }
 
-/* Customize the scrollbar track (background) */
 .dropdown-menu::-webkit-scrollbar-track {
     background-color: #333333;
     border-radius: 6px 0px 0px 6px;
@@ -109,14 +97,18 @@ transform: translateX(-48%);
 }
 
 .item-style{
-       font-size: 24px;
+       font-size: 20px;
     font-weight: 700;
     line-height: 36px;
     letter-spacing: 0em;
-    text-align: justified;
     color: #333333;
+    text-align: right;
     font-family: 'GE SS Unique Light' !important;
 
+}
+html[lang="en"] .item-style{
+  text-align: left;
+    
 }
 .logoNav{
     width: 118px;

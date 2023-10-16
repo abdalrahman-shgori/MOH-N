@@ -51,23 +51,23 @@
 
     <script src="../js/includeNav.js"></script>
     <script src="../js/nav.js"></script>
-   <script>
-    function adjustLayout() {
-        if (window.innerWidth < 767) {
-            document.getElementById("feet3Small").style.display = "none";
-            document.getElementById("feet4Small").style.display = "none";
+    <script>
+        function adjustLayout() {
+            if (window.innerWidth < 767) {
+                document.getElementById("feet3Small").style.display = "none";
+                document.getElementById("feet4Small").style.display = "none";
 
-        } else {
-            document.getElementById("feet4Small").src = "../assets/images/feet4.svg";
-            document.getElementById("feet4Small").style.right = "0";
-            document.getElementById("feet4Small").style.bottom = "0";
+            } else {
+                document.getElementById("feet4Small").src = "../assets/images/feet4.svg";
+                document.getElementById("feet4Small").style.right = "0";
+                document.getElementById("feet4Small").style.bottom = "0";
 
-            document.getElementById("feet3Small").style.display = "block";
+                document.getElementById("feet3Small").style.display = "block";
+            }
         }
-    }
-    adjustLayout();
-    window.onresize = adjustLayout;
-</script>
+        adjustLayout();
+        window.onresize = adjustLayout;
+    </script>
 
 </body>
 

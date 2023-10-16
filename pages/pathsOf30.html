@@ -29,8 +29,8 @@
     <img id="img" src="../assets/images/rings.svg" style="position: absolute;top: 0px;right: 0;"></img>
     <div id="navbar-container"></div>
     <div class="paths" style="position: relative;">
-        <p class="PathsText" data-translate="walkPaths">مسارات امش 30</p>
-        <div id="output" class="col-lg-7">
+        <span class="PathsText" data-translate="walkPaths">مسارات امش 30</span>
+        <div id="output" class="">
 
         </div>
 
@@ -38,14 +38,23 @@
     <script src="../js/includeNav.js"></script>
     <script src="../js/nav.js"></script>
     <script>
-        if (window.innerWidth < 767) {
-            document.getElementById("img").src = "../assets/images/ringsSmall.svg"
+        function img() {
+            if (window.innerWidth < 767) {
+                document.getElementById("img").src = "../assets/images/ringsSmall.svg"
+            }
+            else {
+                document.getElementById("img").src = "../assets/images/rings.svg"
+
+            }
         }
+        img()
+        window.onresize = img;
+
         const myArray = [
             { title: "شخصيتك في  المشي", description: "اختبار يقيس مستوى الشخص في ممارسة المشي، ويقدم حلول للستمرار", img: "../assets/images/animateWalking.svg", btnText: "اختبر الآن واعرف شخصيتك" },
-            { title: "شخصيتك في  المشي", description: "اختبار يقيس مستوى الشخص في ممارسة المشي، ويقدم حلول للستمرار", img: "../assets/images/animateWalking.svg", btnText: "اختبر الآن واعرف شخصيتك" },
-            { title: "شخصيتك في  المشي", description: "اختبار يقيس مستوى الشخص في ممارسة المشي، ويقدم حلول للستمرار", img: "../assets/images/animateWalking.svg", btnText: "اختبر الآن واعرف شخصيتك" },
-            { title: "شخصيتك في  المشي", description: "اختبار يقيس مستوى الشخص في ممارسة المشي، ويقدم حلول للستمرار", img: "../assets/images/animateWalking.svg", btnText: "اختبر الآن واعرف شخصيتك" },
+            { title: "شخصيتك في  المشي", description: "اختبار يقيس مستوى الشخص في ممارسة المشي، ويقدم حلول للستمرار", img: "../assets/images/runPath30.svg", btnText: "اختبر الآن واعرف شخصيتك" },
+            { title: "شخصيتك في  المشي", description: "اختبار يقيس مستوى الشخص في ممارسة المشي، ويقدم حلول للستمرار", img: "../assets/images/maps.svg", btnText: "اختبر الآن واعرف شخصيتك" },
+            { title: "شخصيتك في  المشي", description: "اختبار يقيس مستوى الشخص في ممارسة المشي، ويقدم حلول للستمرار", img: "../assets/images/goal.svg", btnText: "اختبر الآن واعرف شخصيتك" },
 
         ];
         const outputElement = document.getElementById("output");
@@ -54,11 +63,11 @@
             const div = document.createElement("div");
             div.innerHTML = `
      <div class="pathsCard col-lg-12 center-content">
-             <div class="PathsTexts">
-                <p class="howYouWork" id="wk" data-translate="walkingPersonalityTitle">${item.title}</p>
-                <p class="PathsDescription" data-translate="walkingPersonalityDescription">
+             <div class="PathsTexts ">
+                <span class="howYouWork" id="wk" data-translate="walkingPersonalityTitle">${item.title}</span>
+                <span class="PathsDescription" data-translate="walkingPersonalityDescription">
 ${item.description}
-                    </p>
+                    </span>
                 
                 <div class=""> 
                     <button class="pathsBtn " data-translate="walkingPersonalityBtnText">
@@ -67,13 +76,37 @@ ${item.btnText}
             </div>
              </div>
              <div class="GroupImg">
-                <img class="pathsImg" src="../assets/images/animateWalking.svg"></img>
+                <img class="pathsImg" src=${item.img}></img>
 
              </div>
             </div>
   `;
             outputElement.appendChild(div);
         });
+    </script>
+    <script>
+        function addContainerClass() {
+            var outputDiv = document.getElementById("output");
+
+            if (window.innerWidth < 768) {
+                outputDiv.classList.add("container");
+            } else {
+                outputDiv.classList.remove("container");
+            }
+        }
+
+        addContainerClass();
+
+        window.addEventListener("resize", addContainerClass);
+
+
+
+
+
+
+
+
+
     </script>
 </body>
 

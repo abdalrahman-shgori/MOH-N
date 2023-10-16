@@ -34,6 +34,7 @@ html[lang="en"] .WalkSportText{
 .startBtn {
     width: 57px;
     height: 55px;
+    z-index: 1;
 }
 
 
@@ -182,8 +183,9 @@ input[type="text"] {
 }
 .imgs{
     position: relative;
-    left: 20px;
+    left: 30px;
     bottom: 26px;
+    z-index: -1;
 }
 
 
