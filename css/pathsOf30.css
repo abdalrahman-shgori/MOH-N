@@ -121,6 +121,11 @@ html[lang="en"] .pathsBtn{
 html[lang="en"] .pathsImg{
     transform: scaleX(-1);
 }
+.pathsImg2{
+    padding: 0px 60px 0px 60px;
+
+}
+
 
 html[lang = "en"] .center-content{
     direction: rtl;
@@ -179,6 +184,12 @@ html[lang = "en"] .center-content{
     }
 
     .pathsImg {
+        width: 124px;
+        height: 105px;
+        padding: 0px 20px 0px 20px;
+
+    }
+    .pathsImg2 {
         width: 124px;
         height: 105px;
         padding: 0px 20px 0px 20px;
