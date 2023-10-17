@@ -171,6 +171,7 @@ html[lang="en"] .container{
     text-align: left;
     font-family: 'EnLanguage';
  }
+ 
 
 .whatDiffrence {
     display: flex;
@@ -251,9 +252,8 @@ li {
     
         }
     .ideasList{
-        padding: 10px 81px 10px 24px;
+        padding: 10px 10px 10px 10px;
         margin-bottom: 16px;
-
         font-size: 16px;
         line-height: 19px;
         width: 100% !important;
@@ -311,7 +311,7 @@ li {
     }
     
     html[lang="en"] .ideasList{
-        padding: 10px 81px 10px 24px;
+        padding: 10px 10px 10px 10px;
     }
 
 }
