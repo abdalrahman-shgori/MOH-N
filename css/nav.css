@@ -8,41 +8,61 @@
     font-family: 'Montserrat' ;
     src: url('../Montserrat\ Semi\ Bold.otf');
   }
+  @font-face {
+    font-family: 'EnLanguage' ;
+    src: url('../HelveticaNeue.ttc');
+  }
   .lang-shortcut{
     font-family: 'Montserrat' ;
+    display: flex;
+    justify-content: center;
 
   }
+  .lang-shortcut:hover{
+    background-color: transparent;
+  }
+  
+  .dropdown-item{
+    margin: 0;
+    padding: 0;
+}
 .dropdown-menu[data-bs-popper]{
     right: 0 !important;
     left: unset !important;
-    
+    display: flex;
+    padding: 10px 20px 30px 40px;
+    padding-left: 80px;
+    padding-right: 36px;
+    padding-top: 24px;
+    flex-direction: column;
+    gap: 31px;
 }
+html[lang="en"] .dropdown-menu[data-bs-popper]{
+    padding-right: 60px;
+    padding-left: 36px;
+}
+.language-dropdown .dropdown-menu {
 
+    background-color: #F5F5F5;
+    padding: 12px;
+    width: 60px;
+    height: 80px;
+    gap: 0px;
+    border-radius: 24px 0px 0px 24px;
+}
+  html[lang="en"] .language-dropdown .dropdown-menu{
+   padding: 16px;
+}
+  
 .dropdown-menu {
     right: 0 !important;
     background-color: #F5F5F5;
     left: unset !important;
     --bs-dropdown-min-width: 0 !important;
-    border-radius: 24px 0px 0px 24px !important;
-    max-height: 200px;
-    overflow-y: auto;
-    
+    border-radius: 24px 0px 0px 24px !important;  
 }
 
-.dropdown-menu::-webkit-scrollbar {
-    width: 10px;
-    height: 100px;
-}
 
-.dropdown-menu::-webkit-scrollbar-thumb {
-    background-color: #C6C6C6;
-    border-radius: 6px 0px 0px 6px;
-}
-
-.dropdown-menu::-webkit-scrollbar-track {
-    background-color: #333333;
-    border-radius: 6px 0px 0px 6px;
-}
 .dropdown-text{
 
 }
@@ -59,13 +79,16 @@
 }
 .current-lng{
     color: #008656;
+    border: none;
+    background-color: transparent;
     font-size: 16px;
     font-family: 'Montserrat' !important;
     font-weight: 700;
     display: flex;
     align-items: center;
     position: relative;
-    top: 8px;
+    top: 10px;
+    padding-bottom: 20px;
 }
 .dropdown-style::after{
     content: "";
@@ -106,7 +129,13 @@ transform: translateX(-48%);
     color: #333333;
     text-align: right;
     font-family: 'GE SS Unique Light' !important;
+}
+html[lang="en"] .item-style{
+    font-family: 'EnLanguage' !important;
 
+}
+.item-style:hover{
+    background-color: transparent;
 }
 html[lang="en"] .item-style{
   text-align: left;
@@ -125,5 +154,19 @@ html[lang="en"] .item-style{
     .dropdown-style{
         width: 50px;
         height: 42px;
+    }
+    .item-style{
+        font-size: 16px;
+    }
+    .dropdown-menu[data-bs-popper]{
+padding-left: 10px;
+padding-right: 10px;
+gap:0px;
+
+    }
+    html[lang="en"] .dropdown-menu[data-bs-popper]{
+        padding-left: 10px;
+padding-right: 10px;
+gap:0px;
     }
 }

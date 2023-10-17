@@ -33,7 +33,9 @@ const translations = {
         whoisPartners: "Who are our partners?",
         walkDescription: "Walking is a fun sport with many levels. It starts with walking for thirty minutes daily for five days a week.",
         testPersonality:"Test your personality",
-        walk30:"walk 30"
+        walk30:"walk 30",
+        namePlaceholder: "Name :",
+
 
     },
     ar: {
@@ -70,7 +72,9 @@ const translations = {
         whoisPartners: "من هم شركاؤنا",
         walkDescription: "رياضة المشي رياضة ممتعة ولها مستويات كثيرة تبدأ بالمشي ثلاثين دقيقة يومياً لمدة خمسة أيام في الأسبوع.",
         testPersonality:"اختبر شخصيتك",
-        walk30:"امش 30"
+        walk30:"امش 30",
+        namePlaceholder: ": اسمك",
+
 
     },
 };
@@ -83,9 +87,13 @@ function setLanguage(language) {
     });
 
     document.documentElement.lang = language;
-    document.getElementById("dropdownMenuLink").innerHTML = document.documentElement.lang.toUpperCase()
+    document.getElementById("dropdownMenuLink").innerHTML = document.documentElement.lang.toUpperCase();
 
     localStorage.setItem('selectedLanguage', language);
+
+    // Set the input placeholder based on the language
+    const nameInput = document.getElementById('nameInput');
+    nameInput.placeholder = translations[language].namePlaceholder;
 }
 
 function initializeLanguage() {
@@ -93,8 +101,7 @@ function initializeLanguage() {
     if (selectedLanguage) {
         setLanguage(selectedLanguage);
     }
-    document.getElementById("dropdownMenuLink").innerHTML = document.documentElement.lang.toUpperCase()
-
+    document.getElementById("dropdownMenuLink").innerHTML = document.documentElement.lang.toUpperCase();
 }
 
 document.querySelectorAll('.dropdown-item').forEach((item) => {
@@ -105,3 +112,6 @@ document.querySelectorAll('.dropdown-item').forEach((item) => {
 });
 
 initializeLanguage();
+
+
+

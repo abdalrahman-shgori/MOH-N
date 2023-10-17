@@ -11,14 +11,24 @@ body {
     font-family: 'GE SS Unique Light';
     src: url('../GE\ SS\ Unique\ Bold.otf');
   }
+  @font-face {
+    font-family: 'EnLanguage';
+    src: url('../HelveticaNeue.ttc');
+  }
 .PathsText {
     color: #008056;
     font-size: 40px;
     font-weight: 700;
     line-height: 49px;
-    font-family: 'GE SS Unique Light';
-    margin-bottom: 28px;
+    margin-bottom: 64px;
+        font-family: 'GE SS Unique Light' ;
+
 }
+html[lang="en"] .PathsText{
+        font-family: 'EnLanguage' !important;
+
+}
+
 
 .paths {
     display: flex;
@@ -34,8 +44,11 @@ padding: 36px 60px 36px 60px;
     border-radius: 16px;
     box-shadow: 4px 4px 4px 4px #33333329;
     display: flex;
-    margin-top: 36px;
+    margin-bottom: 36px;
     width: 90%;
+}
+.spaceCard{
+    margin-bottom: 91px;
 }
 
 .PathsTexts {
@@ -57,9 +70,13 @@ html[lang="en"] .PathsTexts {
     line-height: 45px;
     letter-spacing: 0em;
     text-align: justified;
-    font-family: 'GE SS Unique Light';
+    font-family: 'GE SS Unique Light' !important;
     color: #333333;
 }
+html[lang='en'] .howYouWork{
+font-family:'EnLanguage' !important ;
+}
+
 
 .PathsDescription {
     font-size: 24px;
@@ -74,6 +91,9 @@ html[lang="en"] .PathsTexts {
 
 html[lang="en"] .PathsDescription {
     text-align: left;
+    font-family:'EnLanguage'  ;
+
+
 }
 
 .pathsBtn {
@@ -84,6 +104,9 @@ html[lang="en"] .PathsDescription {
     padding: 4px 30px 4px 30px;
     color: #FFFFFF;
     font-family: 'GE SS Unique Bold';
+}
+html[lang="en"] .pathsBtn{
+    font-family: 'EnLanguage';
 }
 
 .center-content {
@@ -102,13 +125,17 @@ html[lang="en"] .pathsImg{
 html[lang = "en"] .center-content{
     direction: rtl;
 }
+
 @media screen and (max-width:967px) {
     .pathsCard{
     }
+   
 }
 @media screen and (max-width:767px) {
     .pathsCard{
         padding: 24px 26px 24px 26px;
+        margin-bottom: 16px;
+        
 
     }
     .paths{
@@ -119,13 +146,13 @@ html[lang = "en"] .center-content{
         font-size: 24px;
         line-height: 29px;
         gap: 8px;
-        margin-bottom: 0px;
+        margin-bottom: 24px;
 
     }
     .PathsTexts{
         line-height: 29px;
         gap: 8px;
-        padding-left: 00px;
+        padding-left: 0px;
         
 
     }
@@ -162,6 +189,9 @@ html[lang = "en"] .center-content{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .spaceCard{
+        margin-bottom: 41px ;
     }
 
 }

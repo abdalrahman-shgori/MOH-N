@@ -12,6 +12,10 @@ body {
     font-family: 'GE SS Unique Light';
     src: url('../GE\ SS\ Unique\ Bold.otf');
   }
+  @font-face {
+    font-family: 'EnLanguage';
+    src: url('../HelveticaNeue.ttc');
+  }
 .landingPage {
     display: flex;
     flex-direction: column;
@@ -28,7 +32,10 @@ body {
     line-height: 44px;
     text-align: left;
     font-family: 'GE SS Unique Bold';
-
+    margin-top: 16px;
+}
+html[lang="en"] .descriptionText{
+    font-family: 'EnLanguage';
 
 }
 
@@ -41,14 +48,16 @@ body {
 .startBtn {
     background-color: #F0C905;
     border: #F0C905;
-    border-radius: 16px;
+    border-radius: 12px;
     padding: 5px 10px 5px 10px;
     color: #FFFFFF;
     font-size: 24px;
     font-weight: 700;
     box-shadow: 0 -1px #333333, 1px 0 #333333;
     font-family: 'GE SS Unique Bold';
-
+}
+html[lang="en"] .startBtn{
+    font-family: 'EnLanguage';
 }
 
 .landingGroupImg {
@@ -74,6 +83,9 @@ body {
     height: 100%;
     
 }
+#footer{
+    position: absolute; bottom: 0
+   }
 @media screen and (min-width:1800px) {
 .peopleImg{
     width: 1440px;
@@ -89,6 +101,10 @@ body {
         width: 340px;
 
     }
+    #footer{
+        bottom:-100px;
+    }
+  
 
     .walkImg {
         width: 144px;

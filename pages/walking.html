@@ -26,17 +26,19 @@
 </head>
 
 <body>
+    <img id="img" src="../assets/images/rings.svg" style="position: absolute;top: 0px;right: 10px;"></img>
+
     <div id="navbar-container"></div>
     <div class="walking">
         <p class="aboutWalk" data-translate="aboutWalking">عن رياضة المشي</p>
     </div>
 
     <div class="whatHappen" style="position: relative;">
-        <img class="stepsWalkingImg" src="../assets/images/walkingLine.svg">
+        <!-- <img class="stepsWalkingImg" src="../assets/images/walkingLine.svg"> -->
 
 
         <div class="container">
-            <p class="QuestionWalk " data-translate="whatHappens">ماذا يحدث إذا مشيت ثلاثين دقيقة يومياً؟</p>
+            <p class="QuestionWalk" data-translate="whatHappens">ماذا يحدث إذا مشيت ثلاثين دقيقة يومياً؟</p>
             <ul class="group-text">
                 <li class="fontWeight" data-translate="whatHappens1">تحسين لياقتك البدنية</li>
                 <li class="fontWeight" data-translate="whatHappens2"> تحميك من مخاطر الإصابة بالأمراض المزمنة</li>
@@ -47,8 +49,8 @@
                 <li class="fontWeight" data-translate="whatHappens6"> تحسن التوازن وتدفق الدم في الجسم</li>
             </ul>
         </div>
-        <div class="container mt-4">
-            <p class="QuestionWalk ideasList" data-translate="ideastowalk">أفكار للمشي خلال اليوم</p>
+        <div class="container">
+            <p class="ideasList" data-translate="ideastowalk">أفكار للمشي خلال اليوم</p>
             <ul class="group-text">
                 <li class="fontWeight" data-translate="idea1">أوقف السيارة بعيد عن مكان وصولك</li>
                 <li class="fontWeight" data-translate="idea2">امش مع أصدقائك بدل الجلوس في مكان طوال الوقت</li>
@@ -70,35 +72,38 @@
 
 
         <div class=" container whatDiffrence " style="position: relative;">
-            <img id="walkingLine" style="position: absolute;left: 0;top:-60px;"
-                src="../assets/images/walking2.svg"></img>
+            <!-- <img id="walkingLine" style="position: absolute;left: 0;top:-60px;"
+                src="../assets/images/walking2.svg"></img> -->
 
-            <div class="whatHowWalk mt-3">
+            <div class="whatHowWalk">
                 <p class="QuestionWalk2" data-translate="differenceBetweenWalking">ما الفرق بين رياضة المشي والمشي
                     العادي؟ </p>
-                <p class="howtowalk fontWeight container mt-3" data-translate="properWalking">المشي الصحيح يعني أن تقطع
+                <p class="howtowalk container" data-translate="properWalking">المشي الصحيح يعني أن تقطع
                     كيلو متر ونصف
                     تقريباً، بالمشي المتسارع وليس
                     التمشية، ويمكن الاستعانة بتطبيقات الأجهزة الذكية لحساب المسافة المقطوعة</p>
 
             </div>
         </div>
+
     </div>
+    <div id="footer" class="walkingFooter"></div>
+
     <script src="../js/includeNav.js"></script>
     <script src="../js/nav.js"></script>
     <script>
-        if (window.innerWidth < 767) {
-
-
+         function img() {
+            if (window.innerWidth < 767) {
+            document.getElementById("img").src = "../assets/images/ringsSmall.svg"
+        }
+        else {
+            document.getElementById("img").src = "../assets/images/rings.svg"
 
         }
-        function imgChange() {
-            document.getElementById("walkingLine").src = "../assets/images/feet2.svg"
-            document.getElementById("walkingLine").style.display = "none"
 
         }
-        imgChange()
-        window.onresize = imgChange;
+        img()
+        window.onresize=img
 
     </script>
 </body>

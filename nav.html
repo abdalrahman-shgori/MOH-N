@@ -32,42 +32,47 @@
   <nav class="navbar">
     <div class="container-xxl">
       <a class="navbar-brand" href="https://abdalrahman-shgori.github.io/MOH-N/">
-        <img class="logoNav" src="./assets/images/logoSA.svg" alt="Bootstrap">
+        <img class="logoNav" src="../assets/images/logoSA.svg" alt="Bootstrap">
       </a>
-      <div style="display: flex;justify-content: center;align-items: center ;gap: 30px;">
-        <div class="dropdown show" style="display: flex;align-items: center;justify-content: center;">
-          <p class="dropdown-toggle current-lng" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-          </p>
+      <div style="display: flex; justify-content: center; align-items: center; gap: 30px;">
+        <div class="btn-group language-dropdown">
+            <button  class="current-lng btn-group dropdown-toggle" href="#" role="button" id="dropdownMenuLink"data-bs-toggle="dropdown" aria-expanded="false"
+>
+            </button>
+  
+            <div id="languageDropdown" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a onclick="myFunction()" id="current-language" class="dropdown-item lang-shortcut" href="#">AR</a>
+  
+              <a onclick="myFunction1()" class="dropdown-item lang-shortcut" href="#">EN</a>
+  
+            </div>
 
-          <div id="id-1" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a onclick="myFunction()" id="current-language" class="dropdown-item lang-shortcut" href="#">AR</a>
-
-            <a onclick="myFunction1()" class="dropdown-item lang-shortcut" href="#">EN</a>
-
-          </div>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item lang-shortcut" href="#" onclick="myFunction()">AR</a></li>
+            <li><a class="dropdown-item lang-shortcut" href="#" onclick="myFunction1()">EN</a></li>
+          </ul>
         </div>
-        <div class="btn-group">
+        <div class="btn-group dropdown show "id="menuDropdown">
           <button type="button" class="dropdown-style  dropdown-toggle-split" data-bs-toggle="dropdown"
             aria-expanded="false">
             <div class="third-split"></div>
           </button>
-        
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item item-style dropdown-text" data-translate="walk30" href="https://abdalrahman-shgori.github.io/MOH-N/">امش
+            <li><a class="dropdown-item item-style dropdown-text" data-translate="walk30" href="../index.html">امش
                 30</a></li>
             <li><a class="dropdown-item item-style dropdown-text" data-translate="aboutWalk"
-                href="./pages/walking.html">عن رياضة المشي</a></li>
+                href="../pages/walking.html">عن رياضة المشي</a></li>
             <li><a class="dropdown-item item-style dropdown-text" data-translate="path"
-                href="./pages/pathsOf30.html">مسارات امش 30</a></li>
+                href="../pages/pathsOf30.html">مسارات امش 30</a></li>
             <li><a class="dropdown-item item-style dropdown-text" data-translate="Partners"
-                href="./pages/partners.html">الشركاء</a></li>
+                href="../pages/partners.html">الشركاء</a></li>
             <li><a class="dropdown-item item-style dropdown-text" data-translate="testPersonality"
-                href="./pages/homePage.html">اختبر شخصيتك</a></li>
+                href="../pages/homePage.html">اختبر شخصيتك</a></li>
 
           </ul>
         </div>
       </div>
+    </div>
   </nav>
   <script src="./js/language.js"></script>
   <script src="./js/nav.js"></script>

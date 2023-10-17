@@ -16,6 +16,22 @@ document.addEventListener("DOMContentLoaded", function () {
             console.error("Error fetching navigation bar:", error);
         });
 
+        fetch("../pages/footer.html")
+        .then(response => response.text())
+        .then(navHTML => {
+            document.getElementById("footer").innerHTML = navHTML;
+
+            const script = document.createElement("script");
+            script.src = "../js/language.js";
+            head.appendChild(script);
+            console.log("abd")
+
+        })
+        .catch(error => {
+            console.error("Error fetching navigation bar:", error);
+        });
+
+
 
 
 });

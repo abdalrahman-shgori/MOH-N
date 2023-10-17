@@ -10,15 +10,19 @@ body {
   font-family: 'GE SS Unique Light';
   src: url('../GE\ SS\ Unique\ Bold.otf');
 }
+@font-face {
+  font-family: 'EnLanguage';
+  src: url('../HelveticaNeue.ttc');
+}
 .whoPartners {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 88px;
 }
 
 .PartnersTextImg {
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
 }
@@ -31,8 +35,9 @@ body {
   text-align: center;
   color: #008056;
   font-family: 'GE SS Unique Light';
-
-
+}
+html[lang='en'] .whoPartnerText{
+  font-family: 'EnLanguage';
 }
 
 .container {
@@ -65,6 +70,9 @@ body {
 }
 
 @media (max-width: 767px) {
+  .whoPartners{
+    margin-top: 24px;
+  }
   .container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
