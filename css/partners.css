@@ -166,3 +166,14 @@ html[lang='en'] .whoPartnerText{
     grid-area: 3 / 1 / 4 / 3;
   }
 }
+
+.fadeRight {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 1s ease, transform 0.5s ease;
+}
+
+.fadeRight.show {
+  opacity: 1;
+  transform: translateX(0);
+}
