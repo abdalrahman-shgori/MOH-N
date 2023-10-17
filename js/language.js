@@ -98,13 +98,29 @@ function initializeLanguage() {
         setLanguage(selectedLanguage);
     }
     document.getElementById("dropdownMenuLink").innerHTML = document.documentElement.lang.toUpperCase()
-
+    setLanguage(selectedLanguage);
+    if(selectedLanguage === "ar") {
+        document.getElementById('nameInput').placeholder="اسمك :"
+    
+    }
+    else if (selectedLanguage === "en"){
+        document.getElementById('nameInput').placeholder="Name :"
+    
+    }
 }
 
 document.querySelectorAll('.dropdown-item').forEach((item) => {
     item.addEventListener('click', (e) => {
         const selectedLanguage = e.target.textContent.toLowerCase();
         setLanguage(selectedLanguage);
+        if(selectedLanguage === "ar") {
+            document.getElementById('nameInput').placeholder="abd"
+        
+        }
+        else if (selectedLanguage === "en"){
+            document.getElementById('nameInput').placeholder="abd12"
+        
+        }
     });
 });
 
