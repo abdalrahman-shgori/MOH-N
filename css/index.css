@@ -41,21 +41,22 @@ html[lang="en"] .descriptionText{
 .walkImg {
     width: 368px;
     transform: rotate(-5deg);
+    margin-bottom: 16px;
 
 }
 
 .startBtn {
     background-color: #F0C905;
     border: #F0C905;
-    border-radius: 12px;
+    border-radius: 14px;
     padding: 5px 10px 5px 10px;
     color: #FFFFFF;
     font-size: 24px;
     font-weight: 700;
-    box-shadow: 0 -1px #333333, 1px 0 #333333;
-    font-family: 'GE SS Unique Bold';
+    font-family: 'GE SS Unique Light';
     margin-bottom:40px;
-    margin-top: 16px;
+    box-shadow: 0 -2px 0 0 #333333, 2px 0 0 0 #333333;
+
 }
 html[lang="en"] .startBtn{
     font-family: 'EnLanguage';
