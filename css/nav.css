@@ -1,32 +1,35 @@
+@font-face {
+    font-family: 'GE SS Unique Light';
+    src: url('../GE\ SS\ Unique\ Light.otf') !important;
+}
 
 @font-face {
-    font-family: 'GE SS Unique Light' ;
-    src: url('../GE\ SS\ Unique\ Light.otf') !important;
-  }
-
-  @font-face {
-    font-family: 'Montserrat' ;
+    font-family: 'Montserrat';
     src: url('../Montserrat\ Semi\ Bold.otf');
-  }
-  @font-face {
-    font-family: 'EnLanguage' ;
+}
+
+@font-face {
+    font-family: 'EnLanguage';
     src: url('../HelveticaNeue.ttc');
-  }
-  .lang-shortcut{
-    font-family: 'Montserrat' ;
+}
+
+.lang-shortcut {
+    font-family: 'Montserrat';
     display: flex;
     justify-content: center;
 
-  }
-  .lang-shortcut:hover{
+}
+
+.lang-shortcut:hover {
     background-color: transparent;
-  }
-  
-  .dropdown-item{
+}
+
+.dropdown-item {
     margin: 0;
     padding: 0;
 }
-.dropdown-menu[data-bs-popper]{
+
+.dropdown-menu[data-bs-popper] {
     right: 0 !important;
     left: unset !important;
     display: flex;
@@ -37,47 +40,50 @@
     flex-direction: column;
     gap: 31px;
 }
-html[lang="en"] .dropdown-menu[data-bs-popper]{
+
+html[lang="en"] .dropdown-menu[data-bs-popper] {
     padding-right: 60px;
     padding-left: 36px;
 }
+
 .language-dropdown .dropdown-menu {
 
     background-color: #F5F5F5;
-    padding: 12px;
+    padding: 10px;
     width: 60px;
     height: 80px;
-    gap: 0px;
+    gap: 10px;
     border-radius: 24px 0px 0px 24px;
 }
-  html[lang="en"] .language-dropdown .dropdown-menu{
-   padding: 16px;
+
+html[lang="en"] .language-dropdown .dropdown-menu {
+    padding: 10px;
 }
-  
+
 .dropdown-menu {
     right: 0 !important;
     background-color: #F5F5F5;
     left: unset !important;
     --bs-dropdown-min-width: 0 !important;
-    border-radius: 24px 0px 0px 24px !important;  
+    border-radius: 24px 0px 0px 24px !important;
 }
 
 
-.dropdown-text{
+.dropdown-text {}
 
-}
-
-.dropdown-style{
+.dropdown-style {
     background-color: #008656;
     border: #008656;
     width: 56px;
     height: 48px;
     border-radius: 4px;
 }
-.dropdown-toggle{
+
+.dropdown-toggle {
     color: #008656;
 }
-.current-lng{
+
+.current-lng {
     color: #008656;
     border: none;
     background-color: none;
@@ -89,27 +95,30 @@ html[lang="en"] .dropdown-menu[data-bs-popper]{
     position: relative;
     top: 10px;
 }
-.dropdown-style::after{
+
+.dropdown-style::after {
     content: "";
-background-color: #FFFFFF !important;
-width: 40px;
-height: 4px;
-top: 60%;
-border-radius: 20px;
-position: absolute;
-transform: translateX(-48%);
+    background-color: #FFFFFF !important;
+    width: 40px;
+    height: 4px;
+    top: 60%;
+    border-radius: 20px;
+    position: absolute;
+    transform: translateX(-48%);
 }
-.dropdown-style::before{
+
+.dropdown-style::before {
     content: "";
-background-color: white !important;
-border-radius: 1px;
-width: 40px;
-height: 4px;
-top: 30%;
-position: absolute;
-transform: translateX(-48%);
+    background-color: white !important;
+    border-radius: 1px;
+    width: 40px;
+    height: 4px;
+    top: 30%;
+    position: absolute;
+    transform: translateX(-48%);
 }
-.third-split::after{
+
+.third-split::after {
     content: "";
     background-color: white !important;
     border-radius: 20px;
@@ -120,8 +129,8 @@ transform: translateX(-48%);
     transform: translateX(-48%);
 }
 
-.item-style{
-       font-size: 20px;
+.item-style {
+    font-size: 20px;
     font-weight: 700;
     line-height: 36px;
     letter-spacing: 0em;
@@ -129,43 +138,51 @@ transform: translateX(-48%);
     text-align: right;
     font-family: 'GE SS Unique Light' !important;
 }
-html[lang="en"] .item-style{
+
+html[lang="en"] .item-style {
     font-family: 'EnLanguage' !important;
 
 }
-.item-style:hover{
+
+.item-style:hover {
     background-color: transparent;
 }
-html[lang="en"] .item-style{
-  text-align: left;
-    
+
+html[lang="en"] .item-style {
+    text-align: left;
+
 }
-.logoNav{
+
+.logoNav {
     width: 118px;
     height: 108px;
 }
 
 @media screen and (max-width:600px) {
-    .logoNav{
+    .logoNav {
         width: 87px;
         height: 80px;
     }
-    .dropdown-style{
+
+    .dropdown-style {
         width: 50px;
         height: 42px;
     }
-    .item-style{
+
+    .item-style {
         font-size: 16px;
     }
-    .dropdown-menu[data-bs-popper]{
-padding-left: 10px;
-padding-right: 10px;
-gap:0px;
+
+    .dropdown-menu[data-bs-popper] {
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 0px;
 
     }
-    html[lang="en"] .dropdown-menu[data-bs-popper]{
+
+    html[lang="en"] .dropdown-menu[data-bs-popper] {
         padding-left: 10px;
-padding-right: 10px;
-gap:0px;
+        padding-right: 10px;
+        gap: 0px;
     }
 }
