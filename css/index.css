@@ -48,12 +48,13 @@ html[lang="en"] .descriptionText{
 .startBtn {
     background-color: #F0C905;
     border: #F0C905;
-    border-radius: 14px;
-    padding: 5px 10px 5px 10px;
+    border-radius: 24px;
+    padding: 5px 24px 5px 24px;
     color: #FFFFFF;
     font-size: 24px;
     font-weight: 700;
     font-family: 'GE SS Unique Light';
+    height: 60px;
     margin-bottom:40px;
     box-shadow: 0 -2px 0 0 #333333, 2px 0 0 0 #333333;
 
