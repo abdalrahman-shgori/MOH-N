@@ -3,18 +3,22 @@ body {
 
 
 }
+
 @font-face {
     font-family: 'GE SS Unique Light';
-    src: url('../GE\ SS\ Unique\ Bold.otf') ;
+    src: url('../GE\ SS\ Unique\ Bold.otf');
 }
+
 @font-face {
     font-family: 'GE SS Unique Bold';
-    src: url('../GE\ SS\ Unique\ Light.otf') ;
+    src: url('../GE\ SS\ Unique\ Light.otf');
 }
+
 @font-face {
     font-family: 'EnLanguage';
-    src: url('../HelveticaNeue.ttc') ;
+    src: url('../HelveticaNeue.ttc');
 }
+
 .aboutWalkBg {
     background-image: url("../assets/images/walkingLine.svg");
     background-repeat: no-repeat;
@@ -25,13 +29,15 @@ body {
     background-repeat: no-repeat;
     height: 40vh;
 }
-.stepsWalkingImg{
+
+.stepsWalkingImg {
     position: absolute;
     left: 0;
 
 }
-html[lang="en"] .stepsWalkingImg{
-    right:  0;
+
+html[lang="en"] .stepsWalkingImg {
+    right: 0;
     transform: scaleX(-1);
 }
 
@@ -44,27 +50,34 @@ html[lang="en"] .stepsWalkingImg{
     margin-top: 88px;
     margin-bottom: 51px;
 }
-.ideas-walk{
-width: 70%;
+
+.ideas-walk {
+    width: 70%;
 }
-.fontWeight{
+
+.fontWeight {
     font-family: 'GE SS Unique Light';
     background-image: url('../assets/images/pointer.svg');
     background-repeat: no-repeat;
-    background-position: right top; /* Adjust this position as needed */
-   padding-right: 40px;
-   margin-top: 16px;
+    background-position: right top;
+    /* Adjust this position as needed */
+    padding-right: 40px;
+    margin-top: 16px;
 }
-html[lang="en"] .fontWeight{
-    background-position: left top; /* Adjust this position as needed */
+
+html[lang="en"] .fontWeight {
+    background-position: left top;
+    /* Adjust this position as needed */
     padding-left: 40px;
 }
-html[lang="en"] ul{
-   margin: 0;
-   padding: 0;
+
+html[lang="en"] ul {
+    margin: 0;
+    padding: 0;
 
 }
-html[lang="en"] .fontWeight{
+
+html[lang="en"] .fontWeight {
     font-family: 'EnLanguage';
 }
 
@@ -75,9 +88,10 @@ html[lang="en"] .fontWeight{
     line-height: 49px;
     font-family: 'GE SS Unique Light';
 }
-html[lang="en"] .aboutWalk{
+
+html[lang="en"] .aboutWalk {
     font-family: 'EnLanguage';
-} 
+}
 
 .QuestionWalk {
     color: #FFFFFF;
@@ -91,11 +105,13 @@ html[lang="en"] .aboutWalk{
     padding: 10px 24px 10px 60px;
     margin-bottom: 20px;
 }
-html[lang="en"] .QuestionWalk{
+
+html[lang="en"] .QuestionWalk {
     padding: 10px 60px 10px 24px;
 
 }
-.ideasList{
+
+.ideasList {
     color: #FFFFFF;
     background-color: #008056;
     font-size: 36px;
@@ -108,11 +124,13 @@ html[lang="en"] .QuestionWalk{
     margin-bottom: 24px;
 
 }
-html[lang="en"] .ideasList{
+
+html[lang="en"] .ideasList {
     padding: 10px 281px 10px 24px;
     font-family: 'EnLanguage';
 }
-.QuestionWalk2{
+
+.QuestionWalk2 {
     color: #FFFFFF;
     background-color: #008056;
     font-size: 36px;
@@ -124,7 +142,8 @@ html[lang="en"] .ideasList{
     padding: 10px 24px 10px 85px;
     margin-bottom: 24px;
 }
-html[lang="en"] .QuestionWalk2{
+
+html[lang="en"] .QuestionWalk2 {
     text-align: left;
     font-family: 'EnLanguage';
     padding: 10px 85px 10px 24px;
@@ -136,20 +155,23 @@ html[lang="en"] .QuestionWalk2{
     flex-direction: column;
     direction: rtl;
 }
-.group-text{
-    list-style-type: none; 
-    margin-bottom: 40px;  
+
+.group-text {
+    list-style-type: none;
+    margin-bottom: 40px;
 }
+
 ul {
     margin: 0;
     padding: 0;
 }
 
-  
-  .group-text .fontWeight {
-    color: #333;    
-  }
-html[lang="en"] .group-text{
+
+.group-text .fontWeight {
+    color: #333;
+}
+
+html[lang="en"] .group-text {
     text-align: left;
     width: 100%;
     margin-top: 24px;
@@ -157,21 +179,23 @@ html[lang="en"] .group-text{
     direction: ltr;
 }
 
-html[lang="en"] .QuestionWalk{
-    
-   text-align: left;
-   font-family: 'EnLanguage';
+html[lang="en"] .QuestionWalk {
+
+    text-align: left;
+    font-family: 'EnLanguage';
 }
-html[lang="en"] .QuestionWalk2{
+
+html[lang="en"] .QuestionWalk2 {
     text-align: left;
     font-family: 'EnLanguage';
- }
-html[lang="en"] .container{
-    
+}
+
+html[lang="en"] .container {
+
     text-align: left;
     font-family: 'EnLanguage';
- }
- 
+}
+
 
 .whatDiffrence {
     display: flex;
@@ -188,14 +212,14 @@ html[lang="en"] .container{
     font-family: 'GE SS Unique Light';
 
 }
-html[lang="en"] .howtowalk{
+
+html[lang="en"] .howtowalk {
     text-align: left;
     direction: ltr;
     font-family: 'EnLanguage';
 }
 
-.whatHowWalk {
-}
+.whatHowWalk {}
 
 li {
     font-size: 24px;
@@ -204,60 +228,67 @@ li {
     letter-spacing: 0em;
     text-align: justified;
     color: #333333;
-    
+
 
 }
-.walkingFooter{
+
+.walkingFooter {
     margin-top: 174px;
 }
 
 @media screen and (max-width:768px) {
-    html[lang="en"] .group-text{
+    html[lang="en"] .group-text {
         text-align: left;
         width: 100%;
         margin-top: 16px;
         margin-bottom: 24px;
         direction: ltr;
     }
-    .walkingFooter{
+
+    .walkingFooter {
         margin-top: 48px;
     }
+
     .aboutWalk {
         font-size: 24px;
         line-height: 29px;
     }
-    .fontWeight{
+
+    .fontWeight {
         font-family: 'GE SS Unique Bold';
         margin-top: 10px;
         background-size: 15px 15px;
-        padding-right: 23px; 
+        padding-right: 23px;
         margin-top: 10px;
     }
-    html[lang="en"] .fontWeight{
+
+    html[lang="en"] .fontWeight {
         background-size: 15px 15px;
-        padding-left: 23px; 
+        padding-left: 23px;
     }
 
-        .QuestionWalk {
-            padding: 10px 10px 10px 10px !important;
-            width: 100%;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 20px;
-            letter-spacing: 0em;
-            text-align: right;
-            margin-bottom: 16px;
-            
+    .QuestionWalk {
+        padding: 10px 10px 10px 10px !important;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: right;
+        margin-bottom: 16px;
 
-    
-        }
-    .ideasList{
+
+
+    }
+
+    .ideasList {
         padding: 10px 10px 10px 10px;
         margin-bottom: 16px;
         font-size: 16px;
         line-height: 19px;
         width: 100% !important;
     }
+
     .QuestionWalk2 {
         padding: 10px 10px 10px 10px !important;
         width: 100%;
@@ -294,23 +325,28 @@ li {
     .whatDiffrenceBg {
         background-image: url("");
     }
-    .ideas-walk{
+
+    .ideas-walk {
         width: 100%;
     }
-    .group-text{
+
+    .group-text {
         width: 100% !important;
-        margin-bottom: 14px;  
+        margin-bottom: 14px;
 
     }
-    .stepsWalkingImg{
-        display: none;
-    }
-    .walking{
+
+    .walking {
         margin-top: 24px;
         margin-bottom: 24px;
     }
-    
-    html[lang="en"] .ideasList{
+
+    .stepsWalkingImg {
+        display: none;
+    }
+
+
+    html[lang="en"] .ideasList {
         padding: 10px 10px 10px 10px;
     }
 
