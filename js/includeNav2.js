@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
             console.error("Error fetching navigation bar:", error);
         });
 
-        fetch("./pages/footer.html")
+        fetch("./footer.html")
         .then(response => response.text())
         .then(navHTML => {
             document.getElementById("footer").innerHTML = navHTML;
