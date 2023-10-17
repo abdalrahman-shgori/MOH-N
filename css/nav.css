@@ -80,7 +80,7 @@ html[lang="en"] .dropdown-menu[data-bs-popper]{
 .current-lng{
     color: #008656;
     border: none;
-    background-color: transparent;
+    background-color: none;
     font-size: 16px;
     font-family: 'Montserrat' !important;
     font-weight: 700;
@@ -88,7 +88,6 @@ html[lang="en"] .dropdown-menu[data-bs-popper]{
     align-items: center;
     position: relative;
     top: 10px;
-    padding-bottom: 20px;
 }
 .dropdown-style::after{
     content: "";
