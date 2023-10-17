@@ -53,11 +53,11 @@ width: 70%;
     background-repeat: no-repeat;
     background-position: right top; /* Adjust this position as needed */
    padding-right: 40px;
+   margin-top: 16px;
 }
 html[lang="en"] .fontWeight{
     background-position: left top; /* Adjust this position as needed */
     padding-left: 40px;
-
 }
 html[lang="en"] ul{
    margin: 0;
@@ -230,6 +230,7 @@ li {
         margin-top: 10px;
         background-size: 15px 15px;
         padding-right: 23px; 
+        margin-top: 10px;
     }
     html[lang="en"] .fontWeight{
         background-size: 15px 15px;
