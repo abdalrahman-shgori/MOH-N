@@ -51,11 +51,11 @@ width: 70%;
     font-family: 'GE SS Unique Light';
     background-image: url('../assets/images/pointer.svg');
     background-repeat: no-repeat;
-    background-position: right center; /* Adjust this position as needed */
+    background-position: right top; /* Adjust this position as needed */
    padding-right: 40px;
 }
 html[lang="en"] .fontWeight{
-    background-position: left center; /* Adjust this position as needed */
+    background-position: left top; /* Adjust this position as needed */
     padding-left: 40px;
 
 }
