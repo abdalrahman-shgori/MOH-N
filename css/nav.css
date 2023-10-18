@@ -73,7 +73,6 @@ html[lang="en"] .language-dropdown .dropdown-menu {
     border-color: #F5F5F5;
     box-shadow: 2px 2px 4px 4px #3333331F;
     animation: slide-in 0.7s ease-in-out 0s forwards;
-    z-index: 1;
 
 }
 
@@ -95,7 +94,6 @@ html[lang="en"] .language-dropdown .dropdown-menu {
     width: 56px;
     height: 48px;
     border-radius: 4px;
-    z-index: 999;
 }
 
 
