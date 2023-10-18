@@ -67,18 +67,18 @@
         let value = 0;
 
         function name() {
-            // if (value === 0) {
-            //     document.getElementById("nameInput").style.display = "block";
-            //     document.getElementById("WalkSportText").style.display = "none";
-            //     value += 1;
-            //     console.log(value);
-            // } else if (value === 1) {
-            //     if (document.getElementById("nameInput").value === "") {
-            //         alert("No name entered!");
-            //     } else {
-            //         window.location.href = "https://abdalrahman-shgori.github.io/MOH-N";
-            //     }
-            // }
+            if (value === 0) {
+                document.getElementById("nameInput").style.display = "block";
+                document.getElementById("WalkSportText").style.display = "none";
+                value += 1;
+                console.log(value);
+            } else if (value === 1) {
+                if (document.getElementById("nameInput").value === "") {
+                    alert("No name entered!");
+                } else {
+                    window.location.href = "https://abdalrahman-shgori.github.io/MOH-N";
+                }
+            }
         }
 
 
