@@ -1,5 +1,6 @@
 body {
   background-color: #F5F5F5 !important;
+  overflow-x: hidden;
 
 }
 @font-face {
@@ -126,7 +127,7 @@ html[lang='en'] .whoPartnerText{
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 967px) {
   .whoPartnerText{
     font-size: 24px;
     line-height: 29px;
@@ -148,6 +149,7 @@ html[lang='en'] .whoPartnerText{
 
   .div1 {
     grid-area: 1 / 1 / 2 / 2;
+    data-aos:'fade-up'
   }
 
   .div2 {
@@ -166,4 +168,5 @@ html[lang='en'] .whoPartnerText{
     grid-area: 3 / 1 / 4 / 3;
   }
 }
+
 
