@@ -41,42 +41,59 @@
                   </p>
   
             <div id="languageDropdown" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a onclick="myFunction()" id="current-language" class="dropdown-item lang-shortcut" href="#">AR</a>
+              <a onclick="myFunction()" id="current-language" class="dropdown-item lang-shortcut" style="cursor: pointer;">AR</a>
   
-              <a onclick="myFunction1()" class="dropdown-item lang-shortcut" href="#">EN</a>
+              <a onclick="myFunction1()" class="dropdown-item lang-shortcut" style="cursor: pointer;">EN</a>
   
             </div>
 
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li><a class="dropdown-item lang-shortcut" href="#" onclick="myFunction()">AR</a></li>
-            <li><a class="dropdown-item lang-shortcut" href="#" onclick="myFunction1()">EN</a></li>
-          </ul>
+         
         </div>
         <div class="btn-group dropdown show "id="menuDropdown">
           <button type="button" class="dropdown-style  dropdown-toggle-split" data-bs-toggle="dropdown"
             aria-expanded="false">
             <div class="third-split"></div>
           </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item item-style dropdown-text" data-translate="walk30" href="https://abdalrahman-shgori.github.io/MOH-N/">امش
+          
+          <ul class="dropdown-menu dropdown-list weke">
+            <li><a class="dropdown-item item-style dropdown-text slide-in-1" data-translate="walk30" href="https://abdalrahman-shgori.github.io/MOH-N/">امش
                 30</a></li>
-            <li><a class="dropdown-item item-style dropdown-text" data-translate="aboutWalk"
+            <li><a class="dropdown-item item-style dropdown-text slide-in-2" data-translate="aboutWalk"
                 href="./pages/walking.html">عن رياضة المشي</a></li>
-            <li><a class="dropdown-item item-style dropdown-text" data-translate="path"
+            <li><a class="dropdown-item item-style dropdown-text slide-in-3 " data-translate="path"
                 href="./pages/pathsOf30.html">مسارات امش 30</a></li>
-            <li><a class="dropdown-item item-style dropdown-text" data-translate="Partners"
+            <li><a class="dropdown-item item-style dropdown-text slide-in-4" data-translate="Partners"
                 href="./pages/partners.html">الشركاء</a></li>
-            <li><a class="dropdown-item item-style dropdown-text" data-translate="testPersonality"
+            <li><a class="dropdown-item item-style dropdown-text slide-in-5" data-translate="testPersonality"
                 href="./pages/homePage.html">اختبر شخصيتك</a></li>
 
           </ul>
         </div>
+     
       </div>
     </div>
   </nav>
   <script src="./js/language.js"></script>
   <script src="./js/nav.js"></script>
+  <script>
+    document.querySelector('.dropdown-style').addEventListener('click', function() {
+        // Remove the third element
+        var thirdSplit = document.querySelector('.third-split');
+        thirdSplit.parentNode.removeChild(thirdSplit);
 
+        // Remove the third option
+        var thirdOption = document.querySelector('.dropdown-menu li:nth-child(3)');
+        thirdOption.parentNode.removeChild(thirdOption);
+
+        // Style the first button to look like an "X"
+        var firstButton = document.querySelector('.dropdown-menu li:nth-child(1) a');
+        firstButton.innerHTML = 'X';
+
+        // Style the second button to look like an "X"
+        var secondButton = document.querySelector('.dropdown-menu li:nth-child(2) a');
+        secondButton.innerHTML = 'X';
+    });
+</script>
 
 
 </body>

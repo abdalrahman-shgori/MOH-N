@@ -93,20 +93,23 @@ function setLanguage(language) {
 }
 
 function initializeLanguage() {
+    
     const selectedLanguage = localStorage.getItem('selectedLanguage');
+    
     if (selectedLanguage) {
         setLanguage(selectedLanguage);
     }
     document.getElementById("dropdownMenuLink").innerHTML = document.documentElement.lang.toUpperCase()
     setLanguage(selectedLanguage);
     if(selectedLanguage === "ar") {
-        document.getElementById('nameInput').placeholder="اسمك :"
+        document.getElementById('nameInput').placeholder=" : اسمك"
     
     }
     else if (selectedLanguage === "en"){
         document.getElementById('nameInput').placeholder="Name :"
     
     }
+    
 }
 
 document.querySelectorAll('.dropdown-item').forEach((item) => {
@@ -114,14 +117,15 @@ document.querySelectorAll('.dropdown-item').forEach((item) => {
         const selectedLanguage = e.target.textContent.toLowerCase();
         setLanguage(selectedLanguage);
         if(selectedLanguage === "ar") {
-            document.getElementById('nameInput').placeholder="abd"
-        
+            document.getElementById('nameInput').placeholder=" : اسمك"        
         }
         else if (selectedLanguage === "en"){
-            document.getElementById('nameInput').placeholder="abd12"
+            document.getElementById('nameInput').placeholder="Name :"
         
         }
+        
     });
+    
 });
 
 initializeLanguage();

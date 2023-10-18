@@ -1,7 +1,6 @@
 body {
     background-color: #F5F5F5 !important;
     font-family: 'GE SS Unique Bold';
-
 }
 
   @font-face {
@@ -87,6 +86,7 @@ html[lang="en"] .startBtn{
     background-color: transparent;
     
 }
+
 #footer{
     position: absolute; bottom: 0
    }

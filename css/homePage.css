@@ -1,5 +1,6 @@
 body {
     background-color: #F5F5F5 !important;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -202,7 +203,7 @@ input[type="text"] {
 }
 
 .div4 {
-    grid-area: 2 / 2 / 3 / 4;
+    grid-area: 2 / 2 / 4 / 4;
     display: flex;
     justify-content: center;
     margin-top: 44px;
