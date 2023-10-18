@@ -91,8 +91,6 @@
             document.querySelector('.div3').setAttribute('data-aos', 'fade-right');
             document.querySelector('.div4').setAttribute('data-aos', 'fade-right');
             document.querySelector('.div5').setAttribute('data-aos', 'fade-up');
-
-
         } else {
             // You might want to reset the data-aos attribute if the condition is not met
             document.querySelector('.div2').setAttribute('data-aos', 'fade-down');
@@ -107,9 +105,11 @@
 
     window.onresize = imgAnimation;
 
-    AOS.init();
 </script>
+<script>
+        AOS.init();
 
+</script>
 </body>
 
 </html>
