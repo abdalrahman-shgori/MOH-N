@@ -34,7 +34,6 @@
     left: unset !important;
     display: flex;
     flex-direction: column;
-    gap: 31px;
 }
 
 @keyframes drop {
@@ -77,12 +76,12 @@ html[lang="en"] .language-dropdown .dropdown-menu {
 
 
 
-
+/* 
 .dropdown-list {
     padding-top: 24px !important;
     padding-bottom: 24px;
 
-}
+} */
 
 
 .dropdown-text {}
@@ -157,6 +156,19 @@ html[lang="en"] .language-dropdown .dropdown-menu {
     font-family: 'GE SS Unique Light' !important;
     padding-left: 80px;
     padding-right: 36px;
+    height: 60px;
+    align-items: center;
+    justify-content: right;
+    display: inline-flex;
+
+}
+
+html[lang='en'] .item-style {
+    justify-content: left;
+    padding-right: 55px;
+    padding-left: 36px;
+    font-family: 'EnLanguage' !important;
+    text-align: left;
 }
 
 .slide-in-1 {
@@ -205,27 +217,10 @@ html[lang="en"] .language-dropdown .dropdown-menu {
     }
 }
 
-html[lang='en'] .item-style {
-    padding-right: 55px;
-    padding-left: 36px;
-}
-
-
-html[lang="en"] .item-style {
-    font-family: 'EnLanguage' !important;
-
-}
-
-
 .item-style:hover {
     background-color: #008656;
     border-radius: 8px;
     color: #FFFFFF;
-}
-
-html[lang="en"] .item-style {
-    text-align: left;
-
 }
 
 .logoNav {
@@ -248,6 +243,7 @@ html[lang="en"] .item-style {
         font-size: 14px;
         padding-left: 30px;
         padding-right: 26px;
+        height: 40px;
     }
 
     .dropdown-menu[data-bs-popper] {
@@ -258,10 +254,10 @@ html[lang="en"] .item-style {
 
     }
 
-    .dropdown-list {
+    /* .dropdown-list {
         padding-top: 12px !important;
         padding-bottom: 12px !important;
-    }
+    } */
 
     html[lang="en"] .item-style {
         padding-right: 10px;
