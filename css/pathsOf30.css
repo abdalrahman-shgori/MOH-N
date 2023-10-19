@@ -45,6 +45,7 @@ padding: 36px 60px 36px 60px;
     border-radius: 16px;
     box-shadow: 2px 2px 4px 0px #3333331F;
     display: flex;
+    
     margin-bottom: 36px;
     width: 90%;
 }
@@ -62,6 +63,7 @@ padding: 36px 60px 36px 60px;
 
 html[lang="en"] .PathsTexts {
     text-align: left;
+    padding-left: 0px;
 
 }
 
@@ -73,6 +75,7 @@ html[lang="en"] .PathsTexts {
     text-align: justified;
     font-family: 'GE SS Unique Light' !important;
     color: #333333;
+    
 }
 html[lang='en'] .howYouWork{
 font-family:'EnLanguage' !important ;
@@ -98,22 +101,41 @@ html[lang="en"] .PathsDescription {
 }
 
 .pathsBtn {
+    width: 424px;
     height: 38px;
+    font-size: 24px;
     background: #EEC718;
     border: #EEC718;
     border-radius: 24px;
     padding: 4px 30px 4px 30px;
     color: #FFFFFF;
     font-family: 'GE SS Unique Bold';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnDirection{
+    display: flex;
+    justify-content: right;
 }
 html[lang="en"] .pathsBtn{
     font-family: 'EnLanguage';
+    font-size: 22px;
+    
+}
+html[lang="en"] .btnDirection{
+    font-family: 'EnLanguage';
+    justify-content: left;
+    
 }
 
 .center-content {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
+}
+html[lang="en"] .center-content{
+    justify-content: left;
 }
 .pathsImg{
     padding: 0px 60px 0px 60px;
@@ -160,7 +182,6 @@ html[lang = "en"] .center-content{
         gap: 8px;
         padding-left: 0px;
         
-
     }
     .howYouWork {
         font-size: 18px;
@@ -177,23 +198,29 @@ html[lang = "en"] .center-content{
     }
 
     .pathsBtn {
-        font-size: 16px;
+        font-size: 14px;
         width: 100%;
         line-height: 19px;
-        padding: 4px 16px 4px 16px;
+        padding: 4px 10px 4px 10px;
 
+    }
+    html[lang='en'] .pathsBtn{
+        font-size: 14px;
+    }
+    html[lang='en'] .PathsDescription{
+        font-size: 14px;
     }
 
     .pathsImg {
         width: 124px;
         height: 105px;
-        padding: 0px 20px 0px 20px;
+        padding: 10px 26px 10px 34px;
 
     }
     .pathsImg2 {
         width: 124px;
         height: 105px;
-        padding: 0px 20px 0px 20px;
+        padding: 10px 26px 10px 34px;
 
     }
 
@@ -209,10 +236,30 @@ html[lang = "en"] .center-content{
 }
 @media screen and (max-width:360px) {
     .pathsBtn{
-        font-size: 14px;
-        padding: 4px 6px 4px 6px;
+        font-size: 12px;
+        padding: 4px 4px 4px 4px;
 
     }
+    html[lang='en'] .pathsBtn{
+        font-size: 12px;
+        padding: 4px 4px 4px 4px;
+    }
+    html[lang='en'] .PathsDescription{
+        font-size: 12px;
+    }
+    .pathsImg {
+        width: 100px;
+        height: 100px;
+        padding: 10px 10px 10px 10px;
+
+    }
+    .pathsImg2 {
+        width: 100px;
+        height: 100px;
+        padding: 10px 10px 10px 10px;
+    }
+    
+
     .howYouWork{
         font-size: 16px;
     }
@@ -247,5 +294,15 @@ html[lang = "en"] .center-content{
         padding: 0px 10px 0px 10px;
 
     }
+    html[lang='en'] .pathsBtn{
+        font-size: 8px;
+    }
+    html[lang='en'] .PathsDescription{
+        font-size: 10px;
+    }
+    html[lang='en'] .howYouWork{
+        font-size: 12px;
+    }
+    
     
 }

@@ -35,6 +35,14 @@ const translations = {
         testPersonality:"Test your personality",
         walk30:"walk 30",
         namePlaceholder: "Name",
+        campagin:"A creative campaign to raise awareness about walking behavior",
+        share:"Share with us the hashtag #Walk30",
+        walkaround:"Walk around the kingdom",
+        filed:"A field walking track event in 20 regions around the Kingdom, in which the community participates",
+        link:"Registration link to attend the event",
+        startchalleng:"Start the challenge",
+        compitition:"A competition to walk 8,000 steps a day via the Sihati app",
+        downloadapp:"Download the Sehaty app"
 
 
     },
@@ -74,6 +82,14 @@ const translations = {
         testPersonality:"اختبر شخصيتك",
         walk30:"امش 30",
         namePlaceholder: ":اسمك",
+        campagin:"حملة إبداعية للتوعية بسلوك المشي",
+        share:"شاركنا على هاشتاغ #امشِ30",
+walkaround:"امش حول المملكة",
+filed:"فعالية مسار ميداني للمشي في 20 منطقة حول المملكة يتشارك فيها المجتمع ",
+link:"رابط التسجيل لحضور الفعالية",
+startchalleng:"ابدأ التحدي",
+compitition:"مسابقة للمشي 8000 خطوة في اليوم عبر تطبيق صحتي",
+downloadapp:"حمل تطبيق صحتي"
 
 
     },

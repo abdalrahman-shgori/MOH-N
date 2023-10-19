@@ -57,23 +57,37 @@
         img()
         window.onresize=img
       
-        const myArray = [
-            { title: "شخصيتك في  المشي", description: "اختبار يقيس مستوى الشخص في ممارسة المشي، ويقدم حلول للستمرار", img: "../assets/images/animateWalking.svg", btnText: "اختبر الآن واعرف شخصيتك",id:0 },
-            { title: "شخصيتك في  المشي", description: "اختبار يقيس مستوى الشخص في ممارسة المشي، ويقدم حلول للستمرار", img: "../assets/images/runPath30.svg", btnText: "اختبر الآن واعرف شخصيتك",id:1 },
-            { title: "شخصيتك في  المشي", description: "اختبار يقيس مستوى الشخص في ممارسة المشي، ويقدم حلول للستمرار", img: "../assets/images/maps.svg", btnText: "اختبر الآن واعرف شخصيتك",id:2 },
-            { title: "شخصيتك في  المشي", description: "اختبار يقيس مستوى الشخص في ممارسة المشي، ويقدم حلول للستمرار", img: "../assets/images/goal.svg", btnText: "اختبر الآن واعرف شخصيتك",id:3 },
+        const myArrayEn = [
+    { title: "Your Personality in Walking", description: "A test that measures your level of walking practice and provides solutions for continuity", img: "../assets/images/animateWalking.svg", btnText: "Take the test now and discover your personality", id: 0 },
+    { title: "Walk 30", description: "A test that measures your level of walking practice and provides solutions for continuity", img: "../assets/images/runPath30.svg", btnText: "Take the test now and discover your personality", id: 1 },
+    { title: "Your Personality in Walking", description: "A test that measures your level of walking practice and provides solutions for continuity", img: "../assets/images/maps.svg", btnText: "Take the test now and discover your personality", id: 2 },
+    { title: "Your Personality in Walking", description: "A test that measures your level of walking practice and provides solutions for continuity", img: "../assets/images/goal.svg", btnText: "Take the test now and discover your personality", id: 3 },
+];
 
-        ];
-        const outputElement = document.getElementById("output");
+const myArrayAr = [
+    { title: "شخصيتك في المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/animateWalking.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك", id: 0 },
+    { title: "امش 30", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/runPath30.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك", id: 1 },
+    { title: "شخصيتك في المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/maps.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك", id: 2 },
+    { title: "شخصيتك في المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/goal.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك", id: 3 },
+];
+function getCurrentLanguage() {
+                return localStorage.getItem('selectedLanguage');
+            }
+        
+            const currentLanguage = getCurrentLanguage() || 'en';
+            localStorage.setItem('selectedLanguage', currentLanguage);
+            const outputElement = document.getElementById("output");
+            const myArray = currentLanguage === "en" ? myArrayEn : myArrayAr;
 
+console.log("abd abda abd",currentLanguage)
         myArray.map(function (item, index) {
             const div = document.createElement("div");
             div.innerHTML = `
             <div data-aos="fade-up" data-aos-duration="1000" class="pathsCard col-lg-12 mx-auto center-content ${index === myArray.length - 1 ? 'spaceCard' : ''}">
             <div class="PathsTexts">
-                <span class="howYouWork" id="wk" data-translate="walkingPersonalityTitle">${item.title}</span>
+                <span class="howYouWork" id="wk">${item.title}</span>
                 <span class="PathsDescription" data-translate="walkingPersonalityDescription">${item.description}</span>
-                <div> 
+                <div class="btnDirection"> 
                     <button class="pathsBtn" data-translate="walkingPersonalityBtnText">${item.btnText}</button>
                 </div>
             </div>
@@ -83,25 +97,31 @@
         </div>
   `;
             outputElement.appendChild(div);
-        
+            if (item.id === 0) {
+        div.querySelector(".howYouWork").setAttribute('data-translate', 'walkingPersonalityTitle');
+        div.querySelector(".PathsDescription").setAttribute('data-translate', 'walkingPersonalityDescription');
+        div.querySelector(".pathsBtn").setAttribute('data-translate', 'walkingPersonalityBtnText');
+    }
+    if (item.id === 1) {
+        div.querySelector(".howYouWork").setAttribute('data-translate', 'walk30');
+        div.querySelector(".PathsDescription").setAttribute('data-translate', 'campagin');
+        div.querySelector(".pathsBtn").setAttribute('data-translate', 'share');  
+      }
+      if (item.id === 2) {
+        div.querySelector(".howYouWork").setAttribute('data-translate', 'walkaround');
+        div.querySelector(".PathsDescription").setAttribute('data-translate', 'filed');
+        div.querySelector(".pathsBtn").setAttribute('data-translate', 'link');  
+      }
+      if (item.id === 3) {
+        div.querySelector(".howYouWork").setAttribute('data-translate', 'startchalleng');
+        div.querySelector(".PathsDescription").setAttribute('data-translate', 'compitition');
+        div.querySelector(".pathsBtn").setAttribute('data-translate', 'downloadapp');  
+      }
+            
+
         });
     </script>
-        <script>
-            function getCurrentLanguage() {
-                return localStorage.getItem('selectedLanguage');
-            }
-        
-            const currentLanguage = getCurrentLanguage();
-            if (currentLanguage === 'ar') {
-                const weContainer = document.querySelector(".fadeAnimation");            
-                weContainer.setAttribute('data-aos', 'fade-left');
-            }
-            else if(currentLanguage ==='en'){
-                const weContainer = document.querySelector(".fadeAnimation");
-                
-                weContainer.setAttribute('data-aos', 'fade-right');
-            }
-        </script>
+  
         <script>
             AOS.init();
         </script>
