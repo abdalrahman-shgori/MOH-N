@@ -193,7 +193,7 @@ input[type="text"] {
     display: flex;
     justify-content: center;
     position: relative;
-    left: 50px;
+    right: 21.5px;
 }
 
 .div3 {
@@ -264,7 +264,7 @@ input[type="text"] {
     }
 
     .div2 {
-        left: 16px;
+        right: 6px;
     }
 
     .div4 {

@@ -1,0 +1,161 @@
+/* Your existing CSS */
+body {
+    background-color: #F5F5F5 !important;
+    overflow-x: hidden;
+  
+  }
+  @font-face {
+    font-family: 'GE SS Unique Bold';
+    src: url('../GE\ SS\ Unique\ Light.otf');
+  }
+  @font-face {
+    font-family: 'GE SS Unique Light';
+    src: url('../GE\ SS\ Unique\ Bold.otf');
+  }
+  @font-face {
+    font-family: 'EnLanguage';
+    src: url('../HelveticaNeue.ttc');
+  }
+.progres{
+    margin-top: 15px;
+    margin-bottom: 8px;
+    background-color: #D8D8D8 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px !important;
+    gap: 10px;
+    min-height: 24px; /* Set a height for the div elements */
+}
+
+
+.progress1 {
+    background-color: #008056;
+    opacity: 11%;
+    width: 69.19px;
+    height: 16.21px;
+    border-radius: 2px;
+    display: flex;
+}
+
+
+.questionsCards{
+    background-color: #FFFFFF;
+    border-radius: 16px;
+margin-bottom: 101px;
+}
+.questionNumber{
+font-size: 24px;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: center;
+padding-top: 67px;
+color:#008056;
+margin-bottom: 104px;
+}
+.radios{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   gap: 12px;
+
+}
+.radioGroup{
+
+}
+.nextBtn{
+    background-color: #008056;
+    border: #008056;
+    color: #FFFFFF;
+    width: 199px;
+    height: 55px;
+    border-radius: 40px;
+    margin-left: 48px;
+    margin-bottom: 48px;
+    background-image: url('../assets/images/arrows.svg');
+    background-repeat: no-repeat;
+}
+.answer-button{
+    background-color: transparent;
+    border: none;
+    font-family: 'EnLanguage';
+}
+.answers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'GE SS Unique Bold';
+font-size: 16px;
+font-weight: 300;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: justified;
+color: #404040;
+}
+
+
+/* Style the radio button itself */
+input[type="radio"] {
+    /* Hide the default radio button */
+    display: none;
+    
+  }
+  
+  /* Style the custom radio button circle */
+  input[type="radio"] + label::before {
+    content: '';
+    display: inline-block;
+    width: 20px; /* Adjust the size as needed */
+    height: 20px; /* Adjust the size as needed */
+    border: 2px solid #F5F5F5; /* Border color */
+    border-radius: 50%; /* Makes it a circle */
+    margin-right: 5px; /* Adjust the spacing */
+   
+  }
+  
+  /* Style the custom radio button when it's checked */
+  input[type="radio"]:checked + label::before {
+    background-color: #008056; /* Color when selected */
+    align-items: center;
+    
+  }
+  
+  /* Optional: Style the label text */
+  label {
+    font-size: 16px; /* Adjust the font size */
+    color: #333; /* Text color */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+
+  @media screen and (max-width:676px) {
+    .progres{
+        gap: 3.59px;
+        margin-top: 155px;
+        margin-bottom: 12.19px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+       
+    }
+    .progress1{
+        width: 24.41px;
+        height: 12.7px;
+    }
+    .questionNumber{
+        font-size: 16px;
+        line-height: 19.92px;
+        font-weight: 700;
+    }
+    .answers{
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 20px;
+    }
+    .nextBtn{
+        margin-left: 24px;
+    }
+}
