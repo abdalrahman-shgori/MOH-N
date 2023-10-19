@@ -45,14 +45,16 @@ padding: 36px 60px 36px 60px;
     border-radius: 16px;
     box-shadow: 2px 2px 4px 0px #3333331F;
     display: flex;
-    
     margin-bottom: 36px;
     width: 90%;
+    transition: transform 0.3s; /* Add a smooth transition for the transform property */
 }
 .spaceCard{
     margin-bottom: 91px;
 }
-
+.pathsCard:hover{
+    transform: scale(1.02);
+}
 .PathsTexts {
     padding-left: 60px;
     display: flex;
