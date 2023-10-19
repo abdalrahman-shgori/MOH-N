@@ -207,3 +207,45 @@ html[lang = "en"] .center-content{
     }
 
 }
+@media screen and (max-width:360px) {
+    .pathsBtn{
+        font-size: 14px;
+        padding: 4px 6px 4px 6px;
+
+    }
+    .howYouWork{
+        font-size: 16px;
+    }
+    .PathsDescription{
+        font-size: 14px;
+    }
+    .pathsBtn{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:280px) {
+    .pathsBtn{
+        font-size: 10px;
+        padding: 0px 0px 0px 0px;
+
+    }
+    .howYouWork{
+        font-size: 12px;
+    }
+    .PathsDescription{
+        font-size: 10px;
+    }
+    .pathsImg {
+        width: 80px;
+        height: 80px;
+        padding: 0px 10px 0px 10px;
+
+    }
+    .pathsImg2 {
+        width: 80px;
+        height: 80px;
+        padding: 0px 10px 0px 10px;
+
+    }
+    
+}
