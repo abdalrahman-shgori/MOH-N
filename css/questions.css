@@ -157,5 +157,8 @@ input[type="radio"] {
     }
     .nextBtn{
         margin-left: 24px;
+        width: 140px;
+        height: 40px;
+        background-size: 40px;
     }
 }
