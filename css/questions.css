@@ -242,6 +242,11 @@ input[type="radio"]:checked+label::before {
   cursor: pointer;
 
 }
+.questionSteps{
+  position: absolute;
+  top: 100px;
+  z-index: -1;
+}
 
 
 @media screen and (max-width:676px) {
@@ -300,5 +305,9 @@ input[type="radio"]:checked+label::before {
   .nextPrevBtn {
     margin-top: 46px;
     padding-bottom: 48px;
+  }
+  .questionSteps{
+    display: none;
+
   }
 }
