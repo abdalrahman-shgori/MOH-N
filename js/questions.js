@@ -98,7 +98,7 @@ const questionsAr = [
         answers: [
             { text: "ليس لدي نية حالية ولم أبدأ المشي", value: 0 },
             { text: "أعتزم بدء المشي خلال الـ30 يومًا القادمة", value: 6 },
-            { text: "لقد بدأت المشي خلال الـ6 أشهر القادمة", value: 2 },
+            { text: "أعتزم بدء المشي خلال الـ6 أشهر القادمة", value: 2 },
         ],
     },
     {
@@ -260,9 +260,19 @@ function nextQuestion() {
     const selectedAnswers = document.querySelectorAll('input[name="answer"]:checked');
     if (selectedAnswers.length > 0) {
         let answerValue = 0;
+        const selectedAnswerTexts = []; 
         selectedAnswers.forEach((selectedAnswer) => {
             answerValue += parseInt(selectedAnswer.value);
+            const label = document.querySelector(`label[for="${selectedAnswer.id}"]`);
+            if (label) {
+                selectedAnswerTexts.push(label.textContent.trim());
+            }
         });
+                console.log("Selected Answer Texts:", selectedAnswerTexts);
+
+        // selectedAnswers.forEach((selectedAnswer) => {
+        //     answerValue += parseInt(selectedAnswer.value);
+        // });
         selectedAnswerValues.push(answerValue);
         totalValue += answerValue;
         console.log(`Question ${currentQuestionIndex + 1}: Selected Answer Value ${answerValue}`);
@@ -339,6 +349,14 @@ function showToast(message) {
     }, 3000);
 }
 function prev() {
+
+    if (currentQuestionIndex > 0) {
+        const lastAnswerValue = selectedAnswerValues.pop();
+        totalValue -= lastAnswerValue;
+        console.log("new total",totalValue)
+
+    } 
+    
     const savedIndexesJSON = localStorage.getItem('questionsIndexes');
     if (savedIndex.length > 0) {
         savedIndex.pop();
