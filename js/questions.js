@@ -170,7 +170,7 @@ function loadQuestion(index) {
             console.log("Language changed to " + lg);
             loadQuestion(currentQuestionIndex);
         }
-    }, 1000);
+    }, 0);
     const questionContainer = document.getElementById("question");
     let lg = document.documentElement.lang;
     if (index + 1 <= questionsAr.length) {
