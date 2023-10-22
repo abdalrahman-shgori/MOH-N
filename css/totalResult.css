@@ -32,6 +32,11 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 48px;
+    direction: ltr;
+}
+html[lang="en"] .userName{
+    direction:rtl;
+
 }
     .nameText{
         font-family: 'GE SS Unique Light';
@@ -85,11 +90,11 @@ text-align: center;
     
     .descriptionText{
  font-family: 'GE SS Unique Light';
+ display: flex;
 font-size: 24px;
 font-weight: 700;
 line-height: 30px;
 letter-spacing: 0em;
-text-align: justified;
 color:#008056;
 text-align: right;
 
@@ -99,10 +104,10 @@ text-align: right;
     }
     @media screen and (max-width:767px) {
         .RateImg{
-            margin-top: 24px;
+            margin-top: 12px;
         }
         .rate{
-            margin-top: 24px;
+            margin-top: 12px;
         }
         .imgRate{
             width: 101px;
@@ -123,6 +128,7 @@ text-align: right;
         .descriptionText{
             font-size: 16px;
             line-height: 19px;
+            
         }
         }
  
