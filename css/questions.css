@@ -25,7 +25,7 @@ body {
     align-items: center;
     border-radius: 50px !important;
     gap: 10px;
-    min-height: 24px; /* Set a height for the div elements */
+    min-height: 24px;
 }
 
 
@@ -39,11 +39,12 @@ body {
 }
 
 
-.questionsCards{
+.questionsCards {
     background-color: #FFFFFF;
     border-radius: 16px;
-margin-bottom: 101px;
+    margin-bottom: 101px;
 }
+
 .questionNumber{
 font-size: 24px;
 font-weight: 700;
@@ -55,12 +56,44 @@ color:#008056;
 margin-bottom: 104px;
 }
 .radios{
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   gap: 12px;
+  display: grid !important;
+  grid-template-columns: auto auto !important;
+  padding: 10px;
+  justify-content: space-around;
+}
+.checkboxes{
+/* display: flex !important;
+flex-wrap: wrap !important;
+justify-content: center !important;
+gap: 12px !important; */
+display: grid !important;
+grid-template-columns: auto auto !important;
+padding: 10px;
+justify-content: space-around;
 
 }
+
+
+#hell {
+  display: flex;
+  flex-direction: row !important;
+gap: 12px;
+direction: rtl;
+}
+html[lang="en"] #hell{
+  direction: ltr;
+}
+
+.checkboxGroup {
+  /* display: flex !important;
+  flex-direction: row !important; */
+
+
+}
+
+
+
+
 .radioGroup{
 
 }
@@ -72,29 +105,97 @@ margin-bottom: 104px;
     height: 55px;
     border-radius: 40px;
     margin-left: 48px;
-    margin-bottom: 48px;
-    background-image: url('../assets/images/arrows.svg');
+    background-image: url('../assets/images/arrow\ left.png');
     background-repeat: no-repeat;
+}
+.prevBtn{  
+    margin-right: 48px;
+    max-width: 57px;
+    height: 55px;
+
 }
 .answer-button{
     background-color: transparent;
     border: none;
     font-family: 'EnLanguage';
 }
-.answers{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'GE SS Unique Bold';
+.answers {
+  display: grid;
+  grid-template-columns: auto auto ;
+  gap: 12px;
+  justify-content: start;
+  font-family: 'GE SS Unique Bold';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #404040;
+  padding-right: 24px;
+
+}
+html[lang ="en"] .answers{
+  gap: 0px;
+}
+.answersCheckBox{
+  display: grid;
+  grid-template-columns: auto auto ;
+  justify-content:start !important;
+  align-items: center;
+  text-align: left !important;
+  font-family: 'GE SS Unique Bold';
 font-size: 16px;
 font-weight: 300;
 line-height: 20px;
 letter-spacing: 0em;
-text-align: justified;
 color: #404040;
+padding-right: 24px;
+}
+
+html[lang = "en"] .answersCheckBox{
+  font-family: 'EnLanguage';
+  padding-left: 24px;
+
+
 }
 
 
+input[type="checkbox"] {
+  /* Hide the default radio button */
+  display: none;
+  
+}
+
+/* Style the custom radio button circle */
+input[type="checkbox"] + label::before {
+  content: '';
+  display: inline-block;
+  width: 20px; /* Adjust the size as needed */
+  height: 20px; /* Adjust the size as needed */
+  border: 2px solid #F5F5F5; /* Border color */
+  border-radius: 50%; /* Makes it a circle */
+  margin-right: 5px; /* Adjust the spacing */
+ 
+}
+
+/* Style the custom radio button when it's checked */
+input[type="checkbox"]:checked + label::before {
+  background-color: #008056; /* Color when selected */
+  align-items: center;
+  
+}
+
+/* Optional: Style the label text */
+label {
+  font-size: 16px !important; /* Adjust the font size */
+  color: #333; /* Text color */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
+html[lang = "en"] .label{
+
+}
 /* Style the radio button itself */
 input[type="radio"] {
     /* Hide the default radio button */
@@ -121,17 +222,29 @@ input[type="radio"] {
     
   }
   
-  /* Optional: Style the label text */
-  label {
-    font-size: 16px; /* Adjust the font size */
-    color: #333; /* Text color */
-    align-items: center;
-    justify-content: center;
+
+  .nextPrevBtn{
+    position: relative;
+    margin-top: 96px;
+    padding-bottom: 48px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    
   }
 
 
   @media screen and (max-width:676px) {
+    .checkboxes{
+      grid-template-columns: auto !important;
+  
+      
+    }
+    .radios{
+      grid-template-columns: auto  !important;
+
+    }
     .progres{
         gap: 3.59px;
         margin-top: 155px;
@@ -149,6 +262,8 @@ input[type="radio"] {
         font-size: 16px;
         line-height: 19.92px;
         font-weight: 700;
+        margin-bottom: 56px;
+        padding-top: 48px;
     }
     .answers{
         font-size: 12px;
@@ -160,5 +275,13 @@ input[type="radio"] {
         width: 140px;
         height: 40px;
         background-size: 40px;
+    }
+    .prevBtn{
+        max-width: 42px;
+        margin-right: 24px;
+    }
+    .nextPrevBtn{
+        margin-top: 46px;
+        padding-bottom: 48px;
     }
 }

@@ -1,3 +1,4 @@
+
 const translations = {
     en: {
         welcome: "Welcome to the MCQ Quiz",
@@ -42,7 +43,30 @@ const translations = {
         link:"Registration link to attend the event",
         startchalleng:"Start the challenge",
         compitition:"A competition to walk 8,000 steps a day via the Sihati app",
-        downloadapp:"Download the Sehaty app"
+        downloadapp:"Download the Sehaty app",
+        congra:`Congratulations`,
+        Unfortunately:`Unfortunately`,
+        professional:"You are a professional",
+        youareDriven: "You are driven",
+        youareInitiator: "You are an initiator",
+        youareIntending: "You are intending",
+        youhavePassiveBehavior: "You have passive behavior",
+        yourCommitmentSetsAnExample: "Your commitment sets an example",
+        youTakeOffLikeARocketAndKeepWalking: "You take off like a rocket, never stopping your walk",
+        butThereAreAFewSteps: "But there are a few steps left to keep going",
+        butYouNeedAStarting: "But you need a starting plan to make your behavior continuous",
+        andYouHaven:"And you haven't acquired the habit yet",
+        stage1: "Individuals at this stage are distinguished as role models for those around them. They have the determination and the ability to reach and continue achieving their goals. They are athletes and persistent in walking. Keep on what you're doing and be a role model for those around you.",
+        stage2: "Individuals at this stage are characterized by their adaptability. They are enthusiastic about walking and committed to it. However, they now need to maintain it as a lifelong behavior. Keep on what you're doing and be a role model for those around you.",
+        stage3: "Individuals at this stage are characterized by a strong will to make decisions and have already started walking, but they may need to turn this habit into a continuous behavior. You are on the right path, and you can achieve your goal!",
+        stage4: "Individuals at this stage are distinguished by sufficient awareness and a strong will to start walking, but they may face any obstacle. That's why we've prepared a comprehensive plan and program to assist you.",
+        stage5: "Individuals at this stage have a desire for change, but they easily come up with excuses. You need to confront those excuses with reasons that motivate you to reach your goal. Start now with the change, challenge yourself, and continue to maintain your health.",
+        next:"Next"
+
+
+
+
+
 
 
     },
@@ -89,13 +113,37 @@ filed:"فعالية مسار ميداني للمشي في 20 منطقة حول �
 link:"رابط التسجيل لحضور الفعالية",
 startchalleng:"ابدأ التحدي",
 compitition:"مسابقة للمشي 8000 خطوة في اليوم عبر تطبيق صحتي",
-downloadapp:"حمل تطبيق صحتي"
+downloadapp:"حمل تطبيق صحتي",
+congra:`تهانينا `,
+Unfortunately:`للأسف `,
+professional:"أنت محترف",
+youareDriven: "أنت منطلق",
+youareInitiator: "أنت بادي",
+youareIntending: "أنت ناوي",
+youhavePassiveBehavior: "أنت صاحب سلوك خامل",
+yourCommitmentSetsAnExample: "التزامك يضرب به المثل",
+youTakeOffLikeARocketAndKeepWalking: "انطلاقك مثل الصاروخ، لا تتوقف عن المشي",
+butThereAreAFewSteps: "لكن تتبقى خطوات بسيطة وتكون مستمراً",
+butYouNeedAStarting: "لكن تحتاج خطةً للبدء ليصبح سلوكك مستمراً",
+andYouHaven:"ولم تكتسب السوك بعد",
+stage1: "يتميز الأشخاص في هذه المرحلة بأنهم قدوة لمن حولهم لديهم العزم والقدرة على الوصول والاستمرار على تحقيق أهدافهم فهم رياضيون ومثابرون على المشي. واصل على ما أنت عليه وكن قدوة لمن حولك.",
+stage2: "يتميز الأشخاص في هذه المرحلة بسهولة التكيف. فهم منطلقون بممارسة المشي ومستمرون عليه. ولكن عليهم الآن المحافظة عليه كسلوك حياة دائم. واصل على ما أنت عليه وكن قدوة لمن حولك.",
+stage3: "يتميز الأشخاص في هذه المرحلة بإرادة قوية في اتخاذ القرار وبدأوا بالفعل في ممارسة المشي، لكن قد يحتاجون إلى تحويل هذه العادة إلى سلوك مستمر. أنت على الطريق الصحيح، ويمكنك الوصول لهدفك!",
+stage4: "يتميز الأشخاص في هذه المرحلة ببوعي كافٍ وإرادة قوية للبدء بممارسة المشي، لكن قد يعوقهم أي سبب. لذلك جهزنا لك خطةً وبرنامجًا ماملاً لمساعدتك.",
+stage5: "الأشخاص في هذه المرحلة عندهم الرغبة في التغيير لكن من السهل عليهم اختلاق الأعذار. عليك مواجهة تلك الأعذار بأسباب تحفزك للوصول إلى هدفك. ابدأ الآن بالتغيير، وتحد نفسك، واستمر في الحفاظ على صحتك.",
+next:"التالي"
+
+
+
+
+
 
 
     },
 };
 
 function setLanguage(language) {
+    
     const elements = document.querySelectorAll('[data-translate]');
     elements.forEach((element) => {
         const translationKey = element.getAttribute('data-translate');
