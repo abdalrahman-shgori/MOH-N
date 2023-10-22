@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="ar">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title><meta charset="UTF-8">
+    <title>Document</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -27,16 +29,17 @@
     <link rel="stylesheet" href="./css/nav.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<link rel="stylesheet" href="../css/totalResult.css">
+    <link rel="stylesheet" href="../css/totalResult.css">
 </head>
+
 <body>
     <div id="navbar-container"></div>
 
-<div id="total" class="totalResult">
+    <div id="total" class="totalResult">
 
-</div>
+    </div>
 
-<div id="footer"></div>
+    <div id="footer"></div>
 
     <script src="../js/includeNav.js"></script>
     <script src="../js/nav.js"></script>
@@ -47,19 +50,19 @@
         console.log('name:', theName);
 
         // localStorage.removeItem('totalValue');
-        document.getElementById("total").innerHTML=(`Your Total value is ${totalValue}`)
+        document.getElementById("total").innerHTML = (`Your Total value is ${totalValue}`)
     </script>
-   <script>
-    const resultsContainer = document.getElementById('total');
-    let html = `
+    <script>
+        const resultsContainer = document.getElementById('total');
+        let html = `
         <div>
             <div class="RateImg">
                 ${totalValue >= 30 ? '<img class="imgRate" src="../assets/images/5.svg"/>' :
-                  totalValue >= 18 ? '<img class="imgRate" src="../assets/images/4.svg"/>'  : 
-                   totalValue >=6 ? '<img class="imgRate" src="../assets/images/3.svg"/>'   :
-                   totalValue >=2 ?  '<img class="imgRate" src="../assets/images/2.svg"/>'  :
-                   totalValue < 2 ? '<img class="imgRate" src="../assets/images/1.svg"/>' : ''
-                }
+                totalValue >= 18 ? '<img class="imgRate" src="../assets/images/4.svg"/>' :
+                    totalValue >= 6 ? '<img class="imgRate" src="../assets/images/3.svg"/>' :
+                        totalValue >= 2 ? '<img class="imgRate" src="../assets/images/2.svg"/>' :
+                            totalValue < 2 ? '<img class="imgRate" src="../assets/images/1.svg"/>' : ''
+            }
             </div>
             <div class="userName">
                 
@@ -67,26 +70,26 @@
                 </div>
                 <div class="rate">
                     ${totalValue >= 30 ? '<p class="rateText" data-translate="professional">أنت محترف</p>' :
-                  totalValue >= 18 ? '<p class="rateText" data-translate="youareDriven">أنت منطلق </p>'  : 
-                   totalValue >=6 ? '<p class="rateText" data-translate="youareInitiator"> أنت بادي</p>'  :
-                   totalValue >=2 ?  '<p class="rateText" data-translate="youareIntending">أنت ناوي </p>'  :
-                   totalValue < 2 ? '<p class="rateText" data-translate="youhavePassiveBehavior">أنت صاحب سلوك خامل </p>': ''
-                }                </div>
+                totalValue >= 18 ? '<p class="rateText" data-translate="youareDriven">أنت منطلق </p>' :
+                    totalValue >= 6 ? '<p class="rateText" data-translate="youareInitiator"> أنت بادي</p>' :
+                        totalValue >= 2 ? '<p class="rateText" data-translate="youareIntending">أنت ناوي </p>' :
+                            totalValue < 2 ? '<p class="rateText" data-translate="youhavePassiveBehavior">أنت صاحب سلوك خامل </p>' : ''
+            }                </div>
                 <div class="rate">
                     ${totalValue >= 30 ? '<p class="titleText" data-translate="yourCommitmentSetsAnExample">التزامك يضرب به المثل</p>' :
-                  totalValue >= 18 ? '<p class="titleText" data-translate="youTakeOffLikeARocketAndKeepWalking">انطلاقك مثل الصاروخ لا تتوقف عن المشي</p>'  : 
-                   totalValue >=6 ? '<p class="titleText" data-translate="butThereAreAFewSteps"> لكن تتبقى خطوات بسيطة وتكون مستمراً.</p>'  :
-                   totalValue >=2 ?  '<p class="titleText" data-translate="butYouNeedAStarting">لكن تحتاج خطةً للبدء ليصبح سلوكك مستمراً</p>'  :
-                   totalValue < 2 ? '<p class="titleText" data-translate="andYouHaven">ولم تكتسب السوك بعد</p>': ''
-                }               
+                totalValue >= 18 ? '<p class="titleText" data-translate="youTakeOffLikeARocketAndKeepWalking">انطلاقك مثل الصاروخ لا تتوقف عن المشي</p>' :
+                    totalValue >= 6 ? '<p class="titleText" data-translate="butThereAreAFewSteps"> لكن تتبقى خطوات بسيطة وتكون مستمراً.</p>' :
+                        totalValue >= 2 ? '<p class="titleText" data-translate="butYouNeedAStarting">لكن تحتاج خطةً للبدء ليصبح سلوكك مستمراً</p>' :
+                            totalValue < 2 ? '<p class="titleText" data-translate="andYouHaven">ولم تكتسب السوك بعد</p>' : ''
+            }               
                  </div>
                  <div class='rate col-lg-8 mx-auto'>
                     ${totalValue >= 30 ? '<p class="descriptionText" data-translate="stage1">يتميز الأشخاص في هذه المرحلة بأنهم قدوة لمن حولهم لديهم العزم والقدرة على الوصول والاستمرار على تحقيق أهدافهم فهم رياضيون ومثابرون على المشي. واصل على ما أنت عليه وكن قدوة لمن حولك.</p>' :
-                  totalValue >= 18 ? '<p class="descriptionText" data-translate="stage2">يتميز الأشخاص في هذه المرحلة بسهولة التكيف. فهم منطلقون بممارسة المشي ومستمرون عليه. ولكن عليهم الآن المحافظة عليه كسلوك حياة دائم. واصل على ما أنت عليه وكن قدوة لمن حولك.</p>'  : 
-                   totalValue >=6 ? '<p class="descriptionText" data-translate="stage3"> يتميز الأشخاص في هذه المرحلة بإرادة قوية في اتخاذ القرار وبدأوا بالفعل في ممارسة المشي، لكن قد يحتاجون إلى تحويل هذه العادة إلى سلوك مستمر. أنت على الطريق الصحيح، ويمكنك الوصول لهدفك!</p>'  :
-                   totalValue >=2 ?  '<p class="descriptionText" data-translate="stage4">يتميز الأشخاص في هذه المرحلة ببوعي كافٍ وإرادة قوية للبدء بممارسة المشي، لكن قد يعوقهم أي سبب. لذلك جهزنا لك خطةً وبرنامجًا ماملاً لمساعدتك</p>'  :
-                   totalValue < 2 ? '<p class="descriptionText" data-translate="stage5">الأشخاص في هذه المرحلة عندهم الرغبة في التغيير لكن من السهل عليهم اختلاق الأعذار. عليك مواجهة تلك الأعذار بأسباب تحفزك للوصول إلى هدفك. ابدأ الآن بالتغيير، وتحد نفسك، واستمر في الحفاظ على صحتك.</p>': ''
-                } 
+                totalValue >= 18 ? '<p class="descriptionText" data-translate="stage2">يتميز الأشخاص في هذه المرحلة بسهولة التكيف. فهم منطلقون بممارسة المشي ومستمرون عليه. ولكن عليهم الآن المحافظة عليه كسلوك حياة دائم. واصل على ما أنت عليه وكن قدوة لمن حولك.</p>' :
+                    totalValue >= 6 ? '<p class="descriptionText" data-translate="stage3"> يتميز الأشخاص في هذه المرحلة بإرادة قوية في اتخاذ القرار وبدأوا بالفعل في ممارسة المشي، لكن قد يحتاجون إلى تحويل هذه العادة إلى سلوك مستمر. أنت على الطريق الصحيح، ويمكنك الوصول لهدفك!</p>' :
+                        totalValue >= 2 ? '<p class="descriptionText" data-translate="stage4">يتميز الأشخاص في هذه المرحلة ببوعي كافٍ وإرادة قوية للبدء بممارسة المشي، لكن قد يعوقهم أي سبب. لذلك جهزنا لك خطةً وبرنامجًا ماملاً لمساعدتك</p>' :
+                            totalValue < 2 ? '<p class="descriptionText" data-translate="stage5">الأشخاص في هذه المرحلة عندهم الرغبة في التغيير لكن من السهل عليهم اختلاق الأعذار. عليك مواجهة تلك الأعذار بأسباب تحفزك للوصول إلى هدفك. ابدأ الآن بالتغيير، وتحد نفسك، واستمر في الحفاظ على صحتك.</p>' : ''
+            } 
                     </div>
 
 
@@ -94,8 +97,9 @@
         </div>
        
     `;
-    resultsContainer.innerHTML = html;
-</script>
+        resultsContainer.innerHTML = html;
+    </script>
 
 </body>
+
 </html>

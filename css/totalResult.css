@@ -1,139 +1,159 @@
 body {
     background-color: #F5F5F5 !important;
     overflow-x: hidden;
-  
-  }
+}
+
 @font-face {
     font-family: 'GE SS Unique Bold';
     src: url('../GE\ SS\ Unique\ Light.otf');
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: 'GE SS Unique Light';
     src: url('../GE\ SS\ Unique\ Bold.otf');
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: 'EnLanguage';
     src: url('../HelveticaNeue.ttc');
-  }
-.totalResult{
+}
+
+.totalResult {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.RateImg{
+
+.RateImg {
     margin-top: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.userName{
+.userName {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 48px;
     direction: ltr;
 }
-html[lang="en"] .userName{
-    direction:rtl;
+
+html[lang="en"] .userName {
+    direction: rtl;
 
 }
-    .nameText{
-        font-family: 'GE SS Unique Light';
+
+.nameText {
+    font-family: 'GE SS Unique Light';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+}
+
+html[lang='en'] .nameText {
+    font-family: 'EnLanguage';
+
+}
+
+.rate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.rateText {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #008056;
+    font-family: 'GE SS Unique Light';
+
+}
+
+html[lang='en'] .rateText {
+    font-family: 'EnLanguage';
+
+}
+
+.titleText {
+    font-family: 'GE SS Unique Light';
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+html[lang='en'] .titleText {
+    font-family: 'EnLanguage';
+}
+
+.descriptionText {
+    font-family: 'GE SS Unique Light';
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: #008056;
+    text-align: right;
+    margin-bottom: 76px;
+
+}
+
+.imgRate {}
+
+@media screen and (max-width:767px) {
+    .RateImg {
+        margin-top: 12px;
+    }
+
+    .userName {
+        margin-top: 24px;
+    }
+
+    .rate {
+        margin-top: 12px;
+    }
+
+    .imgRate {
+        width: 101px;
+        height: 53px;
+    }
+
+    .nameText {
+        font-size: 12px;
+        line-height: 19px;
+    }
+
+    .rateText {
         font-size: 24px;
-        font-weight: 700;
-        line-height: 30px;
-        letter-spacing: 0em;
-        text-align: center;
-        margin: 0;  
-    }
-   
-    html[lang='en'] .nameText{
-        font-family: 'EnLanguage';
-
-    }
-    .rate{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 48px;
-    }
-    .rateText{
-font-size: 36px;
-font-weight: 700;
-line-height: 45px;
-letter-spacing: 0em;
-text-align: center;
-color: #008056;
-font-family: 'GE SS Unique Light';
-
-    }
-  
-    html[lang='en'] .rateText{
-        font-family: 'EnLanguage';
-
-    }
-    .titleText{
-        font-family: 'GE SS Unique Light';
-
-font-size: 24px;
-font-weight: 700;
-line-height: 30px;
-letter-spacing: 0em;
-text-align: center;
-
+        line-height: 29px;
     }
 
-    html[lang='en'] .titleText{
-        font-family: 'EnLanguage';
+    .titleText {
+        font-size: 16px;
+        line-height: 19px;
     }
-    
-    .descriptionText{
- font-family: 'GE SS Unique Light';
- display: flex;
-font-size: 24px;
-font-weight: 700;
-line-height: 30px;
-letter-spacing: 0em;
-color:#008056;
-text-align: right;
+
+    .descriptionText {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 48px;
 
     }
-    .imgRate{
+}
 
-    }
-    @media screen and (max-width:767px) {
-        .RateImg{
-            margin-top: 12px;
-        }
-        .rate{
-            margin-top: 12px;
-        }
-        .imgRate{
-            width: 101px;
-            height: 53px;
-        } 
-        .nameText{
-            font-size: 12px;
-            line-height: 19px;
-        }   
-        .rateText{
-            font-size: 24px;
-            line-height: 29px;
-        }
-        .titleText{
-            font-size: 16px;
-            line-height: 19px;
-        }
-        .descriptionText{
-            font-size: 16px;
-            line-height: 19px;
-            
-        }
-        }
- 
-    html[lang='en'] .descriptionText{
-        font-family: 'EnLanguage';
-        text-align: left;
-    }
-    
+html[lang='en'] .descriptionText {
+    font-family: 'EnLanguage';
+    text-align: left;
+}

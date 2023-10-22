@@ -31,6 +31,7 @@
 <body>
     
     <div id="navbar-container"></div>
+    <div class="toast-container"></div>
     <div style="position: relative;" class="" > 
     <div class="parents container mx-auto col-10">
         <div class="div1" data-aos="fade-right" data-aos-duration="1000"><img src="../assets/images/beginner.svg"></img></div>
@@ -58,6 +59,9 @@
     <script src="../js/includeNav.js"></script>
     <script src="../js/nav.js"></script>
     <script>
+        
+    </script>
+    <script>
         if (window.innerWidth < 767) {
             document.getElementById("StartFeet").src = "../assets/images/startFeet2.svg"
         }
@@ -65,7 +69,26 @@
             name();
         });
         let value = 0;
+        function showToast(message) {
+    const toastContainer = document.querySelector(".toast-container");
+    const toast = document.createElement("div");
+    toast.className = "toast";
+    toast.style.position = "fixed";
+    toast.style.top = "5%";
+    toast.style.transform = "translateY(-50%)";
+    toast.style.left = "50%";
+    toast.style.transform = "translateX(-50%)";
+    toast.innerHTML = `
+            <div class="toast-body">${message}</div>
+        `;
+    toastContainer.appendChild(toast);
 
+    $(toast).toast("show");
+
+    setTimeout(function () {
+        toastContainer.removeChild(toast);
+    }, 3000);
+}
         function name() {
             if (value === 0) {
                 document.getElementById("nameInput").style.display = "block";
@@ -75,7 +98,7 @@
             } else if (value === 1) {
                 const nameInput = document.getElementById("nameInput").value;
                 if (document.getElementById("nameInput").value === "") {
-                    alert("No name entered!");
+                   showToast("Please inter your name")
                 } else {
                     localStorage.setItem('userName', nameInput);
                     window.location.href = "./questions.html";

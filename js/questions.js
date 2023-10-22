@@ -161,10 +161,6 @@ const increaseButton = document.getElementById('increaseButton');
 const decreaseButton = document.getElementById('decreaseButton');
 let currentIndex = 0;
 const selectedAnswerValues = [];
-
-
-
-
 function loadQuestion(index) {
     setInterval(function () {
         const newLang = document.documentElement.lang;
@@ -175,10 +171,7 @@ function loadQuestion(index) {
             loadQuestion(currentQuestionIndex);
         }
     }, 1000);
-
     const questionContainer = document.getElementById("question");
-
-
     let lg = document.documentElement.lang;
     if (index + 1 <= questionsAr.length) {
         console.log(questionsAr.length, index + 1)
@@ -200,7 +193,6 @@ function loadQuestion(index) {
                         </div>
                     `;
                 }
-
                 else {
                     html += `
                         <div class="radioGroup">
@@ -215,7 +207,6 @@ function loadQuestion(index) {
             </div>
         </div>
     `;
-
             questionContainer.innerHTML = html;
         }
         if (lg === 'en') {
@@ -226,8 +217,6 @@ function loadQuestion(index) {
             <p class="questionNumber">${questions[index].question}</p>
             <div class="${index === 6 || index === 7 || index === 8 ? 'checkboxes' : 'radios'}" id="hell">
             `;
-
-
             for (let i = 0; i < answers.length; i++) {
                 if (index === 6 || index === 7 || index === 8) {
                     html += `
@@ -237,7 +226,6 @@ function loadQuestion(index) {
                         </div>
                     `;
                 }
-
                 else {
                     html += `
                         <div class="radioGroup">
@@ -252,7 +240,6 @@ function loadQuestion(index) {
             </div>
         </div>
     `;
-
             questionContainer.innerHTML = html;
         }
 
@@ -268,11 +255,6 @@ function loadQuestion(index) {
     }
 }
 progressElements[0].style.opacity = '100%';
-
-
-
-
-
 function nextQuestion() {
 
     const selectedAnswers = document.querySelectorAll('input[name="answer"]:checked');
@@ -283,7 +265,6 @@ function nextQuestion() {
         });
         selectedAnswerValues.push(answerValue);
         totalValue += answerValue;
-
         console.log(`Question ${currentQuestionIndex + 1}: Selected Answer Value ${answerValue}`);
         console.log(`Total Value So Far: ${totalValue}`);
         localStorage.setItem('totalValue', totalValue);
@@ -293,7 +274,6 @@ function nextQuestion() {
         if (currentQuestionIndex === 1 && selectedAnswers[0].value === "10") {
             currentQuestionIndex = 3;
         }
-
         else if (currentQuestionIndex === 1 && selectedAnswers[0].value === "0") {
             currentQuestionIndex = 2;
         }
@@ -333,17 +313,11 @@ function nextQuestion() {
         } else {
 
         }
-
         currentIndex++;
-
-
     } else {
         showToast("Please select at least one answer before proceeding.");
     }
 }
-
-
-
 function showToast(message) {
     const toastContainer = document.querySelector(".toast-container");
     const toast = document.createElement("div");
@@ -353,22 +327,17 @@ function showToast(message) {
     toast.style.transform = "translateY(-50%)";
     toast.style.left = "50%";
     toast.style.transform = "translateX(-50%)";
-
-
     toast.innerHTML = `
-          
             <div class="toast-body">${message}</div>
         `;
-
     toastContainer.appendChild(toast);
 
     $(toast).toast("show");
 
     setTimeout(function () {
         toastContainer.removeChild(toast);
-    }, 1000);
+    }, 3000);
 }
-
 function prev() {
     const savedIndexesJSON = localStorage.getItem('questionsIndexes');
     if (savedIndex.length > 0) {
@@ -401,16 +370,11 @@ function prev() {
     localStorage.setItem('questionsIndex', prev);
     console.log("ababababa", currentQuestionIndex)
 }
-
-
-
-
 loadQuestion(currentQuestionIndex);
 function increaseProgress() {
     if (currentIndex < progressElements.length) {
     }
 }
-
 decreaseButton.addEventListener('click', decreaseProgress);
 
 

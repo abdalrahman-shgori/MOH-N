@@ -1,75 +1,80 @@
-/* Your existing CSS */
 body {
-    background-color: #F5F5F5 !important;
-    overflow-x: hidden;
-  
-  }
-  @font-face {
-    font-family: 'GE SS Unique Bold';
-    src: url('../GE\ SS\ Unique\ Light.otf');
-  }
-  @font-face {
-    font-family: 'GE SS Unique Light';
-    src: url('../GE\ SS\ Unique\ Bold.otf');
-  }
-  @font-face {
-    font-family: 'EnLanguage';
-    src: url('../HelveticaNeue.ttc');
-  }
-.progres{
-    margin-top: 15px;
-    margin-bottom: 8px;
-    background-color: #D8D8D8 !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px !important;
-    gap: 10px;
-    min-height: 24px;
+  background-color: #F5F5F5 !important;
+  overflow-x: hidden;
+
+}
+
+@font-face {
+  font-family: 'GE SS Unique Bold';
+  src: url('../GE\ SS\ Unique\ Light.otf');
+}
+
+@font-face {
+  font-family: 'GE SS Unique Light';
+  src: url('../GE\ SS\ Unique\ Bold.otf');
+}
+
+@font-face {
+  font-family: 'EnLanguage';
+  src: url('../HelveticaNeue.ttc');
+}
+
+.progres {
+  margin-top: 15px;
+  margin-bottom: 8px;
+  background-color: #D8D8D8 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px !important;
+  gap: 10px;
+  min-height: 24px;
 }
 
 
 .progress1 {
-    background-color: #008056;
-    opacity: 11%;
-    width: 69.19px;
-    height: 16.21px;
-    border-radius: 2px;
-    display: flex;
+  background-color: #008056;
+  opacity: 11%;
+  width: 69.19px;
+  height: 16.21px;
+  border-radius: 2px;
+  display: flex;
 }
 
 
 .questionsCards {
-    background-color: #FFFFFF;
-    border-radius: 16px;
-    margin-bottom: 101px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  margin-bottom: 101px;
 }
 
-.questionNumber{
-font-size: 24px;
-font-weight: 700;
-line-height: 30px;
-letter-spacing: 0em;
-text-align: center;
-padding-top: 67px;
-color:#008056;
-margin-bottom: 104px;
+.questionNumber {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-top: 67px;
+  color: #008056;
+  margin-bottom: 104px;
 }
-.radios{
+
+.radios {
   display: grid !important;
   grid-template-columns: auto auto !important;
   padding: 10px;
   justify-content: space-around;
 }
-.checkboxes{
-/* display: flex !important;
+
+.checkboxes {
+  /* display: flex !important;
 flex-wrap: wrap !important;
 justify-content: center !important;
 gap: 12px !important; */
-display: grid !important;
-grid-template-columns: auto auto !important;
-padding: 10px;
-justify-content: space-around;
+  display: grid !important;
+  grid-template-columns: auto auto !important;
+  padding: 10px;
+  justify-content: space-around;
 
 }
 
@@ -77,10 +82,11 @@ justify-content: space-around;
 #hell {
   display: flex;
   flex-direction: row !important;
-gap: 12px;
-direction: rtl;
+  gap: 12px;
+  direction: rtl;
 }
-html[lang="en"] #hell{
+
+html[lang="en"] #hell {
   direction: ltr;
 }
 
@@ -94,34 +100,36 @@ html[lang="en"] #hell{
 
 
 
-.radioGroup{
+.radioGroup {}
+
+.nextBtn {
+  background-color: #008056;
+  border: #008056;
+  color: #FFFFFF;
+  width: 199px;
+  height: 55px;
+  border-radius: 40px;
+  margin-left: 48px;
+  background-image: url('../assets/images/arrow\ left.png');
+  background-repeat: no-repeat;
+}
+
+.prevBtn {
+  margin-right: 48px;
+  max-width: 57px;
+  height: 55px;
 
 }
-.nextBtn{
-    background-color: #008056;
-    border: #008056;
-    color: #FFFFFF;
-    width: 199px;
-    height: 55px;
-    border-radius: 40px;
-    margin-left: 48px;
-    background-image: url('../assets/images/arrow\ left.png');
-    background-repeat: no-repeat;
-}
-.prevBtn{  
-    margin-right: 48px;
-    max-width: 57px;
-    height: 55px;
 
+.answer-button {
+  background-color: transparent;
+  border: none;
+  font-family: 'EnLanguage';
 }
-.answer-button{
-    background-color: transparent;
-    border: none;
-    font-family: 'EnLanguage';
-}
+
 .answers {
   display: grid;
-  grid-template-columns: auto auto ;
+  grid-template-columns: auto auto;
   gap: 12px;
   justify-content: start;
   font-family: 'GE SS Unique Bold';
@@ -133,25 +141,27 @@ html[lang="en"] #hell{
   padding-right: 24px;
 
 }
-html[lang ="en"] .answers{
+
+html[lang="en"] .answers {
   gap: 0px;
 }
-.answersCheckBox{
+
+.answersCheckBox {
   display: grid;
-  grid-template-columns: auto auto ;
-  justify-content:start !important;
+  grid-template-columns: auto auto;
+  justify-content: start !important;
   align-items: center;
   text-align: left !important;
   font-family: 'GE SS Unique Bold';
-font-size: 16px;
-font-weight: 300;
-line-height: 20px;
-letter-spacing: 0em;
-color: #404040;
-padding-right: 24px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #404040;
+  padding-right: 24px;
 }
 
-html[lang = "en"] .answersCheckBox{
+html[lang="en"] .answersCheckBox {
   font-family: 'EnLanguage';
   padding-left: 24px;
 
@@ -162,126 +172,133 @@ html[lang = "en"] .answersCheckBox{
 input[type="checkbox"] {
   /* Hide the default radio button */
   display: none;
-  
+
 }
 
 /* Style the custom radio button circle */
-input[type="checkbox"] + label::before {
+input[type="checkbox"]+label::before {
   content: '';
   display: inline-block;
-  width: 20px; /* Adjust the size as needed */
-  height: 20px; /* Adjust the size as needed */
-  border: 2px solid #F5F5F5; /* Border color */
-  border-radius: 50%; /* Makes it a circle */
-  margin-right: 5px; /* Adjust the spacing */
- 
+  width: 20px;
+  /* Adjust the size as needed */
+  height: 20px;
+  /* Adjust the size as needed */
+  border: 2px solid #F5F5F5;
+  /* Border color */
+  border-radius: 50%;
+  /* Makes it a circle */
+  margin-right: 5px;
+  /* Adjust the spacing */
+
 }
 
-/* Style the custom radio button when it's checked */
-input[type="checkbox"]:checked + label::before {
-  background-color: #008056; /* Color when selected */
+input[type="checkbox"]:checked+label::before {
+  background-color: #008056;
   align-items: center;
-  
+
 }
 
-/* Optional: Style the label text */
 label {
-  font-size: 16px !important; /* Adjust the font size */
-  color: #333; /* Text color */
+  font-size: 16px !important;
+  color: #333;
   align-items: center;
   justify-content: center;
   display: flex;
 
 }
-html[lang = "en"] .label{
+
+html[lang="en"] .label {}
+
+input[type="radio"] {
+  display: none;
 
 }
-/* Style the radio button itself */
-input[type="radio"] {
-    /* Hide the default radio button */
-    display: none;
-    
-  }
-  
-  /* Style the custom radio button circle */
-  input[type="radio"] + label::before {
-    content: '';
-    display: inline-block;
-    width: 20px; /* Adjust the size as needed */
-    height: 20px; /* Adjust the size as needed */
-    border: 2px solid #F5F5F5; /* Border color */
-    border-radius: 50%; /* Makes it a circle */
-    margin-right: 5px; /* Adjust the spacing */
-   
-  }
-  
-  /* Style the custom radio button when it's checked */
-  input[type="radio"]:checked + label::before {
-    background-color: #008056; /* Color when selected */
-    align-items: center;
-    
-  }
-  
 
-  .nextPrevBtn{
-    position: relative;
-    margin-top: 96px;
+input[type="radio"]+label::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #F5F5F5;
+  border-radius: 50%;
+  margin-right: 5px;
+
+}
+
+input[type="radio"]:checked+label::before {
+  background-color: #008056;
+  align-items: center;
+
+}
+
+
+.nextPrevBtn {
+  position: relative;
+  margin-top: 96px;
+  padding-bottom: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+
+}
+
+
+@media screen and (max-width:676px) {
+  .checkboxes {
+    grid-template-columns: auto !important;
+
+
+  }
+
+  .radios {
+    grid-template-columns: auto !important;
+
+  }
+
+  .progres {
+    gap: 3.59px;
+    margin-top: 155px;
+    margin-bottom: 12.19px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .progress1 {
+    width: 24.41px;
+    height: 12.7px;
+  }
+
+  .questionNumber {
+    font-size: 16px;
+    line-height: 19.92px;
+    font-weight: 700;
+    margin-bottom: 56px;
+    padding-top: 48px;
+  }
+
+  .answers {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+
+  .nextBtn {
+    margin-left: 24px;
+    width: 140px;
+    height: 40px;
+    background-size: 40px;
+  }
+
+  .prevBtn {
+    max-width: 42px;
+    margin-right: 24px;
+  }
+
+  .nextPrevBtn {
+    margin-top: 46px;
     padding-bottom: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    
   }
-
-
-  @media screen and (max-width:676px) {
-    .checkboxes{
-      grid-template-columns: auto !important;
-  
-      
-    }
-    .radios{
-      grid-template-columns: auto  !important;
-
-    }
-    .progres{
-        gap: 3.59px;
-        margin-top: 155px;
-        margin-bottom: 12.19px;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-       
-    }
-    .progress1{
-        width: 24.41px;
-        height: 12.7px;
-    }
-    .questionNumber{
-        font-size: 16px;
-        line-height: 19.92px;
-        font-weight: 700;
-        margin-bottom: 56px;
-        padding-top: 48px;
-    }
-    .answers{
-        font-size: 12px;
-        font-weight: 300;
-        line-height: 20px;
-    }
-    .nextBtn{
-        margin-left: 24px;
-        width: 140px;
-        height: 40px;
-        background-size: 40px;
-    }
-    .prevBtn{
-        max-width: 42px;
-        margin-right: 24px;
-    }
-    .nextPrevBtn{
-        margin-top: 46px;
-        padding-bottom: 48px;
-    }
 }
