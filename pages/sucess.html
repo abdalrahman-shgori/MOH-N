@@ -37,7 +37,7 @@
     <body>
         <!-- <div id="navbar-container"></div> -->
 
-        <div id="total" class="totalResult">
+        <div id="total" class="totalResult container">
         </div>
        
           
@@ -116,7 +116,7 @@
         <script src="../js/includeNav.js"></script>
         <script src="../js/nav.js"></script>
         <script>
-            const totalValue = 2;
+            const totalValue = localStorage.getItem('totalValue');
             const theName = localStorage.getItem('userName');
             console.log('Total Value:', totalValue);
             console.log('name:', theName);
@@ -164,9 +164,9 @@
                 }
                 </div>
                     
-                    <div class='rate descriptionTextGroup col-lg-8 mx-auto '>
+                    <div class='rate descriptionTextGroup col-lg-9 mx-auto '>
                         ${totalValue >= 30 ? '<p class="descriptionText" data-translate="stage1">يتميز الأشخاص في هذه المرحلة بأنهم قدوة لمن حولهم لديهم العزم والقدرة على الوصول والاستمرار على تحقيق أهدافهم فهم رياضيون ومثابرون على المشي. واصل على ما أنت عليه وكن قدوة لمن حولك.</p>' :
-                    totalValue >= 18 ? '<p class="descriptionText" data-translate="stage2">يتميز الأشخاص في هذه المرحلة بسهولة التكيف. فهم منطلقون بممارسة المشي ومستمرون عليه. ولكن عليهم الآن المحافظة عليه كسلوك حياة دائم. واصل على ما أنت عليه وكن قدوة لمن حولك.</p>' :
+                    totalValue >= 18 ? '<p class="descriptionText" data-translate="stage2">يتميز الأشخاص في هذه المرحلة بسهولة التكيف فهم منطلقون بممارسة المشي ومستمرون عليه ولكن عليهم الآن المحافظة عليه كسلوك حياةدائم.واصل على ما أنت عليه وكن قدوة لمن حولك.</p>' :
                         totalValue >= 6 ? '<p class="descriptionText" data-translate="stage3"> يتميز الأشخاص في هذه المرحلة بإرادة قوية في اتخاذ القرار وبدأوا بالفعل في ممارسة المشي، لكن قد يحتاجون إلى تحويل هذه العادة إلى سلوك مستمر. أنت على الطريق الصحيح، ويمكنك الوصول لهدفك!</p>' :
                             totalValue >= 2 ? '<p class="descriptionText" data-translate="stage4">يتميز الأشخاص في هذه المرحلة ببوعي كافٍ وإرادة قوية للبدء بممارسة المشي، لكن قد يعوقهم أي سبب. لذلك جهزنا لك خطةً وبرنامجًا ماملاً لمساعدتك</p>' :
                                 totalValue < 2 ? '<p class="descriptionText" data-translate="stage5">الأشخاص في هذه المرحلة عندهم الرغبة في التغيير لكن من السهل عليهم اختلاق الأعذار. عليك مواجهة تلك الأعذار بأسباب تحفزك للوصول إلى هدفك. ابدأ الآن بالتغيير، وتحد نفسك، واستمر في الحفاظ على صحتك.</p>' : ''
