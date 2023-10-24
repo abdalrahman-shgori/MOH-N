@@ -193,6 +193,7 @@ html[lang='en'] .titleText {
     .titleText {
         font-size: 16px;
         line-height: 19px;
+        width: 300px;
     }
 
     .descriptionText {

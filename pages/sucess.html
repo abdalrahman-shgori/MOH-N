@@ -116,7 +116,7 @@
         <script src="../js/includeNav.js"></script>
         <script src="../js/nav.js"></script>
         <script>
-            const totalValue = localStorage.getItem('totalValue');
+            const totalValue = 2;
             const theName = localStorage.getItem('userName');
             console.log('Total Value:', totalValue);
             console.log('name:', theName);
@@ -147,7 +147,7 @@
                             totalValue >= 2 ? '<p class="rateText" data-translate="youareIntending">أنت ناوي </p>' :
                                 totalValue < 2 ? '<p class="rateText" data-translate="youhavePassiveBehavior">أنت صاحب سلوك خامل </p>' : ''
                 }                </div>
-                    <div class="rate">
+                    <div class="rate ">
                         ${totalValue >= 30 ? '<p class="titleText" data-translate="yourCommitmentSetsAnExample">التزامك يضرب به المثل</p>' :
                     totalValue >= 18 ? '<p class="titleText" data-translate="youTakeOffLikeARocketAndKeepWalking">انطلاقك مثل الصاروخ لا تتوقف عن المشي</p>' :
                         totalValue >= 6 ? '<p class="titleText" data-translate="butThereAreAFewSteps"> لكن تتبقى خطوات بسيطة وتكون مستمراً.</p>' :
@@ -164,7 +164,7 @@
                 }
                 </div>
                     
-                    <div class='rate descriptionTextGroup col-lg-8 mx-auto'>
+                    <div class='rate descriptionTextGroup col-lg-8 mx-auto '>
                         ${totalValue >= 30 ? '<p class="descriptionText" data-translate="stage1">يتميز الأشخاص في هذه المرحلة بأنهم قدوة لمن حولهم لديهم العزم والقدرة على الوصول والاستمرار على تحقيق أهدافهم فهم رياضيون ومثابرون على المشي. واصل على ما أنت عليه وكن قدوة لمن حولك.</p>' :
                     totalValue >= 18 ? '<p class="descriptionText" data-translate="stage2">يتميز الأشخاص في هذه المرحلة بسهولة التكيف. فهم منطلقون بممارسة المشي ومستمرون عليه. ولكن عليهم الآن المحافظة عليه كسلوك حياة دائم. واصل على ما أنت عليه وكن قدوة لمن حولك.</p>' :
                         totalValue >= 6 ? '<p class="descriptionText" data-translate="stage3"> يتميز الأشخاص في هذه المرحلة بإرادة قوية في اتخاذ القرار وبدأوا بالفعل في ممارسة المشي، لكن قد يحتاجون إلى تحويل هذه العادة إلى سلوك مستمر. أنت على الطريق الصحيح، ويمكنك الوصول لهدفك!</p>' :
