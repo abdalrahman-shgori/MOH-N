@@ -156,12 +156,12 @@ html[lang='en'] .titleText {
         height: 272px !important;
     }
     .RateCharacterImg{
-        margin-top: 12px;
-        margin-bottom: 12px;
+        margin-top: 45px;
+        margin-bottom: 45px;
 
     }
     .RateImg {
-        margin-top: 12px;
+        margin-top: 80px;
     }
 
     .userName {
@@ -169,7 +169,7 @@ html[lang='en'] .titleText {
     }
 
     .rate {
-        margin-top: 12px;
+        margin-top: 14px;
     }
 
     .imgRate {
