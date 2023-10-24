@@ -4,6 +4,9 @@ body {
     overflow-x: hidden;
 
 }
+a{
+    text-decoration: none !important;
+}
 @font-face {
     font-family: 'GE SS Unique Bold';
     src: url('../GE\ SS\ Unique\ Light.otf');

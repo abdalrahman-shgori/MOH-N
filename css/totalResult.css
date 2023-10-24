@@ -25,10 +25,17 @@ body {
 }
 
 .RateImg {
-    margin-top: 48px;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.RateCharacterImg{
+    margin-top: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 55px;
 }
 
 .userName {
@@ -58,12 +65,15 @@ html[lang='en'] .nameText {
     font-family: 'EnLanguage';
 
 }
+.descriptionTextGroup{
+    margin-bottom: 40px;
+}
 
 .rate {
     display: flex;
-    justify-content: center;
+    justify-content: center !important;
     align-items: center;
-    margin-top: 48px;
+    margin-top: 24px;
 }
 
 .rateText {
@@ -74,7 +84,9 @@ html[lang='en'] .nameText {
     text-align: center;
     color: #008056;
     font-family: 'GE SS Unique Light';
-
+}
+p{
+    margin: 0 !important;
 }
 
 html[lang='en'] .rateText {
@@ -110,10 +122,44 @@ html[lang='en'] .titleText {
     margin-bottom: 76px;
 
 }
+.calendarPdf{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    margin-bottom: 80px;
+}
+.addCalendarBtn{
+    background: #F0C905;
+    border: #F0C905;
+    border-radius: 6px;
+    color: #FFFFFF;
+    min-height: 36px;
+    width: 308px;
+}
+.downloadPdfBtn{
+    background: #008056;
+    border: #008056;
+    border-radius: 6px;
+    color: #FFFFFF;
+    min-height: 36px;
+    width: 308px;
+}
 
-.imgRate {}
+.imgRateCharactar {
+
+
+}
+
 
 @media screen and (max-width:767px) {
+    .imgRateCharactar{
+        height: 272px !important;
+    }
+    .RateCharacterImg{
+        margin-top: 12px;
+        margin-bottom: 12px;
+
+    }
     .RateImg {
         margin-top: 12px;
     }
@@ -135,6 +181,9 @@ html[lang='en'] .titleText {
         font-size: 12px;
         line-height: 19px;
     }
+    .descriptionTextGroup{
+        margin-bottom: 12px;
+    }
 
     .rateText {
         font-size: 24px;
@@ -153,6 +202,11 @@ html[lang='en'] .titleText {
 
     }
 }
+@media screen and (max-width:380px) {
+    .imgRateCharactar{
+        height: 200px !important;
+    }
+    }
 
 html[lang='en'] .descriptionText {
     font-family: 'EnLanguage';

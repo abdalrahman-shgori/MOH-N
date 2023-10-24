@@ -58,18 +58,20 @@
         window.onresize=img
       
         const myArrayEn = [
-    { title: "Your Personality in Walking", description: "A test that measures your level of walking practice and provides solutions for continuity", img: "../assets/images/animateWalking.svg", btnText: "Take the test now and discover your personality", id: 0 },
-    { title: "Walk 30", description: "A test that measures your level of walking practice and provides solutions for continuity", img: "../assets/images/runPath30.svg", btnText: "Take the test now and discover your personality", id: 1 },
-    { title: "Your Personality in Walking", description: "A test that measures your level of walking practice and provides solutions for continuity", img: "../assets/images/maps.svg", btnText: "Take the test now and discover your personality", id: 2 },
-    { title: "Your Personality in Walking", description: "A test that measures your level of walking practice and provides solutions for continuity", img: "../assets/images/goal.svg", btnText: "Take the test now and discover your personality", id: 3 },
+    { title: "Your Personality in Walking", description: "A test that measures your level of walking practice and provides solutions for continuity", img: "../assets/images/animateWalking.svg", btnText: "Take the test now and discover your personality",link:"./homePage.html", id: 0 },
+    { title: "Walk 30", description: "A creative campaign to raise awareness about walking behavior", img: "../assets/images/runPath30.svg", btnText: "Share with us the hashtag #Walk30", id: 1 },
+    { title: "Walk around the kingdom", description: "A field walking track event in 20 regions around the Kingdom, in which the community participates", img: "../assets/images/maps.svg", btnText: "Walk around the kingdom",link:"https://walk.online-link.net/ar/Request/OpenReg?utm_source=Social+media&utm_medium=MOH&utm_campaign=Walk+30", id: 2 },
+    { title: "Start the challenge", description: "A competition to walk 8,000 steps a day via the Sihati app", img: "../assets/images/goal.svg", btnText: "Download the Sehaty app",link:"https://apps.apple.com/us/app/%D8%B5%D8%AD%D8%AA%D9%8A-sehhaty/id1459266578", id: 3 },
 ];
 
 const myArrayAr = [
-    { title: "شخصيتك في المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/animateWalking.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك", id: 0 },
+    { title: "شخصيتك في المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/animateWalking.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك",link:"./homePage.html", id: 0 },
     { title: "امش 30", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/runPath30.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك", id: 1 },
-    { title: "شخصيتك في المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/maps.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك", id: 2 },
-    { title: "شخصيتك في المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/goal.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك", id: 3 },
+    { title: "شخصيتك في المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/maps.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك",link:"https://walk.online-link.net/ar/Request/OpenReg?utm_source=Social+media&utm_medium=MOH&utm_campaign=Walk+30", id: 2 },
+    { title: "شخصيتك في المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/goal.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك",link:"https://apps.apple.com/us/app/%D8%B5%D8%AD%D8%AA%D9%8A-sehhaty/id1459266578", id: 3 },
 ];
+
+
 function getCurrentLanguage() {
                 return localStorage.getItem('selectedLanguage');
             }
@@ -88,7 +90,7 @@ console.log("abd abda abd",currentLanguage)
                 <span class="howYouWork" id="wk">${item.title}</span>
                 <span class="PathsDescription" data-translate="walkingPersonalityDescription">${item.description}</span>
                 <div class="btnDirection"> 
-                    <button class="pathsBtn" data-translate="walkingPersonalityBtnText">${item.btnText}</button>
+                   <a href="${item.link}"  target="_blank"><button class="pathsBtn" data-translate="walkingPersonalityBtnText">${item.btnText}</button></a>
                 </div>
             </div>
             <div class="GroupImg">

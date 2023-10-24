@@ -2,7 +2,7 @@
 const translations = {
     en: {
         welcome: "Welcome to the MCQ Quiz",
-        aboutWalk: "About walking",
+        aboutWalk: "About walking.",
         path: "Walk paths 30",
         Partners: "Partners",
         walkdescription: "It is a qualitative initiative for the year 2023 that includes all interventions in previous years in two months of this year. This is to change society and motivate it to increase the rates of physical activity 150 minutes 3-5 times a week, which is consistent with the Kingdom’s 2030 vision and direction to increase the average age from 74 to 80 years.",

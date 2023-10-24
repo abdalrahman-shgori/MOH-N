@@ -8,7 +8,7 @@ const questions = [
         ],
     },
     {
-        question: "Do you walk reularly",
+        question: "Do you walk regularly",
         answers: [
             { text: "yes", value: 10 },
             { text: "no", value: 0 },
@@ -45,6 +45,13 @@ const questions = [
             { text: "I started and tried several times to stick to walking", value: 6 },
             { text: "Have been walking recently", value: 8 },
             { text: "I have been practicing walking for a long time (more than 6 months) and I have a plan to continue", value: 20 }
+        ],
+    },
+    {
+        question: "Do you think mental and/or physical health is affected by daily walks ?",
+        answers: [
+            { text: "yes", value: 0 },
+            { text: "no", value: 0 },
         ],
     },
     {
@@ -125,7 +132,14 @@ const questionsAr = [
         ],
     },
     {
-        question:"هل لديك أسباب تمنعك من ممارسة المشي",
+        question: "هل تعتقد أن الصحة العقلية و/أو الجسدية تتأثر بالمشي اليومي؟",
+        answers: [
+            { text: "نعم", value: 0 },
+            { text: "لا", value: 0 },
+        ],
+    },
+    {
+        question: "هل لديك أسباب تمنعك من ممارسة المشي",
         answers: [
             { text: "ليس هناك شيء يمنعني من المشي", value: 0 },
             { text: "لا يوجد مكان مناسب", value: 0 },
@@ -162,6 +176,7 @@ const decreaseButton = document.getElementById('decreaseButton');
 let currentIndex = 0;
 const selectedAnswerValues = [];
 function loadQuestion(index) {
+    
     setInterval(function () {
         const newLang = document.documentElement.lang;
 
@@ -181,11 +196,11 @@ function loadQuestion(index) {
             let html = `
         <div>
             <p class="questionNumber">${questionsAr[index].question}</p>
-            <div class="${index === 6 || index === 7 || index === 8 ? 'checkboxes' : 'radios'}" id="hell">
+            <div class="${index === 7 || index === 8 || index === 9 ? 'checkboxes' : 'radios'}" id="hell">
             `;
 
             for (let i = 0; i < answers.length; i++) {
-                if (index === 6 || index === 7 || index === 8) {
+                if (index === 7 || index === 8 || index === 9) {
                     html += `
                         <div class="checkboxGroup">
                             <input type="checkbox" name="answer" id="checkbox${i}" value="${answers[i].value}">
@@ -218,7 +233,7 @@ function loadQuestion(index) {
             <div class="${index === 6 || index === 7 || index === 8 ? 'checkboxes' : 'radios'}" id="hell">
             `;
             for (let i = 0; i < answers.length; i++) {
-                if (index === 6 || index === 7 || index === 8) {
+                if (index === 7 || index === 8 || index === 9) {
                     html += `
                         <div class="checkboxGroup">
                             <input type="checkbox" name="answer" id="checkbox${i}" value="${answers[i].value}">
@@ -245,7 +260,6 @@ function loadQuestion(index) {
 
     } else {
         showToast(`You have completed the questionnaire. Total Value: ${totalValue}`)
-        window.location.href = "../pages/sucess.html"
     }
     const prevButton = document.getElementById("prevButton");
     if (currentQuestionIndex === 0) {
@@ -260,7 +274,7 @@ function nextQuestion() {
     const selectedAnswers = document.querySelectorAll('input[name="answer"]:checked');
     if (selectedAnswers.length > 0) {
         let answerValue = 0;
-        const selectedAnswerTexts = []; 
+        const selectedAnswerTexts = [];
         selectedAnswers.forEach((selectedAnswer) => {
             answerValue += parseInt(selectedAnswer.value);
             const label = document.querySelector(`label[for="${selectedAnswer.id}"]`);
@@ -268,7 +282,7 @@ function nextQuestion() {
                 selectedAnswerTexts.push(label.textContent.trim());
             }
         });
-                console.log("Selected Answer Texts:", selectedAnswerTexts);
+        console.log("Selected Answer Texts:", selectedAnswerTexts);
 
         // selectedAnswers.forEach((selectedAnswer) => {
         //     answerValue += parseInt(selectedAnswer.value);
@@ -299,10 +313,15 @@ function nextQuestion() {
         else if (currentQuestionIndex === 6) {
             currentQuestionIndex = 7;
         }
+        else if (currentQuestionIndex === 7) {
+            currentQuestionIndex = 8;
+        }
+         else if (currentQuestionIndex === 8) {
+            currentQuestionIndex = 9;
+        }
         else if (currentQuestionIndex === 1 && selectedAnswers[0].value === "0") {
             currentQuestionIndex = 2;
         }
-
         else if (currentQuestionIndex === 2 && selectedAnswers[0].value === "0") {
             currentQuestionIndex = 6;
         }
@@ -312,16 +331,14 @@ function nextQuestion() {
         else if (currentQuestionIndex === 2 && selectedAnswers[0].value === "6") {
             currentQuestionIndex = 5;
         }
-
         else {
             currentQuestionIndex++;
         }
-
         if (currentQuestionIndex < 10) {
             loadQuestion(currentQuestionIndex);
             progressElements[currentIndex + 1].style.opacity = '100%';
         } else {
-
+           window.location.href = "../pages/sucess.html"
         }
         currentIndex++;
     } else {
@@ -353,10 +370,10 @@ function prev() {
     if (currentQuestionIndex > 0) {
         const lastAnswerValue = selectedAnswerValues.pop();
         totalValue -= lastAnswerValue;
-        console.log("new total",totalValue)
+        console.log("new total", totalValue)
 
-    } 
-    
+    }
+
     const savedIndexesJSON = localStorage.getItem('questionsIndexes');
     if (savedIndex.length > 0) {
         savedIndex.pop();

@@ -29,6 +29,10 @@ body {
   border-radius: 50px !important;
   gap: 10px;
   min-height: 24px;
+  direction: rtl;
+}
+html[lang="en"] .progres{
+  direction: ltr;
 }
 
 
@@ -99,6 +103,21 @@ html[lang="en"] #hell {
 
 .radioGroup {}
 
+.nextPrevBtn {
+  position: relative;
+  margin-top: 96px;
+  padding-bottom: 48px;
+  margin-left: 48px;
+  margin-right: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+html[lang="en"] .nextPrevBtn{
+  direction: rtl;
+}
+
 .nextBtn {
   background-color: #008056;
   border: #008056;
@@ -106,16 +125,23 @@ html[lang="en"] #hell {
   width: 199px;
   height: 55px;
   border-radius: 40px;
-  margin-left: 48px;
   background-image: url('../assets/images/arrow\ left.png');
   background-repeat: no-repeat;
+  
+}
+html[lang="en"] .nextBtn{
+  background-image: url('../assets/images/arrows.svg' );
+  background-position: right;
+
+
 }
 
 .prevBtn {
-  margin-right: 48px;
   max-width: 57px;
   height: 55px;
-
+}
+html[lang="en"] .prevBtn{
+  transform: rotate(180deg);
 }
 
 .answer-button {
@@ -139,6 +165,8 @@ html[lang="en"] #hell {
 
 html[lang="en"] .answers {
   gap: 0px;
+  font-family: 'EnLanguage';
+
 }
 
 .answersCheckBox {
@@ -158,8 +186,6 @@ html[lang="en"] .answers {
 html[lang="en"] .answersCheckBox {
   font-family: 'EnLanguage';
   padding-left: 24px;
-
-
 }
 
 
@@ -173,19 +199,19 @@ input[type="checkbox"]+label::before {
   display: inline-block;
   width: 20px;
   height: 20px;
-  border: 2px solid #F5F5F5;
+  border: 2px solid #404040;
   border-radius: 50%;
   margin-right: 5px;
 }
 
 input[type="checkbox"]:checked+label::before {
-  background-color: #008056;
+  border: 4px solid #008056;
   align-items: center;
 
 }
 
 label {
-  font-size: 16px !important;
+  font-size: 18px !important;
   color: #333;
   align-items: center;
   justify-content: center;
@@ -205,29 +231,20 @@ input[type="radio"]+label::before {
   display: inline-block;
   width: 20px;
   height: 20px;
-  border: 2px solid #F5F5F5;
+  border: 2px solid #404040;
   border-radius: 50%;
   margin-right: 5px;
 
 }
 
 input[type="radio"]:checked+label::before {
-  background-color: #008056;
+  /* background-color: #008056; */
   align-items: center;
-
+  border: 4px solid #008056;
 }
 
 
-.nextPrevBtn {
-  position: relative;
-  margin-top: 96px;
-  padding-bottom: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
 
-}
 .questionSteps{
   position: absolute;
   top: 100px;
@@ -277,7 +294,6 @@ input[type="radio"]:checked+label::before {
   }
 
   .nextBtn {
-    margin-left: 24px;
     width: 140px;
     height: 40px;
     background-size: 40px;
@@ -285,12 +301,13 @@ input[type="radio"]:checked+label::before {
 
   .prevBtn {
     max-width: 42px;
-    margin-right: 24px;
   }
 
   .nextPrevBtn {
     margin-top: 46px;
     padding-bottom: 48px;
+    margin-right: 24px;
+    margin-left: 24px;
   }
   .questionSteps{
     display: none;
