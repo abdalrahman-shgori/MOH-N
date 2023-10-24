@@ -168,8 +168,6 @@ html[lang = "en"] .center-content{
     .pathsCard{
         padding: 24px 26px 24px 26px;
         margin-bottom: 16px;
-        
-
     }
     .paths{
         margin-top: 24px;
@@ -203,8 +201,8 @@ html[lang = "en"] .center-content{
     }
 
     .pathsBtn {
+        width: 220px;
         font-size: 14px;
-        width: 100%;
         line-height: 19px;
         padding: 4px 10px 4px 10px;
 
@@ -239,7 +237,7 @@ html[lang = "en"] .center-content{
     }
 
 }
-@media screen and (max-width:360px) {
+@media screen and (max-width:400px) {
     .pathsBtn{
         font-size: 12px;
         padding: 4px 4px 4px 4px;
@@ -275,7 +273,29 @@ html[lang = "en"] .center-content{
         font-size: 14px;
     }
 }
-@media screen and (max-width:280px) {
+@media screen and (max-width:375px) {
+    .pathsBtn{
+        width: 200px;
+    }
+    
+}
+@media screen and (max-width:360px) {
+    .pathsBtn{
+        width: 180px;
+    }
+    
+}
+@media screen and (max-width:335px) {
+    .pathsBtn{
+        width: 160px;
+        font-size: 12px;
+    }
+    .PathsDescription{
+        font-size: 12px;
+    }
+    
+}
+@media screen and (max-width:315px) {
     .pathsBtn{
         font-size: 10px;
         padding: 0px 0px 0px 0px;
@@ -309,5 +329,12 @@ html[lang = "en"] .center-content{
         font-size: 12px;
     }
     
+    
+}
+
+@media screen and (max-width:290px) {
+    .pathsBtn{
+        width: 150px;
+    }
     
 }
