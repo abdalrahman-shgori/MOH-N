@@ -110,7 +110,7 @@ html[lang='en'] .radios{
 html[lang='en'] .checkboxes{
   direction: ltr;
   padding-left: 24px;
-  padding-right: 10px;
+  padding-right: 0px;
 }
 
 
