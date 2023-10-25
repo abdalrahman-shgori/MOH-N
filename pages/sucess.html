@@ -68,15 +68,15 @@
                 // Dummy events
                 var events = [
                     {
-                        'summary': 'mhmd wedding',
+                        'summary': 'moh meeting',
                         'location': 'Online',
                         'description': 'Meeting to discuss project status and next steps.',
                         'start': {
-                            'dateTime': '2023-10-29T09:00:00-07:00',
+                            'dateTime': '2023-11-1T09:00:00-07:00',
                             'timeZone': 'America/Los_Angeles'
                         },
                         'end': {
-                            'dateTime': '2023-10-29T10:00:00-07:00',
+                            'dateTime': '2023-11-1T10:00:00-07:00',
                             'timeZone': 'America/Los_Angeles'
                         },
                         'recurrence': [
@@ -94,6 +94,33 @@
                             ]
                         }
                     },
+                    {
+          'summary': 'Team Meeting',
+          'location': 'Online',
+          'description': 'Meeting to discuss project status and next steps.',
+          'start': {
+            'dateTime': '2023-31-02T09:00:00-07:00',
+            'timeZone': 'America/Los_Angeles'
+          },
+          'end': {
+            'dateTime': '2023-31-02T10:00:00-07:00',
+            'timeZone': 'America/Los_Angeles'
+          },
+          'recurrence': [
+            'RRULE:FREQ=WEEKLY;UNTIL=20231202T000000Z'
+          ],
+          'attendees': [
+            {'email': 'example1@example.com'},
+            {'email': 'example2@example.com'}
+          ],
+          'reminders': {
+            'useDefault': false,
+            'overrides': [
+              {'method': 'email', 'minutes': 24 * 60},
+              {'method': 'popup', 'minutes': 10}
+            ]
+          }
+        },
                 
                 ];
     
