@@ -50,6 +50,26 @@ html[lang="en"] .progres{
   background-color: #FFFFFF;
   border-radius: 16px;
   margin-bottom: 101px;
+  z-index:0;
+}
+.greenshadow{
+  position: absolute;
+  z-index: -1;
+  width: 98% !important;
+  height: 90%;
+  bottom:-30px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.greenshadow2{
+  position: absolute;
+  z-index: -1;
+  width: 804px !important;
+height: 400px;
+  bottom:-35px;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
 }
 
 .questionNumber {
@@ -69,18 +89,31 @@ html[lang="en"] .progres{
   padding: 10px;
   justify-content: space-around;
   align-items: center;
+  gap: 12px;
+  direction: rtl;
+  padding-right: 24px;
+}
+html[lang='en'] .radios{
+  direction: ltr;
+  padding-left: 24px;
 }
 
 .checkboxes {
   display: grid !important;
   grid-template-columns: auto auto !important;
-  padding: 10px;
   justify-content: space-around;
   align-items: center;
+  direction: rtl;
+  gap: 12px;
+  padding-right: 24px;
+}
+html[lang='en'] .checkboxes{
+  direction: ltr;
+
 }
 
 
-#hell {
+/* #hell {
   display: flex;
   flex-direction: row !important;
   gap: 12px;
@@ -89,7 +122,7 @@ html[lang="en"] .progres{
 
 html[lang="en"] #hell {
   direction: ltr;
-}
+} */
 
 .checkboxGroup {
   /* display: flex !important;
@@ -255,12 +288,13 @@ input[type="radio"]:checked+label::before {
 @media screen and (max-width:676px) {
   .checkboxes {
     grid-template-columns: auto !important;
-
+justify-content: start;
 
   }
 
   .radios {
     grid-template-columns: auto !important;
+    justify-content: start;
 
   }
 

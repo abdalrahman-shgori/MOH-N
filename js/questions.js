@@ -1,6 +1,6 @@
 const questions = [
     {
-        question: "Are you male or female",
+        question: "Are you male or female ?",
         answers: [
             { text: "male", value: 0 },
             { text: "Female", value: 0 },
@@ -8,7 +8,7 @@ const questions = [
         ],
     },
     {
-        question: "Do you walk regularly",
+        question: "Do you walk regularly ?",
         answers: [
             { text: "yes", value: 10 },
             { text: "no", value: 0 },
@@ -17,7 +17,7 @@ const questions = [
         ],
     },
     {
-        question: "Which of the following statements best describes your situation",
+        question: "Which of the following statements best describes your situation ?",
         answers: [
             { text: "I have no current intention nor have I started walking", value: 0 },
             { text: "I intend to start walking within the next 30 days", value: 6 },
@@ -55,7 +55,7 @@ const questions = [
         ],
     },
     {
-        question: "Do you have reasons that prevent you from walking?",
+        question: "Do you have reasons that prevent you from walking ?",
         answers: [
             { text: "I have nothing to stop me from walking", value: 0 },
             { text: "There is no suitable place", value: 0 },
@@ -66,7 +66,7 @@ const questions = [
         ],
     },
     {
-        question: "What are the reasons that encourage you to practice walking?",
+        question: "What are the reasons that encourage you to practice walking ?",
         answers: [
             { text: "Maintain a healthy weight", value: 0 },
             { text: "Improve fitness and mood", value: 0 },
@@ -75,7 +75,7 @@ const questions = [
         ],
     },
     {
-        question: "What are the places you prefer when practicing walking:",
+        question: "What are the places you prefer when practicing walking ?",
         answers: [
             { text: "Sports club", value: 0 },
             { text: "Public place", value: 0 },
@@ -87,21 +87,21 @@ const questions = [
 
 const questionsAr = [
     {
-        question: "هل أنت ذكر أم أنثى",
+        question: " هل أنت ذكر أم أنثى؟",
         answers: [
             { text: "ذكر", value: 0 },
             { text: "أنثى", value: 0 },
         ],
     },
     {
-        question: "هل تمارس رياضة المشي بانتظام",
+        question: "هل تمارس رياضة المشي بانتظام؟",
         answers: [
             { text: "نعم", value: 10 },
             { text: "لا", value: 0 },
         ],
     },
     {
-        question: "أي العبارات التالية تصف حالتك بشكل أفضل",
+        question: "أي العبارات التالية تصف حالتك بشكل أفضل؟",
         answers: [
             { text: "ليس لدي نية حالية ولم أبدأ المشي", value: 0 },
             { text: "أعتزم بدء المشي خلال الـ30 يومًا القادمة", value: 6 },
@@ -109,21 +109,21 @@ const questionsAr = [
         ],
     },
     {
-        question: "منذ متى مستمر على ممارسة المشي",
+        question: "منذ متى مستمر على ممارسة المشي؟",
         answers: [
             { text: "أقل من 6 أشهر مضت", value: 8 },
             { text: "أكثر من 6 أشهر مضت", value: 20 },
         ],
     },
     {
-        question: " أثناء ممارسة المشي هل تشعر بالتعرق وتزيد نبضات القلب",
+        question: " أثناء ممارسة المشي هل تشعر بالتعرق وتزيد نبضات القلب؟",
         answers: [
             { text: "نعم", value: 0 },
             { text: "لا", value: 0 },
         ],
     },
     {
-        question: " أي العبارات التالية تصف حالتك",
+        question: " أي العبارات التالية تصف حالتك؟",
         answers: [
             { text: "أعتزم ممارسة المشي، لكني لا أعرف متى سأبدأ", value: 2 },
             { text: "لقد بدأت وحاولت عدة مرات الالتزام بالمشي", value: 6 },
@@ -139,7 +139,7 @@ const questionsAr = [
         ],
     },
     {
-        question: "هل لديك أسباب تمنعك من ممارسة المشي",
+        question: "هل لديك أسباب تمنعك من ممارسة المشي؟",
         answers: [
             { text: "ليس هناك شيء يمنعني من المشي", value: 0 },
             { text: "لا يوجد مكان مناسب", value: 0 },
@@ -149,7 +149,7 @@ const questionsAr = [
         ],
     },
     {
-        question: "ماهي الأسباب التي تشجعك على ممارسة رياضة المشي",
+        question: "ماهي الأسباب التي تشجعك على ممارسة رياضة المشي؟",
         answers: [
             { text: "الحفاظ على وزن صحي", value: 0 },
             { text: "تحسين اللياقة والمزاج", value: 0 },
@@ -158,7 +158,7 @@ const questionsAr = [
         ],
     },
     {
-        question: "ماهي الأماكن التي تفضلها عند ممارسة رياضة المشي",
+        question: "ماهي الأماكن التي تفضلها عند ممارسة رياضة المشي؟",
         answers: [
             { text: "نادي رياضي", value: 0 },
             { text: "مكان عام", value: 0 },
@@ -230,7 +230,7 @@ function loadQuestion(index) {
             let html = `
         <div>
             <p class="questionNumber">${questions[index].question}</p>
-            <div class="${index === 6 || index === 7 || index === 8 ? 'checkboxes' : 'radios'}" id="hell">
+            <div class="${index === 7 || index === 8 || index === 9 ? 'checkboxes' : 'radios'}" id="hell">
             `;
             for (let i = 0; i < answers.length; i++) {
                 if (index === 7 || index === 8 || index === 9) {

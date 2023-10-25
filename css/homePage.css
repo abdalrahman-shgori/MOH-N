@@ -101,12 +101,16 @@ html[lang='en'] .NameInput::placeholder {
 
 input[type="text"] {
     border: 1px solid #FFFFFF;
-    border-radius: 8px;
+    border-radius: 16px;
     text-align: right;
     width: 60%;
-    height: 62px;
+    height: 72px;
     box-shadow: 0px -4px 2px 0px #C1C1C1;
     padding: 10px;
+    padding-right: 40px;
+}
+html[lang="en"] input[type="text"]{
+    padding-left: 40px;
 }
 
 .containers {
@@ -142,14 +146,19 @@ input[type="text"] {
     input[type="text"] {
         width: 88%;
         height: 42px;
+        padding-right: 16px;
     }
+    html[lang="en"] input[type="text"]{
+        padding-left: 16px;
+    }
+
 
     .NameInput::placeholder {
         font-size: 12px;
         font-weight: 300;
         line-height: 15px;
         top: -2px;
-
+        font-family: 'GE SS Unique Bold';
     }
 
     .containers {

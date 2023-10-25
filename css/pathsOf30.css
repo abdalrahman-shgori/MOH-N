@@ -101,6 +101,7 @@ font-family:'EnLanguage' !important ;
 html[lang="en"] .PathsDescription {
     text-align: left;
     font-family:'EnLanguage'  ;
+    direction: ltr;
 
 
 }
@@ -125,7 +126,7 @@ html[lang="en"] .PathsDescription {
 }
 html[lang="en"] .pathsBtn{
     font-family: 'EnLanguage';
-    font-size: 22px;
+    font-size: 20px;
     
 }
 html[lang="en"] .btnDirection{
