@@ -109,7 +109,8 @@ html[lang='en'] .radios{
 }
 html[lang='en'] .checkboxes{
   direction: ltr;
-
+  padding-left: 24px;
+  padding-right: 10px;
 }
 
 
@@ -218,7 +219,6 @@ html[lang="en"] .answers {
 
 html[lang="en"] .answersCheckBox {
   font-family: 'EnLanguage';
-  padding-left: 24px;
 }
 
 
