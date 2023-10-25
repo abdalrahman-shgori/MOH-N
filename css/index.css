@@ -27,13 +27,14 @@ body {
     color: #333333;
     font-size: 36px;
     font-weight: 300;
-    text-align: left;
     line-height: 44px;
-    text-align: justify;
+    text-align: justify !important;
+    direction: rtl;
     font-family: 'GE SS Unique Bold';
 }
 html[lang="en"] .descriptionText{
     font-family: 'EnLanguage';
+    direction: ltr;
 
 }
 
@@ -102,6 +103,8 @@ html[lang="en"] .startBtn{
     .descriptionText {
         font-size: 16px;
         line-height: 19px;
+        padding-left: 44px;
+        padding-right: 44px;
     }
     #footer{
         bottom:-100px;
@@ -117,6 +120,7 @@ html[lang="en"] .startBtn{
 
     .startBtn {
         font-size: 16px;
+        height: 40px;
         
     }
 
