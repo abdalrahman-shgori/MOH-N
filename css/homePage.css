@@ -30,7 +30,7 @@ body {
     font-weight: 300;
     line-height: 44px;
     color: #333333;
-    text-align: justify;
+    text-align: right;
     direction: rtl;
     font-family: 'GE SS Unique Bold';
     margin-top: 72px;
@@ -38,6 +38,7 @@ body {
 
 html[lang="en"] .WalkSportText {
     font-family: 'EnLanguage';
+    text-align: left;
     direction: ltr;
 
 }
