@@ -139,7 +139,8 @@ html[lang='en'] .descriptionText {
     border-radius: 6px;
     color: #FFFFFF;
     min-height: 36px;
-    width: 308px;
+    width: 358px;
+    font-size: 16px;
 }
 .downloadPdfBtn{
     background: #008056;
@@ -147,7 +148,8 @@ html[lang='en'] .descriptionText {
     border-radius: 6px;
     color: #FFFFFF;
     min-height: 36px;
-    width: 308px;
+    width: 358px;
+    font-size: 16px;
 }
 .downloadCalendar{
     font-family: 'GE SS Unique Light';

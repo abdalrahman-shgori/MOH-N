@@ -625,7 +625,10 @@
                     </div>
 
                     <div class="rate calendarPdf">
-                        
+                        <div class="downloadCalendar">
+                        <button id="button" class="addCalendarBtn" data-translate="calendarDownload">تحميل التذكيرات على تقويم جوالك</button>
+                        <img class="calendarImg" src="../assets/images/calendarDownload.svg"/>
+                    </div>
                     <div class="downloadCalendar">
                         <a href="${totalValue >= 30 ? '../assets/pdf/pdf5.pdf' :
                 totalValue >= 18 ? '../assets/pdf/pdf4.pdf' :
@@ -633,7 +636,7 @@
                         totalValue >= 2 ? '../assets/pdf/pdf2.pdf' :
                             totalValue < 2 ? '../assets/pdf/pdf1.pdf' : ""
             }" download>
-<button class="downloadPdfBtn" data-translate="pdfDownloadText">الاطلاع على الدليل الخاص بمرحلتك</button>
+            <button class="downloadPdfBtn" data-translate="pdfDownloadText">الاطلاع على الدليل الخاص بمرحلتك</button>
 
 </a>
 <img class="calendarImg" src="../assets/images/pdfDownload.svg"/>
