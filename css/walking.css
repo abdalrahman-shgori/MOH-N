@@ -97,6 +97,7 @@ html[lang="en"] .aboutWalk {
     background-color: #008056;
     font-size: 36px;
     font-weight: 700;
+    height: 64px;
     line-height: 49px;
     font-family: 'GE SS Unique Light';
     display: inline-block;
@@ -139,6 +140,7 @@ html[lang="en"] .ideasList {
     background-color: #008056;
     font-size: 36px;
     font-weight: 700;
+    height: 64px;
     line-height: 49px;
     font-family: 'GE SS Unique Light';
     display: inline-block;
@@ -186,12 +188,6 @@ html[lang="en"] .group-text {
     direction: ltr;
 }
 
-
-
-html[lang="en"] .QuestionWalk2 {
-    text-align: left;
-    font-family: 'EnLanguage';
-}
 
 html[lang="en"] .container {
 
@@ -273,6 +269,7 @@ li {
     .QuestionWalk {
         padding: 10px 10px 10px 10px !important;
         width: 100%;
+        height: 100%;
         font-size: 16px;
         font-weight: 700;
         line-height: 20px;
@@ -296,6 +293,7 @@ li {
     .QuestionWalk2 {
         padding: 10px 10px 10px 10px !important;
         width: 100%;
+        height: 100%;
         font-size: 16px;
         font-weight: 700;
         line-height: 20px;
