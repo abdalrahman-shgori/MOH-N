@@ -2,7 +2,6 @@
 body {
     background-color: #F5F5F5 !important;
     overflow-x: hidden;
-
 }
 a{
     text-decoration: none !important;
@@ -44,6 +43,7 @@ html[lang="en"] .PathsText{
 
 .pathsCard {
 padding: 36px 60px 36px 60px;
+overflow-x: auto;
     background-color: #FFFFFF;
     border-radius: 16px;
     box-shadow: 2px 2px 4px 0px #3333331F;
