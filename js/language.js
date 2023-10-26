@@ -61,7 +61,8 @@ const translations = {
         stage3: "Individuals at this stage are characterized by a strong will to make decisions and have already started walking, but they may need to turn this habit into a continuous behavior. You are on the right path, and you can achieve your goal!",
         stage4: "Individuals at this stage are distinguished by sufficient awareness and a strong will to start walking, but they may face any obstacle. That's why we've prepared a comprehensive plan and program to assist you.",
         stage5: "Individuals at this stage have a desire for change, but they easily come up with excuses. You need to confront those excuses with reasons that motivate you to reach your goal. Start now with the change, challenge yourself, and continue to maintain your health.",
-        next:"Next"
+        next:"Next",
+        pdfDownloadText:"View the guide for your stage"
 
 
 
@@ -131,7 +132,8 @@ stage2: "يتميز الأشخاص في هذه المرحلة بسهولة ال�
 stage3: "يتميز الأشخاص في هذه المرحلة بإرادة قوية في اتخاذ القرار وبدأوا بالفعل في ممارسة المشي، لكن قد يحتاجون إلى تحويل هذه العادة إلى سلوك مستمر. أنت على الطريق الصحيح، ويمكنك الوصول لهدفك!",
 stage4: "يتميز الأشخاص في هذه المرحلة ببوعي كافٍ وإرادة قوية للبدء بممارسة المشي، لكن قد يعوقهم أي سبب. لذلك جهزنا لك خطةً وبرنامجًا ماملاً لمساعدتك.",
 stage5: "الأشخاص في هذه المرحلة عندهم الرغبة في التغيير لكن من السهل عليهم اختلاق الأعذار. عليك مواجهة تلك الأعذار بأسباب تحفزك للوصول إلى هدفك. ابدأ الآن بالتغيير، وتحد نفسك، واستمر في الحفاظ على صحتك.",
-next:"التالي"
+next:"التالي",
+pdfDownloadText:"الاطلاع على الدليل الخاص بمرحلتك"
 
 
 

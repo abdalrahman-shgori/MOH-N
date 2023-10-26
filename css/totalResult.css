@@ -150,9 +150,15 @@ html[lang='en'] .descriptionText {
     width: 308px;
 }
 .downloadCalendar{
+    font-family: 'GE SS Unique Light';
     display: flex;
     align-items: center;
     gap: 24px;
+    font-size: 18px;
+
+}
+html[lang="en"] .downloadCalendar{
+    font-family: 'EnLanguage';
 
 }
 
@@ -232,6 +238,7 @@ padding-right:10px !important;
     }
     .downloadCalendar{
         gap: 8px;
+        font-size: 12px;
     }
     .calendarImg{
         width: 16px;
