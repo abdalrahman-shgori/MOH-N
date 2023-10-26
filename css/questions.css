@@ -299,7 +299,7 @@ input[type="radio"]:checked+label::before {
 
 @media screen and (max-width:676px) {
   .greenshadow2{
-    width: 98% !important;
+    width: 90% !important;
     height: 460px;
     right: 0px;
     left: 0;
@@ -346,6 +346,11 @@ justify-content: start;
   html[lang="en"] .questionNumber{
     padding-left: 60px;
     padding-right: 60px;
+    font-family: 'EnLanguage' !important;
+
+  }
+  label{
+    font-size: 16px !important;
   }
 
   .answers {
