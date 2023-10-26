@@ -1,6 +1,6 @@
 const questions = [
     {
-        question: "Are you male or female ?",
+        question: "Are you male or female?",
         answers: [
             { text: "male", value: 0 },
             { text: "Female", value: 0 },
@@ -8,7 +8,7 @@ const questions = [
         ],
     },
     {
-        question: "Do you walk regularly ?",
+        question: "Do you walk regularly?",
         answers: [
             { text: "yes", value: 10 },
             { text: "no", value: 0 },
@@ -17,7 +17,7 @@ const questions = [
         ],
     },
     {
-        question: "Which of the following statements best describes your situation ?",
+        question: "Which of the following statements best describes your situation?",
         answers: [
             { text: "I have no current intention nor have I started walking", value: 0 },
             { text: "I intend to start walking within the next 30 days", value: 6 },
@@ -48,14 +48,14 @@ const questions = [
         ],
     },
     {
-        question: "Do you think mental and/or physical health is affected by daily walks ?",
+        question: "Do you think mental and/or physical health is affected by daily walks?",
         answers: [
             { text: "yes", value: 0 },
             { text: "no", value: 0 },
         ],
     },
     {
-        question: "Do you have reasons that prevent you from walking ?",
+        question: "Do you have reasons that prevent you from walking?",
         answers: [
             { text: "I have nothing to stop me from walking", value: 0 },
             { text: "There is no suitable place", value: 0 },
@@ -66,7 +66,7 @@ const questions = [
         ],
     },
     {
-        question: "What are the reasons that encourage you to practice walking ?",
+        question: "What are the reasons that encourage you to practice walking?",
         answers: [
             { text: "Maintain a healthy weight", value: 0 },
             { text: "Improve fitness and mood", value: 0 },
@@ -75,7 +75,7 @@ const questions = [
         ],
     },
     {
-        question: "What are the places you prefer when practicing walking ?",
+        question: "What are the places you prefer when practicing walking?",
         answers: [
             { text: "Sports club", value: 0 },
             { text: "Public place", value: 0 },
@@ -109,7 +109,7 @@ const questionsAr = [
         ],
     },
     {
-        question: "منذ متى مستمر على ممارسة المشي",
+        question: "منذ متى مستمر على ممارسة المشي؟",
         answers: [
             { text: "أقل من 6 أشهر مضت", value: 8 },
             { text: "أكثر من 6 أشهر مضت", value: 20 },

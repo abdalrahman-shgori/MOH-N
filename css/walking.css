@@ -100,6 +100,8 @@ html[lang="en"] .aboutWalk {
     line-height: 49px;
     font-family: 'GE SS Unique Light';
     display: inline-block;
+    direction: rtl;
+    text-align: right;
     border-radius: 24px 24px 0px 0px;
     padding: 10px 24px 10px 60px;
     margin-bottom: 20px;
@@ -107,7 +109,9 @@ html[lang="en"] .aboutWalk {
 
 html[lang="en"] .QuestionWalk {
     padding: 10px 60px 10px 24px;
-
+    text-align: left;
+    direction: ltr;
+    font-family: 'EnLanguage';
 }
 
 .ideasList {
@@ -140,10 +144,13 @@ html[lang="en"] .ideasList {
     border-radius: 24px 24px 0px 0px;
     padding: 10px 24px 10px 85px;
     margin-bottom: 24px;
+    direction: rtl;
+    text-align: right;
 }
 
 html[lang="en"] .QuestionWalk2 {
     text-align: left;
+    direction: ltr;
     font-family: 'EnLanguage';
     padding: 10px 85px 10px 24px;
 
@@ -178,11 +185,7 @@ html[lang="en"] .group-text {
     direction: ltr;
 }
 
-html[lang="en"] .QuestionWalk {
 
-    text-align: left;
-    font-family: 'EnLanguage';
-}
 
 html[lang="en"] .QuestionWalk2 {
     text-align: left;
