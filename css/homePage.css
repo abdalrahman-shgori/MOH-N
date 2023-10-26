@@ -30,14 +30,15 @@ body {
     font-weight: 300;
     line-height: 44px;
     color: #333333;
-    text-align: right;
+    text-align: justify;
+    direction: rtl;
     font-family: 'GE SS Unique Bold';
     margin-top: 72px;
 }
 
 html[lang="en"] .WalkSportText {
-    text-align: justify;
     font-family: 'EnLanguage';
+    direction: ltr;
 
 }
 

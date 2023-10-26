@@ -94,13 +94,14 @@ font-family:'EnLanguage' !important ;
     letter-spacing: 0em;
     color: #333333;
     text-align: right;
+    direction: rtl;
     font-family: 'GE SS Unique Bold';
 
 }
 
 html[lang="en"] .PathsDescription {
-    text-align: left;
     font-family:'EnLanguage'  ;
+    text-align: left;
     direction: ltr;
 
 

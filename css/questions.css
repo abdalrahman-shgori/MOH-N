@@ -81,6 +81,13 @@ height: 400px;
   padding-top: 67px;
   color: #008056;
   margin-bottom: 104px;
+  font-family: 'GE SS Unique Light';
+  direction: rtl;
+}
+html[lang="en"] .questionNumber{
+  font-family: 'EnLanguage';
+  direction: ltr;
+
 }
 
 .radios {
@@ -344,8 +351,12 @@ justify-content: start;
     margin-right: 24px;
     margin-left: 24px;
   }
-  .questionSteps{
-    display: none;
 
+
+}
+
+@media screen and (max-width:1184px) {
+  .questionSteps{
+    display: none !important;
   }
 }
