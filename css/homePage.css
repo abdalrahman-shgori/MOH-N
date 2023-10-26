@@ -30,15 +30,16 @@ body {
     font-weight: 300;
     line-height: 44px;
     color: #333333;
-    text-align: right;
+    text-align: justify !important;
     direction: rtl;
     font-family: 'GE SS Unique Bold';
     margin-top: 72px;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 html[lang="en"] .WalkSportText {
     font-family: 'EnLanguage';
-    text-align: left;
     direction: ltr;
 
 }
@@ -144,41 +145,7 @@ html[lang="en"] input[type="text"]{
     grid-area: thrid;
 }
 
-@media (max-width: 767px) {
-    input[type="text"] {
-        width: 88%;
-        height: 42px;
-        padding-right: 16px;
-    }
-    html[lang="en"] input[type="text"]{
-        padding-left: 16px;
-    }
 
-
-    .NameInput::placeholder {
-        font-size: 12px;
-        font-weight: 300;
-        line-height: 15px;
-        top: -2px;
-        font-family: 'GE SS Unique Bold';
-    }
-
-    .containers {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas:
-            "first-area second-area"
-            "fourth fifth"
-            "thrid .";
-
-    }
-
-    .WalkSportText {
-        margin-top: 44px;
-        margin-bottom: 16px;
-    }
-
-}
 
 .parents {
     display: grid;
@@ -237,6 +204,42 @@ html[lang="en"] input[type="text"]{
 
 
 @media (max-width: 767px) {
+    input[type="text"] {
+        width: 88%;
+        height: 42px;
+        padding-right: 16px;
+    }
+    html[lang="en"] input[type="text"]{
+        padding-left: 16px;
+    }
+
+
+    .NameInput::placeholder {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 15px;
+        top: -2px;
+        font-family: 'GE SS Unique Bold';
+    }
+
+    .containers {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "first-area second-area"
+            "fourth fifth"
+            "thrid .";
+
+    }
+
+    .WalkSportText {
+        margin-top: 44px;
+        margin-bottom: 16px;
+        padding-left: 73px;
+        padding-right: 74px;
+        font-size: 16px;
+        line-height: 19px;
+    }
     .parents {
         display: grid;
         justify-content: center;
@@ -255,11 +258,7 @@ html[lang="en"] input[type="text"]{
         height: 115px;
     }
 
-    .WalkSportText {
-        font-size: 16px;
-        line-height: 19px;
-        text-align: right;
-    }
+ 
 
     .startBtn {
         width: 42px;
