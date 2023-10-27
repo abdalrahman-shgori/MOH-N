@@ -40,20 +40,6 @@
                 });
             }
 
-            // Function to create and trigger a download of an .ics file
-            function downloadIcsFile(content) {
-                // Create a data URI for the .ics content
-                const dataUri = "data:text/calendar;charset=utf-8," + encodeURIComponent(content);
-
-                // Create a link element for the download
-                const link = document.createElement('a');
-                link.href = dataUri;
-                link.download = 'events.ics';
-
-                // Trigger the download
-                link.click();
-            }
-
             // Function to create an .ics file content
             function createIcsFile(events) {
                 let icsFileContent = 'BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//hacksw/handcal//NONSGML v1.0//EN\n';
@@ -73,7 +59,23 @@
 
                 icsFileContent += 'END:VCALENDAR';
 
-                downloadIcsFile(icsFileContent);
+                // Create a data URI for the .ics content
+                const dataUri = "data:text/calendar;charset=utf-8," + encodeURIComponent(icsFileContent);
+
+                // Create a link element for the download
+                const link = document.createElement('a');
+                link.href = dataUri;
+                link.download = 'events.ics';
+
+                // Create a download button
+                const downloadButton = document.createElement('button');
+                downloadButton.textContent = 'Download .ics File';
+                downloadButton.addEventListener('click', function () {
+                    link.click();
+                });
+
+                // Append the download button to the page
+                document.body.appendChild(downloadButton);
             }
 
             document.getElementById('button').addEventListener('click', function() {
@@ -82,7 +84,7 @@
                     // Your event data here
                 ];
 
-                var platform = navigator.userAgent || navigator.vendor || window.opera;
+                // Check if the user is on iOS
                 const expression = /(Mac|iPhone|iPod|iPad)/i;
 
                 if (expression.test(navigator.platform)) {
