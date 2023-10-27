@@ -40,18 +40,9 @@
                 });
             }
 
-            // Function to create and open a new tab with the .ics file content
-            function openIcsFileContentInNewTab(icsContent) {
-                // Create a data URI for the .ics content
-                const dataUri = "data:text/calendar;charset=utf-8," + encodeURIComponent(icsContent);
-
-                // Open the data URI in a new tab or window
-                window.open(dataUri);
-            }
-
             document.getElementById('button').addEventListener('click', function() {
                 // Dummy events
-                var events = [
+                const events = [
                     // Your event data here
                 ];
 
@@ -59,8 +50,21 @@
                 const expression = /(Mac|iPhone|iPod|iPad)/i;
 
                 if (expression.test(navigator.platform)) {
-                    // iOS device detected, open .ics content in a new tab
-                    createIcsFile(events, openIcsFileContentInNewTab);
+                    // iOS device detected, create .ics file content
+                    const icsContent = createIcsFile(events);
+
+                    // Create a data URI for the .ics content
+                    const dataUri = "data:text/calendar;charset=utf-8," + encodeURIComponent(icsContent);
+
+                    // Create a link element for the download
+                    const link = document.createElement('a');
+                    link.href = dataUri;
+                    link.download = 'events.ics';
+                    link.textContent = 'Download .ics File';
+                    link.style.display = 'block';
+
+                    // Append the link to the logs section
+                    document.getElementById('logs').appendChild(link);
                 } else {
                     // Non-iOS device, attempt to add events to Google Calendar
                     events.forEach(function(event) {
@@ -77,6 +81,28 @@
                     });
                 }
             });
+
+            // Function to create an .ics file content
+            function createIcsFile(events) {
+                let icsFileContent = 'BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//hacksw/handcal//NONSGML v1.0//EN\n';
+
+                events.forEach(event => {
+                    icsFileContent += 'BEGIN:VEVENT\n';
+                    icsFileContent += 'UID:' + generateUid() + '\n';
+                    icsFileContent += 'DTSTAMP:' + new Date().toISOString().replace(/[-:.]/g, '') + '\n';
+                    icsFileContent += 'DTSTART:' + event.start.dateTime + '\n';
+                    icsFileContent += 'DTEND:' + event.end.dateTime + '\n';
+                    icsFileContent += event.recurrence[0] + '\n';
+                    icsFileContent += 'SUMMARY:' + event.summary + '\n';
+                    icsFileContent += 'DESCRIPTION:' + event.description + '\n';
+                    icsFileContent += 'LOCATION:' + event.location + '\n';
+                    icsFileContent += 'END:VEVENT\n';
+                });
+
+                icsFileContent += 'END:VCALENDAR';
+
+                return icsFileContent;
+            }
         }
     </script>
 </body>
