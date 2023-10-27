@@ -40,42 +40,13 @@
                 });
             }
 
-            // Function to create an .ics file content
-            function createIcsFile(events) {
-                let icsFileContent = 'BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//hacksw/handcal//NONSGML v1.0//EN\n';
-
-                events.forEach(event => {
-                    icsFileContent += 'BEGIN:VEVENT\n';
-                    icsFileContent += 'UID:' + generateUid() + '\n';
-                    icsFileContent += 'DTSTAMP:' + new Date().toISOString().replace(/[-:.]/g, '') + '\n';
-                    icsFileContent += 'DTSTART:' + event.start.dateTime + '\n';
-                    icsFileContent += 'DTEND:' + event.end.dateTime + '\n';
-                    icsFileContent += event.recurrence[0] + '\n';
-                    icsFileContent += 'SUMMARY:' + event.summary + '\n';
-                    icsFileContent += 'DESCRIPTION:' + event.description + '\n';
-                    icsFileContent += 'LOCATION:' + event.location + '\n';
-                    icsFileContent += 'END:VEVENT\n';
-                });
-
-                icsFileContent += 'END:VCALENDAR';
-
+            // Function to create and open a new tab with the .ics file content
+            function openIcsFileContentInNewTab(icsContent) {
                 // Create a data URI for the .ics content
-                const dataUri = "data:text/calendar;charset=utf-8," + encodeURIComponent(icsFileContent);
+                const dataUri = "data:text/calendar;charset=utf-8," + encodeURIComponent(icsContent);
 
-                // Create a link element for the download
-                const link = document.createElement('a');
-                link.href = dataUri;
-                link.download = 'events.ics';
-
-                // Create a download button
-                const downloadButton = document.createElement('button');
-                downloadButton.textContent = 'Download .ics File';
-                downloadButton.addEventListener('click', function () {
-                    link.click();
-                });
-
-                // Append the download button to the page
-                document.body.appendChild(downloadButton);
+                // Open the data URI in a new tab or window
+                window.open(dataUri);
             }
 
             document.getElementById('button').addEventListener('click', function() {
@@ -88,8 +59,8 @@
                 const expression = /(Mac|iPhone|iPod|iPad)/i;
 
                 if (expression.test(navigator.platform)) {
-                    // iOS device detected, generate .ics file
-                    createIcsFile(events);
+                    // iOS device detected, open .ics content in a new tab
+                    createIcsFile(events, openIcsFileContentInNewTab);
                 } else {
                     // Non-iOS device, attempt to add events to Google Calendar
                     events.forEach(function(event) {
