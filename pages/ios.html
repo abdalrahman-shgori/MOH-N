@@ -7,7 +7,7 @@
 </head>
 <body>
 
-    <a id="downloadLink" href="#" download="event.ics">Download Event</a>
+    <a id="downloadLink" href="#" download="event.ics">Downloererad Event</a>
 
     <script>
         document.getElementById('downloadLink').addEventListener('click', function() {
@@ -15,8 +15,8 @@
             const event = {
                 title: 'Sample Event',
                 description: 'This is a sample event description.',
-                start: '2023-11-01T09:00:00',
-                end: '2023-11-01T10:00:00',
+                start: '20231101T090000Z',
+                end: '20231101T100000Z',
                 location: 'Sample Location',
             };
 
@@ -32,11 +32,8 @@ LOCATION:${event.location}
 END:VEVENT
 END:VCALENDAR`;
 
-            const blob = new Blob([calContent], { type: 'text/calendar;charset=utf-8;' });
-            const url = window.URL.createObjectURL(blob);
-
-            // Set the download link to the generated file
-            document.getElementById('downloadLink').setAttribute('href', url);
+            const dataUrl = 'data:text/calendar;charset=utf-8,' + encodeURIComponent(calContent);
+            document.getElementById('downloadLink').setAttribute('href', dataUrl);
         });
     </script>
 </body>
