@@ -7,10 +7,10 @@
 </head>
 <body>
 
-    <button id="addEventButton">Add Event to Calendar</button>
+    <a id="downloadLink" href="#" download="event.ics">Download Event</a>
 
     <script>
-        document.getElementById('addEventButton').addEventListener('click', function() {
+        document.getElementById('downloadLink').addEventListener('click', function() {
             // Define the event details
             const event = {
                 title: 'Sample Event',
@@ -34,19 +34,9 @@ END:VCALENDAR`;
 
             const blob = new Blob([calContent], { type: 'text/calendar;charset=utf-8;' });
             const url = window.URL.createObjectURL(blob);
-            const link = document.createElement('a');
 
-            link.href = url;
-            link.setAttribute('download', 'event.ics');
-
-            link.style.display = 'none';
-            document.body.appendChild(link);
-
-            link.click();
-
-            // Clean up
-            document.body.removeChild(link);
-            window.URL.revokeObjectURL(url);
+            // Set the download link to the generated file
+            document.getElementById('downloadLink').setAttribute('href', url);
         });
     </script>
 </body>
