@@ -56,25 +56,25 @@ html[lang="en"] .progres{
 
 }
 .shadow1{
-  background: linear-gradient(180deg, rgba(0, 128, 87, 0.12) 0%, rgba(0, 128, 87, 0.12) 100%);
+  background: linear-gradient(180deg, rgba(0, 128, 87, 0.1) 0%, rgba(0, 128, 87, 0.1) 100%);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 position: absolute;
-top: 101.1%;
+top: 100%;
 left: 50%;
 transform: translate(-50%, -50%);
-height:10px !important;
-width: 94%;
+height:16px !important;
+width: 92%;
 z-index: -1;
 }
 .shadow2{
   background: linear-gradient(180deg, rgba(0, 128, 87, 0.1) 0%, rgba(0, 128, 87, 0.1) 100%);
 position: absolute;
-top: 102.1%;
+top: 100%;
 left: 50%;
-height: 20px;
+height: 32px;
 transform: translate(-50%, -50%);
-width: 90%;
+width: 86%;
 z-index: -1;
 border-bottom-left-radius: 16px;
 border-bottom-right-radius: 16px;
@@ -365,6 +365,7 @@ input[type="radio"]:checked+label::before {
 
 @media screen and (max-width:676px) {
   .shadow1{
+    width: 90%;
   }
   .shadow2{
 
