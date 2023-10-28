@@ -137,8 +137,12 @@ html[lang='en'] .descriptionText {
     background: #F0C905;
     border: #F0C905;
     border-radius: 6px;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     min-height: 36px;
+    text-decoration: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 358px;
     font-size: 16px;
 }
