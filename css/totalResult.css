@@ -146,6 +146,7 @@ html[lang='en'] .descriptionText {
     width: 358px;
     font-size: 16px;
 }
+
 .downloadPdfBtn{
     background: #008056;
     border: #008056;
@@ -233,14 +234,19 @@ padding-right:10px !important;
         margin-bottom: 48px;
     }
     .addCalendarBtn{
-        width: 240px;
+        width: 250px;
         min-height: 24px;
         font-size: 12px;
+        padding-left: 18px;
+        padding-right: 18px;
     }
+   
     .downloadPdfBtn{
-        width: 240px;
+        width: 250px;
         min-height: 24px;
         font-size: 12px;
+        padding-left: 18px;
+        padding-right: 18px;
     }
     .downloadCalendar{
         gap: 8px;
@@ -259,5 +265,6 @@ padding-right:10px !important;
     }
     .descriptionTextGroup{
     }
+    
     }
 
