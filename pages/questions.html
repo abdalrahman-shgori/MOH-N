@@ -26,7 +26,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="../css/questions.css">
     <link href="dist/toasty.min.css" rel="stylesheet">
-<script src="dist/toasty.min.js"></script>
+    <script src="dist/toasty.min.js"></script>
     <title>Document</title>
 </head>
 
@@ -37,61 +37,60 @@
 
     </div>
 
-    <div> 
-    <div class="container col-lg-7 " style="position: relative">
-        <div class="progres" id="theProgress">
-            <div class="progress1"></div>
-            <div class="progress1"></div>
-            <div class="progress1"></div>
-            <div class="progress1"></div>
-            <div class="progress1"></div>
-            <div class="progress1"></div>
-            <div class="progress1"></div>
-            <div class="progress1"></div>
-            <div class="progress1"></div>
-            <div class="progress1"></div>
+    <div>
+        <div class="container col-lg-7 " style="position: relative">
+            <div class="progres" id="theProgress">
+                <div class="progress1"></div>
+                <div class="progress1"></div>
+                <div class="progress1"></div>
+                <div class="progress1"></div>
+                <div class="progress1"></div>
+                <div class="progress1"></div>
+                <div class="progress1"></div>
+                <div class="progress1"></div>
+                <div class="progress1"></div>
+                <div class="progress1"></div>
+
+            </div>
+            <div>
+
+                <div class="shadow2">
+                </div>
+                <div class="shadow1">
+                </div>
+                <div class="questionsCards" style="position: relative;">
+
+                    <div class="answersBtnGroup">
+                        <div id="question">
+                            <p class="questionNumber"></p>
+                            <div class="answers"></div>
+                        </div>
+                        <div class="nextPrevBtn">
+                            <button id="nextButton" class="nextBtn" style="position: relative;" onclick="nextQuestion()"
+                                data-translate="next">التالي</button>
+                            <img id="prevButton" class="prevBtn" onclick="prev()" src="../assets/images/arrows.svg" />
+
+                            <!-- <button id="decreaseButton" onclick="decreaseProgress()">Decrease</button> -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <img class="questionSteps" src="../assets/images/questionFeet.svg" />
 
         </div>
-        <div> 
 
-            <div class="shadow2">
-            </div>
-            <div class="shadow1">
-            </div>
-        <div class="questionsCards" style="position: relative;">
-                <!-- <img class="greenshadow col-lg-12" src="../assets/images/greenshadow.svg"/> -->
-                <!-- <img  class="greenshadow2 " src="../assets/images/greenshadow2.svg"/> -->
-               
-            <div class="answersBtnGroup">
-                <div id="question" >
-                    <p class="questionNumber"></p>
-                    <div class="answers"></div>
-                </div>
-                <div class="nextPrevBtn">
-                    <button id="nextButton" class="nextBtn" style="position: relative;" onclick="nextQuestion()" data-translate="next">التالي</button>
-                    <img id="prevButton" class="prevBtn" onclick="prev()" src="../assets/images/arrows.svg"/>
-    
-                    <!-- <button id="decreaseButton" onclick="decreaseProgress()">Decrease</button> -->
-    
-                </div>
-                
-            </div>  
-           
-        </div>
-
+        <div style="margin-bottom: 0px !important;" id="footer"></div> <!-- Set margin-bottom to 0 -->
     </div>
-        <img class="questionSteps" src="../assets/images/questionFeet.svg" />
-
-    </div>
-
-    <div style="margin-bottom: 0px !important;" id="footer"></div> <!-- Set margin-bottom to 0 -->
-</div>
 
     <script src="../js/includeNav.js"></script>
     <script src="../js/nav.js"></script>
     <script src="../js/questions.js"></script>
-    
-   
+
+
 </body>
 
 </html>

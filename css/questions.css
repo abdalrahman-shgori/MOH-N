@@ -30,10 +30,11 @@ body {
   gap: 10px;
   min-height: 24px;
   direction: rtl;
-  padding-left:40px;
+  padding-left: 40px;
   padding-right: 40px;
 }
-html[lang="en"] .progres{
+
+html[lang="en"] .progres {
   direction: ltr;
 }
 
@@ -52,39 +53,42 @@ html[lang="en"] .progres{
   background-color: #FFFFFF;
   border-radius: 16px;
   margin-bottom: 101px;
-  z-index:0;
+  z-index: 0;
 
 }
-.shadow1{
+
+.shadow1 {
   background: linear-gradient(180deg, rgba(0, 128, 87, 0.1) 0%, rgba(0, 128, 87, 0.1) 100%);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
-position: absolute;
-top: 100%;
-left: 50%;
-transform: translate(-50%, -50%);
-height:16px !important;
-width: 92%;
-z-index: -1;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 16px !important;
+  width: 92%;
+  z-index: -1;
 }
-.shadow2{
+
+.shadow2 {
   background: linear-gradient(180deg, rgba(0, 128, 87, 0.1) 0%, rgba(0, 128, 87, 0.1) 100%);
-position: absolute;
-top: 100%;
-left: 50%;
-height: 32px;
-transform: translate(-50%, -50%);
-width: 86%;
-z-index: -1;
-border-bottom-left-radius: 16px;
-border-bottom-right-radius: 16px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  height: 32px;
+  transform: translate(-50%, -50%);
+  width: 86%;
+  z-index: -1;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
-.greenshadow{
+
+.greenshadow {
   position: absolute;
   z-index: -1;
   width: 98% !important;
   height: 90%;
-  bottom:-30px;
+  bottom: -30px;
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -102,7 +106,8 @@ border-bottom-right-radius: 16px;
   font-family: 'GE SS Unique Light';
   direction: rtl;
 }
-html[lang="en"] .questionNumber{
+
+html[lang="en"] .questionNumber {
   font-family: 'EnLanguage';
   direction: ltr;
 
@@ -119,7 +124,8 @@ html[lang="en"] .questionNumber{
   direction: rtl;
   padding-right: 24px;
 }
-html[lang='en'] .radios{
+
+html[lang='en'] .radios {
   direction: ltr;
   padding-left: 24px;
 }
@@ -136,33 +142,14 @@ html[lang='en'] .radios{
   height: 0px !important;
   padding-bottom: 76px;
 }
-html[lang='en'] .checkboxes{
+
+html[lang='en'] .checkboxes {
   direction: ltr;
   padding-left: 24px;
   padding-right: 10px;
 }
 
-
-/* #hell {
-  display: flex;
-  flex-direction: row !important;
-  gap: 12px;
-  direction: rtl;
-}
-
-html[lang="en"] #hell {
-  direction: ltr;
-} */
-
-.checkboxGroup {
-  /* display: flex !important;
-  flex-direction: row !important; */
-
-
-}
-
-
-.answersBtnGroup{
+.answersBtnGroup {
   display: flex;
   flex-direction: column;
   gap: 93px;
@@ -181,7 +168,8 @@ html[lang="en"] #hell {
   cursor: pointer;
   z-index: 0;
 }
-html[lang="en"] .nextPrevBtn{
+
+html[lang="en"] .nextPrevBtn {
   direction: rtl;
 }
 
@@ -194,10 +182,11 @@ html[lang="en"] .nextPrevBtn{
   border-radius: 40px;
   background-image: url('../assets/images/arrow\ left.png');
   background-repeat: no-repeat;
-  
+
 }
-html[lang="en"] .nextBtn{
-  background-image: url('../assets/images/arrows.svg' );
+
+html[lang="en"] .nextBtn {
+  background-image: url('../assets/images/arrows.svg');
   background-position: right;
 
 
@@ -207,7 +196,8 @@ html[lang="en"] .nextBtn{
   max-width: 57px;
   height: 55px;
 }
-html[lang="en"] .prevBtn{
+
+html[lang="en"] .prevBtn {
   transform: rotate(180deg);
 }
 
@@ -284,9 +274,6 @@ label {
   display: flex;
 
 }
-
-html[lang="en"] .label {}
-
 input[type="radio"] {
   display: none;
 
@@ -304,14 +291,13 @@ input[type="radio"]+label::before {
 }
 
 input[type="radio"]:checked+label::before {
-  /* background-color: #008056; */
   align-items: center;
   border: 4px solid #008056;
 }
 
 
 
-.questionSteps{
+.questionSteps {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -319,66 +305,38 @@ input[type="radio"]:checked+label::before {
   left: 10px;
   z-index: -1;
 }
+
 .greenshadow2 {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Width set to 100% */
-  height: auto; /* Let the height adjust based on the width */
+  width: 100%;
+  height: auto;
   top: 64%;
   left: 50%;
   transform: translate(-50%, -50%);
 
 }
-.ss{
 
-
-}
-
-
-/* @media screen and (max-width:1380px) {
-  .greenshadow2{
-    top: 100px;
-  }
-}
-@media screen and (max-width:1320px) {
-  .greenshadow2{
-    top: 105px;
-  }
-}
-@media screen and (max-width:1276px) {
-  .greenshadow2{
-    top: 110px;
-  }
-}
-@media screen and (max-width:1250px) {
-  .greenshadow2{
-    top: 115px;
-  }
-}
-@media screen and (max-width:1320px) {
-  .greenshadow2{
-    top: 105px;
-  }
-} */
 
 @media screen and (max-width:676px) {
-  .shadow1{
+  .shadow1 {
     width: 90%;
   }
-  .shadow2{
 
-  }
-  .greenshadow2{
+  .shadow2 {}
+
+  .greenshadow2 {
     width: 90% !important;
     height: 460px;
     right: 0px;
     left: 0;
   }
+
   .checkboxes {
     grid-template-columns: auto !important;
-justify-content: start;
+    justify-content: start;
 
   }
 
@@ -399,7 +357,8 @@ justify-content: start;
     padding-right: 14px;
 
   }
-  .answersBtnGroup{
+
+  .answersBtnGroup {
     gap: 48px;
   }
 
@@ -418,13 +377,15 @@ justify-content: start;
     padding-right: 70px;
 
   }
-  html[lang="en"] .questionNumber{
+
+  html[lang="en"] .questionNumber {
     padding-left: 40px;
     padding-right: 40px;
     font-family: 'EnLanguage' !important;
 
   }
-  label{
+
+  label {
     font-size: 14px !important;
   }
 
@@ -454,7 +415,7 @@ justify-content: start;
 }
 
 @media screen and (max-width:1000px) {
-  .questionSteps{
+  .questionSteps {
     display: none !important;
   }
 }
