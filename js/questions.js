@@ -196,7 +196,7 @@ function loadQuestion(index) {
             let html = `
         <div>
             <p class="questionNumber">${questionsAr[index].question}</p>
-            <div class="${index === 7 || index === 8 || index === 9 ? 'checkboxes' : 'radios'}" id="hell">
+            <div class="${index === 7 || index === 8 || index === 9 ? 'checkboxes' : 'radios'}" >
             `;
 
             for (let i = 0; i < answers.length; i++) {

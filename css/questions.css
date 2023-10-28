@@ -53,6 +53,31 @@ html[lang="en"] .progres{
   border-radius: 16px;
   margin-bottom: 101px;
   z-index:0;
+
+}
+.shadow1{
+  background: linear-gradient(180deg, rgba(0, 128, 87, 0.12) 0%, rgba(0, 128, 87, 0.12) 100%);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+position: absolute;
+top: 101.1%;
+left: 50%;
+transform: translate(-50%, -50%);
+height:10px !important;
+width: 94%;
+z-index: -1;
+}
+.shadow2{
+  background: linear-gradient(180deg, rgba(0, 128, 87, 0.1) 0%, rgba(0, 128, 87, 0.1) 100%);
+position: absolute;
+top: 102.1%;
+left: 50%;
+height: 20px;
+transform: translate(-50%, -50%);
+width: 90%;
+z-index: -1;
+border-bottom-left-radius: 16px;
+border-bottom-right-radius: 16px;
 }
 .greenshadow{
   position: absolute;
@@ -73,7 +98,7 @@ html[lang="en"] .progres{
   text-align: center;
   padding-top: 67px;
   color: #008056;
-  margin-bottom: 104px;
+  margin-bottom: 76px;
   font-family: 'GE SS Unique Light';
   direction: rtl;
 }
@@ -90,6 +115,7 @@ html[lang="en"] .questionNumber{
   justify-content: space-around;
   align-items: center;
   gap: 12px;
+  height: auto;
   direction: rtl;
   padding-right: 24px;
 }
@@ -107,6 +133,8 @@ html[lang='en'] .radios{
   gap: 12px;
   padding-right: 24px;
   padding-left: 10px;
+  height: 0px !important;
+  padding-bottom: 76px;
 }
 html[lang='en'] .checkboxes{
   direction: ltr;
@@ -134,13 +162,16 @@ html[lang="en"] #hell {
 }
 
 
-
+.answersBtnGroup{
+  display: flex;
+  flex-direction: column;
+  gap: 93px;
+}
 
 .radioGroup {}
 
 .nextPrevBtn {
   position: relative;
-  margin-top: 96px;
   padding-bottom: 48px;
   margin-left: 48px;
   margin-right: 48px;
@@ -148,6 +179,7 @@ html[lang="en"] #hell {
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  z-index: 0;
 }
 html[lang="en"] .nextPrevBtn{
   direction: rtl;
@@ -287,17 +319,56 @@ input[type="radio"]:checked+label::before {
   left: 10px;
   z-index: -1;
 }
-.greenshadow2{
+.greenshadow2 {
   position: absolute;
-  z-index: -1;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Width set to 100% */
+  height: auto; /* Let the height adjust based on the width */
+  top: 64%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
- height: 400px;
-  top: 90px;
+}
+.ss{
+
 
 }
 
+
+/* @media screen and (max-width:1380px) {
+  .greenshadow2{
+    top: 100px;
+  }
+}
+@media screen and (max-width:1320px) {
+  .greenshadow2{
+    top: 105px;
+  }
+}
+@media screen and (max-width:1276px) {
+  .greenshadow2{
+    top: 110px;
+  }
+}
+@media screen and (max-width:1250px) {
+  .greenshadow2{
+    top: 115px;
+  }
+}
+@media screen and (max-width:1320px) {
+  .greenshadow2{
+    top: 105px;
+  }
+} */
+
 @media screen and (max-width:676px) {
+  .shadow1{
+  }
+  .shadow2{
+
+  }
   .greenshadow2{
     width: 90% !important;
     height: 460px;
@@ -327,6 +398,9 @@ justify-content: start;
     padding-right: 14px;
 
   }
+  .answersBtnGroup{
+    gap: 48px;
+  }
 
   .progress1 {
     width: 24.41px;
@@ -337,7 +411,7 @@ justify-content: start;
     font-size: 16px;
     line-height: 19.92px;
     font-weight: 700;
-    margin-bottom: 56px;
+    margin-bottom: 48px;
     padding-top: 48px;
     padding-left: 70px;
     padding-right: 70px;
@@ -370,7 +444,6 @@ justify-content: start;
   }
 
   .nextPrevBtn {
-    margin-top: 46px;
     padding-bottom: 48px;
     margin-right: 24px;
     margin-left: 24px;

@@ -33,9 +33,12 @@
 <body>
     <div id="navbar-container"></div>
     <div class="toast-container"></div>
+    <div class=" ">
+
+    </div>
 
     <div> 
-    <div class="container col-lg-7" style="position: relative">
+    <div class="container col-lg-7 " style="position: relative">
         <div class="progres" id="theProgress">
             <div class="progress1"></div>
             <div class="progress1"></div>
@@ -49,30 +52,41 @@
             <div class="progress1"></div>
 
         </div>
-        <div class="questionsCards">
+        <div> 
+
+
+        <div class="questionsCards" style="position: relative;">
                 <!-- <img class="greenshadow col-lg-12" src="../assets/images/greenshadow.svg"/> -->
-                <!-- <img class="greenshadow2 container col-lg-12" src="../assets/images/greenshadow2.svg"/> -->
-
-            <div id="question" >
-                <p class="questionNumber"></p>
-                <div class="answers"></div>
-            </div>
-            <div class="nextPrevBtn">
-                <button id="nextButton" class="nextBtn" style="position: relative;" onclick="nextQuestion()" data-translate="next">التالي</button>
-                <img id="prevButton" class="prevBtn" onclick="prev()" src="../assets/images/arrows.svg"/>
-
-                <!-- <button id="decreaseButton" onclick="decreaseProgress()">Decrease</button> -->
-
-            </div>
-            
+                <!-- <img  class="greenshadow2 " src="../assets/images/greenshadow2.svg"/> -->
+                <div class="shadow2">
+                </div>
+                <div class="shadow1">
+                </div>
+            <div class="answersBtnGroup">
+                <div id="question" >
+                    <p class="questionNumber"></p>
+                    <div class="answers"></div>
+                </div>
+                <div class="nextPrevBtn">
+                    <button id="nextButton" class="nextBtn" style="position: relative;" onclick="nextQuestion()" data-translate="next">التالي</button>
+                    <img id="prevButton" class="prevBtn" onclick="prev()" src="../assets/images/arrows.svg"/>
+    
+                    <!-- <button id="decreaseButton" onclick="decreaseProgress()">Decrease</button> -->
+    
+                </div>
+                
+            </div>  
+           
         </div>
 
+    </div>
         <img class="questionSteps" src="../assets/images/questionFeet.svg" />
 
     </div>
 
     <div style="margin-bottom: 0px !important;" id="footer"></div> <!-- Set margin-bottom to 0 -->
 </div>
+
     <script src="../js/includeNav.js"></script>
     <script src="../js/nav.js"></script>
     <script src="../js/questions.js"></script>
