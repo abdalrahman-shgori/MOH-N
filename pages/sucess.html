@@ -58,10 +58,10 @@
                 document.getElementById('button').addEventListener('click', function() {
             // Define the event details
             const event = {
-                title: 'apple event test',
+                title: 'Sample Event',
                 description: 'This is a sample event description.',
-                start: '20231102T090000Z',
-                end: '20231101T200000Z',
+                start: '20231101T090000Z',
+                end: '20231101T100000Z',
                 location: 'Sample Location',
             };
 
@@ -77,12 +77,13 @@ LOCATION:${event.location}
 END:VEVENT
 END:VCALENDAR`;
 
-            const dataUrl = 'data:text/calendar;charset=utf-8,' + encodeURIComponent(calContent);
-            document.getElementById('button').setAttribute('href', dataUrl);
+const dataUrl = 'data:text/calendar;charset=utf-8,' + encodeURIComponent(calContent);
+                    this.setAttribute('href', dataUrl);
+document.getElementById('button').setAttribute('href', dataUrl);
         });
             }
             else{
-
+               
            
             function initClient() {
                 gapi.client.init({
@@ -581,8 +582,7 @@ END:VCALENDAR`;
 
                     ];
                 }
-
-
+             
                 events.forEach(function (event) {
                     gapi.client.calendar.events.insert({
                         'calendarId': 'primary',
@@ -595,6 +595,9 @@ END:VCALENDAR`;
                         }
                     });
                 });
+                event.preventDefault();
+                    return false;
+
             });
         } }
 
@@ -659,7 +662,7 @@ END:VCALENDAR`;
 
                     <div class="rate calendarPdf">
                         <div class="downloadCalendar">
-                        <a id="button" class="addCalendarBtn"  data-translate="calendarDownload"> تحميل التذكيرات على تقويم جوالك</a>
+                        <a id="button" class="addCalendarBtn" href="#" download="event.ics" data-translate="calendarDownload"> تحميل التذكيرات على تقويم جوالك</a>
                         <img class="calendarImg" src="../assets/images/calendarDownload.svg"/>
                     </div>
                     <div class="downloadCalendar">
