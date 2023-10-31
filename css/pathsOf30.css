@@ -171,6 +171,9 @@ html[lang = "en"] .center-content{
         padding: 24px 26px 24px 26px;
         margin-bottom: 16px;
     }
+    .ss{
+        
+    }
     .paths{
         margin-top: 24px;
     }
@@ -255,13 +258,13 @@ html[lang = "en"] .center-content{
     .pathsImg {
         width: 100px;
         height: 100px;
-        padding: 10px 10px 10px 10px;
+        padding: 10px 10px 10px 26px;
 
     }
     .pathsImg2 {
         width: 100px;
         height: 100px;
-        padding: 10px 10px 10px 10px;
+        padding: 10px 10px 10px 26px;
     }
     
 
