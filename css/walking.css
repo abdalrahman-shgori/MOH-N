@@ -18,6 +18,9 @@ body {
     src: url('../HelveticaNeue.ttc');
 }
 
+ol, ul{
+    padding: 0 !important;
+}
 .aboutWalkBg {
     background-image: url("../assets/images/walkingLine.svg");
     background-repeat: no-repeat;
@@ -226,7 +229,7 @@ html[lang="en"] .howtowalk {
 li {
     font-size: 24px;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 40px;
     letter-spacing: 0em;
     text-align: justified;
     color: #333333;
