@@ -245,7 +245,7 @@ li {
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     html[lang="en"] .group-text {
         text-align: left;
         width: 100%;
@@ -360,8 +360,8 @@ li {
         padding: 10px 10px 10px 10px;
     }
     .whatHappen{
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
 }

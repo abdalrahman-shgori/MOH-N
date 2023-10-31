@@ -112,7 +112,7 @@ html[lang="en"] .language-dropdown .dropdown-menu {
     background-color: #FFFFFF !important;
     width: 29px;
     height: 3.24px;
-    top: 66%;
+    top: 69%;
     border-radius: 20px;
     position: absolute;
     transform: translateX(-49%);
@@ -124,7 +124,7 @@ html[lang="en"] .language-dropdown .dropdown-menu {
     border-radius: 1px;
     width:29px;
     height: 3.24px;
-    top: 24%;
+    top: 26%;
     position: absolute;
     transform: translateX(-49%);
 }
@@ -136,7 +136,7 @@ html[lang="en"] .language-dropdown .dropdown-menu {
     width: 29px;
     height: 3px;
     position: absolute;
-    top: 47%;
+    top: 48%;
     transform: translateX(-49%);
 }
 
