@@ -186,6 +186,9 @@ html[lang = "en"] .center-content{
         margin-bottom: 24px;
 
     }
+    html[lang='en'] .PathsText{
+        font-weight: 700 !important;
+    }
     .PathsTexts{
         line-height: 29px;
         gap: 8px;
