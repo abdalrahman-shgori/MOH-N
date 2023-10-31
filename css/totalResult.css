@@ -172,9 +172,9 @@ html[lang="en"] .downloadCalendar{
 
 }
 @media screen and (max-width:992px) {
-    .descriptionText{
-        padding-left: 40px;
-        padding-right: 40px;
+    .descriptionTextGroup{
+        padding-left: 60px;
+        padding-right:60px;
     }
 }
 
