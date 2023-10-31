@@ -144,7 +144,6 @@ const questionsAr = [
             { text: "ليس هناك شيء يمنعني من المشي", value: 0 },
             { text: "لا يوجد مكان مناسب", value: 0 },
             { text: "ليس لدي وقت", value: 0 },
-            { text: "ليس لدي وقت", value: 0 },
             { text: "أخرى", value: 0 },
         ],
     },
@@ -176,7 +175,7 @@ const decreaseButton = document.getElementById('decreaseButton');
 let currentIndex = 0;
 const selectedAnswerValues = [];
 function loadQuestion(index) {
-    
+
     setInterval(function () {
         const newLang = document.documentElement.lang;
 
@@ -269,6 +268,7 @@ function loadQuestion(index) {
     }
 }
 progressElements[0].style.opacity = '100%';
+
 function nextQuestion() {
 
     const selectedAnswers = document.querySelectorAll('input[name="answer"]:checked');
@@ -316,7 +316,7 @@ function nextQuestion() {
         else if (currentQuestionIndex === 7) {
             currentQuestionIndex = 8;
         }
-         else if (currentQuestionIndex === 8) {
+        else if (currentQuestionIndex === 8) {
             currentQuestionIndex = 9;
         }
         else if (currentQuestionIndex === 1 && selectedAnswers[0].value === "0") {
@@ -338,7 +338,7 @@ function nextQuestion() {
             loadQuestion(currentQuestionIndex);
             progressElements[currentIndex + 1].style.opacity = '100%';
         } else {
-           window.location.href = "../pages/sucess.html"
+            window.location.href = "../pages/sucess.html"
         }
         currentIndex++;
     } else {
