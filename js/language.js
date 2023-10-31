@@ -158,6 +158,7 @@ function setLanguage(language) {
     document.getElementById("dropdownMenuLink").innerHTML = document.documentElement.lang.toUpperCase()
 
     localStorage.setItem('selectedLanguage', language);
+    console.log('lasng',localStorage.getItem('selectedLanguage', language));
 }
 
 function initializeLanguage() {

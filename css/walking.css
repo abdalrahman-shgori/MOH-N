@@ -62,14 +62,13 @@ html[lang="en"] .stepsWalkingImg {
     background-image: url('../assets/images/pointer.svg');
     background-repeat: no-repeat;
     background-position: right top;
-    /* Adjust this position as needed */
     padding-right: 40px;
     margin-top: 16px;
 }
 
 html[lang="en"] .fontWeight {
+    font-family: 'EnLanguage';
     background-position: left top;
-    /* Adjust this position as needed */
     padding-left: 40px;
 }
 
@@ -78,11 +77,6 @@ html[lang="en"] ul {
     padding: 0;
 
 }
-
-html[lang="en"] .fontWeight {
-    font-family: 'EnLanguage';
-}
-
 .aboutWalk {
     color: #008056;
     font-size: 40px;
@@ -280,6 +274,7 @@ li {
     html[lang="en"] .fontWeight {
         background-size: 15px 15px;
         padding-left: 23px;
+        padding-right: 0px;
     }
 
     .QuestionWalk {
