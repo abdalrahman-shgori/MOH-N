@@ -270,6 +270,9 @@ html[lang = "en"] .center-content{
         padding: 10px 10px 10px 26px;
 
     }
+    html[lang='en'] .pathsImg{
+        padding: 10px 10px 10px 26px;        
+    }
     html[lang='en'] .pathsImg2{
         padding: 10px 26px 10px 10px;        
     }
