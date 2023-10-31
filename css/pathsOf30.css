@@ -224,6 +224,15 @@ html[lang = "en"] .center-content{
         height: 105px;
         padding: 10px 26px 10px 34px;
 
+        
+    }
+    html[lang='en'] .pathsImg{
+        padding: 10px 26px 10px 34px;
+
+    }
+    html[lang='en'] .pathsImg2{
+        padding: 10px 34px 10px 26px;
+
     }
     .pathsImg2 {
         width: 124px;
@@ -260,6 +269,9 @@ html[lang = "en"] .center-content{
         height: 100px;
         padding: 10px 10px 10px 26px;
 
+    }
+    html[lang='en'] .pathsImg2{
+        padding: 10px 26px 10px 10px;        
     }
     .pathsImg2 {
         width: 100px;
