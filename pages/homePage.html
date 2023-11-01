@@ -34,13 +34,11 @@
     <div class="toast-container"></div>
     <div style="position: relative;" class="" > 
     <div class="parents container mx-auto col-10">
-        <div class="div1" data-aos="fade-right" data-aos-duration="1000"><img src="../assets/images/beginner.svg"></img></div>
-        <div class="div2" data-aos="fade-down" data-aos-duration="1000"><img src="../assets/images/badia.svg"></img></div>
-        <div class="div3" data-aos="fade-left" data-aos-duration="1000"><img src="../assets/images/seelpy.svg"></img></div>
-        <div class="div4" data-aos="fade-left" data-aos-duration="1000"><img src="../assets/images/starting.svg"></img></div>
-        <div class="div5" data-aos="fade-right" data-aos-duration="1000"><img src="../assets/images/professional.svg"></img></div>
-
-
+        <div class="div1" data-aos="fade-right" data-aos-duration="1000"> <img id="imageElement" src="" alt="Image" /> </div>
+        <div class="div2" data-aos="fade-down" data-aos-duration="1000"><img id="imageElement1" src=""></img></div>
+        <div class="div3" data-aos="fade-left" data-aos-duration="1000"><img id="imageElement2" src=""></img></div>
+        <div class="div4" data-aos="fade-left" data-aos-duration="1000"><img id="imageElement3" src=""></img></div>
+        <div class="div5" data-aos="fade-right" data-aos-duration="1000"><img id="imageElement4" src=""></img></div>
     </div>
     <div class="WalkSport container" style="position: relative;">
         <input style="display: none;" id="nameInput" class="NameInput"
@@ -115,14 +113,15 @@
         }
     
         const currentLanguage = getCurrentLanguage();
+        const imageElement = document.getElementById('imageElement');
+
         if (currentLanguage === 'ar') {
-            const weContainer = document.querySelector(".fadeAnimation");            
-            weContainer.setAttribute('data-aos', 'fade-left');
+            imageElement.src = '../assets/images/badia.svg'; // Change 'new-image-arabic-path.jpg' to the actual path for the Arabic version of the image.
+
         }
         else if(currentLanguage ==='en'){
-            const weContainer = document.querySelector(".fadeAnimation");
-            
-            weContainer.setAttribute('data-aos', 'fade-right');
+            imageElement.src = '../assets/images/seelpy.svg'; // Change 'new-image-arabic-path.jpg' to the actual path for the Arabic version of the image.
+
         }
     </script>
     <script>

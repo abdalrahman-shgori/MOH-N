@@ -295,6 +295,15 @@ function nextQuestion() {
         savedIndex.push(currentQuestionIndex);
         localStorage.setItem('questionsIndexes', JSON.stringify(savedIndex));
         console.log("1212121", savedIndex)
+        if (selectedAnswers.length > 0) {
+            const answerText = document.querySelector(`label[for="${selectedAnswers[0].id}"]`).textContent.trim(); // Get the text of the first selected answer
+    
+            // Save the text of the selected answer only for the first question
+            if (currentQuestionIndex === 0) {
+                localStorage.setItem('firstQuestionAnswer', answerText);
+            }
+        }
+        console.log("the gender",localStorage.getItem('firstQuestionAnswer'))
         if (currentQuestionIndex === 1 && selectedAnswers[0].value === "10") {
             currentQuestionIndex = 3;
         }

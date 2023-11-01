@@ -47,10 +47,20 @@ const translations = {
         congra:`Congratulations`,
         Unfortunately:`Unfortunately`,
         professional:"You are a professional",
+        professionalFe:"You are a professional",
+
         youareDriven: "You are driven",
+        youareDrivenFe: "You are driven",
+
         youareInitiator: "You are an initiator",
+        youareInitiatorFe: "You are an initiator",
+
         youareIntending: "You are intending",
+        youareIntendingFe: "You are intending",
+
         youhavePassiveBehavior: "You have passive behavior",
+        youhavePassiveBehaviorFe: "You have passive behavior",
+
         yourCommitmentSetsAnExample: "Your commitment sets an example",
         youTakeOffLikeARocketAndKeepWalking: "You take off like a rocket, never stopping your walk",
         butThereAreAFewSteps: "But there are a few steps left to keep going",
@@ -119,10 +129,20 @@ downloadapp:"حمل تطبيق صحتي",
 congra:`تهانينا `,
 Unfortunately:`للأسف `,
 professional:"أنت محترف",
+professionalFe:"أنت محترفة",
+
 youareDriven: "أنت منطلق",
+youareDrivenFe: "أنت منطلقة",
+
 youareInitiator: "أنت بادي",
+youareInitiatorFe: "أنت بادية",
+
 youareIntending: "أنت ناوي",
+youareIntendingFe: "أنت ناوية",
+
 youhavePassiveBehavior: "أنت صاحب سلوك خامل",
+youhavePassiveBehaviorFe: "أنت صاحبة سلوك خامل",
+
 yourCommitmentSetsAnExample: "التزامك يضرب به المثل",
 youTakeOffLikeARocketAndKeepWalking: "انطلاقك مثل الصاروخ، لا تتوقف عن المشي",
 butThereAreAFewSteps: "لكن تتبقى خطوات بسيطة وتكون مستمراً",
@@ -158,6 +178,26 @@ function setLanguage(language) {
     document.getElementById("dropdownMenuLink").innerHTML = document.documentElement.lang.toUpperCase()
 
     localStorage.setItem('selectedLanguage', language);
+
+    const imageElement = document.getElementById('imageElement');
+    const imageElement1 = document.getElementById('imageElement1');
+    const imageElement2= document.getElementById('imageElement2');
+    const imageElement3 = document.getElementById('imageElement3');
+    const imageElement4 = document.getElementById('imageElement4');
+
+    if (language === 'ar') {
+        imageElement.src = '../assets/images/beginner.svg'; 
+        imageElement1.src='../assets/images/badia.svg'
+        imageElement2.src='../assets/images/seelpy.svg'
+        imageElement3.src='../assets/images/starting.svg'
+        imageElement4.src='../assets/images/professional.svg'
+    } else if (language === 'en') {
+        imageElement.src = '../assets/images/beginnerEn.svg'; 
+        imageElement1.src='../assets/images/willingEn.svg'
+        imageElement2.src='../assets/images/sleepyEn.svg'
+        imageElement3.src='../assets/images/startingEn.svg'
+        imageElement4.src='../assets/images/professionalEn.svg'
+    }
 }
 
 function initializeLanguage() {
