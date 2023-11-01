@@ -10,19 +10,2069 @@ window.onload = () => {
         if (totalValue < 2) {
             events = [
                 {
-                    title: 'خامل',
-                    description: 'This is the first sample event description.',
-                    start: '20231102T090000Z',
-                    end: '20231102T100000Z',
-                    location: 'Sample Location 1',
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "شهر جديد وإنجازات جديدة كيف كان الشهر اللي فات سهل صح؟ هذا الشهر بيكون اسهل ان شاء الله",
+                    'start': {
+                        'dateTime': '2023-11-1T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2023-11-1T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
                 },
                 {
-                    title: 'Apple Event 2',
-                    description: 'This is the second sample event description.',
-                    start: '20231103T090000Z',
-                    end: '20231103T100000Z',
-                    location: 'Sample Location 2',
-                }
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'هدفك في هذا الأسبوع١٤ دقيقة مشي يومين بالأسبوع لا  تنسَ سخن عضلاتك وهيئ جسمك قبل تمشي',
+                    'start': {
+                        'dateTime': '2023-11-5T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2023-11-5T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'الالتزام بسلوك المشي سهل... لو غيرت البيئة زودت الحركة بتفاصيل يومك مشيت مع  صديق أو عائلتك ',
+                    'start': {
+                        'dateTime': '2023-11-7T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2023-11-7T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "تعرف علامات المشي الصحيح؟ اطلع على الرابط التالي https://www.moh.gov.sa/HealthAwareness/EducationalContent/PublicHealth/Pages/Walking.aspx ",
+                    'start': {
+                        'dateTime': '2023-11-10T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2023-11-10T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "زود يوم  على هدفك  وامش ١٤ دقيقة ٣ ايام بالأسبوع ",
+                    'start': {
+                        'dateTime': '2023-11-12T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2023-11-12T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "قبل تمشي اليوم  تأكد من اختيار الحذاء الصحيح المناسب لك يكون مقاسك سميك من جهة الكعب.  مزود بطبقة لتوسيد القدم. كعب ثابت لتثبيت القدم",
+                    'start': {
+                        'dateTime': '2023-11-14T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2023-11-14T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "اليوم غيّر خطتك وتوجه للمسجد مشي .. صحة وأجر💪🏼 ‏وجمعتك مباركة",
+                    'start': {
+                        'dateTime': '2023-11-17T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2023-11-17T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'جاء الوقت ارفع هدفك وزود  دقيقتين وخلها ١٦',
+                    'start': {
+                        'dateTime': '2023-11-19T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2023-11-19T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "المشي يأخذ  ٢٪ تقريبًا من يومك، وكل اللي تحتاجه  حذاء مناسب لبس مريح وانطلق📢🏃🏻",
+                    'start': {
+                        'dateTime': '2023-11-21T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2023-11-21T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "كفو عليك وصلت لآخر أسبوع بهذا الشهر زودها  ٣ دقائق  وخلها 19",
+                    'start': {
+                        'dateTime': '2023-11-26T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2023-11-26T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+
+
+
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "تحدى نفسك وأصدقائك،  مين عنده اللياقة أعلى ؟ تقدرون تستخدمون تطبيق صحتي لحساب عدد الخطوات ",
+                    'start': {
+                        'dateTime': '2023-11-24T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2023-11-24T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "لا تنسَ تشرب ماء ، قبل تمشي اليوم",
+                    'start': {
+                        'dateTime': '2023-11-29T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2023-11-29T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "هدفك في هذا الأسبوع٢٢ دقيقة مشي  ٣ أيام بالأسبوع لا تنسَ تمارين التمدد ",
+                    'start': {
+                        'dateTime': '2023-12-1T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2023-12-1T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "كلما زاد نبضك خلال المشي كلما ارتفعت لياقتك ",
+                    'start': {
+                        'dateTime': '2023-12-4T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2023-12-4T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'قيس تطور أدائك، تابع نبضات قلبك، مدة تمرينك و مدى لياقتك ',
+                    'start': {
+                        'dateTime': '2023-12-7T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2023-12-7T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: ":زود دقيقتين على هدفك وامش ٢٤ دقيقة ",
+                    'start': {
+                        'dateTime': '2023-12-10T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2023-12-10T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "صباحك نشاط وصحة   اختر الحذاء المناسب👟 ‏وحدد وجهتك🎯 ‏وانطلق 📢🏃🏻",
+                    'start': {
+                        'dateTime': '2023-12-12T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2023-12-12T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "صباحك صحة وإنجاز 🤩❤️ كم خطوة مشيت اليوم؟ شاركنا  على #امش30",
+                    'start': {
+                        'dateTime': '2023-12-16T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2023-12-16T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "جاء الوقت ارفع هدفك وزود ٣ دقائق وخلها 27  ",
+                    'start': {
+                        'dateTime': '2023-12-17T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2023-12-17T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'قسم مشيك على دفعات مثلًا ١٠ دقائق على مدار اليوم حتى توصل لهدفك',
+                    'start': {
+                        'dateTime': '2023-12-19T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2023-12-19T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "22:خلنا معك وأنت تمشي 🏃🏻، واسمع  بودكاست #عش_بصحة https://bit.ly/3uGoNwI                            ",
+                    'start': {
+                        'dateTime': '2023-12-22T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2023-12-22T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "كفو عليك وصلت لآخر أسبوع بهذا الشهر زودها  ٣ دقائق  وخلها 30",
+                    'start': {
+                        'dateTime': '2023-12-24T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2023-12-24T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "جرّب تروح اليوم مع أطفالك أو أخوانك إلى الحديقة",
+                    'start': {
+                        'dateTime': '2023-12-28T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2023-12-28T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "مبروووك ... وصلت لـ٣٠ دقيقة 🎉 👏🏻 كفو والله، لا تنسَ تكافئ نفسك بعد الخطوات اللي مشيتها 👏🏻",
+                    'start': {
+                        'dateTime': '2023-12-30T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2023-12-30T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'هدفك في هذا الأسبوع​٣٠ دقيقة مشي ​لا تنسَ ​تمارين الاستطالة والإحماء​',
+                    'start': {
+                        'dateTime': '2024-1-1T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-1-1T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "كيف تستمر وتحافظ على سلوك المشي؟​• غير بيئتك المحيطة، أو كن مؤثرا فيهم .​ • زود الحركة بتفاصيل يومك​ • غير مكان مشيك من فترة لفترة​• امشِ مع أحد تحبه.​",
+                    'start': {
+                        'dateTime': '2024-1-4T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-1-4T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'زود دقيقتين على هدفك ​وامش ٣٢ دقائق​',
+                    'start': {
+                        'dateTime': '2024-1-7T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-1-7T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: ":تحس عضلاتك شاده؟ لا تنسَ ​• سخن جسمك قبل التمرين​ • مدد عضلاتك بعد التمرين",
+                    'start': {
+                        'dateTime': '2024-1-9T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-1-9T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: ":صباحك صحّة ✋، ​‏جرب تشارك أهلك متعة المشي لمدة نصف ساعة",
+                    'start': {
+                        'dateTime': '2024-1-12T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-1-12T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "جاء الوقت ارفع هدفك وزود​٣ دقائق وخلها 35 دقيقة",
+                    'start': {
+                        'dateTime': '2024-1-14T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-1-14T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: ':لا تنسَ تشرب ماء ، قبل تمشي اليوم .​',
+                    'start': {
+                        'dateTime': '2024-1-16T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-1-16T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+
+                    description: "بشر، حققت الهدف هذا الأسبوع ؟🤩​في حال ما قدرت توصل لهدفك، عادي كمل على جدول ، و أضف له أسبوع.​",
+                    'start': {
+                        'dateTime': '2024-1-19T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-1-19T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "كفو عليك وصلت لآخر أسبوع  بهذا الشهر استمر على ٣٥، ٣ايام بالأسبوع",
+                    'start': {
+                        'dateTime': '2024-1-21T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-1-21T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+
+                    'location': 'Online',
+                    description: "جرب توقف اليوم بعيد، وكملها مشي للدوام.",
+                    'start': {
+                        'dateTime': '2024-1-23T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-1-23T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    'desxription': "اشحن طاقتك وامشي مع أصدقائك وتحدى عائلتك!",
+                    'start': {
+                        'dateTime': '2024-1-26T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-1-26T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "وصلنا اسبوع ٢١ من التزامك وحرصك على تحقيق أهدافك فخورين فيك!​هدفك في هذا الأسبوع​ ٣٨ دقيقة مشي ​",
+                    'start': {
+                        'dateTime': '2024-1-28T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-1-28T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "3 عناصر تؤثر على أدائك في التمرين:​ -نومك​ -تغذيتك خلال اليوم​ -شربك للماء​",
+                    'start': {
+                        'dateTime': '2024-2-1T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-2-1T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "زود دقيقتين على هدفك ​وامش ٤٠ دقائق ​",
+                    'start': {
+                        'dateTime': '2024-2-4T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-2-4T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "قوة عضلاتك، تعديل مزاجك، توازن جسمك، ولياقة قلبك، كلها تعتمد على نشاطك البدني​",
+                    'start': {
+                        'dateTime': '2024-2-6T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-2-6T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: ":اجمع الاثنين!​ اقضِ وقتك مع احبابك ، ومارسوا الرياضة معا.​",
+                    'start': {
+                        'dateTime': '2024-2-9T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-2-9T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "استمر على هدفك ​ وامش ٤٠ دقيقةو ٣ أيام بالأسبوع ​",
+                    'start': {
+                        'dateTime': '2024-2-11T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-2-11T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+
+                    'desription': "خذ لك بريك ١٠ دقائق من تمارين التمدد​",
+                    'start': {
+                        'dateTime': '2024-2-13T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-2-13T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "صباحك صحة وإنجاز 🤩❤️​حافظ على صحتك واستمر بتحقيق خطواتك! 🤩​",
+                    'start': {
+                        'dateTime': '2024-2-16T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-2-16T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "جاء الوقت ارفع هدفك وزود دقيقتين وخلها ٤٢  ",
+                    'start': {
+                        'dateTime': '2024-2-18T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-2-18T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "افتح عداد الخطوات تطبيق صحتي وانطلق !!🏃🏻‍♂️​",
+                    'start': {
+                        'dateTime': '2024-2-20T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-2-20T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+
+                    'location': 'Online',
+                    description: "جمعة مباركة🤍​كم خطوة مشيت اليوم؟ شاركنا  على #امش30​",
+                    'start': {
+                        'dateTime': '2024-2-23T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-2-23T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+
+                    description: "كفو عليك وصلت لآخر أسبوع​ بهذا الشهر زودها  ٣ دقائق ​وخلها ٤٥​",
+                    'start': {
+                        'dateTime': '2024-2-25T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-2-25T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "مّدد خطواتك وعزز صحتك ومزاجك واطلع امشي  ​",
+                    'start': {
+                        'dateTime': '2024-2-27T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-2-27T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "هدفك في هذا الأسبوع​ الاستمرار على ٤٥ دقيقة مشي ​مايحتاج نوصيك بتسخين عضلاتك وتهيئ جسمك قبل  تمشي​",
+                    'start': {
+                        'dateTime': '2024-3-3T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-3-3T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "صباحك صحة وإنجاز 🤩❤️​المشي يساعد على التفكير.. جّرب تمشي قبل تنجز مهامك ​",
+                    'start': {
+                        'dateTime': '2024-3-6T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-3-6T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "",
+                    'start': {
+                        'dateTime': '2024-3-3T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-3-3T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "لا تحتار متى تمشي في​ رمضان ..​بعد التراويح وقت مناسب ​أو قبل السحور",
+                    'start': {
+                        'dateTime': '2024-3-9T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-3-9T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "جاء الوقت ارفع هدفك ​دقيقتين وخلها ٤٨    ",
+                    'start': {
+                        'dateTime': '2024-3-10T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-3-10T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: ":رمضان كريم🤍​خل رمضان هذا غير  وتحدى أصدقائك أو عائلتك مين أكثر واحد عدد خطوات خلال شهر رمضان​",
+                    'start': {
+                        'dateTime': '2024-3-12T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-3-12T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "تذكر المشي إلى المسجد صحة وأجر​",
+                    'start': {
+                        'dateTime': '2024-3-14T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-3-14T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: ":زود ٣ دقائق على هدفك يابطل وامش ٥٠ دقائق ​",
+                    'start': {
+                        'dateTime': '2024-3-17T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-3-17T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "لا تنسَ تشرب ماء ، قبل تمشي اليوم .​",
+                    'start': {
+                        'dateTime': '2024-3-19T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-3-19T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "كملت عدد خطواتك لليوم ؟  يمديك تلحق ​جرب تقسم مشيك على دفعات مثلًا ١٠ دقائق على مدار اليوم حتى توصل لهدفك​",
+                    'start': {
+                        'dateTime': '2024-3-22T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-3-22T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "كفو عليك وصلت لآخر أسبوع​ بهذا الشهر زودها  ٣ دقائق ​وخلها ٥٣​",
+                    'start': {
+                        'dateTime': '2024-3-24T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-3-24T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "حمل كتاب صوتي أو بودكاست ​وأنطلق 🏃🏻‍♂️​",
+                    'start': {
+                        'dateTime': '2024-3-26T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-3-26T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: "مّدد خطواتك وعزز صحتك ومزاجك واطلع امشي وشارك أحد أصدقائك متعة المشي  ​​",
+                    'start': {
+                        'dateTime': '2024-3-28T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-3-28T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'هدفك في هذا الأسبوع​ ٥٥ دقيقة مشي​  مايحتاج نوصيك بتسخين عضلاتك وتهيئ جسمك قبل  تمشي​',
+                    'start': {
+                        'dateTime': '2024-4-1T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-4-1T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'كيف تتعامل مع آلام العضلات​ بعد التمرين؟​ - أكثر من السوائل. مارس بعض تمارين الإطالة الخفيفة.​جرب الكمادات الدافئة أو الثلج لتخفيف الألم.​  جرب الجاكوزي وقم بتدليك مكان الألم.​',
+                    'start': {
+                        'dateTime': '2024-4-4T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-4-4T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'استمر على هدفك ​ وامش ٥٥ دقيقة ٣ ايام بالأسبوع ​',
+                    'start': {
+                        'dateTime': '2024-4-7T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-4-7T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: ':لو كنت مستثقل أو مشغول عن المشي اليوم، ابدا بكره من بدري أو جرب طريقة تقسيم المشي على مدار اليوم​',
+                    'start': {
+                        'dateTime': '2024-4-9T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-4-9T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'صباحك صحة،​كمل احتفالات العيد مع  أحبابك وشاركهم متعة المشي في أقرب ممشى لكم​',
+                    'start': {
+                        'dateTime': '2024-4-12T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-4-12T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'زود ٣ دقائق على هدفك يابطل وامش ٥٨ دقائق ​',
+                    'start': {
+                        'dateTime': '2024-4-14T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-4-14T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'خذ لك بريك ١٠ دقائق من تمارين التمدد​',
+                    'start': {
+                        'dateTime': '2024-4-16T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-4-16T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: ':صباحك نشاط وصحة ​1. اختر الحذاء الداعم 👟 ​2. ‏وحدد وجهتك🎯​ 3. ‏وانطلق 📢🏃🏻​ ',
+                    'start': {
+                        'dateTime': '2024-4-19T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-4-19T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'كفو عليك وصلت لآخر أسبوع بهذا الشهر زودها دقيقتين بس! وخلها ٦٠ د، ​',
+                    'start': {
+                        'dateTime': '2024-4-21T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-4-21T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'كيف تكوّن صداقات جديدة مع الأشخاص النشيطين بدنيًا؟!​ انضم إلى نوادٍ رياضية، أو مجموعات مهتمة بالمشي في مدينتك عبر مواقع التواصل الاجتماعي.​',
+                    'start': {
+                        'dateTime': '2024-4-24T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-4-24T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'مبرووووك ... وصلت لـ٦٠ دقيقة 🎉 👏🏻 ​إنجاز يفتخر فيه فلا تنسَ تكافئ نفسك  👏🏻​وبهذه المناسبة بنغير أسلوب تحدي للشهر الجاي​',
+                    'start': {
+                        'dateTime': '2024-4-27T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-4-27T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'جمعة مباركة🤍​كم خطوة مشيت اليوم؟ شاركنا  على #امش30',
+                    'start': {
+                        'dateTime': '2024-5-3T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-5-3T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'كمل على ٣٠~ ٦٠ دقيقة ، ٤ ايام بالأسبوع   ',
+                    'start': {
+                        'dateTime': '2024-5-5T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-5-5T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'احرق سعراتك واطلع امشي​',
+                    'start': {
+                        'dateTime': '2024-5-7T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-5-7T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'حدد يوم في الأسبوع تمارس فيه الرياضة مع أطفالك ،أو إخوانك، مثل ​ المشي -القفز  على الحبل- الدراجات- كرة قدم​',
+                    'start': {
+                        'dateTime': '2024-5-10T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-5-10T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'كمل على ٣٠~ ٦٠ دقيقة ، ٤ ايام بالأسبوع    ',
+                    'start': {
+                        'dateTime': '2024-5-12T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-5-12T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'أحرص على ممارسة تمارين  تقوية العضلات 💪 ​على الأقل مرتين في الأسبوع​',
+                    'start': {
+                        'dateTime': '2024-5-14T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-5-14T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'لصحة الجسد، وصحة العلاقات: شارك عائلتك اليوم متعة المشي في أقرب حديقة  أو ممشى 👨‍👩‍👧‍👦​',
+                    'start': {
+                        'dateTime': '2024-5-17T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-5-17T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'جاء الوقت زودها يوم وخلها  ٣٠~ ٦٠ دقيقة ، ٥ ايام بالأسبوع     ​',
+                    'start': {
+                        'dateTime': '2024-5-19T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-5-19T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'إذا كنت مشغول اليوم جرب تقسم مشيك على دفعات مثلًا ١٠ دقائق على مدار اليوم حتى توصل لهدفك​',
+                    'start': {
+                        'dateTime': '2024-5-21T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-5-21T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'كفو عليك وصلت لآخر أسبوع​ بهذا الشهر استمر على ٣٠~ ٦٠ دقيقة ، ٥ ايام بالأسبوع​',
+                    'start': {
+                        'dateTime': '2024-5-26T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-5-26T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'لا تنسَ تشرب ماء ، قبل تمشي اليوم .',
+                    'start': {
+                        'dateTime': '2024-5-29T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-5-29T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'صباحك نشاط وحركة ​ كل خطوة تمشيها تنعكس على صحتك، لا ينتهي يومك بدون مشي​ ',
+                    'start': {
+                        'dateTime': '2024-5-24T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-5-24T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'وصلنا لأخر شهر من التذكيرات ❤️​فخورين فيك حققت انجاز عظيم بـ٩ شهور بس قدرت تبدأ من الصفر حتى ٦٠ دقيقة مشي!!​بهذه المناسبة هدفك هذا الشهر بيكون مختلف،​ أنت تحدده، عندك خيارين: تزيد المدة أو الأيام ​ أو تحافظ على مستواك​مستعد!؟🤩❤️',
+                    'start': {
+                        'dateTime': '2024-6-1T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-6-1T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'حدد خطتك وأهدافك لهذا الشهر كامل ​ وانطلق!!🏃🏻‍♂️',
+                    'start': {
+                        'dateTime': '2024-6-2T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-6-2T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: '•حدد هدفك​ • اصنع خطة ​• ابدأ بشيء بسيط وتدرج​ •  أزل المعوقات ​• جهز بيئتك ​• تابع تقدمك واستعد للتحديات​ • احتفل بالنجاحات ​',
+                    'start': {
+                        'dateTime': '2024-6-4T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-6-4T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'شاركنا هدفك لهذا الأسبوع على هاشتاق #امش٣٠​',
+                    'start': {
+                        'dateTime': '2024-6-9T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-6-9T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'حددت خطتك وطبقتها؟ كل اللي عليك تراقب أدائك، تابع نبضات قلبك، مدة تمرينك و مدى لياقتك.​',
+                    'start': {
+                        'dateTime': '2024-6-12T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-6-12T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'كيف تستمر على اتباع سلوك المشي؟ ​ -بسط السلوك، قسم المشي على دفعات على مدار اليوم​ - اصنع  بيئة محفزة. ​-اجعل الإشارة واضحة، استخدم تطبيقات تتبّع العادات أو منبه لتذكيرك ​',
+                    'start': {
+                        'dateTime': '2024-6-17T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-6-17T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'صباحك صحة، كمل احتفالات العيد مع  أحبابك وشاركهم متعة المشي في أقرب ممشى لكم​',
+                    'start': {
+                        'dateTime': '2024-6-21T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-6-21T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'تابع تقدمك واستعد للتحديات، كن مرن ولا تخف من تعديل أو تغيير خططك وأهدافك عند مواجهة عقبات أو صعوبات ​',
+                    'start': {
+                        'dateTime': '2024-6-25T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-6-25T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+                {
+                    'summary': 'خامل',
+                    'location': 'Online',
+                    description: 'وصلنا لنهاية مشوارنا معاك لكن مشوارك مع المشي ما إنتهى. الكرة بملعبك الآن، صار عندك القدرة والمهارات لممارسة المشي والمحافظة عليه',
+                    'start': {
+                        'dateTime': '2024-6-30T09:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+                    'end': {
+                        'dateTime': '2024-6-30T11:00:00',
+                        'timeZone': 'Asia/Riyadh'
+                    },
+
+
+                    'reminders': {
+                        'useDefault': false,
+                        'overrides': [
+                            { 'method': 'email', 'minutes': 24 * 60 },
+                            { 'method': 'popup', 'minutes': 10 }
+                        ]
+                    }
+                },
+
+
             ];
         } else if (totalValue > 2) {
             events = [
