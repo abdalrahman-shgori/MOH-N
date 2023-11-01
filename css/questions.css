@@ -181,14 +181,13 @@ html[lang="en"] .nextPrevBtn {
   border-radius: 40px;
   background-image: url('../assets/images/arrow\ left.png');
   background-repeat: no-repeat;
-
+  font-family: 'GE SS Unique Light';
 }
 
 html[lang="en"] .nextBtn {
   background-image: url('../assets/images/arrows.svg');
   background-position: right;
-
-
+  font-family: 'EnLanguage';
 }
 
 .prevBtn {

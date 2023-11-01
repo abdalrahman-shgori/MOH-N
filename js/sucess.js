@@ -11,12 +11,18 @@ window.onload = () => {
             events = [
                 {
                     title: 'خامل',
-                    location: 'Online',
-                    description: "شهر جديد وإنجازات جديدة كيف كان الشهر اللي فات سهل صح؟ هذا الشهر بيكون اسهل ان شاء الله",
-                    start:'2023-11-1T09:00:00',
-                    end:'2023-11-1T010:00:00'
+                    description: 'This is the first sample event description.',
+                    start: '20231102T090000Z',
+                    end: '20231102T100000Z',
+                    location: 'Sample Location 1',
                 },
-                
+                {
+                    title: 'Apple Event 2',
+                    description: 'This is the second sample event description.',
+                    start: '20231103T090000Z',
+                    end: '20231103T100000Z',
+                    location: 'Sample Location 2',
+                }
             ];
         } else if (totalValue > 2) {
             events = [
