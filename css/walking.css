@@ -21,6 +21,12 @@ body {
 ol, ul{
     padding: 0 !important;
 }
+.gr{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 100px;
+}
 .aboutWalkBg {
     background-image: url("../assets/images/walkingLine.svg");
     background-repeat: no-repeat;
