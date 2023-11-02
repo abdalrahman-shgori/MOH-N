@@ -16,33 +16,30 @@ body {
     src: url('../HelveticaNeue.ttc');
   }
 .landingPage {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+
+    top: 0;
+        left: 50%;
+        z-index: 3;
+        position: absolute;
+        transform: translateX(-50%);
 }
 
 .descriptionText {
     color: #333333;
     font-size: 36px;
     font-weight: 300;
-    text-align: left;
     line-height: 44px;
-    text-align: left;
+    text-align: justify !important;
+    direction: rtl;
     font-family: 'GE SS Unique Bold';
 }
 html[lang="en"] .descriptionText{
     font-family: 'EnLanguage';
+    direction: ltr;
 
 }
 
-.walkImg {
-    width: 368px;
-    transform: rotate(-5deg);
-    margin-bottom: 16px;
 
-}
 
 .startBtn {
     background-color: #F0C905;
@@ -102,6 +99,8 @@ html[lang="en"] .startBtn{
     .descriptionText {
         font-size: 16px;
         line-height: 19px;
+        padding-left: 44px;
+        padding-right: 44px;
     }
     #footer{
         bottom:-100px;
@@ -109,14 +108,14 @@ html[lang="en"] .startBtn{
   
 
     .walkImg {
-        width: 144px;
-        height: 165px;
+ max-width: 131px;
     }
 
     .landingGroupImg {}
 
     .startBtn {
         font-size: 16px;
+        height: 40px;
         
     }
 
@@ -126,39 +125,45 @@ html[lang="ar"] .descriptionText {
     text-align: right;
 }
 
+/* .bgVector{
+    background-image: url(../assets/images/firstVector.svg);
 
-.containers {
+    background-repeat: no-repeat;
     position: relative;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    color: white;
-    bottom: 20px;
-    z-index: 4  ;
-  }
-  .centered {
-    position: absolute;
-    padding-top: 171px;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: 4;
-  }
-  .centereds {
-    position: absolute;
-    top: 10;
-  }
-  .secVector{
-    width: 100%;
+    bottom:20px;
+    background-size: cover;
+    width: 100% !important;
+height: 100%;
+}
+.bgVector2{
+    background-image: url(../assets/images/secVector.svg);
+    background-size: contain;
+width: 100% !important;
+    background-repeat: no-repeat;
     position: relative;
+    z-index: 4 !important;
+    background-size: cover;
+    height: 100%;
+
+
+} */
+.bgVector{
+    position: relative;
+    bottom: 30px;
+    z-index: 2;
+width: 100%;
+}
+.bgv{
+    position: absolute;
     top: 100px;
-  }
-  .centeredss {
-    position: absolute;
-   
-  }
-  .secVectors{
-    
     width: 100%;
-    position: relative;
+
+
+}
+
+.walkImg {
+    margin-top: 157px;
+    padding-bottom: 464px;
+    z-index: 4;
+    
   }
