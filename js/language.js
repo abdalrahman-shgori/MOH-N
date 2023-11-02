@@ -166,7 +166,6 @@ calendarDownload:"تحميل التذكيرات على تقويم جوالك"
     },
 };
 
-
 function setLanguage(language) {
     
     const elements = document.querySelectorAll('[data-translate]');
@@ -176,13 +175,10 @@ function setLanguage(language) {
     });
 
     document.documentElement.lang = language;
-    document.getElementById("dropdownMenuLink").innerHTML = document.documentElement.lang.toUpperCase()
+    document.getElementById("dropdownMenuLink").innerHTML =language.toUpperCase()
 
     localStorage.setItem('selectedLanguage', language);
-    const newURL = window.location.href.split('?')[0]; 
-    const urlWithLang = newURL + `?${language}`;
 
-    window.history.replaceState({}, document.title, urlWithLang);
     const imageElement = document.getElementById('imageElement');
     const imageElement1 = document.getElementById('imageElement1');
     const imageElement2= document.getElementById('imageElement2');
@@ -204,23 +200,8 @@ function setLanguage(language) {
     }
 }
 
-const urlParams = new URLSearchParams(window.location.search);
-
-for (const param of urlParams.keys()) {
-    console.log(`Parameter: ${param}`);
-
-    if(param){
-        setLanguage(param)
-    }
-    else{
-        setLanguage('en')
-    }
-}
-
-
 
 function initializeLanguage() {
-     
     
     const selectedLanguage = localStorage.getItem('selectedLanguage');
     
