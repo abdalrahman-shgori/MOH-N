@@ -206,7 +206,6 @@ function setLanguage(language) {
 
 const urlParams = new URLSearchParams(window.location.search);
 
-// Log all parameters to check their names and values
 for (const param of urlParams.keys()) {
     console.log(`Parameter: ${param}`);
 
