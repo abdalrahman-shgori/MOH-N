@@ -199,6 +199,15 @@ function setLanguage(language) {
         imageElement4.src='../assets/images/professionalEn.svg'
     }
 }
+window.onload = function () {
+    const savedLanguage = localStorage.getItem('selectedLanguage');
+    if (savedLanguage) {
+        setLanguage(savedLanguage);
+    } else {
+       
+        setLanguage('en'); 
+    }
+};
 
 function initializeLanguage() {
     
