@@ -178,7 +178,7 @@ function setLanguage(language) {
     document.getElementById("dropdownMenuLink").innerHTML =language.toUpperCase()
 
     localStorage.setItem('selectedLanguage', language);
-    const theLang=localStorage.setItem('selectedLanguage')
+    const theLang=localStorage.getItem('selectedLanguage')
     if(theLang == '' || theLang == null || theLang == undefined){
         localStorage.setItem('selectedLanguage','en')
     }
