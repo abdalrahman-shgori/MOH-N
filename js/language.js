@@ -210,7 +210,7 @@ window.onload = function () {
     if (selectedLanguage) {
         setLanguage(selectedLanguage);
     } else {
-        selectedLanguage('en'); 
+        setLanguage('en'); 
     }
 };
 function initializeLanguage() {
