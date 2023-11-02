@@ -166,6 +166,7 @@ calendarDownload:"تحميل التذكيرات على تقويم جوالك"
     },
 };
 
+
 function setLanguage(language) {
     
     const elements = document.querySelectorAll('[data-translate]');
@@ -203,17 +204,24 @@ function setLanguage(language) {
     }
 }
 
-window.onload = function () {
-    const urlParams = new URLSearchParams(window.location.search);
-    const selectedLanguage = urlParams.get('lang');
+const urlParams = new URLSearchParams(window.location.search);
 
-    if (selectedLanguage) {
-        setLanguage(selectedLanguage);
-    } else {
-        setLanguage('en'); 
+// Log all parameters to check their names and values
+for (const param of urlParams.keys()) {
+    console.log(`Parameter: ${param}`);
+
+    if(param){
+        setLanguage(param)
     }
-};
+    else{
+        setLanguage('en')
+    }
+}
+
+
+
 function initializeLanguage() {
+     
     
     const selectedLanguage = localStorage.getItem('selectedLanguage');
     
