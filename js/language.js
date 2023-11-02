@@ -179,7 +179,7 @@ function setLanguage(language) {
 
     localStorage.setItem('selectedLanguage', language);
     const newURL = window.location.href.split('?')[0]; 
-    const urlWithLang = newURL + `?lang=${language}`;
+    const urlWithLang = newURL + `?${language}`;
 
     window.history.replaceState({}, document.title, urlWithLang);
     const imageElement = document.getElementById('imageElement');
@@ -208,9 +208,9 @@ window.onload = function () {
     const selectedLanguage = urlParams.get('lang');
 
     if (selectedLanguage) {
-        setLanguageAndUpdateURL(selectedLanguage);
+        setLanguage(selectedLanguage);
     } else {
-        setLanguageAndUpdateURL('en'); 
+        selectedLanguage('en'); 
     }
 };
 function initializeLanguage() {
