@@ -190,7 +190,11 @@ function setLanguage(language) {
 
     if (language === 'ar') {
         imageElement.src = '../assets/images/beginner.svg'; 
+        imageElement.alt = '../assets/images/beginner.svg'; 
+
         imageElement1.src='../assets/images/badia.svg'
+        imageElement1.alt='../assets/images/badia.svg'
+
         imageElement2.src='../assets/images/seelpy.svg'
         imageElement3.src='../assets/images/starting.svg'
         imageElement4.src='../assets/images/professional.svg'
