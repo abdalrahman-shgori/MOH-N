@@ -206,7 +206,7 @@ window.onload = function () {
         setLanguage(savedLanguage);
     } else {
        
-        setLanguage('EN'); 
+        setLanguage('en'); 
     }
 };
 function initializeLanguage() {
