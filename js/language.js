@@ -179,7 +179,7 @@ function setLanguage(language) {
 
     localStorage.setItem('selectedLanguage', language);
     const theLang=localStorage.setItem('selectedLanguage')
-    if(theLang === ''){
+    if(theLang == '' || theLang == null || theLang == undefined){
         localStorage.setItem('selectedLanguage','en')
     }
     const imageElement = document.getElementById('imageElement');
