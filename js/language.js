@@ -178,7 +178,10 @@ function setLanguage(language) {
     document.getElementById("dropdownMenuLink").innerHTML = document.documentElement.lang.toUpperCase()
 
     localStorage.setItem('selectedLanguage', language);
+    const newURL = window.location.href.split('?')[0]; 
+    const urlWithLang = newURL + `?lang=${language}`;
 
+    window.history.replaceState({}, document.title, urlWithLang);
     const imageElement = document.getElementById('imageElement');
     const imageElement1 = document.getElementById('imageElement1');
     const imageElement2= document.getElementById('imageElement2');
@@ -201,12 +204,13 @@ function setLanguage(language) {
 }
 
 window.onload = function () {
-    const savedLanguage = localStorage.getItem('selectedLanguage');
-    if (savedLanguage) {
-        setLanguage(savedLanguage);
+    const urlParams = new URLSearchParams(window.location.search);
+    const selectedLanguage = urlParams.get('lang');
+
+    if (selectedLanguage) {
+        setLanguageAndUpdateURL(selectedLanguage);
     } else {
-       
-        setLanguage('en'); 
+        setLanguageAndUpdateURL('en'); 
     }
 };
 function initializeLanguage() {
