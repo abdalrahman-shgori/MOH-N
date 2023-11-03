@@ -298,10 +298,8 @@ html[lang="ar"] .descriptionText {
 }
 
 .text-after-images {
-    margin-top: 1100px;
-    /* Adjust spacing between images and text */
+    margin-top: 1050px;
     position: relative;
-    /* Assuming it's meant to follow the images */
     display: flex;
     flex-direction: column !important;
 
@@ -385,8 +383,8 @@ html[lang='en'] .descriptionText3 {
 }
 
 .descriptionText2 {
-  padding-left: 158px ;
-  padding-right: 158px ;
+  padding-left: 175px ;
+  padding-right: 175px ;
     color: #000000;
     direction: rtl;
     font-family: 'GE SS Unique Bold';
@@ -404,11 +402,11 @@ margin: 0 auto; /* Remove default margin if needed */
 
 }
 .descriptionText3 {
-    padding-left: 158px ;
-        padding-right: 158px ;
+    padding-left: 140px ;
+        padding-right: 140px ;
         color: #EEC718 !important;
         direction: rtl;
-        font-family: 'GE SS Unique Bold';
+        font-family: 'GE SS Unique Light';
         position: relative;
         font-size: 34px;
         font-weight: 300;
