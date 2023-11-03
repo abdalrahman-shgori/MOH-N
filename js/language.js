@@ -80,13 +80,15 @@ Launched:'Launched',
 Walk30isaninitiative:'Walk 30 is an initiative across the Kingdom, to raise awareness of walking behavior and promote public health as one of the goals of Vision 2030. It began in 2019 to coincide with the Ministry of Health declaring March 5 as National Walking Day.',
 Aim:"Aim",
 Toraisetherates:'To raise the rates of physical activity in general to the internationally recommended level(150 minutes per week), which is reflected in the increase in the average age from 74 years to 80 years.',
-Byaccessingthesite:'By accessing the site, you are our conscious partner. Start the test and know your walking personality'
+Byaccessingthesite:'By accessing the site, you are our conscious partner. Start the test and know your walking personality',
+Whatisyourpersonality:"What is your personality? Start the test and find out"
 
 
 
 
     },
     ar: {
+        Whatisyourpersonality:"وش شخصيتك ؟ ابدأ الاختبار واعرفها         ",
         Byaccessingthesite:'بوصولك للموقع أنت شريكنا الواعي ، ابدأ الاختبار واعرف شخصيتك في المشي',
         Toraisetherates:'الى رفع معدلات ممارسة النشاط البدني بشكل عام إلى الحد الموصَّى به عالميًّا(150 دقيقة اسبوعياً) والذي ينعكس على ارتفاع متوسط الاعمار مـــن ٧٤ عامًا إلى ٨٠ عامًا.',
         Aim:'تــهدف',

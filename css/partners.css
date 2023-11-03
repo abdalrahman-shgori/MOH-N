@@ -22,7 +22,15 @@ body {
   align-items: center;
   margin-top: 88px;
 }
+.bgVector{
+  background-image: url(../assets/images/Background.svg);
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: contain;
+  background-position: center calc(100% - 200px);  
+  transition: background-position 4s; 
 
+} 
 .PartnersTextImg {
   display: flex;
   flex-direction: column;
@@ -71,6 +79,11 @@ html[lang='en'] .whoPartnerText{
 }
 
 @media (max-width: 767px) {
+  .bgVector{
+    background-image: url(../assets/images/vectorMobile.svg);
+    background-position: center calc(100% - 150px);  
+
+  }
   .whoPartners{
     margin-top: 24px;
   }

@@ -17,6 +17,15 @@ body {
     font-family: 'EnLanguage';
     src: url('../HelveticaNeue.ttc');
 }
+.bgVector{
+    background-image: url(../assets/images/Background.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: contain;
+    background-position: center calc(100% - 500px);  
+    transition: background-position 4s; 
+  
+  } 
 
 .totalResult {
     display: flex;
@@ -177,6 +186,12 @@ html[lang="en"] .downloadCalendar{
 }
 
 @media screen and (max-width:767px) {
+    .bgVector{
+        background-image: url(../assets/images/vectorMobile.svg);
+        background-position: center calc(100% - 300px);  
+
+
+    }
     .imgRateCharactar{
         width: 80%;
     }
