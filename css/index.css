@@ -204,6 +204,7 @@ html[lang="ar"] .descriptionText {
     }
     .secVectors{
         position: relative;
+        right: 2px;
         width: 100%;
     }
     .descriptionText{
