@@ -1,6 +1,6 @@
 
 body {
-    background-color: #F5F5F5 !important;
+    background-color: #FFFFFF !important;
     overflow-x: hidden;
 }
 a{
@@ -33,7 +33,9 @@ html[lang="en"] .PathsText{
 
 }
 
-
+.group-Cards{
+    padding-bottom: 194px;
+}
 .paths {
     display: flex;
     flex-direction: column;
@@ -41,24 +43,30 @@ html[lang="en"] .PathsText{
     align-items: center;
     margin-top: 88px;
 }
+.wek{
+}
 
+scrolls{
+    background-color: #008056 !important;
+}
 .pathsCard {
 padding: 36px 60px 36px 60px;
 overflow-x: auto;
     background-color: #FFFFFF;
     border-radius: 16px;
-    box-shadow: 2px 2px 4px 0px #3333331F;
+    box-shadow: 2px 2px 22px 0px hsla(0, 0%, 20%, 0.12);
     display: flex;
     margin-bottom: 36px;
-    width: 90%;
+    margin-top: 1px;
+    width: 100% !important;
     transition: transform 0.3s; /* Add a smooth transition for the transform property */
 }
 .spaceCard{
     margin-bottom: 91px;
 }
-.pathsCard:hover{
+/* .pathsCard:hover{
     transform: scale(1.02);
-}
+} */
 .PathsTexts {
     padding-left: 60px;
     display: flex;

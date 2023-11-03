@@ -1,5 +1,4 @@
 body {
-    background-color: #F5F5F5 !important;
     overflow-x: hidden;
 }
 
@@ -28,12 +27,13 @@ body {
 .WalkSportText {
     font-size: 36px;
     font-weight: 300;
-    line-height: 44px;
+    line-height: 38px;
     color: #333333;
     text-align: justify !important;
     direction: rtl;
     font-family: 'GE SS Unique Bold';
     margin-top: 72px;
+    margin-bottom: 53px;
     padding-left: 120px;
     padding-right: 120px;
 }
@@ -72,12 +72,26 @@ html[lang="en"] .WalkSportText {
     text-align: center;
     color: #008056;
 }
+.interName{
+    margin-top: 55px;
+    font-size: 47px;
+    font-weight: 300;
+    line-height: 66px;
+    letter-spacing: 0em;
+    text-align: center;
+    font-family: 'GE SS Unique Bold';
+color: #333333;
+    
+}
+html[lang='en'] .interName{
+    font-family: 'EnLanguage';
 
+}
 .NameInput {
     background-color: #FFFFFF;
-    margin-top: 55px;
     margin-bottom: 20px;
     text-align: right;
+    
 }
 
 html[lang="en"] .NameInput {
@@ -104,11 +118,12 @@ html[lang='en'] .NameInput::placeholder {
 
 input[type="text"] {
     border: 1px solid #FFFFFF;
-    border-radius: 16px;
+    border-radius: 33px;
     text-align: right;
-    width: 60%;
-    height: 72px;
-    box-shadow: 0px -4px 2px 0px #C1C1C1;
+    width: 50%;
+    height: 94px;
+    border: 1px solid #8F8E8E    ;
+
     padding: 10px;
     padding-right: 40px;
 }
@@ -213,6 +228,10 @@ html[lang='en'] .div5{
 
 
 @media (max-width: 767px) {
+    .interName{
+        font-size: 21px;
+        line-height: 24px;
+    }
     input[type="text"] {
         width: 88%;
         height: 42px;

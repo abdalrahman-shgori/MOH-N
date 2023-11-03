@@ -33,7 +33,7 @@
 </head>
 
 <body>
-    <!-- <div id="navbar-container"></div> -->
+    <div id="navbar-container"></div>
 
     <div id="total" class="totalResult">
     </div>
@@ -123,10 +123,7 @@
                     </div>
 
                     <div class="rate calendarPdf">
-                        <div class="downloadCalendar">
-                        <a id="button" class="addCalendarBtn" href="#" download="event.ics" data-translate="calendarDownload"> تحميل التذكيرات على تقويم جوالك</a>
-                        <img class="calendarImg" src="../assets/images/calendarDownload.svg"/>
-                    </div>
+                        
                     <div class="downloadCalendar">
                         <a href="${totalValue >= 30 ? '../assets/pdf/دليل المستوى الخامس.pdf' :
                 totalValue >= 18 ? '../assets/pdf/دليل المستوى الرابع.pdf' :
@@ -139,6 +136,10 @@
 </a>
 <img class="calendarImg" src="../assets/images/pdfDownload.svg"/>
 </div>
+<div class="downloadCalendar">
+                        <a id="button" class="addCalendarBtn" href="#" download="event.ics" data-translate="calendarDownload"> تحميل التذكيرات على تقويم جوالك</a>
+                        <img class="calendarImg" src="../assets/images/calendarDownload.svg"/>
+                    </div>
 
                         </div>
 
@@ -149,6 +150,7 @@
     `;
         resultsContainer.innerHTML = html;
     </script>
+
 <script src="../js/includeNav.js"></script>
 <script src="../js/nav.js"></script>
 </body>

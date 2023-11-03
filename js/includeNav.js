@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const script = document.createElement("script");
             script.src = "../js/language.js";
             head.appendChild(script);
+
         })
         .catch(error => {
             console.error("Error fetching navigation bar:", error);

@@ -32,7 +32,7 @@ const translations = {
         walkingPersonalityDescription: "A test that measures a person’s level of walking and provides solutions to continue.",
         walkingPersonalityBtnText: "Test now and find out your personality" ,
         whoisPartners: "The Partners",
-        walkDescription: "A test that measures your level and walking behavior, and gives you your result and your personality based on your answers.",
+        walkDescription: "This test determines your level of walking. After completing it, you will get your result and the personality that expresses your level of walking. You can then download the awareness guide and add reminders appropriate to your personality on your mobile calendar.",
         testPersonality:"Test Your Personality",
         walk30:"#Walk30 ",
         namePlaceholder: "Name",
@@ -73,22 +73,32 @@ const translations = {
         stage5: "Individuals at this stage have a desire for change, but they easily come up with excuses. You need to confront those excuses with reasons that motivate you to reach your goal. Start now with the change, challenge yourself, and continue to maintain your health.",
         next:"Next",
         pdfDownloadText:"View the guide for your stage",
-        calendarDownload:"Download reminders to your mobile calendar"
+        interName:"your name?",
+        calendarDownload:"Download reminders to your mobile calendar",
 
-
-
+Launched:'Launched',
+Walk30isaninitiative:'Walk 30 is an initiative across the Kingdom, to raise awareness of walking behavior and promote public health as one of the goals of Vision 2030. It began in 2019 to coincide with the Ministry of Health declaring March 5 as National Walking Day.',
+Aim:"Aim",
+Toraisetherates:'To raise the rates of physical activity in general to the internationally recommended level(150 minutes per week), which is reflected in the increase in the average age from 74 years to 80 years.',
+Byaccessingthesite:'By accessing the site, you are our conscious partner. Start the test and know your walking personality'
 
 
 
 
     },
     ar: {
+        Byaccessingthesite:'بوصولك للموقع أنت شريكنا الواعي ، ابدأ الاختبار واعرف شخصيتك في المشي',
+        Toraisetherates:'الى رفع معدلات ممارسة النشاط البدني بشكل عام إلى الحد الموصَّى به عالميًّا(150 دقيقة اسبوعياً) والذي ينعكس على ارتفاع متوسط الاعمار مـــن ٧٤ عامًا إلى ٨٠ عامًا.',
+        Aim:'تــهدف',
+        Walk30isaninitiative:'امش 30 بوصفها مبادرة حول المملكـــة، للتوعية بسلوك المشي، وتعزيز الصحة العامة باعتبارها أحد مستهدفات الرؤيــة 2030، وبدأت ســـنة 2019 تزامناً مع إعلان وزارة الصحة يوم 5 مارس يوماً وطنياً للمشي.        ',
+        Launched:'انطلقت',
+        interName:"اسمك؟",
         welcome: "مرحبًا بك في اختبار الاختيار من متعدد",
         aboutWalk: "عن رياضة المشي",
         path: "مسارات امش 30",
         Partners: "الشركاء",
         walkdescription: "هي مبادرة نوعية لعام 2023 تضم جميع التدخلات في السنوات السابقة في شهرين من هذا العام. وذلك لتغيير المجتمع وتحفيزه لزيادة معدلات ممارسة النشاط البدني 150 دقيقة 3-5 مرات أسبوعياً مما يتناسب مع توجه ورؤية المملكة 2030 بزيادة متوسط الأعمار من 74 إلى 80 عاماً .",
-        start: "ابدأ اختبار المعرفة الشخصية",
+        start: "أخــتبر شخصيتك",
         whatHappens: "ماذا يحدث إذا مشيت لمدة ثلاثين دقيقة يومياً؟",
         whatHappens1: "تحسين لياقتك البدنية",
         whatHappens2: "حمايتك من خطر الأمراض المزمنة",
@@ -114,7 +124,7 @@ const translations = {
         walkingPersonalityDescription: "اختبار يقيس مستوى الشخص في ممارسة المشي ، ويقدم حلول للستمرار .",
         walkingPersonalityBtnText: "اختبر الآن واعرف شخصيتك",
         whoisPartners: "من هم شركاؤنا",
-        walkDescription: "رياضة المشي رياضة ممتعة ولها مستويات كثيرة تبدأ بالمشي ثلاثين دقيقة يومياً لمدة خمسة أيام في الأسبوع.",
+        walkDescription: "هذا الاختبار يحدد مستواك في ممارسة رياضة المشي، بعد الانتهاء منه ستحصل على نتيجتك والشخصية المعبرة عن مستواك في المشي  ، وتستطيع بعدها تحميل الدليل التوعوي واضافة التذكيرات المناسبة لشخصيتك على تقويم جوالك",
         testPersonality:"اختبر شخصيتك",
         walk30:"امش 30",
         namePlaceholder: ":اسمك",
@@ -178,7 +188,6 @@ function setLanguage(language) {
     document.getElementById("dropdownMenuLink").innerHTML =language.toUpperCase()
 
     localStorage.setItem('selectedLanguage', language);
-    const theLang=localStorage.getItem('selectedLanguage')
     if(language == '' || language == null || language == undefined){
         localStorage.setItem('selectedLanguage','en')
     }
@@ -213,14 +222,14 @@ function initializeLanguage() {
     }
     document.getElementById("dropdownMenuLink").innerHTML = document.documentElement.lang.toUpperCase()
     setLanguage(selectedLanguage);
-    if(selectedLanguage === "ar") {
-        document.getElementById('nameInput').placeholder=" : اسمك"
+    // if(selectedLanguage === "ar") {
+    //     document.getElementById('nameInput').placeholder=" : اسمك"
     
-    }
-    else if (selectedLanguage === "en"){
-        document.getElementById('nameInput').placeholder="Name :"
+    // }
+    // else if (selectedLanguage === "en"){
+    //     document.getElementById('nameInput').placeholder="Name :"
     
-    }
+    // }
     
 }
 

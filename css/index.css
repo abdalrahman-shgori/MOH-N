@@ -1,20 +1,23 @@
 body {
-    background-color: #F5F5F5 !important;
+    background-color: #FFFFFF !important;
     font-family: 'GE SS Unique Bold';
 }
 
-  @font-face {
+@font-face {
     font-family: 'GE SS Unique Bold';
     src: url('../GE\ SS\ Unique\ Light.otf');
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: 'GE SS Unique Light';
     src: url('../GE\ SS\ Unique\ Bold.otf');
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: 'EnLanguage';
     src: url('../HelveticaNeue.ttc');
-  }
+}
+
 .landingPage {
     display: flex;
     flex-direction: column;
@@ -23,19 +26,7 @@ body {
     gap: 30px;
 }
 
-.descriptionText {
-    color: #333333;
-    font-size: 36px;
-    font-weight: 300;
-    text-align: left;
-    line-height: 44px;
-    text-align: left;
-    font-family: 'GE SS Unique Bold';
-}
-html[lang="en"] .descriptionText{
-    font-family: 'EnLanguage';
 
-}
 
 .walkImg {
     width: 368px;
@@ -54,11 +45,12 @@ html[lang="en"] .descriptionText{
     font-weight: 700;
     font-family: 'GE SS Unique Light';
     height: 60px;
-    margin-bottom:40px;
+    margin-bottom: 40px;
     box-shadow: 0 -2px 0 0 #333333, 2px 0 0 0 #333333;
 
 }
-html[lang="en"] .startBtn{
+
+html[lang="en"] .startBtn {
     font-family: 'EnLanguage';
 }
 
@@ -75,7 +67,7 @@ html[lang="en"] .startBtn{
     z-index: -2;
     width: 100%;
     height: 100%;
-  
+
 
 }
 
@@ -84,29 +76,34 @@ html[lang="en"] .startBtn{
     width: 100%;
     height: 100%;
     background-color: transparent;
-    
+
 }
 
-#footer{
-    position: absolute; bottom: 0
-   }
+#footer {
+    position: absolute;
+    bottom:0
+}
+
 @media screen and (min-width:1800px) {
-.peopleImg{
-    width: 1440px;
+    .peopleImg {
+        width: 1440px;
+    }
+
+    .shadowImg {
+        width: 1440px;
+    }
 }
-.shadowImg{
-    width: 1440px;
-}
-}
+
 @media screen and (max-width:600px) {
     .descriptionText {
         font-size: 16px;
         line-height: 19px;
     }
-    #footer{
-        bottom:-100px;
+
+    #footer {
+        bottom: -100px;
     }
-  
+
 
     .walkImg {
         width: 144px;
@@ -117,7 +114,7 @@ html[lang="en"] .startBtn{
 
     .startBtn {
         font-size: 16px;
-        
+
     }
 
 }
@@ -133,32 +130,392 @@ html[lang="ar"] .descriptionText {
     display: flex;
     justify-content: center;
     color: white;
-    bottom: 20px;
-    z-index: 4  ;
-  }
-  .centered {
+    bottom: 40px;
+    z-index: 4;
+}
+
+.centered {
     position: absolute;
     padding-top: 171px;
     top: 0;
     left: 50%;
     transform: translate(-50%);
     z-index: 4;
-  }
-  .centereds {
+}
+.logo-new{
+    width: 346px;
+    height: 351px;
+}
+@media screen and (max-width:1295px) {
+    .centered{
+        padding-top: 100px;
+    }
+    .text-after-images{
+        margin-top: 1000px !important;
+    }
+}
+@media screen and (max-width:1127px) {
+    .text-after-images{
+        margin-top: 800px !important;
+    }
+    .centered{
+        padding-top: 80px;
+    }
+    .logo-new{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media screen and (max-width:935px) {
+   
+    .centered{
+        padding-top: 80px;
+    }
+    .logo-new{
+        width: 250px;
+        height: 250px;
+    }
+}
+@media screen and (max-width:830px) {
+    .text-after-images{
+        margin-top: 600px !important;
+    }
+    .centered{
+        padding-top: 80px;
+    }
+    .logo-new{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media screen and (max-width:696px) {
+    .title-text{
+        font-size: 28px !important;
+    }
+    .text-after-images{
+        margin-top: 450px !important;
+    }
+    .centered{
+        padding-top: 70px;
+    }
+    .logo-new{
+        width: 131px;
+        height: 131px;
+    }
+    .secVectors{
+        position: relative;
+        width: 100%;
+    }
+    .descriptionText{
+        font-size: 18px !important;
+        font-weight: 300;
+        line-height: 47px !important;
+    }
+    .group-items {
+        padding-left: 38px !important;
+        padding-right: 38px !important ;
+    }
+    .descriptionText2{
+        font-size: 18px !important;
+        font-weight: 300;
+        line-height: 45px !important;
+        padding-left: 38px !important;
+        padding-right: 38px !important ;
+    }
+    .descriptionText3{
+        font-size: 19px !important;
+        font-weight: 300;
+        line-height: 37px !important;
+        padding-left: 38px !important;
+        padding-right:38px !important ;
+    }
+    .rocketImg{
+        background-image: url(../assets/images/rocket-small.svg) !important;
+        width: 54px !important;
+        height: 53px !important;
+    }
+    .snipe-img{
+        background-image: url(../assets/images/snipe-small.svg) !important;
+        width: 54px !important;
+        height: 53px !important;
+    }
+    .vector{
+        background-image: url(../assets/images/vectorMobile.svg) !important;
+        height: 435px !important;
+        background-repeat: no-repeat;
+    }
+    
+.vector:hover {
+    background-position: 100% !important;
+    animation: none !important;
+}
+
+
+    
+    .center-btn{
+        padding-bottom: 0px !important;
+
+    }
+    .startBtn-new{
+      
+        border-radius: 20px;
+        width: 240px !important;
+        height: 59px !important;
+        font-size: 16px !important;
+    }
+    .text-on-image{
+        top: 80% !important;
+
+    }
+    .text-container{
+        bottom: 200px !important;
+
+    }
+    
+}
+
+.centereds {
     position: absolute;
     top: 10;
-  }
-  .secVector{
+}
+
+.secVector {
     width: 100%;
     position: relative;
     top: 100px;
-  }
-  .centeredss {
+
+}
+
+.centeredss {
     position: absolute;
-   
-  }
-  .secVectors{
-    
+}
+
+.secVectors {
     width: 100%;
     position: relative;
+
+}
+
+.text-after-images {
+    margin-top: 1100px;
+    /* Adjust spacing between images and text */
+    position: relative;
+    /* Assuming it's meant to follow the images */
+    display: flex;
+    flex-direction: column !important;
+
+}
+
+.mx {
+    display: flex;
+    justify-content: center;
+}
+
+.rocketImg {
+    background-image: url(../assets/images/rocket.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    width: 127px;
+    height: 127px;
+    margin-bottom: 30px;
+    transition: 1s;
+
+}
+
+.rocketImg:hover {
+    background-image: url(../assets/images/rocket2.svg);
+    width: 127px;
+    height: 127px;
+    transition: 1s;
+
+}
+
+.group-items {
+    padding-left: 160px ;
+    padding-right: 161px ;
+}
+
+.title-text {
+    font-family: 'GE SS Unique Light';
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 68px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #048057;
+
+}
+html[lang='en'] .title-text{
+    font-family: 'EnLanguage';
+
+}
+
+.descriptionText {
+  
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 67px;
+    letter-spacing: 0em;
+    text-align: center !important;
+    color: #000000;
+    direction: rtl;
+    font-family: 'GE SS Unique Bold';
+    position: relative;
+    z-index: 5;
+
+
+}
+html[lang='en'] .descriptionText {
+    direction: ltr;
+    font-family: 'EnLanguage';
+
+}
+html[lang='en'] .descriptionText2 {
+    direction: ltr;
+    font-family: 'EnLanguage';
+
+}
+html[lang='en'] .descriptionText3 {
+    direction: ltr;
+    font-family: 'EnLanguage';
+
+}
+
+.descriptionText2 {
+  padding-left: 158px ;
+  padding-right: 158px ;
+    color: #000000;
+    direction: rtl;
+    font-family: 'GE SS Unique Bold';
+    position: relative;
+    z-index: 5;
+
+font-size: 34px;
+font-weight: 300;
+line-height: 65px;
+letter-spacing: 0em;
+text-align: center !important;
+width: 100%; /* Adjust the width according to your preference */
+margin: 0 auto; /* Remove default margin if needed */
+
+
+}
+.descriptionText3 {
+    padding-left: 158px ;
+        padding-right: 158px ;
+        color: #EEC718 !important;
+        direction: rtl;
+        font-family: 'GE SS Unique Bold';
+        position: relative;
+        font-size: 34px;
+        font-weight: 300;
+        line-height: 65px;
+        letter-spacing: 0em;
+        text-align: center !important;
+        width: 100%;
+        /* Adjust the width according to your preference */
+        margin: 0 auto;
+        /* Remove default margin if needed */
+        margin-top: 30px;
+        margin-bottom: 30px;
+  
   }
+.text-container {
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    bottom: 84px;
+}
+
+html[lang="en"] .descriptionText {
+    font-family: 'EnLanguage';
+
+}
+
+.vector {
+    background-image: url(../assets/images/Background.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 545px;
+    width: 100%;
+    position: relative;
+    bottom: 200px;
+    transition: background-position 4s; 
+    z-index: 1;
+
+}
+
+.vector:hover {
+    background-position: 100% 0; /* Move the background completely to the right on hover */
+    animation: walk 4s infinite linear; /* Apply the walk animation over 4 seconds on hover */
+}
+
+@keyframes walk {
+    from {
+        background-position: 0 0; /* Initial position */
+    }
+    to {
+        background-position: 100% 0; /* Move the background completely to the right */
+    }
+}
+
+.text-on-image {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: green;
+    font-size: 24px;
+}
+
+.snipe-img {
+    background-image: url(../assets/images/snipe.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    width: 127px;
+    height: 127px;
+    margin-bottom: 30px;
+z-index: 2;
+    transition: 1s;
+}
+
+.snipe-img:hover {
+    background-image: url(../assets/images/snipe2.svg);
+    width: 127px;
+    height: 127px;
+    transition: 1s;
+}
+
+.startBtn-new{
+
+border-radius: 24px;
+background-color: #4BBEA5 !important;
+border: #4BBEA5 !important;
+color: #FFFFFF !important;
+font-family: 'GE SS Unique Light' !important;
+font-size: 26px;
+transition: 1s;
+width: 434px;
+height: 105px;
+
+
+}
+html[lang='en'] .startBtn-new{
+    font-family: 'EnLanguage' !important;
+
+}
+.startBtn-new:hover{
+    transition: 1s;
+    background-color: #EEC718 !important;
+    border: #EEC718 !important;
+}
+
+.center-btn{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 577px;
+}

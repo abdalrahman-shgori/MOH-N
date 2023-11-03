@@ -41,10 +41,12 @@
         <div class="div5" data-aos="fade-up" data-aos-duration="1000"><img id="imageElement4" src=""></img></div>
     </div>
     <div class="WalkSport container" style="position: relative;">
+        <p style="display: none;" id="interName" class="interName" data-translate="interName">اسمك؟</p>
         <input style="display: none;" id="nameInput" class="NameInput"
             type="text"/>
-        <p id="WalkSportText" class="WalkSportText" data-translate="walkDescription">رياضة المشي رياضة ممتعة ولها
-            مستويات كثيرة تبدأ بالمشي ثلاثين دقيقة يومياً لمدة خمسة أيام في الأسبوع.</p>
+        <p id="WalkSportText" class="WalkSportText" data-translate="walkDescription">
+            هذا الاختبار يحدد مستواك في ممارسة رياضة المشي، بعد الانتهاء منه ستحصل على نتيجتك والشخصية المعبرة عن مستواك في المشي  ، وتستطيع بعدها تحميل الدليل التوعوي واضافة التذكيرات المناسبة لشخصيتك على تقويم جوالك
+        </p>
         <img class="startBtn" style="cursor: pointer;" onclick="name()" id="btnStart"
             src="../assets/images/ButtonStart.svg">
         <img class="imgs" id="StartFeet" src="../assets/images/StartFeet.svg"></img>
@@ -90,6 +92,8 @@
         function name() {
             if (value === 0) {
                 document.getElementById("nameInput").style.display = "block";
+                document.getElementById("interName").style.display = "block";
+
                 document.getElementById("WalkSportText").style.display = "none";
                 value += 1;
                 console.log(value);

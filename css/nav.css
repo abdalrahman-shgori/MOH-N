@@ -80,10 +80,14 @@ html[lang="en"] .language-dropdown .dropdown-menu {
 
 
 .dropdown-text {}
+.navbar{
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 
+}
 .dropdown-style {
-    background-color: #008656;
-    border: #008656;
+    background-color: #FFFFFF;
+    border: #FFFFFF;
     width: 40px;
     height: 34px;
     border-radius: 4px;
@@ -104,12 +108,12 @@ html[lang="en"] .language-dropdown .dropdown-menu {
     display: flex;
     align-items: center;
     position: relative;
-    top: 10px;
+    top: 10px !important;
 }
 
 .dropdown-style::after {
     content: "";
-    background-color: #FFFFFF !important;
+    background-color:#008656 !important;
     width: 29px;
     height: 3.24px;
     top: 69%;
@@ -120,7 +124,7 @@ html[lang="en"] .language-dropdown .dropdown-menu {
 
 .dropdown-style::before {
     content: "";
-    background-color: #FFFFFF !important;
+    background-color:#008656 !important;
     border-radius: 1px;
     width:29px;
     height: 3.24px;
@@ -131,7 +135,7 @@ html[lang="en"] .language-dropdown .dropdown-menu {
 
 .third-split::after {
     content: "";
-    background-color: #FFFFFF !important;
+    background-color:#008656 !important;
     border-radius: 20px;
     width: 29px;
     height: 3px;
@@ -262,5 +266,5 @@ html[lang='en'] .item-style {
 }
 
 .navbar{
-    /* background-color: #FFFFFF; */
+    background-color: #FFFFFF;
 }

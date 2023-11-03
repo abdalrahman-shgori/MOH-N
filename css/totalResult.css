@@ -1,5 +1,5 @@
 body {
-    background-color: #F5F5F5 !important;
+    background-color: #FFFFFF !important;
     overflow-x: hidden;
 }
 
@@ -85,9 +85,7 @@ html[lang='en'] .nameText {
     color: #008056;
     font-family: 'GE SS Unique Light';
 }
-p{
-    margin: 0 !important;
-}
+
 
 html[lang='en'] .rateText {
     font-family: 'EnLanguage';

@@ -31,11 +31,11 @@
 </head>
 
 <body>
-   <img id="img" src="../assets/images/rings.svg" style="position: absolute;top: 0px;right: 0;"></img>
+   <img id="img" src="../assets/images/rings.svg" style="position: absolute;top: 0px;right: 0;display: none;"></img>
     <div id="navbar-container"></div>
     <div class="paths" style="position: relative;">
         <p class="PathsText" data-aos="fade-down" data-aos-duration="1000" data-translate="walkPaths">مسارات امش 30</p>
-        <div id="output" class="col-lg-9 ss">
+        <div id="output" class="col-lg-9 group-Cards">
 
         </div>
         <div id="footer" class="" ></div>
@@ -86,7 +86,7 @@ console.log("abd abda abd",currentLanguage)
         myArray.map(function (item, index) {
             const div = document.createElement("div");
             div.innerHTML = `
-            <div scrolls scrolls-anim="fade-right" scrolls-duration="800" scrolls-delay="1"    class="pathsCard col-lg-12 mx-auto center-content ${index === myArray.length - 1 ? 'spaceCard' : ''}">
+            <div class="pathsCard col-lg-12 mx-auto center-content ${index === myArray.length - 1 ? 'spaceCard' : ''}">
             <div class="PathsTexts ">
                 <span class="howYouWork" id="wk">${item.title}</span>
                 <span class="PathsDescription" data-translate="walkingPersonalityDescription">${item.description}</span>
