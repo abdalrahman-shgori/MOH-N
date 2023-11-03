@@ -213,22 +213,22 @@ html[lang="ar"] .descriptionText {
         line-height: 47px !important;
     }
     .group-items {
-        padding-left: 38px !important;
-        padding-right: 38px !important ;
+        padding-left: 34px !important;
+        padding-right: 34px !important ;
     }
     .descriptionText2{
         font-size: 18px !important;
         font-weight: 300;
         line-height: 45px !important;
-        padding-left: 38px !important;
-        padding-right: 38px !important ;
+        padding-left: 34px !important;
+        padding-right: 34px !important ;
     }
     .descriptionText3{
         font-size: 19px !important;
         font-weight: 300;
         line-height: 37px !important;
-        padding-left: 38px !important;
-        padding-right:38px !important ;
+        padding-left: 34px !important;
+        padding-right:34px !important ;
     }
     .rocketImg{
         background-image: url(../assets/images/rocket-small.svg) !important;
