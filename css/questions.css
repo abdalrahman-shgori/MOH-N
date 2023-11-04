@@ -21,11 +21,24 @@ body {
 .bgVector{
   background-image: url(../assets/images/Background.svg);
   background-repeat: no-repeat;
-  position: relative;
-  background-size: contain;
   background-position: center calc(100% - 100px);  
+  position: relative;
   transition: background-position 4s; 
 
+} 
+.bgVector:hover {
+  transition: 4s;
+  animation: walk 4s infinite  linear; /* Apply the walk animation over 4 seconds on hover */
+  
+}
+
+@keyframes walk {
+  from {
+      background-position:0 calc(100% - 100px) ; /* Initial position */
+  }
+  to {
+      background-position:100% calc(100% - 100px) ; /* Move the background completely to the right */
+  }
 } 
 .progres {
   margin-top: 15px;

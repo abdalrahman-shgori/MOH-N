@@ -68,20 +68,20 @@
                 </div>
                 <div class="rate">
                     ${
-                        totalValue >= 30 && theGender== 'male' ? '<p class="rateText" data-translate="professional">أنت محترف</p>' :
+                        totalValue >= 30 && theGender== 'male' || theGender=='ذكر' ? '<p class="rateText" data-translate="professional">أنت محترف</p>' :
                         totalValue >= 30  ? '<p class="rateText" data-translate="professionalFe">أنت محترفة</p>' :
 
                     
-                totalValue >= 18 && theGender == 'male' ? '<p class="rateText" data-translate="youareDriven">أنت منطلق </p>' :
+                totalValue >= 18 && theGender == 'male' || theGender=='ذكر' ? '<p class="rateText" data-translate="youareDriven">أنت منطلق </p>' :
                 totalValue >= 18 ? '<p class="rateText" data-translate="youareDrivenFe">أنت منطلقة </p>' :
 
-                    totalValue >= 6 && theGender == 'male' ? '<p class="rateText" data-translate="youareInitiator"> أنت بادي</p>' :
-                    totalValue >= 6 ? '<p class="rateText" data-translate="youareInitiatorFe"> أنت بادية</p>' :
+                    totalValue >= 6 && theGender == 'male' || theGender=='ذكر' ? '<p class="rateText" data-translate="youareInitiator"> أنت بادي</p>' :
+                    totalValue >= 6 ?  '<p class="rateText" data-translate="youareInitiatorFe"> أنت بادية</p>' :
 
-                        totalValue >= 2 && theGender == 'male' ? '<p class="rateText" data-translate="youareIntending">أنت ناوي </p>' :
+                        totalValue >= 2 && theGender == 'male' || theGender=='ذكر' ? '<p class="rateText" data-translate="youareIntending">أنت ناوي </p>' :
                         totalValue >= 2 ? '<p class="rateText" data-translate="youareIntendingFe">أنت ناوية </p>' :
 
-                            totalValue < 2 && theGender == 'male' ? '<p class="rateText" data-translate="youhavePassiveBehavior">أنت صاحب سلوك خامل </p>' : 
+                            totalValue < 2 && theGender == 'male' || theGender=='ذكر' ? '<p class="rateText" data-translate="youhavePassiveBehavior">أنت صاحب سلوك خامل </p>' : 
                             totalValue < 2 ? '<p class="rateText" data-translate="youhavePassiveBehaviorFe">أنت صاحبة سلوك خامل </p>' : ''
 
             }                </div>
@@ -95,19 +95,19 @@
                 </div>
                 <div class="RateCharacterImg">
                 ${
-                    totalValue >= 30 && theGender == 'male' ? '<img class="imgRateCharactar" src="../assets/images/character1.svg"/>' :
+                    totalValue >= 30 && theGender == 'male' || theGender=='ذكر' ? '<img class="imgRateCharactar" src="../assets/images/character1.svg"/>' :
                     totalValue >= 30  ? '<img class="imgRateCharactar" src="../assets/images/professionalFemale.svg"/>' :
 
-                totalValue >= 18 && theGender == 'male' ? '<img class="imgRateCharactar" src="../assets/images/character2.svg"/>' :
+                totalValue >= 18 && theGender == 'male' || theGender=='ذكر' ? '<img class="imgRateCharactar" src="../assets/images/character2.svg"/>' :
                 totalValue >= 18  ? '<img class="imgRateCharactar" src="../assets/images/startingFemale.svg"/>' :
                 
-                    totalValue >= 6 && theGender == 'male' ? '<img class="imgRateCharactar" src="../assets/images/character3.svg"/>' :
+                    totalValue >= 6 && theGender == 'male' || theGender=='ذكر' ? '<img class="imgRateCharactar" src="../assets/images/character3.svg"/>' :
                     totalValue >= 6  ? '<img class="imgRateCharactar" src="../assets/images/willingFemale.svg"/>' :
 
-                        totalValue >= 2 && theGender == 'male' ? '<img class="imgRateCharactar" src="../assets/images/character4.svg"/>' :
+                        totalValue >= 2 && theGender == 'male' || theGender=='ذكر'? '<img class="imgRateCharactar" src="../assets/images/character4.svg"/>' :
                         totalValue >= 2  ? '<img class="imgRateCharactar" src="../assets/images/beginnerFemale.svg"/>' :
 
-                            totalValue < 2 && theGender == 'male' ? '<img class="imgRateCharactar" src="../assets/images/character5.svg"/>' : 
+                            totalValue < 2 && theGender == 'male' || theGender=='ذكر' ? '<img class="imgRateCharactar" src="../assets/images/character5.svg"/>' : 
                             totalValue < 2  ? '<img class="imgRateCharactar" src="../assets/images/sleepyFemale.svg"/>' : ''
 
             }

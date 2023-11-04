@@ -23,14 +23,27 @@ body {
   margin-top: 88px;
 }
 .bgVector{
-  background-image: url(../assets/images/Background.svg);
-  background-repeat: no-repeat;
-  position: relative;
-  background-size: contain;
-  background-position: center calc(100% - 200px);  
-  transition: background-position 4s; 
+   background-image: url(../assets/images/Background.svg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    position: relative;
+    transition: background-position 4s;
 
 } 
+.bgVector:hover {
+  transition: 4s;
+  background-position: 100% 0; /* Move the background completely to the right on hover */
+  animation: walk 4s infinite linear; /* Apply the walk animation over 4 seconds on hover */
+}
+
+@keyframes walk {
+  from {
+      background-position:0 0 ; /* Initial position */
+  }
+  to {
+      background-position:100% 0 ; /* Move the background completely to the right */
+  }
+}
 .PartnersTextImg {
   display: flex;
   flex-direction: column;
@@ -82,7 +95,7 @@ html[lang='en'] .whoPartnerText{
   .bgVector{
     background-image: url(../assets/images/vectorMobile.svg);
     background-position: center calc(100% - 150px);  
-
+    animation: none;
   }
   .whoPartners{
     margin-top: 24px;

@@ -38,9 +38,9 @@
         <div id="output" class="col-lg-9 group-Cards">
 
         </div>
-        <div id="footer" class="" ></div>
 
-    </div>
+    </div>        <div id="footer" class="" ></div>
+
 
     <script src="../js/includeNav.js"></script>
     <script src="../js/nav.js"></script>
@@ -86,7 +86,7 @@ console.log("abd abda abd",currentLanguage)
         myArray.map(function (item, index) {
             const div = document.createElement("div");
             div.innerHTML = `
-            <div class="pathsCard col-lg-12 mx-auto center-content ${index === myArray.length - 1 ? 'spaceCard' : ''}">
+            <div class="pathsCard container col-lg-12 mx-auto center-content ${index === myArray.length - 1 ? 'spaceCard' : ''}">
             <div class="PathsTexts ">
                 <span class="howYouWork" id="wk">${item.title}</span>
                 <span class="PathsDescription" data-translate="walkingPersonalityDescription">${item.description}</span>

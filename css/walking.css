@@ -1,22 +1,4 @@
-body {
-    background-color: #FFFFFF !important;
-    overflow-x: hidden !important;
-}
-
-@font-face {
-    font-family: 'GE SS Unique Light';
-    src: url('../GE\ SS\ Unique\ Bold.otf');
-}
-
-@font-face {
-    font-family: 'GE SS Unique Bold';
-    src: url('../GE\ SS\ Unique\ Light.otf');
-}
-
-@font-face {
-    font-family: 'EnLanguage';
-    src: url('../HelveticaNeue.ttc');
-}
+/*
 
 ol, ul{
     padding: 0 !important;
@@ -371,4 +353,310 @@ li {
     }
 
 }
+ */
 
+ body {
+    background-color: #FFFFFF !important;
+    overflow-x: hidden !important;
+}
+
+@font-face {
+    font-family: 'GE SS Unique Light';
+    src: url('../GE\ SS\ Unique\ Bold.otf');
+}
+
+@font-face {
+    font-family: 'GE SS Unique Bold';
+    src: url('../GE\ SS\ Unique\ Light.otf');
+}
+
+@font-face {
+    font-family: 'EnLanguage';
+    src: url('../HelveticaNeue.ttc');
+}
+.theVector{
+    background-image: url(../assets/images/Background.svg);
+    background-repeat: no-repeat;
+    background-position: center 0 0;
+    height:550px;
+    width: 100%;
+    position: relative;
+    transition: background-position 4s; 
+
+}
+.theVector:hover {
+    transition: 4s;
+    background-position: 100% 0; /* Move the background completely to the right on hover */
+    animation: walk 8s infinite linear; /* Apply the walk animation over 4 seconds on hover */
+}
+
+@keyframes walk {
+    from {
+        background-position:0 0 ; /* Initial position */
+    }
+    to {
+        background-position:100% 0 ; /* Move the background completely to the right */
+    }
+}
+
+
+ .QuestionWalk{
+    padding-top: 274px;
+    font-family: 'GE SS Unique Light';
+color:  rgba(0, 128, 86, 1);
+font-size: 43px;
+font-weight: 700;
+line-height: 54px;
+letter-spacing: 0em;
+text-align: center;
+padding-left: 24px;
+padding-right: 24px;
+
+ }
+ .QuestionWalk2{
+    padding-top: 100px;
+    font-family: 'GE SS Unique Light' !important;
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #4BBEA5;
+    padding-left: 24px;
+padding-right: 24px;
+
+ }
+ html[lang="en"] .QuestionWalk{
+    font-family: 'EnLanguage';
+
+ }
+ html[lang="en"] .QuestionWalk2{
+    font-family: 'EnLanguage';
+
+ }
+ .textDescription{
+    font-family: 'GE SS Unique Bold' !important;
+font-size: 34px;
+font-weight: 300;
+line-height: 67px;
+letter-spacing: 0em;
+text-align: center;
+color: #000000;
+padding-left: 150px;
+padding-right: 150px;
+direction: rtl;
+
+ }
+ html[lang="en"] .textDescription{
+    direction: ltr;
+    font-family: 'EnLanguage';
+
+ }
+
+ .grid-group{
+    display: grid;
+        justify-content: center;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 140px;
+    grid-row-gap: 50px;
+    margin-top: 18px;
+    padding-bottom: 152px;
+    padding-right: 122px;   
+    padding-left: 122px; 
+ }
+
+ .theBox{
+    padding-top: 59px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.11);
+    width: 316px;
+    height: 316px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border-radius: 25px;
+    transition: 1s; 
+ }
+ .theBox:hover{
+    background-color: #EEC718;
+    transition: 1s;
+ }
+ .theBoxImgs{
+    padding-bottom: 17px;
+    transition: 1s;
+
+ }
+ .theBox:hover .theBoxImgs{
+    transition: 1s;
+    transform: rotate(-17.44deg);
+ }
+
+ .theBoxTexts{
+    font-family: 'GE SS Unique Bold';
+font-size: 28px;
+font-weight: 300;
+line-height: 35px;
+letter-spacing: 0em;
+text-align: center;
+color: #000000;
+direction: rtl;
+
+    
+ }
+ html[lang="en"] .theBoxTexts{
+    direction: ltr;
+ 
+        font-family: 'EnLanguage';
+
+
+ }
+
+ .ideasToWalk{
+    font-family: 'GE SS Unique Light';
+
+font-size: 40px;
+font-weight: 700;
+line-height: 50px;
+letter-spacing: 0em;
+text-align: center;
+padding-left: 24px;
+padding-right: 24px;
+color: #008056;
+
+ }
+
+ .theBox2{
+    padding-top: 59px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border-radius: 25px;
+    transition: 1s; 
+ }
+ @media screen and (max-width : 1300px) {
+    .grid-group{
+        grid-column-gap: 40px;
+    }
+}
+@media screen and (max-width : 1084px) {
+    .ideasToWalk{
+        margin-top: 68px;
+
+    }
+    .grid-group{
+        grid-template-columns:auto auto;
+    }
+    .theVector:hover {
+        background-position: 100% 0; /* Move the background completely to the right on hover */
+        animation: walk 14s infinite linear; /* Apply the walk animation over 4 seconds on hover */
+    }
+}
+@media screen and (max-width:828px) {
+    .textDescription{
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+}
+/* @media screen and (max-width:) {
+    
+} */
+ @media screen and (max-width: 676px) {
+    .theBox{
+        width: 131px;
+        height: 131px;
+    }
+    .theBox2{
+    
+    }
+    .textDescription{
+        font-size: 20px;
+        line-height: 45px;
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+    .QuestionWalk{
+        padding-top: 86px;
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .QuestionWalk2{
+        padding-top: 100px;
+
+        font-size: 24px;
+        line-height: 40px;
+
+    }
+    .ideasToWalk{
+        font-size: 24px;
+        line-height: 29px;
+        margin-top: 68px;
+    }
+    .theBoxTexts{
+        font-size: 11px;
+        line-height: 13.7px;
+        padding-left: 4.6px;
+        padding-right: 4.6px;
+    }
+    .theBox{
+        width: 131px;
+        height: 131px;
+        padding-top: 31px;
+
+    }
+    .theBox2{
+        padding-top: 31px;
+     
+        width: 178px;
+        height: 100px;
+    }
+    .theBox2:nth-child(even){
+           
+        padding-right: 25px !important;
+    }
+    .theBox2:nth-child(odd){
+           
+        padding-left: 25px !important;
+    }
+    .grid-group{
+        grid-template-columns: auto auto ;
+        grid-column-gap: 13px;
+        grid-row-gap: 16px;
+        padding-bottom: 0px;
+  
+
+    }
+  
+    .theBoxImgs{
+        width: 25px;
+        height: 40px;
+    }
+    .theVector{
+        height: 350px;
+    }
+   
+
+ }
+ @media screen and (max-width: 430px) {
+  .theVector{
+
+        background-image: url(../assets/images/vectorMobile.svg);
+        height: 500px;
+    }
+}
+ @media screen and (max-width:295px) {
+    .theVector{
+        height: 600px;
+    }
+    .grid-group{
+        grid-template-columns: auto;
+    }
+    .theBox2:nth-child(even){
+           
+        padding-right: 0px !important;
+    }
+    .theBox2:nth-child(odd){
+           
+        padding-left: 0px !important;
+    }
+ }
