@@ -26,13 +26,13 @@
     height:550px;
     width: 100%;
     position: relative;
-    transition: background-position 4s; 
+    transition: background-position 1s; 
 
 }
 .theVector:hover {
-    transition: 4s;
+    transition: 1s;
     background-position: 100% 0;
-    animation: walk 8s infinite linear;
+    animation: walk 1s  linear;
 }
 
 @keyframes walk {

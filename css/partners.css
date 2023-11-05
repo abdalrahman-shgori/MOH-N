@@ -33,15 +33,15 @@ body {
   background-position: center 100% 0;
   width: 100%;
   position: relative;
-  transition: background-position 4s;
+  transition: background-position 1s;
 
 
 }
 
 .bgVector:hover {
-  transition: 4s;
+  transition: 1s;
   background-position: 100% 0;
-  animation: walk 8s infinite linear;
+  animation: walk 1s  linear;
 }
 
 @keyframes walk {

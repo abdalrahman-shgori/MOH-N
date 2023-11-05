@@ -29,13 +29,13 @@ body {
     background-repeat: no-repeat;
     background-position: center calc(100% - 50px);
     position: relative;
-    transition: background-position 4s;
+    transition: background-position 1s;
 
 }
 
 .bgVector:hover {
-    transition: 4s;
-    animation: walk 8s linear;
+    transition: 1s;
+    animation: walk 1s linear;
 
 }
 
@@ -46,6 +46,7 @@ body {
 
     to {
         background-position: 100% calc(100% - 50px);
+        
     }
 }
 

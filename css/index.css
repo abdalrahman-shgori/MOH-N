@@ -217,27 +217,23 @@ html[lang="en"] .descriptionText {
     width: 100%;
     position: relative;
     bottom: 200px;
-    transition: background-position 4s;
+    transition: background-position 1s;
     z-index: 1;
 
 }
 
 .vector:hover {
     background-position: 100% 0;
-    /* Move the background completely to the right on hover */
-    animation: walk 4s infinite linear;
-    /* Apply the walk animation over 4 seconds on hover */
+    animation: walk 1s  linear;
 }
 
 @keyframes walk {
     from {
         background-position: 0 0;
-        /* Initial position */
     }
 
     to {
         background-position: 100% 0;
-        /* Move the background completely to the right */
     }
 }
 

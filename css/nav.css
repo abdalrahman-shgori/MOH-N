@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'GE SS Unique Light';
+    font-family: 'GE SS Unique Bold';
     src: url('../GE\ SS\ Unique\ Light.otf') !important;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .lang-shortcut {
-    font-family: 'Montserrat';
+    font-family: 'GE SS Unique Bold';
     display: flex;
     justify-content: center;
 
@@ -47,13 +47,11 @@
 }
 .language-dropdown .dropdown-menu {
     background-color: #FFFFFF;
-
     top: 75px;
-
     width: 60px;
     height: 80px;
     gap: 4px;
-    border-radius: 24px 0px 0px 24px;
+    border-radius: 16px;
 }
 
 html[lang="en"] .language-dropdown .dropdown-menu {
@@ -65,7 +63,7 @@ html[lang="en"] .language-dropdown .dropdown-menu {
     background-color: #FFFFFF;
     left: unset !important;
     --bs-dropdown-min-width: 0 !important;
-    border-radius: 24px 0px 0px 24px !important;
+    border-radius: 18px!important;
     border-color: #F5F5F5;
     box-shadow: 2px 2px 4px 4px #3333331F;
     animation: slide-in 0.7s ease-in-out 0s forwards;
@@ -95,7 +93,7 @@ html[lang="en"] .language-dropdown .dropdown-menu {
     border: none;
     background-color: none;
     font-size: 16px;
-    font-family: 'Montserrat' !important;
+    font-family: 'GE SS Unique Bold';
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -108,7 +106,7 @@ html[lang="en"] .language-dropdown .dropdown-menu {
     background-color:#008656 !important;
     width: 29px;
     height: 3.24px;
-    top: 69%;
+    top: 77%;
     border-radius: 20px;
     position: absolute;
     transform: translateX(-49%);
@@ -120,7 +118,7 @@ html[lang="en"] .language-dropdown .dropdown-menu {
     border-radius: 1px;
     width:29px;
     height: 3.24px;
-    top: 26%;
+    top: 20%;
     position: absolute;
     transform: translateX(-49%);
 }
@@ -139,27 +137,27 @@ html[lang="en"] .language-dropdown .dropdown-menu {
 /* Style the items */
 .item-style {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 300;
     line-height: 36px;
     letter-spacing: 0em;
     color: #333333;
-    text-align: right;
-    font-family: 'GE SS Unique Light' !important;
-    padding-left: 80px;
-    padding-right: 36px;
+    text-align: center;
+    font-family: 'GE SS Unique Bold' !important;
+    padding-left: 57px;
+    padding-right: 57px;
     height: 60px;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     display: inline-flex;
 
 }
 
 html[lang='en'] .item-style {
-    justify-content: left;
-    padding-right: 55px;
-    padding-left: 36px;
-    font-family: 'EnLanguage' !important;
-    text-align: left;
+    justify-content: center;
+    padding-right: 57px;
+    padding-left: 57px;
+    font-family: 'GE SS Unique Bold';
+    /* text-align: left; */
 }
 
 .slide-in-1 {
@@ -220,6 +218,9 @@ html[lang='en'] .item-style {
 }
 
 @media screen and (max-width:600px) {
+    .language-dropdown .dropdown-menu {
+        top: 60px;
+    }
     .logoNav {
         width: 87px;
         height: 80px;
@@ -233,7 +234,7 @@ html[lang='en'] .item-style {
     .item-style {
         font-size: 14px;
         padding-left: 30px;
-        padding-right: 26px;
+        padding-right: 30px;
         height: 40px;
     }
 
@@ -251,8 +252,8 @@ html[lang='en'] .item-style {
     } */
 
     html[lang="en"] .item-style {
-        padding-right: 10px;
-        padding-left: 26px;
+        padding-right: 30px;
+        padding-left: 30px;
         gap: 0px;
     }
 }

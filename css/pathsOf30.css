@@ -11,7 +11,7 @@ a{
     background-repeat: no-repeat;
     background-position: center calc(100% + 200px);  
     position: relative;
-    transition: background-position 4s; 
+    transition: background-position 1s; 
  padding-top: 250px;
  width: 100%;
 
@@ -19,7 +19,7 @@ a{
 
  .bgVector:hover {
     transition: 4s;
-    animation: walk 8s infinite  linear;
+    animation: walk 1s linear;
     
   }
   

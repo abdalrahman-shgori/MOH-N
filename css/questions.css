@@ -29,7 +29,7 @@ body {
 
 .bgVector:hover {
   transition: 4s;
-  animation: walk 8s infinite linear;
+  animation: walk 3s infinite linear;
 
 }
 
