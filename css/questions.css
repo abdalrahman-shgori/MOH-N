@@ -21,10 +21,9 @@ body {
 .bgVector{
   background-image: url(../assets/images/Background.svg);
   background-repeat: no-repeat;
-  background-position: center calc(100% - 100px);  
+  background-position: center calc(100% - 300px);  
   position: relative;
   transition: background-position 4s; 
-
 } 
 .bgVector:hover {
   transition: 4s;
@@ -34,10 +33,10 @@ body {
 
 @keyframes walk {
   from {
-      background-position:0 calc(100% - 100px) ; /* Initial position */
+      background-position:0 calc(100% - 300px) ; /* Initial position */
   }
   to {
-      background-position:100% calc(100% - 100px) ; /* Move the background completely to the right */
+      background-position:100% calc(100% - 300px) ; /* Move the background completely to the right */
   }
 } 
 .progres {

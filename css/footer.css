@@ -8,7 +8,7 @@
   width: 100%;
   height: 280px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
@@ -49,7 +49,8 @@ padding-top: 200px;
     @media screen and (max-width:900px) {
       .fff{
         padding-bottom: 0px;
-        padding-top: 40px;
+        padding-top: 150px;
+        background-size: cover !important;
       }
       .textStyle{
           font-size: 18px;
@@ -80,14 +81,15 @@ padding-top: 200px;
     @media screen and (max-width:767px) {
       .fff{
         background-image: url(../assets/images/footerMobile.svg);
-        padding-top: 150px;
+        padding-top: 200px;
+        /* height: 240px; */
+        background-size: cover !important;
       }
         .textStyle{
             font-size: 8px;
             line-height: 40px;
             font-weight: 300;
             height: 21px;
-            margin-top:8px;
             gap: 4px;
         }
         /* .textStyle:nth-child(2) {

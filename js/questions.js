@@ -270,7 +270,8 @@ function loadQuestion(index) {
 progressElements[0].style.opacity = '100%';
 
 function nextQuestion() {
-
+console.log("the current index number",currentQuestionIndex)
+localStorage.setItem('currentIndex',currentQuestionIndex)
     const selectedAnswers = document.querySelectorAll('input[name="answer"]:checked');
     if (selectedAnswers.length > 0) {
         let answerValue = 0;
@@ -349,11 +350,15 @@ function nextQuestion() {
         } else {
             window.location.href = "../pages/sucess.html"
         }
+        
         currentIndex++;
-    } else {
+    } 
+  
+    else {
         showToast("Please select at least one answer before proceeding.");
     }
 }
+
 function showToast(message) {
     const toastContainer = document.querySelector(".toast-container");
     const toast = document.createElement("div");
