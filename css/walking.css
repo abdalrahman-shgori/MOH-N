@@ -354,7 +354,7 @@ color: #008056;
         background-position: center calc(100% - 250px);
     }
     html[lang='en'] .theVector{
-        height: 510px;
+        height: 540px;
     }
 }
  @media screen and (max-width:295px) {
