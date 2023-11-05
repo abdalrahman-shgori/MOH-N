@@ -289,6 +289,11 @@ height: 280px;
     }
 }
 @media screen and (max-width:890px) {
+    .whatYour {
+       
+        padding-left: 37px !important;
+        padding-right: 37px !important;
+    }
     img{
 width: 250px;
 height: 220px;
