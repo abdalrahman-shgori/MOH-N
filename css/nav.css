@@ -142,7 +142,7 @@ html[lang="en"] .language-dropdown .dropdown-menu {
     letter-spacing: 0em;
     color: #333333;
     text-align: center;
-    font-family: 'GE SS Unique Bold' !important;
+    font-family: 'GE SS Unique Bold' ;
     padding-left: 57px;
     padding-right: 57px;
     height: 60px;
