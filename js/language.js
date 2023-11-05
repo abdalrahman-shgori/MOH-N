@@ -160,7 +160,7 @@ yourCommitmentSetsAnExample: "التزامك يضرب به المثل",
 youTakeOffLikeARocketAndKeepWalking: "انطلاقك مثل الصاروخ، لا تتوقف عن المشي",
 youTakeOffLikeARocketAndKeepWalkingFe: "انطلاقك مثل الصاروخ، لا تتوقفين عن المشي",
 
-butThereAreAFewSteps: "لكن تتبقى خطوات بسيطة وتكون مستمراً",
+butThereAreAFewSteps: "لكن تتبقى خطوات بسيطة وتكون مستمرةً",
 butThereAreAFewStepsFe: "لكن تتبقى خطوات بسيطة وتكونين مستمراً",
 
 butYouNeedAStarting: "لكن تحتاج خطةً للبدء ليصبح سلوكك مستمراً",
