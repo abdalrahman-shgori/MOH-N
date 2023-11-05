@@ -151,15 +151,12 @@ html[lang="en"] .language-dropdown .dropdown-menu {
     display: inline-flex;
 
 }
-
 html[lang='en'] .item-style {
     justify-content: center;
     padding-right: 57px;
     padding-left: 57px;
     font-family: 'EnLanguage' !important;
-    /* text-align: left; */
 }
-
 .slide-in-1 {
     animation: slide-ins 0.8s 0s forwards;
 }
