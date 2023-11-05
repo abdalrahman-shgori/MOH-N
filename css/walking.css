@@ -280,6 +280,7 @@ color: #008056;
         padding-left: 4.6px;
         padding-right: 4.6px;
     }
+ 
     .theBox{
         width: 131px;
         height: 131px;
@@ -314,6 +315,7 @@ color: #008056;
         padding-left: 0px !important;
         padding-right: 0px !important;
     }
+   
   
     .theBoxImgs{
         width: 25px;
@@ -333,9 +335,9 @@ color: #008056;
         height: 55px;
         width: 55px;
     }
-    .theBox2:last-child {
-        margin-top: 40px;
-
+    
+    html[lang='en'] .theBox2:last-child{
+        margin-top: 50px;
     }
     
     .theVector{
@@ -350,6 +352,9 @@ color: #008056;
         background-image: url(../assets/images/vectorMobile.svg);
         height: 478px;
         background-position: center calc(100% - 250px);
+    }
+    html[lang='en'] .theVector{
+        height: 510px;
     }
 }
  @media screen and (max-width:295px) {
