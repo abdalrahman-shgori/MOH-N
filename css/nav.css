@@ -152,10 +152,10 @@ html[lang="en"] .language-dropdown .dropdown-menu {
 
 }
 html[lang='en'] .item-style {
+    font-family: 'EnLanguage' !important;
     justify-content: center;
     padding-right: 57px;
     padding-left: 57px;
-    font-family: 'EnLanguage' !important;
 }
 .slide-in-1 {
     animation: slide-ins 0.8s 0s forwards;
