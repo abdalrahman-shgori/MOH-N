@@ -273,8 +273,16 @@ html[lang='en'] .div5 {
 width: 350px;
 height: 315px;
     }
+    .WalkSportText{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
 }
 @media screen and (max-width:1100px) {
+    .WalkSportText{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
     img{
 width: 300px;
 height: 280px;
