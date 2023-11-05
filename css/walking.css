@@ -292,13 +292,7 @@ color: #008056;
         width: 178px;
         height: 100px;
     }
-    .theBox2:nth-child(even){
-        padding-right: 24px;
-           
-    }
-    .theBox2:nth-child(odd){
-        padding-left: 24px;
-    }
+   
     .grid-group{
         grid-template-columns: auto auto ;
         grid-column-gap: 13px;
@@ -347,6 +341,13 @@ color: #008056;
 
  }
  @media screen and (max-width: 430px) {
+    .theBox2:nth-child(even){
+        padding-right: 24px;
+           
+    }
+    .theBox2:nth-child(odd){
+        padding-left: 24px;
+    }
   .theVector{
 
         background-image: url(../assets/images/vectorMobile.svg);
