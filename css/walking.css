@@ -23,7 +23,7 @@
     background-image: url(../assets/images/Background.svg);
     background-repeat: no-repeat;
     background-position: center;
-    height:550px;
+    height:545px;
     width: 100%;
     position: relative;
     transition: background-position 1s; 
@@ -46,7 +46,7 @@
 
 
  .QuestionWalk{
-    padding-top: 274px;
+    padding-top: 248px;
     font-family: 'GE SS Unique Light';
 color:  rgba(0, 128, 86, 1);
 font-size: 43px;
@@ -104,7 +104,18 @@ direction: rtl;
     grid-template-columns: auto auto auto;
     grid-column-gap: 140px;
     grid-row-gap: 50px;
-    margin-top: 18px;
+    padding-top: 60px;
+    padding-bottom: 152px;
+    padding-right: 122px;   
+    padding-left: 122px; 
+ }
+ .grid-group2{
+    display: grid;
+        justify-content: center;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 140px;
+    grid-row-gap: 50px;
+    padding-top: 60px;
     padding-bottom: 152px;
     padding-right: 122px;   
     padding-left: 122px; 
@@ -122,6 +133,13 @@ direction: rtl;
     border-radius: 25px;
     transition: 1s; 
  }
+ .theBox2{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border-radius: 25px;
+    transition: 1s; 
+ }
  .theBox:hover{
     background-color: #EEC718;
     transition: 1s;
@@ -129,8 +147,16 @@ direction: rtl;
  .theBoxImgs{
     padding-bottom: 17px;
     transition: 1s;
-
  }
+ .theBoxImgs2{
+    padding-bottom: 17px;
+    transition: 1s;
+ }
+ .theBox2:nth-of-type(1) .theBoxImgs2 {
+    padding-bottom: 30px;
+}
+
+
  .theBox:hover .theBoxImgs{
     transition: 1s;
     transform: rotate(-17.44deg);
@@ -144,16 +170,27 @@ line-height: 35px;
 letter-spacing: 0em;
 text-align: center;
 color: #000000;
+direction: rtl; 
+ }
+ .theBoxTexts2{
+    font-family: 'GE SS Unique Bold';
+font-size: 28px;
+font-weight: 300;
+line-height: 45px;
+letter-spacing: 0em;
+text-align: center;
+color: #000000;
 direction: rtl;
 
     
  }
  html[lang="en"] .theBoxTexts{
     direction: ltr;
- 
         font-family: 'EnLanguage';
-
-
+ }
+ html[lang="en"] .theBoxTexts2{
+    direction: ltr;
+        font-family: 'EnLanguage';
  }
 
  .ideasToWalk{
@@ -170,17 +207,12 @@ color: #008056;
 
  }
 
- .theBox2{
-    padding-top: 59px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    border-radius: 25px;
-    transition: 1s; 
- }
  @media screen and (max-width : 1300px) {
     .grid-group{
+        grid-column-gap: 40px;
+    }
+    .grid-group2{
         grid-column-gap: 40px;
     }
 }
@@ -190,6 +222,9 @@ color: #008056;
 
     }
     .grid-group{
+        grid-template-columns:auto auto;
+    }
+    .grid-group2{
         grid-template-columns:auto auto;
     }
     .theVector:hover {
@@ -218,6 +253,8 @@ color: #008056;
         padding-top: 86px;
         font-size: 24px;
         line-height: 40px;
+        padding-left: 38px;
+        padding-right: 38px;
     }
     .QuestionWalk2{
         padding-top: 100px;
@@ -229,11 +266,17 @@ color: #008056;
     .ideasToWalk{
         font-size: 24px;
         line-height: 29px;
-        margin-top: 68px;
+        margin-top: 0px;
     }
     .theBoxTexts{
         font-size: 11px;
         line-height: 13.7px;
+        padding-left: 4.6px;
+        padding-right: 4.6px;
+    }
+    .theBoxTexts2{
+        font-size: 13px;
+        line-height: 24px;
         padding-left: 4.6px;
         padding-right: 4.6px;
     }
@@ -245,31 +288,55 @@ color: #008056;
     }
     .theBox2{
         padding-top: 31px;
-     
         width: 178px;
         height: 100px;
     }
     .theBox2:nth-child(even){
+        padding-right: 24px;
            
-        padding-right: 25px !important;
     }
     .theBox2:nth-child(odd){
-           
-        padding-left: 25px !important;
+        padding-left: 24px;
     }
     .grid-group{
         grid-template-columns: auto auto ;
         grid-column-gap: 13px;
         grid-row-gap: 16px;
         padding-bottom: 0px;
-  
-
+        padding-top: 12px;
+    }
+    .grid-group2{
+        grid-template-columns: auto auto ;
+        grid-column-gap: 13px;
+        grid-row-gap: 64px;
+        padding-bottom: 0px;
+        padding-top: 12px;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
     }
   
     .theBoxImgs{
         width: 25px;
         height: 40px;
     }
+    .theBoxImgs2{
+       
+        padding-bottom: 14px;
+        height: 55px;
+        width: 55px;
+    }
+    .theBox2:nth-of-type(1) .theBoxImgs2 {
+        padding-bottom: 14px;
+    }
+    .theBox2:nth-of-type(2) .theBoxImgs2 {
+        padding-bottom: 14px;
+        height: 55px;
+        width: 55px;
+    }
+    .theBox2:last-child {
+
+    }
+    
     .theVector{
         height: 350px;
     }
@@ -280,7 +347,8 @@ color: #008056;
   .theVector{
 
         background-image: url(../assets/images/vectorMobile.svg);
-        height: 500px;
+        height: 478px;
+        background-position: center calc(100% - 250px);
     }
 }
  @media screen and (max-width:295px) {
@@ -288,6 +356,9 @@ color: #008056;
         height: 600px;
     }
     .grid-group{
+        grid-template-columns: auto;
+    }
+    .grid-group2{
         grid-template-columns: auto;
     }
     .theBox2:nth-child(even){
