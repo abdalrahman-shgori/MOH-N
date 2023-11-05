@@ -200,8 +200,8 @@ html[lang="en"] .downloadCalendar{
 
 @media screen and (max-width:767px) {
     .bgVector{
-        background-image: url(../assets/images/vectorMobile.svg);
-        background-position: center calc(100% - 300px);  
+        background-image: url(../assets/images/resultbg.svg);
+        background-position: center calc(100% - 200px);  
 
 
     }
