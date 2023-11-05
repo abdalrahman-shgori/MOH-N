@@ -42,6 +42,7 @@
 
     <script>
         const totalValue = localStorage.getItem('totalValue');
+        console.log("wkeekeke",totalValue)
         const theName = localStorage.getItem('userName');
         console.log('Total Value:', totalValue);
         console.log('name:', theName);
@@ -67,57 +68,48 @@
                 ${totalValue >= 2 ? `<p class="nameText">${theName}</p>&nbsp; ,<p class="nameText" data-translate="congra"> تهانينا</p>` : ` <p class="nameText">${theName}</p>&nbsp; ,<p class="nameText" data-translate="Unfortunately">للاسف</p> `}
                 </div>
                 <div class="rate">
-                    ${
-                        totalValue >= 30 && theGender== 'male' || theGender=='ذكر' ? '<p class="rateText" data-translate="professional">أنت محترف</p>' :
-                        totalValue >= 30  ? '<p class="rateText" data-translate="professionalFe">أنت محترفة</p>' :
+                    ${totalValue >= 30 && (theGender === 'male' || theGender === 'ذكر') ? '<p class="rateText" data-translate="professional">أنت محترف</p>' :
+    totalValue >= 30 ? '<p class="rateText" data-translate="professionalFe">أنت محترفة</p>' :
+    totalValue >= 18 && (theGender === 'male' || theGender === 'ذكر') ? '<p class="rateText" data-translate="youareDriven">أنت منطلق </p>' :
+    totalValue >= 18 ? '<p class="rateText" data-translate="youareDrivenFe">أنت منطلقة </p>' :
+    totalValue >= 6 && (theGender === 'male' || theGender === 'ذكر') ? '<p class="rateText" data-translate="youareInitiator"> أنت بادي</p>' :
+    totalValue >= 6 ? '<p class="rateText" data-translate="youareInitiatorFe"> أنت بادية</p>' :
+    totalValue >= 2 && (theGender === 'male' || theGender === 'ذكر') ? '<p class="rateText" data-translate="youareIntending">أنت ناوي </p>' :
+    totalValue >= 2 ? '<p class="rateText" data-translate="youareIntendingFe">أنت ناوية </p>' :
+    totalValue < 2 && (theGender === 'male' || theGender === 'ذكر') ? '<p class="rateText" data-translate="youhavePassiveBehavior">أنت صاحب سلوك خامل </p>' :
+    totalValue < 2 ? '<p class="rateText" data-translate="youhavePassiveBehaviorFe">أنت صاحبة سلوك خامل </p>' : ''
+}</div>
 
-                    
-                totalValue >= 18 && theGender == 'male' || theGender=='ذكر' ? '<p class="rateText" data-translate="youareDriven">أنت منطلق </p>' :
-                totalValue >= 18 ? '<p class="rateText" data-translate="youareDrivenFe">أنت منطلقة </p>' :
+<div class="rate">
+    ${
+        totalValue >= 30 ? '<p class="titleText" data-translate="yourCommitmentSetsAnExample">التزامك يضرب به المثل</p>' :
+        totalValue >= 18 && (theGender === 'male' || theGender === 'ذكر') ? '<p class="titleText" data-translate="youTakeOffLikeARocketAndKeepWalking">انطلاقك مثل الصاروخ لا تتوقف عن المشي</p>' :
+        totalValue >= 18 ? '<p class="titleText" data-translate="youTakeOffLikeARocketAndKeepWalkingFe">انطلاقك مثل الصاروخ لا تتوقفين عن المشي</p>' :
+        totalValue >= 6 && (theGender === 'male' || theGender === 'ذكر') ? '<p class="titleText" data-translate="butThereAreAFewSteps">كن تتبقى خطوات بسيطة وتكون مستمراً</p>' :
+        totalValue >= 6 ? '<p class="titleText" data-translate="butThereAreAFewStepsFe">لكن تتبقى خطوات بسيطة وتكونين مستمرةً</p>' :
+        totalValue >= 2 ? '<p class="titleText" data-translate="butYouNeedAStarting">لكن تحتاج خطةً للبدء ليصبح سلوكك مستمراً</p>' :
+        totalValue < 2 && (theGender === 'male' || theGender === 'ذكر') ? '<p class="titleText" data-translate="andYouHaven">ولم تكتسب السوك بعد</p>' :
+        totalValue < 2 ? '<p class="titleText" data-translate="andYouHavenFe">ولم تكتسبي السوك بعد</p>' :
+        ''
+    }
+</div>
 
-                    totalValue >= 6 && theGender == 'male' || theGender=='ذكر' ? '<p class="rateText" data-translate="youareInitiator"> أنت بادي</p>' :
-                    totalValue >= 6 ?  '<p class="rateText" data-translate="youareInitiatorFe"> أنت بادية</p>' :
-
-                        totalValue >= 2 && theGender == 'male' || theGender=='ذكر' ? '<p class="rateText" data-translate="youareIntending">أنت ناوي </p>' :
-                        totalValue >= 2 ? '<p class="rateText" data-translate="youareIntendingFe">أنت ناوية </p>' :
-
-                            totalValue < 2 && theGender == 'male' || theGender=='ذكر' ? '<p class="rateText" data-translate="youhavePassiveBehavior">أنت صاحب سلوك خامل </p>' : 
-                            totalValue < 2 ? '<p class="rateText" data-translate="youhavePassiveBehaviorFe">أنت صاحبة سلوك خامل </p>' : ''
-
-            }                </div>
-                <div class="rate">
-                    ${totalValue >= 30 ? '<p class="titleText" data-translate="yourCommitmentSetsAnExample">التزامك يضرب به المثل</p>' :
-                totalValue >= 18 && theGender == 'male' || theGender =="ذكر" ? '<p class="titleText" data-translate="youTakeOffLikeARocketAndKeepWalking">انطلاقك مثل الصاروخ لا تتوقف عن المشي</p>' :
-                totalValue >= 18  ? '<p class="titleText" data-translate="youTakeOffLikeARocketAndKeepWalkingFe">انطلاقك مثل الصاروخ لا تتوقفين عن المشي</p>' :
-
-                    totalValue >= 6  && theGender == 'male' || theGender =="ذكر"  ? '<p class="titleText" data-translate="butThereAreAFewSteps">كن تتبقى خطوات بسيطة وتكون مستمراً</p>' :
-                    totalValue >= 6   ? '<p class="titleText" data-translate="butThereAreAFewStepsFe">لكن تتبقى خطوات بسيطة وتكونين مستمرةً</p>' :
-
-                        totalValue >= 2 ? '<p class="titleText" data-translate="butYouNeedAStarting">لكن تحتاج خطةً للبدء ليصبح سلوكك مستمراً</p>' :
-                            totalValue < 2  && theGender == 'male' || theGender =="ذكر" ? '<p class="titleText" data-translate="andYouHaven">ولم تكتسب السوك بعد</p>' : 
-                            totalValue < 2   ? '<p class="titleText" data-translate="andYouHavenFe">ولم تكتسبي السوك بعد</p>' : ''
-
-            }               
-                </div>
                 <div class="RateCharacterImg">
-                ${
-                    totalValue >= 30 && theGender == 'male' || theGender=='ذكر' ? '<img class="imgRateCharactar" src="../assets/images/character1.svg"/>' :
-                    totalValue >= 30  ? '<img class="imgRateCharactar" src="../assets/images/professionalFemale.svg"/>' :
+    ${
+        totalValue >= 30 && (theGender === 'male' || theGender === 'ذكر') ? '<img class="imgRateCharactar" src="../assets/images/character1.svg"/>' :
+        totalValue >= 30 ? '<img class="imgRateCharactar" src="../assets/images/professionalFemale.svg"/>' :
+        totalValue >= 18 && (theGender === 'male' || theGender === 'ذكر') ? '<img class="imgRateCharactar" src="../assets/images/character2.svg"/>' :
+        totalValue >= 18 ? '<img class="imgRateCharactar" src="../assets/images/startingFemale.svg"/>' :
+        totalValue >= 6 && (theGender === 'male' || theGender === 'ذكر') ? '<img class="imgRateCharactar" src="../assets/images/character3.svg"/>' :
+        totalValue >= 6 ? '<img class="imgRateCharactar" src="../assets/images/willingFemale.svg"/>' :
+        totalValue >= 2 && (theGender === 'male' || theGender === 'ذكر') ? '<img class="imgRateCharactar" src="../assets/images/character4.svg"/>' :
+        totalValue >= 2 ? '<img class="imgRateCharactar" src="../assets/images/beginnerFemale.svg"/>' :
+        totalValue < 2 && (theGender === 'male' || theGender === 'ذكر') ? '<img class="imgRateCharactar" src="../assets/images/character5.svg"/>' :
+        totalValue < 2 ? '<img class="imgRateCharactar" src="../assets/images/sleepyFemale.svg"/>' :
+        ''
+    }
+</div>
 
-                totalValue >= 18 && theGender == 'male' || theGender=='ذكر' ? '<img class="imgRateCharactar" src="../assets/images/character2.svg"/>' :
-                totalValue >= 18  ? '<img class="imgRateCharactar" src="../assets/images/startingFemale.svg"/>' :
-                
-                    totalValue >= 6 && theGender == 'male' || theGender=='ذكر' ? '<img class="imgRateCharactar" src="../assets/images/character3.svg"/>' :
-                    totalValue >= 6  ? '<img class="imgRateCharactar" src="../assets/images/willingFemale.svg"/>' :
-
-                        totalValue >= 2 && theGender == 'male' || theGender=='ذكر'? '<img class="imgRateCharactar" src="../assets/images/character4.svg"/>' :
-                        totalValue >= 2  ? '<img class="imgRateCharactar" src="../assets/images/beginnerFemale.svg"/>' :
-
-                            totalValue < 2 && theGender == 'male' || theGender=='ذكر' ? '<img class="imgRateCharactar" src="../assets/images/character5.svg"/>' : 
-                            totalValue < 2  ? '<img class="imgRateCharactar" src="../assets/images/sleepyFemale.svg"/>' : ''
-
-            }
-            </div>
                 
                 <div class='rate descriptionTextGroup col-lg-8 mx-auto'>
                     ${totalValue >= 30 ? '<p class="descriptionText" data-translate="stage1">يتميز الأشخاص في هذه المرحلة بأنهم قدوة لمن حولهم لديهم العزم والقدرة على الوصول والاستمرار على تحقيق أهدافهم فهم رياضيون ومثابرون على المشي. واصل على ما أنت عليه وكن قدوة لمن حولك.</p>' :
