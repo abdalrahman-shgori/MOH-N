@@ -279,6 +279,11 @@ height: 315px;
     }
 }
 @media screen and (max-width:1100px) {
+    .whatYour {
+       
+        padding-left: 37px !important;
+        padding-right: 37px !important;
+    }
     .WalkSportText{
         padding-left: 40px;
         padding-right: 40px;
@@ -313,8 +318,8 @@ height: 220px;
         margin-top: 31px;
         font-size: 21px;
         line-height: 29px;
-        padding-left: 37px !important;
-        padding-right: 37px !important;
+        padding-left: 34px !important;
+        padding-right: 34px !important;
     }
 
     .interName {
