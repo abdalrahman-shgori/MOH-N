@@ -81,7 +81,8 @@ Walk30isaninitiative:'Walk 30 is an initiative across the Kingdom, to raise awar
 Aim:"Aim",
 Toraisetherates:'To raise the rates of physical activity in general to the internationally recommended level(150 minutes per week), which is reflected in the increase in the average age from 74 years to 80 years.',
 Byaccessingthesite:'By accessing the site, you are our conscious partner. Start the test and know your walking personality',
-Whatisyourpersonality:"What is your personality? Start the test and find out"
+Whatisyourpersonality:"What is your personality? Start the test and find out",
+theResult:"The Result"
 
 
 
@@ -167,8 +168,8 @@ stage4: "يتميز الأشخاص في هذه المرحلة ببوعي كاف�
 stage5: "الأشخاص في هذه المرحلة عندهم الرغبة في التغيير لكن من السهل عليهم اختلاق الأعذار. عليك مواجهة تلك الأعذار بأسباب تحفزك للوصول إلى هدفك. ابدأ الآن بالتغيير، وتحد نفسك، واستمر في الحفاظ على صحتك.",
 next:"التالي",
 pdfDownloadText:"للاطلاع على الدليل الخاص بمرحلتك",
-calendarDownload:"لتحميل التذكيرات على تقويم جوالك"
-
+calendarDownload:"لتحميل التذكيرات على تقويم جوالك",
+theResult:'النتيجة'
 
 
 

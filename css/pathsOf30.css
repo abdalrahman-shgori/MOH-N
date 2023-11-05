@@ -6,6 +6,31 @@ body {
 a{
     text-decoration: none !important;
 }
+.bgVector{
+    background-image: url(../assets/images/Background.svg);
+    background-repeat: no-repeat;
+    background-position: center calc(100% + 200px);  
+    position: relative;
+    transition: background-position 4s; 
+ padding-top: 250px;
+ width: 100%;
+
+ } 
+
+ .bgVector:hover {
+    transition: 4s;
+    animation: walk 8s infinite  linear; /* Apply the walk animation over 4 seconds on hover */
+    
+  }
+  
+  @keyframes walk {
+    from {
+        background-position:0 calc(100% + 200px) ; /* Initial position */
+    }
+    to {
+        background-position:100% calc(100% + 200px) ; /* Move the background completely to the right */
+    }
+  } 
 @font-face {
     font-family: 'GE SS Unique Bold';
     src: url('../GE\ SS\ Unique\ Light.otf');
@@ -20,11 +45,14 @@ a{
   }
 .PathsText {
     color: #008056;
+    text-align: center;
     font-size: 40px;
     font-weight: 700;
     line-height: 49px;
-    margin-bottom: 64px;
+    margin-bottom: 33px;
         font-family: 'GE SS Unique Light' ;
+        position: relative;
+        bottom: 100px;
 
 }
 html[lang="en"] .PathsText{
@@ -41,14 +69,9 @@ html[lang="en"] .PathsText{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 88px;
-}
-.wek{
+    z-index: 0;
 }
 
-scrolls{
-    background-color: #008056 !important;
-}
 .pathsCard {
 padding: 36px 60px 36px 60px;
 overflow-x: auto;
@@ -57,7 +80,6 @@ overflow-x: auto;
     box-shadow: 2px 2px 22px 0px hsla(0, 0%, 20%, 0.12);
     display: flex;
     margin-bottom: 36px;
-    margin-top: 1px;
     width: 100% !important;
     transition: transform 0.3s; /* Add a smooth transition for the transform property */
 }
@@ -176,6 +198,9 @@ html[lang = "en"] .center-content{
    
 }
 @media screen and (max-width:767px) {
+    .group-Cards{
+        padding-bottom: 90px;
+    }
     .pathsCard{
         padding: 24px 26px 24px 26px;
         margin-bottom: 16px;
@@ -186,12 +211,21 @@ html[lang = "en"] .center-content{
     .paths{
         margin-top: 24px;
     }
+    .bgVector{
+        background-image: url(../assets/images/vectorMobile.svg);
+        padding-top: 102px;
+        background-position:center calc(100% + 60px);
+
+
+    }
    
     .PathsText{
         font-size: 24px;
         line-height: 29px;
         gap: 8px;
         margin-bottom: 24px;
+        bottom: 50px;
+
 
     }
     html[lang='en'] .PathsText{

@@ -27,7 +27,7 @@ body {
 } 
 .bgVector:hover {
   transition: 4s;
-  animation: walk 4s infinite  linear; /* Apply the walk animation over 4 seconds on hover */
+  animation: walk 8s infinite  linear; /* Apply the walk animation over 4 seconds on hover */
   
 }
 
@@ -216,6 +216,7 @@ html[lang="en"] .nextBtn {
   background-image: url('../assets/images/arrows.svg');
   background-position: right;
   font-family: 'EnLanguage';
+  padding-right: 40px;
 }
 
 .prevBtn {

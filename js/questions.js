@@ -60,7 +60,6 @@ const questions = [
             { text: "I have nothing to stop me from walking", value: 0 },
             { text: "There is no suitable place", value: 0 },
             { text: "I do not have time", value: 0 },
-            { text: "I do not have time", value: 0 },
             { text: "pver", value: 0 }
 
         ],
@@ -174,8 +173,9 @@ const increaseButton = document.getElementById('increaseButton');
 const decreaseButton = document.getElementById('decreaseButton');
 let currentIndex = 0;
 const selectedAnswerValues = [];
-function loadQuestion(index) {
 
+function loadQuestion(index) {
+   
     setInterval(function () {
         const newLang = document.documentElement.lang;
 
@@ -187,6 +187,7 @@ function loadQuestion(index) {
     }, 0);
     const questionContainer = document.getElementById("question");
     let lg = document.documentElement.lang;
+   
     if (index + 1 <= questionsAr.length) {
         console.log(questionsAr.length, index + 1)
         if (lg === 'ar') {
@@ -266,14 +267,52 @@ function loadQuestion(index) {
     } else {
         prevButton.style.display = "inline-block";
     }
+
+    const nextButton = document.getElementById("nextButton");
+
+if (currentQuestionIndex === 9) {
+    if(localStorage.getItem('selectedLanguage')==='en'){
+        nextButton.innerHTML="The Result"
+
+    }
+    else{
+        nextButton.innerHTML="النتيجة"
+
+    }
+ 
+    
+}
+else {
+    if(localStorage.getItem('selectedLanguage')==='en'){
+        nextButton.innerHTML="Next"
+
+    }
+    else{
+        nextButton.innerHTML="التالي"
+
+    }
+}
+
+// Assuming you have the correct value in currentQuestionIndex
+// Ensure you're checking it correctly and it reflects the intended value
+
+
+
+    
+
+    
 }
 progressElements[0].style.opacity = '100%';
 
+
 function nextQuestion() {
+  
 console.log("the current index number",currentQuestionIndex)
-localStorage.setItem('currentIndex',currentQuestionIndex)
+
     const selectedAnswers = document.querySelectorAll('input[name="answer"]:checked');
+
     if (selectedAnswers.length > 0) {
+        
         let answerValue = 0;
         const selectedAnswerTexts = [];
         selectedAnswers.forEach((selectedAnswer) => {
@@ -296,6 +335,8 @@ localStorage.setItem('currentIndex',currentQuestionIndex)
         savedIndex.push(currentQuestionIndex);
         localStorage.setItem('questionsIndexes', JSON.stringify(savedIndex));
         console.log("1212121", savedIndex)
+
+     
         if (selectedAnswers.length > 0) {
             const answerText = document.querySelector(`label[for="${selectedAnswers[0].id}"]`).textContent.trim(); // Get the text of the first selected answer
     
@@ -304,6 +345,7 @@ localStorage.setItem('currentIndex',currentQuestionIndex)
                 localStorage.setItem('firstQuestionAnswer', answerText);
             }
         }
+        
         console.log("the gender",localStorage.getItem('firstQuestionAnswer'))
         if (currentQuestionIndex === 1 && selectedAnswers[0].value === "10") {
             currentQuestionIndex = 3;
@@ -341,12 +383,15 @@ localStorage.setItem('currentIndex',currentQuestionIndex)
         else if (currentQuestionIndex === 2 && selectedAnswers[0].value === "6") {
             currentQuestionIndex = 5;
         }
+      
         else {
             currentQuestionIndex++;
         }
+       
         if (currentQuestionIndex < 10) {
             loadQuestion(currentQuestionIndex);
             progressElements[currentIndex + 1].style.opacity = '100%';
+
         } else {
             window.location.href = "../pages/sucess.html"
         }
@@ -357,6 +402,7 @@ localStorage.setItem('currentIndex',currentQuestionIndex)
     else {
         showToast("Please select at least one answer before proceeding.");
     }
+
 }
 
 function showToast(message) {
@@ -419,6 +465,7 @@ function prev() {
     localStorage.setItem('questionsIndex', prev);
     console.log("ababababa", currentQuestionIndex)
 }
+
 loadQuestion(currentQuestionIndex);
 function increaseProgress() {
     if (currentIndex < progressElements.length) {

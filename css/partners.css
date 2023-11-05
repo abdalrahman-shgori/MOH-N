@@ -23,17 +23,19 @@ body {
   margin-top: 88px;
 }
 .bgVector{
-   background-image: url(../assets/images/Background.svg);
-    background-repeat: no-repeat;
-    background-position: center ;
-    position: relative;
-    transition: background-position 4s;
+  background-image: url(../assets/images/Background.svg);
+  background-repeat: no-repeat;
+  background-position: center 100% 0;
+  width: 100%;
+  position: relative;
+  transition: background-position 4s; 
+
 
 } 
 .bgVector:hover {
   transition: 4s;
   background-position: 100% 0; /* Move the background completely to the right on hover */
-  animation: walk 4s infinite linear; /* Apply the walk animation over 4 seconds on hover */
+  animation: walk 8s infinite linear; /* Apply the walk animation over 4 seconds on hover */
 }
 
 @keyframes walk {
