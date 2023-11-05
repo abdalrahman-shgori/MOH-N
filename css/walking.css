@@ -1,359 +1,4 @@
-/*
 
-ol, ul{
-    padding: 0 !important;
-}
-.gr{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-    gap: 100px;
-}
-.aboutWalkBg {
-    background-image: url("../assets/images/walkingLine.svg");
-    background-repeat: no-repeat;
-}
-
-.whatDiffrenceBg {
-    background-image: url("../assets/images/walkingLine.svg");
-    background-repeat: no-repeat;
-    height: 40vh;
-}
-
-.stepsWalkingImg {
-    position: absolute;
-    left: 0;
-
-}
-
-html[lang="en"] .stepsWalkingImg {
-    right: 0;
-    transform: scaleX(-1);
-}
-
-
-.walking {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 88px;
-    margin-bottom: 51px;
-}
-
-.ideas-walk {
-    width: 70%;
-}
-
-.fontWeight {
-    font-family: 'GE SS Unique Light';
-    background-image: url('../assets/images/pointer.svg');
-    background-repeat: no-repeat;
-    background-position: right top;
-    padding-right: 40px;
-    margin-top: 16px;
-}
-
-html[lang="en"] .fontWeight {
-    font-family: 'EnLanguage';
-    background-position: left top;
-    padding-left: 40px;
-}
-
-html[lang="en"] ul {
-    margin: 0;
-    padding: 0;
-
-}
-.aboutWalk {
-    color: #008056;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 49px;
-    font-family: 'GE SS Unique Light';
-}
-
-html[lang="en"] .aboutWalk {
-    font-family: 'EnLanguage';
-}
-
-.QuestionWalk {
-    color: #FFFFFF;
-    background-color: #008056;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 49px;
-    font-family: 'GE SS Unique Light';
-    display: inline-block;
-    direction: rtl;
-    text-align: right;
-    border-radius: 24px 24px 0px 0px;
-    padding: 10px 24px 10px 60px;
-    margin-bottom: 20px;
-}
-
-html[lang="en"] .QuestionWalk {
-    padding: 10px 60px 10px 24px;
-    text-align: left;
-    direction: ltr;
-    font-family: 'EnLanguage';
-}
-
-.ideasList {
-    color: #FFFFFF;
-    background-color: #008056;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 49px;
-    font-family: 'GE SS Unique Light';
-    display: inline-block;
-    border-radius: 24px 24px 0px 0px;
-    padding: 10px 24px 10px 400px;
-    margin-bottom: 24px;
-
-}
-
-html[lang="en"] .ideasList {
-    padding: 10px 281px 10px 24px;
-    font-family: 'EnLanguage';
-}
-
-.QuestionWalk2 {
-    color: #FFFFFF;
-    background-color: #008056;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 49px;
-    font-family: 'GE SS Unique Light';
-    display: inline-block;
-    border-radius: 24px 24px 0px 0px;
-    padding: 10px 24px 10px 85px;
-    margin-bottom: 24px;
-    direction: rtl;
-    text-align: right;
-}
-
-html[lang="en"] .QuestionWalk2 {
-    text-align: left;
-    direction: ltr;
-    font-family: 'EnLanguage';
-    padding: 10px 85px 10px 24px;
-
-}
-
-.whatHappen {
-    display: flex;
-    flex-direction: column;
-    direction: rtl;
-}
-
-.group-text {
-    list-style-type: none;
-    margin-bottom: 40px;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-
-.group-text .fontWeight {
-    color: #333;
-}
-
-html[lang="en"] .group-text {
-    text-align: left;
-    width: 100%;
-    margin-top: 24px;
-    margin-bottom: 40px;
-    direction: ltr;
-}
-
-
-
-html[lang="en"] .QuestionWalk2 {
-    text-align: left;
-    font-family: 'EnLanguage';
-}
-
-html[lang="en"] .container {
-
-    text-align: left;
-    font-family: 'EnLanguage';
-}
-
-
-.whatDiffrence {
-    display: flex;
-    flex-direction: column;
-    direction: rtl;
-}
-
-.howtowalk {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0em;
-    color: #333333;
-    font-family: 'GE SS Unique Light';
-
-}
-
-html[lang="en"] .howtowalk {
-    text-align: left;
-    direction: ltr;
-    font-family: 'EnLanguage';
-}
-
-.whatHowWalk {}
-
-li {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 0em;
-    text-align: justified;
-    color: #333333;
-
-
-}
-
-.walkingFooter {
-    margin-top: 174px;
-}
-@media screen and (max-width:991px) {
-    .ideasList{
-        padding: 10px 24px 10px 252px;
-
-    }
-    .QuestionWalk2{
-        padding: 10px 24px 10px 25px;
-        
-    }
-}
-
-@media screen and (max-width:767px) {
-    html[lang="en"] .group-text {
-        text-align: left;
-        width: 100%;
-        margin-top: 16px;
-        margin-bottom: 24px;
-        direction: ltr;
-    }
-
-    .walkingFooter {
-        margin-top: 48px;
-    }
-
-    .aboutWalk {
-        font-size: 24px;
-        line-height: 29px;
-    }
-
-    .fontWeight {
-        font-family: 'GE SS Unique Bold';
-        margin-top: 10px;
-        background-size: 15px 15px;
-        padding-right: 23px;
-        margin-top: 10px;
-    }
-
-    html[lang="en"] .fontWeight {
-        background-size: 15px 15px;
-        padding-left: 23px;
-        padding-right: 0px;
-    }
-
-    .QuestionWalk {
-        padding: 10px 10px 10px 10px !important;
-        width: 100%;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 20px;
-        letter-spacing: 0em;
-        text-align: right;
-        margin-bottom: 16px;
-
-
-
-    }
-
-    .ideasList {
-        padding: 10px 10px 10px 10px;
-        margin-bottom: 16px;
-        font-size: 14px;
-        line-height: 19px;
-        width: 100% !important;
-    }
-
-    .QuestionWalk2 {
-        padding: 10px 10px 10px 10px !important;
-        width: 100%;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 20px;
-        letter-spacing: 0em;
-        text-align: right;
-        margin-bottom: 16px;
-    }
-
-    .howtowalk {
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 19px;
-        font-family: 'GE SS Unique Bold';
-
-    }
-
-    .whatHowWalk {
-        top: 0px;
-    }
-
-    li {
-        font-size: 16px;
-        line-height: 19px;
-        font-weight: 300;
-    }
-
-    .aboutWalkBg {
-        background-image: url("");
-    }
-
-    .whatDiffrenceBg {
-        background-image: url("");
-    }
-
-    .ideas-walk {
-        width: 100%;
-    }
-
-    .group-text {
-        width: 100% !important;
-        margin-bottom: 14px;
-
-    }
-
-    .walking {
-        margin-top: 24px;
-        margin-bottom: 24px;
-    }
-
-    .stepsWalkingImg {
-        display: none;
-    }
-
-
-    html[lang="en"] .ideasList {
-        padding: 10px 10px 10px 10px;
-    }
-    .whatHappen{
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-}
- */
 
  body {
     background-color: #FFFFFF !important;
@@ -386,16 +31,16 @@ li {
 }
 .theVector:hover {
     transition: 4s;
-    background-position: 100% 0; /* Move the background completely to the right on hover */
-    animation: walk 8s infinite linear; /* Apply the walk animation over 4 seconds on hover */
+    background-position: 100% 0;
+    animation: walk 8s infinite linear;
 }
 
 @keyframes walk {
     from {
-        background-position:0 0 ; /* Initial position */
+        background-position:0 0 ;
     }
     to {
-        background-position:100% 0 ; /* Move the background completely to the right */
+        background-position:100% 0 ; 
     }
 }
 
@@ -548,8 +193,8 @@ color: #008056;
         grid-template-columns:auto auto;
     }
     .theVector:hover {
-        background-position: 100% 0; /* Move the background completely to the right on hover */
-        animation: walk 14s infinite linear; /* Apply the walk animation over 4 seconds on hover */
+        background-position: 100% 0; 
+        animation: walk 14s infinite linear;
     }
 }
 @media screen and (max-width:828px) {
@@ -558,16 +203,10 @@ color: #008056;
         padding-right: 75px;
     }
 }
-/* @media screen and (max-width:) {
-    
-} */
  @media screen and (max-width: 676px) {
     .theBox{
         width: 131px;
         height: 131px;
-    }
-    .theBox2{
-    
     }
     .textDescription{
         font-size: 20px;

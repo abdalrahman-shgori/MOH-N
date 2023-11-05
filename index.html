@@ -44,7 +44,8 @@
                 <img src="./assets/images/landingLogo.svg" class="logo-new" />
             </div>
             <div class="centeredss">
-                <img id="mobile-vector" class="secVectors" src="./assets/images/firstVector.svg" alt="Snow" style="width:100%;">
+                <img id="mobile-vector" class="secVectors" src="./assets/images/firstVector.svg" alt="Snow"
+                    style="width:100%;">
             </div>
             <div class="text-after-images">
                 <div class="group-items">
@@ -53,48 +54,51 @@
                     </div>
 
                     <p class="title-text" data-translate="Launched">انطلقت</p>
-                    <p class="descriptionText " data-translate="Walk30isaninitiative">امش 30 بوصفها مبادرة حول المملكـــة، للتوعية بسلوك المشي، وتعزيز الصحة
+                    <p class="descriptionText " data-translate="Walk30isaninitiative">امش 30 بوصفها مبادرة حول
+                        المملكـــة، للتوعية بسلوك المشي، وتعزيز الصحة
                         العامة باعتبارها أحد مستهدفات الرؤيــة 2030، وبدأت ســـنة 2019 تزامناً مع إعلان وزارة الصحة يوم
                         5 مارس يوماً وطنياً للمشي.
                     </p>
                 </div>
                 <div>
 
-                <div class="vector">
-                    <div class="text-on-image">
-                        <div class="mx">
-                            <div class="snipe-img"></div>
+                    <div class="vector">
+                        <div class="text-on-image">
+                            <div class="mx">
+                                <div class="snipe-img"></div>
+
+                            </div>
+                            <p class="title-text" data-translate="Aim">تــهدف</p>
 
                         </div>
-                        <p class="title-text" data-translate="Aim">تــهدف</p>
-                        
                     </div>
-                </div>
-                <div class="text-container">
-                    <p class="descriptionText2 " data-translate="Toraisetherates">الى رفع معدلات ممارسة النشاط البدني بشكل عام إلى الحد الموصَّى به عالميًّا
-                    (150 دقيقة اسبوعياً) والذي ينعكس على ارتفاع متوسط الاعمار مـــن ٧٤ عامًا إلى ٨٠ عامًا.
-                  
-                    <p class="descriptionText3" data-translate="Byaccessingthesite">
+                    <div class="text-container">
+                        <p class="descriptionText2 " data-translate="Toraisetherates">الى رفع معدلات ممارسة النشاط
+                            البدني بشكل عام إلى الحد الموصَّى به عالميًّا
+                            (150 دقيقة اسبوعياً) والذي ينعكس على ارتفاع متوسط الاعمار مـــن ٧٤ عامًا إلى ٨٠ عامًا.
 
-                        بوصولك للموقع أنت شريكنا الواعي ، ابدأ الاختبار واعرف شخصيتك في المشي
-                        
+                        <p class="descriptionText3" data-translate="Byaccessingthesite">
+
+                            بوصولك للموقع أنت شريكنا الواعي ، ابدأ الاختبار واعرف شخصيتك في المشي
+
                         </p>
-                
-                </p>
 
-                   <div class="center-btn">
-                    <button onclick="handle()" class="startBtn-new" data-translate="start">أخــتبر شخصيتك</button>
+                        </p>
 
-                   </div>
+                        <div class="center-btn">
+                            <button onclick="handle()" class="startBtn-new" data-translate="start">أخــتبر
+                                شخصيتك</button>
 
+                        </div>
+
+
+                    </div>
 
                 </div>
-
-            </div>
 
             </div>
             <div>
-                
+
             </div>
 
         </div>
@@ -118,24 +122,24 @@
         AOS.init();
     </script>
     <script src="./js/scrolls.js"></script>
-<script>
-    function handleImg(){
-        if(window.innerWidth < 458){
-        document.getElementById('mobile-vector').src="./assets/images/mobileVector.svg"
-    document.getElementById('mobile-vector2').src="./assets/images/mobileVector2.svg"
+    <script>
+        function handleImg() {
+            if (window.innerWidth < 458) {
+                document.getElementById('mobile-vector').src = "./assets/images/mobileVector.svg"
+                document.getElementById('mobile-vector2').src = "./assets/images/mobileVector2.svg"
 
-    }
-    else {
-        document.getElementById('mobile-vector').src="./assets/images/firstVector.svg"
-    document.getElementById('mobile-vector2').src="./assets/images/secVector.svg"
+            }
+            else {
+                document.getElementById('mobile-vector').src = "./assets/images/firstVector.svg"
+                document.getElementById('mobile-vector2').src = "./assets/images/secVector.svg"
 
-    }
-    }
-    handleImg();
-    window.onresize=handleImg;
-  
-   
-</script>
+            }
+        }
+        handleImg();
+        window.onresize = handleImg;
+
+
+    </script>
 
 
 

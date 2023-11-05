@@ -22,29 +22,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 
-        
+
     <title>Paths</title>
 </head>
 
 <body>
-   <img id="img" src="../assets/images/rings.svg" style="position: absolute;top: 0px;right: 0;display: none;"></img>
+    <img id="img" src="../assets/images/rings.svg" style="position: absolute;top: 0px;right: 0;display: none;"></img>
     <div id="navbar-container"></div>
     <div class="paths ">
         <div class="bgVector">
 
-        <p class="PathsText" data-aos="fade-down" data-aos-duration="1000" data-translate="walkPaths">مسارات امش 30</p>
-    </div>  
+            <p class="PathsText" data-aos="fade-down" data-aos-duration="1000" data-translate="walkPaths">مسارات امش 30
+            </p>
+        </div>
 
         <div id="output" class="col-lg-9 group-Cards">
 
         </div>
 
-    </div>  
-        <div id="footer" class="" ></div>
+    </div>
+    <div id="footer" class=""></div>
 
 
 
@@ -53,42 +54,42 @@
     <script>
         function img() {
             if (window.innerWidth < 767) {
-            document.getElementById("img").src = "../assets/images/ringsSmall.svg"
-        }
-        else {
-            document.getElementById("img").src = "../assets/images/rings.svg"
+                document.getElementById("img").src = "../assets/images/ringsSmall.svg"
+            }
+            else {
+                document.getElementById("img").src = "../assets/images/rings.svg"
 
-        }
+            }
 
         }
         img()
-        window.onresize=img
-      
+        window.onresize = img
+
         const myArrayEn = [
-    { title: "Your Personality in Walking", description: "A test that measures your level of walking practice and provides solutions for continuity", img: "../assets/images/animateWalking.svg", btnText: "Take the test now and discover your personality",link:"./homePage.html", id: 0 },
-    { title: "Walk 30", description: "A creative campaign to raise awareness about walking behavior", img: "../assets/images/runPath30.svg", btnText: "Share with us the hashtag #Walk30", id: 1 },
-    { title: "Walk around the kingdom", description: "A field walking track event in 20 regions around the Kingdom, in which the community participates", img: "../assets/images/maps.svg", btnText: "Walk around the kingdom",link:"https://walk.online-link.net/ar/Request/OpenReg?utm_source=Social+media&utm_medium=MOH&utm_campaign=Walk+30", id: 2 },
-    { title: "Start the challenge", description: "A competition to walk 8,000 steps a day via the Sihati app", img: "../assets/images/goal.svg", btnText: "Download the Sehaty app",link:"https://apps.apple.com/us/app/%D8%B5%D8%AD%D8%AA%D9%8A-sehhaty/id1459266578", id: 3 },
-];
+            { title: "Your Personality in Walking", description: "A test that measures your level of walking practice and provides solutions for continuity", img: "../assets/images/animateWalking.svg", btnText: "Take the test now and discover your personality", link: "./homePage.html", id: 0 },
+            { title: "Walk 30", description: "A creative campaign to raise awareness about walking behavior", img: "../assets/images/runPath30.svg", btnText: "Share with us the hashtag #Walk30", id: 1 },
+            { title: "Walk around the kingdom", description: "A field walking track event in 20 regions around the Kingdom, in which the community participates", img: "../assets/images/maps.svg", btnText: "Walk around the kingdom", link: "https://walk.online-link.net/ar/Request/OpenReg?utm_source=Social+media&utm_medium=MOH&utm_campaign=Walk+30", id: 2 },
+            { title: "Start the challenge", description: "A competition to walk 8,000 steps a day via the Sihati app", img: "../assets/images/goal.svg", btnText: "Download the Sehaty app", link: "https://apps.apple.com/us/app/%D8%B5%D8%AD%D8%AA%D9%8A-sehhaty/id1459266578", id: 3 },
+        ];
 
-const myArrayAr = [
-    { title: "شخصيتك في المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/animateWalking.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك",link:"./homePage.html", id: 0 },
-    { title: "امش 30", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/runPath30.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك", id: 1 },
-    { title: "شخصيتك في المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/maps.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك",link:"https://walk.online-link.net/ar/Request/OpenReg?utm_source=Social+media&utm_medium=MOH&utm_campaign=Walk+30", id: 2 },
-    { title: "شخصيتك في المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/goal.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك",link:"https://apps.apple.com/us/app/%D8%B5%D8%AD%D8%AA%D9%8A-sehhaty/id1459266578", id: 3 },
-];
+        const myArrayAr = [
+            { title: "شخصيتك في المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/animateWalking.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك", link: "./homePage.html", id: 0 },
+            { title: "امش 30", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/runPath30.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك", id: 1 },
+            { title: "شخصيتك في المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/maps.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك", link: "https://walk.online-link.net/ar/Request/OpenReg?utm_source=Social+media&utm_medium=MOH&utm_campaign=Walk+30", id: 2 },
+            { title: "شخصيتك في المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/goal.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك", link: "https://apps.apple.com/us/app/%D8%B5%D8%AD%D8%AA%D9%8A-sehhaty/id1459266578", id: 3 },
+        ];
 
 
-function getCurrentLanguage() {
-                return localStorage.getItem('selectedLanguage');
-            }
-        
-            const currentLanguage = getCurrentLanguage() || 'en';
-            localStorage.setItem('selectedLanguage', currentLanguage);
-            const outputElement = document.getElementById("output");
-            const myArray = currentLanguage === "en" ? myArrayEn : myArrayAr;
+        function getCurrentLanguage() {
+            return localStorage.getItem('selectedLanguage');
+        }
 
-console.log("abd abda abd",currentLanguage)
+        const currentLanguage = getCurrentLanguage() || 'en';
+        localStorage.setItem('selectedLanguage', currentLanguage);
+        const outputElement = document.getElementById("output");
+        const myArray = currentLanguage === "en" ? myArrayEn : myArrayAr;
+
+        console.log("abd abda abd", currentLanguage)
         myArray.map(function (item, index) {
             const div = document.createElement("div");
             div.innerHTML = `
@@ -107,45 +108,37 @@ console.log("abd abda abd",currentLanguage)
   `;
             outputElement.appendChild(div);
             if (item.id === 0) {
-        div.querySelector(".howYouWork").setAttribute('data-translate', 'walkingPersonalityTitle');
-        div.querySelector(".PathsDescription").setAttribute('data-translate', 'walkingPersonalityDescription');
-        div.querySelector(".pathsBtn").setAttribute('data-translate', 'walkingPersonalityBtnText');
-    }
-    if (item.id === 1) {
-        div.querySelector(".howYouWork").setAttribute('data-translate', 'walk30');
-        div.querySelector(".PathsDescription").setAttribute('data-translate', 'campagin');
-        div.querySelector(".pathsBtn").setAttribute('data-translate', 'share');  
-      }
-      if (item.id === 2) {
-        div.querySelector(".howYouWork").setAttribute('data-translate', 'walkaround');
-        div.querySelector(".PathsDescription").setAttribute('data-translate', 'filed');
-        div.querySelector(".pathsBtn").setAttribute('data-translate', 'link');  
-      }
-      if (item.id === 3) {
-        div.querySelector(".howYouWork").setAttribute('data-translate', 'startchalleng');
-        div.querySelector(".PathsDescription").setAttribute('data-translate', 'compitition');
-        div.querySelector(".pathsBtn").setAttribute('data-translate', 'downloadapp');  
-      }
-            
+                div.querySelector(".howYouWork").setAttribute('data-translate', 'walkingPersonalityTitle');
+                div.querySelector(".PathsDescription").setAttribute('data-translate', 'walkingPersonalityDescription');
+                div.querySelector(".pathsBtn").setAttribute('data-translate', 'walkingPersonalityBtnText');
+            }
+            if (item.id === 1) {
+                div.querySelector(".howYouWork").setAttribute('data-translate', 'walk30');
+                div.querySelector(".PathsDescription").setAttribute('data-translate', 'campagin');
+                div.querySelector(".pathsBtn").setAttribute('data-translate', 'share');
+            }
+            if (item.id === 2) {
+                div.querySelector(".howYouWork").setAttribute('data-translate', 'walkaround');
+                div.querySelector(".PathsDescription").setAttribute('data-translate', 'filed');
+                div.querySelector(".pathsBtn").setAttribute('data-translate', 'link');
+            }
+            if (item.id === 3) {
+                div.querySelector(".howYouWork").setAttribute('data-translate', 'startchalleng');
+                div.querySelector(".PathsDescription").setAttribute('data-translate', 'compitition');
+                div.querySelector(".pathsBtn").setAttribute('data-translate', 'downloadapp');
+            }
+
 
         });
-        
-//         var animation = anime({
-//   targets: '.el',
-//   translateX: [600, 0], 
-//   duration:60,
-// });
+    </script>
+    <script src="../js/scrolls.js">
 
 
     </script>
-  <script src="../js/scrolls.js">
 
-    
-  </script>
-
-        <script>
-            AOS.init();
-        </script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html

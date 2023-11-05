@@ -18,27 +18,31 @@ body {
   font-family: 'EnLanguage';
   src: url('../HelveticaNeue.ttc');
 }
-.bgVector{
+
+.bgVector {
   background-image: url(../assets/images/Background.svg);
   background-repeat: no-repeat;
-  background-position: center calc(100% - 300px);  
+  background-position: center calc(100% - 300px);
   position: relative;
-  transition: background-position 4s; 
-} 
+  transition: background-position 4s;
+}
+
 .bgVector:hover {
   transition: 4s;
-  animation: walk 8s infinite  linear; /* Apply the walk animation over 4 seconds on hover */
-  
+  animation: walk 8s infinite linear;
+
 }
 
 @keyframes walk {
   from {
-      background-position:0 calc(100% - 300px) ; /* Initial position */
+    background-position: 0 calc(100% - 300px);
   }
+
   to {
-      background-position:100% calc(100% - 300px) ; /* Move the background completely to the right */
+    background-position: 100% calc(100% - 300px);
   }
-} 
+}
+
 .progres {
   margin-top: 15px;
   margin-bottom: 8px;
@@ -68,13 +72,14 @@ html[lang="en"] .progres {
   display: flex;
 }
 
-.questionsLogo{
+.questionsLogo {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 135px;
   margin-bottom: 134px;
 }
+
 .questionsCards {
   margin-top: 106px;
   box-shadow: 0px 4px 27px 0px #00000017;
@@ -349,17 +354,20 @@ input[type="radio"]:checked+label::before {
 
 
 @media screen and (max-width:676px) {
-  .bgVector{
+  .bgVector {
     background-image: url('');
   }
-  .questionsCards{
+
+  .questionsCards {
     margin-top: 0px;
   }
-  .questionsLogo{
+
+  .questionsLogo {
     margin-top: 33px;
     margin-bottom: 36px;
 
   }
+
   .shadow1 {
     width: 90%;
   }

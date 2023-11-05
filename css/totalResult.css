@@ -17,29 +17,32 @@ body {
     font-family: 'EnLanguage';
     src: url('../HelveticaNeue.ttc');
 }
-.bgVector{
+
+.bgVector {
     background-image: url(../assets/images/Background.svg);
     background-repeat: no-repeat;
-    background-position: center calc(100% - 500px);  
+    background-position: center calc(100% - 500px);
     position: relative;
-    transition: background-position 4s; 
-  
-  } 
+    transition: background-position 4s;
 
-  .bgVector:hover {
+}
+
+.bgVector:hover {
     transition: 4s;
-    animation: walk 4s  linear; /* Apply the walk animation over 4 seconds on hover */
-    
-  }
-  
-  @keyframes walk {
+    animation: walk 8s linear;
+
+}
+
+@keyframes walk {
     from {
-        background-position:0 calc(100% - 500px) ; /* Initial position */
+        background-position: 0 calc(100% - 500px);
     }
+
     to {
-        background-position:100% calc(100% - 500px) ; /* Move the background completely to the right */
+        background-position: 100% calc(100% - 500px);
     }
-  }   
+}
+
 .totalResult {
     display: flex;
     justify-content: center;
@@ -52,7 +55,8 @@ body {
     justify-content: center;
     align-items: center;
 }
-.RateCharacterImg{
+
+.RateCharacterImg {
     margin-top: 56px;
     display: flex;
     justify-content: center;
@@ -87,7 +91,8 @@ html[lang='en'] .nameText {
     font-family: 'EnLanguage';
 
 }
-.descriptionTextGroup{
+
+.descriptionTextGroup {
     margin-bottom: 40px;
 }
 
@@ -141,17 +146,20 @@ html[lang='en'] .titleText {
     margin-bottom: 76px;
 
 }
+
 html[lang='en'] .descriptionText {
     font-family: 'EnLanguage';
     direction: ltr;
 }
-.calendarPdf{
+
+.calendarPdf {
     display: flex;
     flex-direction: column;
-    gap:16px;
+    gap: 16px;
     margin-bottom: 80px;
 }
-.addCalendarBtn{
+
+.addCalendarBtn {
     background: #F0C905;
     border: #F0C905;
     border-radius: 6px;
@@ -165,7 +173,7 @@ html[lang='en'] .descriptionText {
     font-size: 16px;
 }
 
-.downloadPdfBtn{
+.downloadPdfBtn {
     background: #008056;
     border: #008056;
     border-radius: 6px;
@@ -174,7 +182,8 @@ html[lang='en'] .descriptionText {
     width: 358px;
     font-size: 16px;
 }
-.downloadCalendar{
+
+.downloadCalendar {
     font-family: 'GE SS Unique Light';
     display: flex;
     align-items: center;
@@ -182,37 +191,39 @@ html[lang='en'] .descriptionText {
     font-size: 18px;
 
 }
-html[lang="en"] .downloadCalendar{
+
+html[lang="en"] .downloadCalendar {
     font-family: 'EnLanguage';
 
 }
 
-.imgRateCharactar {
+.imgRateCharactar {}
 
-
-}
 @media screen and (max-width:992px) {
-    .descriptionTextGroup{
+    .descriptionTextGroup {
         padding-left: 60px;
-        padding-right:60px;
+        padding-right: 60px;
     }
 }
 
 @media screen and (max-width:767px) {
-    .bgVector{
+    .bgVector {
         background-image: url(../assets/images/resultbg.svg);
-        background-position: center calc(100% - 200px);  
+        background-position: center calc(100% - 200px);
 
 
     }
-    .imgRateCharactar{
+
+    .imgRateCharactar {
         width: 80%;
     }
-    .RateCharacterImg{
+
+    .RateCharacterImg {
         margin-top: 45px;
         margin-bottom: 45px;
 
     }
+
     .RateImg {
         margin-top: 80px;
     }
@@ -234,16 +245,19 @@ html[lang="en"] .downloadCalendar{
         font-size: 12px;
         line-height: 19px;
     }
-    .descriptionTextGroup{
+
+    .descriptionTextGroup {
         padding-left: 42px;
         padding-right: 42px;
     }
-    .calendarPdf{
+
+    .calendarPdf {
         gap: 8px;
     }
-    .col-lg-9{
-padding-left:0px !important;
-padding-right:10px !important;
+
+    .col-lg-9 {
+        padding-left: 0px !important;
+        padding-right: 10px !important;
     }
 
     .rateText {
@@ -262,38 +276,41 @@ padding-right:10px !important;
         line-height: 19.92px;
         margin-bottom: 48px;
     }
-    .addCalendarBtn{
+
+    .addCalendarBtn {
         width: 250px;
         min-height: 24px;
         font-size: 12px;
         padding-left: 18px;
         padding-right: 18px;
     }
-   
-    .downloadPdfBtn{
+
+    .downloadPdfBtn {
         width: 250px;
         min-height: 24px;
         font-size: 12px;
         padding-left: 18px;
         padding-right: 18px;
     }
-    .downloadCalendar{
+
+    .downloadCalendar {
         gap: 8px;
         font-size: 12px;
     }
-    .calendarImg{
+
+    .calendarImg {
         width: 16px;
         height: 16px;
     }
-   
+
 }
+
 @media screen and (max-width:300px) {
-    .imgRateCharactar{
+    .imgRateCharactar {
         /* height: 220px !important; */
         width: 85%;
     }
-    .descriptionTextGroup{
-    }
-    
-    }
 
+    .descriptionTextGroup {}
+
+}

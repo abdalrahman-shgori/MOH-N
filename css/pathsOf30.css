@@ -19,16 +19,16 @@ a{
 
  .bgVector:hover {
     transition: 4s;
-    animation: walk 8s infinite  linear; /* Apply the walk animation over 4 seconds on hover */
+    animation: walk 8s infinite  linear;
     
   }
   
   @keyframes walk {
     from {
-        background-position:0 calc(100% + 200px) ; /* Initial position */
+        background-position:0 calc(100% + 200px) ; 
     }
     to {
-        background-position:100% calc(100% + 200px) ; /* Move the background completely to the right */
+        background-position:100% calc(100% + 200px) ; 
     }
   } 
 @font-face {
