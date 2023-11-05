@@ -361,6 +361,9 @@ color: #008056;
     .theVector{
         height: 600px;
     }
+    html[lang="en"] .theVector{
+        height: 650px;
+    }
     .grid-group{
         grid-template-columns: auto;
     }
