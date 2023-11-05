@@ -13,7 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end; 
-  padding-bottom: 56px;
+padding-top: 200px;
  
   
 }
@@ -22,6 +22,7 @@
     justify-content: center ;
     flex-wrap: wrap;
     gap: 8px;
+    height: 100%;
   
 }
 
@@ -43,10 +44,12 @@
     gap: 8px;
     padding-right: 10px;
     border-right: 1px solid #9B945F;
+    height: 32px;
     }
     @media screen and (max-width:900px) {
       .fff{
         padding-bottom: 0px;
+        padding-top: 40px;
       }
       .textStyle{
           font-size: 18px;
@@ -60,8 +63,7 @@
           border-right: none;
         } */
         .footer-group{
-          margin-bottom: 24px;
-          justify-content: center !important;
+            justify-content: center !important;
           align-items: center !important;
         }
         .imk{
@@ -92,7 +94,6 @@
             border-right: none;
           } */
           .footer-group{
-            margin-bottom: 24px;
             justify-content: center !important;
             align-items: center !important;
           }
