@@ -156,7 +156,7 @@ html[lang='en'] .item-style {
     justify-content: center;
     padding-right: 57px;
     padding-left: 57px;
-    font-family: 'GE SS Unique Bold';
+    font-family: 'EnLanguage' !important;
     /* text-align: left; */
 }
 
