@@ -104,10 +104,26 @@ html[lang='en'] .whoPartnerText {
 
 @media (max-width: 767px) {
   .bgVector {
-    background-image: url(../assets/images/vectorMobile.svg);
-    background-position: center calc(100% - 150px);
-    animation: none;
+    background-image: url(../assets/images/walkingmobilevector.svg);
+    background-position: center calc(100% - 0px);
+    width: 100%;
   }
+  .bgVector:hover {
+    transition: 4s;
+    animation: walk 2s  linear;
+  
+  }
+  
+  @keyframes walk {
+    from {
+      background-position: 0 calc(100% - 0px);
+    }
+  
+    to {
+      background-position: 100% calc(100% - 0px);
+    } 
+  } 
+  
 
   .whoPartners {
     margin-top: 24px;
@@ -149,7 +165,7 @@ html[lang='en'] .whoPartnerText {
 }
 
 .div3 {
-  grid-area: 2/ 1 / 3 / 2;
+  grid-area: 2/ 1 / 3 / 3;
   display: flex;
   justify-content: center;
 }
@@ -180,6 +196,7 @@ html[lang='en'] .whoPartnerText {
     padding-left: 36px;
     padding-right: 36px;
     margin-top: 45px;
+    width: 100%;
   }
 
 

@@ -160,8 +160,8 @@ html[lang='en'] .descriptionText3 {
 }
 
 .descriptionText2 {
-    padding-left: 175px;
-    padding-right: 175px;
+    padding-left: 172px;
+    padding-right: 172px;
     color: #000000;
     direction: rtl;
     font-family: 'GE SS Unique Bold';
@@ -177,8 +177,8 @@ html[lang='en'] .descriptionText3 {
 }
 
 .descriptionText3 {
-    padding-left: 140px;
-    padding-right: 140px;
+    padding-left: 120px;
+    padding-right: 120px;
     color: #EEC718 !important;
     direction: rtl;
     font-family: 'GE SS Unique Light';
@@ -189,9 +189,7 @@ html[lang='en'] .descriptionText3 {
     letter-spacing: 0em;
     text-align: center !important;
     width: 100%;
-    /* Adjust the width according to your preference */
     margin: 0 auto;
-    /* Remove default margin if needed */
     margin-top: 30px;
     margin-bottom: 30px;
 
@@ -417,19 +415,29 @@ html[lang='en'] .startBtn-new {
         height: 53px !important;
         margin-bottom: 15px;
     }
-  
 
     .vector {
         background-image: url(../assets/images/vectorMobile.svg) !important;
         height: 360px !important;
         background-repeat: no-repeat;
+        background-position: center 100% 0;
     }
 
     .vector:hover {
-        background-position: 100% !important;
-        animation: none !important;
+        background-position: 100% 0;
+        animation: walk 1s  linear;
     }
-
+    
+    @keyframes walk {
+        from {
+            background-position: 0 0;
+        }
+    
+        to {
+            background-position: 100% 0;
+        }
+    }
+    
 
 
     .center-btn {

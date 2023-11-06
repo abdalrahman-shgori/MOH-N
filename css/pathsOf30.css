@@ -81,8 +81,11 @@ overflow-x: auto;
     display: flex;
     margin-bottom: 36px;
     width: 100% !important;
-    transition: transform 0.3s; /* Add a smooth transition for the transform property */
+    transition: transform 0.3s; 
+
 }
+
+
 .spaceCard{
     margin-bottom: 91px;
 }
@@ -218,6 +221,21 @@ html[lang = "en"] .center-content{
 
 
     }
+
+    .bgVector:hover {
+        transition: 4s;
+        animation: walk 2s linear;
+        
+      }
+      
+      @keyframes walk {
+        from {
+            background-position:0 calc(100% + 60px) ; 
+        }
+        to {
+            background-position:100% calc(100% + 60px) ; 
+        }
+      } 
    
     .PathsText{
         font-size: 24px;

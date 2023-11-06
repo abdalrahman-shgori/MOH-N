@@ -348,16 +348,28 @@ color: #008056;
     .theBox2:nth-child(odd){
         padding-left: 24px;
     }
-  .theVector{
-
-        background-image: url(../assets/images/vectorMobile.svg);
+    .theVector {
+        background-image: url(../assets/images/walkingmobilevector.svg);
         height: 478px;
-        background-position: center calc(100% - 250px);
+        background-position: center calc(100% - 100px);
     }
-    html[lang='en'] .theVector{
+    
+    html[lang='en'] .theVector {
         height: 540px;
     }
-}
+    
+    .theVector:hover {
+        animation: walk 2s infinite linear ;
+    }
+    
+    @keyframes walk {
+        0% {
+            background-position: 0 calc(100% - 100px);
+        }
+        100% {
+            background-position: 100% calc(100% - 100px);
+        }
+    }
  @media screen and (max-width:295px) {
     .theVector{
         height: 600px;
@@ -380,3 +392,4 @@ color: #008056;
         padding-left: 0px !important;
     }
  }
+}

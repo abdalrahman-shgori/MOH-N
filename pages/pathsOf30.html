@@ -52,6 +52,7 @@
     <script src="../js/includeNav.js"></script>
     <script src="../js/nav.js"></script>
     <script>
+        
         function img() {
             if (window.innerWidth < 767) {
                 document.getElementById("img").src = "../assets/images/ringsSmall.svg"
@@ -74,9 +75,9 @@
 
         const myArrayAr = [
             { title: "شخصيتك في المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/animateWalking.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك", link: "./homePage.html", id: 0 },
-            { title: "امش 30", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/runPath30.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك", id: 1 },
-            { title: "شخصيتك في المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/maps.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك", link: "https://walk.online-link.net/ar/Request/OpenReg?utm_source=Social+media&utm_medium=MOH&utm_campaign=Walk+30", id: 2 },
-            { title: "شخصيتك في المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/goal.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك", link: "https://apps.apple.com/us/app/%D8%B5%D8%AD%D8%AA%D9%8A-sehhaty/id1459266578", id: 3 },
+            { title: "ترند المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/runPath30.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك", id: 1 },
+            { title: "ميدان المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/maps.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك", link: "https://walk.online-link.net/ar/Request/OpenReg?utm_source=Social+media&utm_medium=MOH&utm_campaign=Walk+30", id: 2 },
+            { title: "تحدي المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/goal.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك", link: "https://apps.apple.com/us/app/%D8%B5%D8%AD%D8%AA%D9%8A-sehhaty/id1459266578", id: 3 },
         ];
 
 
@@ -93,8 +94,9 @@
         myArray.map(function (item, index) {
             const div = document.createElement("div");
             div.innerHTML = `
-            <div class="pathsCard container col-lg-12 mx-auto center-content ${index === myArray.length - 1 ? 'spaceCard' : ''}">
-            <div class="PathsTexts ">
+            <div scrolls scrolls-anim="fade-right" scrolls-duration="800" class=" pathsCard container col-lg-12 mx-auto center-content ${index === myArray.length - 1 ? 'spaceCard' : ''}">
+                
+            <div class="PathsTexts">
                 <span class="howYouWork" id="wk">${item.title}</span>
                 <span class="PathsDescription" data-translate="walkingPersonalityDescription">${item.description}</span>
                 <div class="btnDirection"> 

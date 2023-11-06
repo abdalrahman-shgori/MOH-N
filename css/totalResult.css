@@ -62,6 +62,21 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 55px;
+    animation: anim 2s linear;
+}
+@keyframes anim {
+    0%{
+        scale: 1.2;
+    }
+    50%{
+        scale: 0.9;
+    }
+    75%{
+        scale: 1;
+    }
+    100%{
+        scale: 1;
+    }
 }
 
 .userName {
@@ -79,9 +94,9 @@ html[lang="en"] .userName {
 
 .nameText {
     font-family: 'GE SS Unique Light';
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 34px;
     letter-spacing: 0em;
     text-align: center;
     margin: 0;
@@ -100,7 +115,12 @@ html[lang='en'] .nameText {
     display: flex;
     justify-content: center !important;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 34px;
+}
+.rates{
+    display: flex;
+    justify-content: center !important;
+    align-items: center;  
 }
 
 .rateText {
@@ -121,7 +141,6 @@ html[lang='en'] .rateText {
 
 .titleText {
     font-family: 'GE SS Unique Light';
-
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
@@ -213,6 +232,21 @@ html[lang="en"] .downloadCalendar {
 
 
     }
+    .bgVector:hover {
+        transition: 1s;
+        animation: walk 1s linear;
+    
+    }
+    
+    @keyframes walk {
+        from {
+            background-position: 0 calc(100% - 200px);
+        }
+    
+        to {
+            background-position: 100% calc(100% - 200px);
+        }
+    }
 
     .imgRateCharactar {
         width: 80%;
@@ -225,7 +259,7 @@ html[lang="en"] .downloadCalendar {
     }
 
     .RateImg {
-        margin-top: 80px;
+        margin-top: 40px;
     }
 
     .userName {
@@ -242,13 +276,14 @@ html[lang="en"] .downloadCalendar {
     }
 
     .nameText {
-        font-size: 12px;
-        line-height: 19px;
+        font-size: 19px;
+        line-height: 23px;
     }
 
     .descriptionTextGroup {
-        padding-left: 42px;
-        padding-right: 42px;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-bottom: 34px;
     }
 
     .calendarPdf {
@@ -272,7 +307,7 @@ html[lang="en"] .downloadCalendar {
     }
 
     .descriptionText {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 19.92px;
         margin-bottom: 48px;
     }
@@ -311,6 +346,5 @@ html[lang="en"] .downloadCalendar {
         width: 85%;
     }
 
-    .descriptionTextGroup {}
 
 }
