@@ -19,21 +19,142 @@ body {
 }
 
 .imgRate1{
-    background-image: url(../assets/images/1.svg);
+    background-image: url(../assets/images/emptyBattery.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
     height: 92px;
     width: 176px;
-    animation: change 1s linear;
+    animation: change1 1s linear forwards;
 }
-@keyframes change {
+@keyframes change1 {
     0%{
-        background-image: url(../assets/images/1.svg);
+        background-image: url(../assets/images/emptyBattery.svg);
  
     }
     100%{
+        background-image: url(../assets/images/1.svg);
+
+    }
+    
+}
+.imgRate2{
+    background-image: url(../assets/images/emptyBattery.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 92px;
+    width: 176px;
+    animation: change2 1s linear forwards;
+}
+@keyframes change2 {
+    0%{
+        background-image: url(../assets/images/emptyBattery.svg);
+ 
+    }
+    50%{
+        background-image: url(../assets/images/1.svg);
+
+    }
+    100%{
         background-image: url(../assets/images/2.svg);
+
+    }
+    
+}
+.imgRate3{
+    background-image: url(../assets/images/emptyBattery.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 92px;
+    width: 176px;
+    animation: change3 1s linear forwards;
+}
+@keyframes change3 {
+    0%{
+        background-image: url(../assets/images/emptyBattery.svg);
+ 
+    }
+    25%{
+        background-image: url(../assets/images/1.svg);
+
+    }
+    50%{
+        background-image: url(../assets/images/2.svg);
+
+    }
+    100%{
+        background-image: url(../assets/images/3.svg);
+
+    }
+    
+}
+.imgRate4{
+    background-image: url(../assets/images/emptyBattery.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 92px;
+    width: 176px;
+    animation: change4 1s linear forwards;
+}
+@keyframes change4 {
+    0%{
+        background-image: url(../assets/images/emptyBattery.svg);
+ 
+    }
+    25%{
+        background-image: url(../assets/images/1.svg);
+
+    }
+    50%{
+        background-image: url(../assets/images/2.svg);
+
+    }
+    75%{
+        background-image: url(../assets/images/3.svg);
+
+    }
+    100%{
+        background-image: url(../assets/images/4.svg);
+
+    }
+ 
+    
+}
+.imgRate5{
+    background-image: url(../assets/images/emptyBattery.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 92px;
+    width: 176px;
+    animation: change5 1s linear forwards;
+}
+@keyframes change5 {
+    0%{
+        background-image: url(../assets/images/emptyBattery.svg);
+ 
+    }
+    20%{
+            background-image: url(../assets/images/1.svg);
+        
+    }
+    40%{
+        background-image: url(../assets/images/2.svg);
+
+    }
+    60%{
+        background-image: url(../assets/images/3.svg);
+
+    }
+    80%{
+        background-image: url(../assets/images/4.svg);
+
+    }
+    100%{
+        background-image: url(../assets/images/5.svg);
 
     }
     

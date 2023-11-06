@@ -56,10 +56,10 @@
         let html = `
         <div>
             <div class="RateImg">
-                ${totalValue >= 30 ? '<img class="imgRate" src="../assets/images/5.svg"/>' :
-                totalValue >= 18 ? '<img class="imgRate" src="../assets/images/4.svg"/>' :
-                    totalValue >= 6 ? '<img class="imgRate" src="../assets/images/3.svg"/>' :
-                        totalValue >= 2 ? '<img class="imgRate" src="../assets/images/2.svg"/>' :
+                ${totalValue >= 30 ?'<div class="imgRate5"></div>' :
+                totalValue >= 18 ?'<div class="imgRate4"></div>' :
+                    totalValue >= 6 ?'<div class="imgRate3"></div>' :
+                        totalValue >= 2 ?'<div class="imgRate2"></div>' :
                             totalValue < 2 ? '<div class="imgRate1"></div>' : ''
             }
             </div>
