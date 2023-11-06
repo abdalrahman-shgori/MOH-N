@@ -22,18 +22,19 @@ body {
     background-image: url(../assets/images/emptyBattery.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 92px;
-    width: 176px;
+  
     animation: change1 1s linear forwards;
 }
 @keyframes change1 {
     from{
         background-image: url(../assets/images/emptyBattery.svg);
- 
+        height: 92px;
+        width: 176px;
     }
     to{
         background-image: url(../assets/images/1.svg);
-
+        height: 92px;
+        width: 176px;
     }
     
 }
@@ -209,7 +210,7 @@ body {
     margin-bottom: 55px;
     animation: anim 2s linear;
 }
-@keyframes anim {
+/* @keyframes anim {
     0%{
         scale: 1.2;
     }
@@ -222,7 +223,7 @@ body {
     100%{
         scale: 1;
     }
-}
+} */
 
 .userName {
     display: flex;
