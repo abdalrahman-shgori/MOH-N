@@ -63,10 +63,18 @@ const translations = {
         youhavePassiveBehaviorFe: "You have passive behavior",
 
         yourCommitmentSetsAnExample: "Your commitment sets an example",
+
         youTakeOffLikeARocketAndKeepWalking: "You take off like a rocket, never stopping your walk",
+        youTakeOffLikeARocketAndKeepWalkingFe: "You take off like a rocket, never stopping your walk",
+
         butThereAreAFewSteps: "But there are a few steps left to keep going",
+        butThereAreAFewStepsFe: "But there are a few steps left to keep going",
+
         butYouNeedAStarting: "But you need a starting plan to make your behavior continuous",
-        andYouHaven:"And you haven't acquired the habit yet",
+        butYouNeedAStartingFe: "But you need a starting plan to make your behavior continuous",
+
+        andYouHaven:"In Walk",
+        andYouHavenFe:"In Walk",
         stage1: "Individuals at this stage are distinguished as role models for those around them. They have the determination and the ability to reach and continue achieving their goals. They are athletes and persistent in walking. Keep on what you're doing and be a role model for those around you.",
         stage2: "Individuals at this stage are characterized by their adaptability. They are enthusiastic about walking and committed to it. However, they now need to maintain it as a lifelong behavior. Keep on what you're doing and be a role model for those around you.",
         stage3: "Individuals at this stage are characterized by a strong will to make decisions and have already started walking, but they may need to turn this habit into a continuous behavior. You are on the right path, and you can achieve your goal!",
