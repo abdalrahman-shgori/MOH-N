@@ -379,20 +379,20 @@ html[lang="en"] .downloadCalendar {
     transform: scale(0.6);
     }
     .imgRate2{
-width: 101px;
-height: 53px;
+    transform: scale(0.6);
+
     }
     .imgRate3{
-width: 101px;
-height: 53px;
+    transform: scale(0.6);
+
     }
     .imgRate4{
-width: 101px;
-height: 53px;
+    transform: scale(0.6);
+
     }
     .imgRate5{
-     width: 101px;
-     height: 53px;   
+        transform: scale(0.6);
+ 
     }
 
     .bgVector {
