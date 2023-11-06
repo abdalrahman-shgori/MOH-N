@@ -27,11 +27,11 @@ body {
     animation: change1 1s linear forwards;
 }
 @keyframes change1 {
-    0%{
+    from{
         background-image: url(../assets/images/emptyBattery.svg);
  
     }
-    100%{
+    to{
         background-image: url(../assets/images/1.svg);
 
     }
