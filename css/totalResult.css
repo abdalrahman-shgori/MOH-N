@@ -21,7 +21,6 @@ body {
 .imgRate1{
     background-image: url(../assets/images/emptyBattery.svg);
     background-repeat: no-repeat;
-    background-size: 100%;
     background-position: center;
     height: 92px;
     width: 176px;
@@ -381,6 +380,9 @@ html[lang="en"] .downloadCalendar {
      min-height: 53px !important;
      max-height: 53px !important;
      max-width: 101px !important;
+     background-repeat: no-repeat;
+     background-position: center;
+
 
         }
         100%{
@@ -389,6 +391,8 @@ html[lang="en"] .downloadCalendar {
             max-width: 101px !important;
             min-height: 53px !important;
             max-height: 53px !important;
+            background-repeat: no-repeat;
+            background-position: center;
 
         }
     }    
