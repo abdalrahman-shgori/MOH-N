@@ -197,8 +197,8 @@ theResult:'النتيجة'
     },
 };
 
+// Function to set the language
 function setLanguage(language) {
-    
     const elements = document.querySelectorAll('[data-translate]');
     elements.forEach((element) => {
         const translationKey = element.getAttribute('data-translate');
@@ -206,71 +206,45 @@ function setLanguage(language) {
     });
 
     document.documentElement.lang = language;
-    document.getElementById("dropdownMenuLink").innerHTML =language.toUpperCase()
-
+    document.getElementById("dropdownMenuLink").innerHTML = language.toUpperCase();
     localStorage.setItem('selectedLanguage', language);
-    if(language == '' || language == null || language == undefined){
-        localStorage.setItem('selectedLanguage','en')
-    }
-    const imageElement = document.getElementById('imageElement');
-    const imageElement1 = document.getElementById('imageElement1');
-    const imageElement2= document.getElementById('imageElement2');
-    const imageElement3 = document.getElementById('imageElement3');
-    const imageElement4 = document.getElementById('imageElement4');
 
-    if (language === 'ar') {
-        imageElement.src = '../assets/images/beginner.svg'; 
-        imageElement1.src='../assets/images/badia.svg'
-        imageElement2.src='../assets/images/seelpy.svg'
-        imageElement3.src='../assets/images/starting.svg'
-        imageElement4.src='../assets/images/professional.svg'
-    } else if (language === 'en') {
-        imageElement.src = '../assets/images/beginnerEn.svg'; 
-        imageElement1.src='../assets/images/willingEn.svg'
-        imageElement2.src='../assets/images/sleepyEn.svg'
-        imageElement3.src='../assets/images/startingEn.svg'
-        imageElement4.src='../assets/images/professionalEn.svg'
+    // Update images based on language
+    const imageElements = {
+        'ar': ['beginner.svg', 'badia.svg', 'seelpy.svg', 'starting.svg', 'professional.svg'],
+        'en': ['beginnerEn.svg', 'willingEn.svg', 'sleepyEn.svg', 'startingEn.svg', 'professionalEn.svg']
+    };
+
+    const images = {
+        'imageElement': ['beginner.svg', 'beginnerEn.svg'],
+        'imageElement1': ['badia.svg', 'willingEn.svg'],
+        'imageElement2': ['seelpy.svg', 'sleepyEn.svg'],
+        'imageElement3': ['starting.svg', 'startingEn.svg'],
+        'imageElement4': ['professional.svg', 'professionalEn.svg']
+    };
+
+    for (let element in images) {
+        document.getElementById(element).src = `../assets/images/${images[element][language === 'en' ? 1 : 0]}`;
     }
 }
 
-
 function initializeLanguage() {
-    
-    const selectedLanguage = localStorage.getItem('selectedLanguage');
-    
-    if (selectedLanguage) {
-        setLanguage(selectedLanguage);
-    }
-    document.getElementById("dropdownMenuLink").innerHTML = document.documentElement.lang.toUpperCase()
+    const selectedLanguage = localStorage.getItem('selectedLanguage') || 'en';
     setLanguage(selectedLanguage);
-    // if(selectedLanguage === "ar") {
-    //     document.getElementById('nameInput').placeholder=" : اسمك"
-    
-    // }
-    // else if (selectedLanguage === "en"){
-    //     document.getElementById('nameInput').placeholder="Name :"
-    
-    // }
-    
+    document.getElementById("dropdownMenuLink").innerHTML = selectedLanguage.toUpperCase();
 }
 
 document.querySelectorAll('.dropdown-item').forEach((item) => {
     item.addEventListener('click', (e) => {
         const selectedLanguage = e.target.textContent.toLowerCase();
         setLanguage(selectedLanguage);
-        if(selectedLanguage === "ar") {
-            document.getElementById('nameInput').placeholder=" : اسمك"        
-        }
-        else if (selectedLanguage === "en"){
-            document.getElementById('nameInput').placeholder="Name :"
-        
-        }
-        
+        document.getElementById("dropdownMenuLink").innerHTML = selectedLanguage.toUpperCase();
     });
-    
 });
 
 initializeLanguage();
+
+
 
 
 

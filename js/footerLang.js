@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         })
         .catch(error => {
-            console.error("Error fetching navigation bar:", error);
+            // console.error("Error fetching navigation bar:", error);
         });
 
         fetch("../pages/footer.html")
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         })
         .catch(error => {
-            console.error("Error fetching navigation bar:", error);
+            // console.error("Error fetching navigation bar:", error);
         });
 
 
