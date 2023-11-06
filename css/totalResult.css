@@ -18,12 +18,28 @@ body {
     src: url('../HelveticaNeue.ttc');
 }
 
-.imgRate5 {
-    background-image: url(../assets/images/1svg);
+.imgRate1{
+    background-image: url(../assets/images/1.svg);
+    background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-    height: 100px;
-    width: 100px;
+    height: 92px;
+    width: 176px;
+    animation: change 1s linear;
+}
+@keyframes change {
+    0%{
+        background-image: url(../assets/images/1.svg);
+ 
+    }
+    100%{
+        background-image: url(../assets/images/2.svg);
+
+    }
+    
+}
+.imgRate5 {
+
 }
 
 
