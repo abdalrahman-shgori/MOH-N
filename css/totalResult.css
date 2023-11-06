@@ -283,7 +283,7 @@ html[lang="en"] .downloadCalendar {
     .descriptionTextGroup {
         padding-left: 24px;
         padding-right: 24px;
-        margin-bottom: 34px;
+        margin-bottom: 0px;
     }
 
     .calendarPdf {
