@@ -375,10 +375,18 @@ html[lang="en"] .downloadCalendar {
     
 
      
-    .imgRate1{
-     
-      width: 101px;
-      height: 53px;
+    @keyframes change1 {
+        from{
+            background-image: url(../assets/images/emptyBattery.svg);
+            height: 53px;
+            width: 101px;
+        }
+        to{
+            background-image: url(../assets/images/1.svg);
+            height: 53px;
+            width: 101px;
+        }
+        
     }
     .imgRate2{
 width: 101px;
