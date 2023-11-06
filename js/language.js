@@ -1,46 +1,3 @@
-class LanguageManager {
-    constructor(translations) {
-        this.translations = translations;
-        this.selectedLanguage = localStorage.getItem('selectedLanguage') || 'en';
-    }
-
-    setLanguage(language) {
-        this.selectedLanguage = language;
-        localStorage.setItem('selectedLanguage', language);
-        this.translateElements();
-    }
-
-    translateElements() {
-        const elements = document.querySelectorAll('[data-translate]');
-        elements.forEach((element) => {
-            const translationKey = element.getAttribute('data-translate');
-            element.textContent = this.translations[this.selectedLanguage][translationKey];
-        });
-
-        document.documentElement.lang = this.selectedLanguage;
-        document.getElementById("dropdownMenuLink").innerHTML = this.selectedLanguage.toUpperCase();
-        this.changeImagesLanguage();
-    }
-
-    changeImagesLanguage() {
-        const images = {
-            'imageElement': ['beginner.svg', 'beginnerEn.svg'],
-            'imageElement1': ['badia.svg', 'willingEn.svg'],
-            'imageElement2': ['seelpy.svg', 'sleepyEn.svg'],
-            'imageElement3': ['starting.svg', 'startingEn.svg'],
-            'imageElement4': ['professional.svg', 'professionalEn.svg']
-        };
-
-        for (let element in images) {
-            document.getElementById(element).src = `../assets/images/${images[element][this.selectedLanguage === 'en' ? 1 : 0]}`;
-        }
-    }
-
-    initializeLanguage() {
-        this.translateElements();
-    }
-}
-
 
 let translations = {
     en: {
@@ -216,17 +173,46 @@ let translations = {
     },
 };
 
-const languageManager = new LanguageManager(translations);
-
-function initializeLanguageChange() {
-    document.querySelectorAll('.dropdown-item').forEach((item) => {
-        item.addEventListener('click', (e) => {
-            const selectedLanguage = e.target.textContent.toLowerCase();
-            languageManager.setLanguage(selectedLanguage);
-        });
+function setLanguage(language) {
+    const elements = document.querySelectorAll('[data-translate]');
+    elements.forEach((element) => {
+        const translationKey = element.getAttribute('data-translate');
+        element.textContent = translations[language][translationKey];
     });
 
-    languageManager.initializeLanguage();
+    document.documentElement.lang = language;
+    document.getElementById("dropdownMenuLink").innerHTML = language.toUpperCase();
+    localStorage.setItem('selectedLanguage', language);
+    const images = {
+        'imageElement': ['beginner.svg', 'beginnerEn.svg'],
+        'imageElement1': ['badia.svg', 'willingEn.svg'],
+        'imageElement2': ['seelpy.svg', 'sleepyEn.svg'],
+        'imageElement3': ['starting.svg', 'startingEn.svg'],
+        'imageElement4': ['professional.svg', 'professionalEn.svg']
+    };
+
+    for (let element in images) {
+        document.getElementById(element).src = `../assets/images/${images[element][language === 'en' ? 1 : 0]}`;
+    }
 }
 
-initializeLanguageChange();
+function initializeLanguage() {
+    const selectedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+    setLanguage(selectedLanguage);
+    document.getElementById("dropdownMenuLink").innerHTML = selectedLanguage.toUpperCase();
+}
+
+document.querySelectorAll('.dropdown-item').forEach((item) => {
+    item.addEventListener('click', (e) => {
+        const selectedLanguage = e.target.textContent.toLowerCase();
+        setLanguage(selectedLanguage);
+        document.getElementById("dropdownMenuLink").innerHTML = selectedLanguage.toUpperCase();
+    });
+});
+
+initializeLanguage();
+
+
+
+
+
