@@ -374,21 +374,10 @@ html[lang="en"] .downloadCalendar {
     
 
      
-    .imgRate1 {
-        width: 101px;
-        height: 53px;
-        animation: changes 1s linear forwards;
+    .imgRate1{
+     
+    transform: scale(0.6);
     }
-    
-    @keyframes changes {
-        0% {
-            background-image: url(../assets/images/emptyBattery.svg);
-        }
-        100% {
-            background-image: url(../assets/images/1.svg);
-        }
-    }
-}
     .imgRate2{
 width: 101px;
 height: 53px;
@@ -442,7 +431,7 @@ height: 53px;
     }
 
     .userName {
-        margin-top: 24px;
+        margin-top: 12px;
     }
 
     .rate {
