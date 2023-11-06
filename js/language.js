@@ -236,19 +236,19 @@ function setLanguage(language) {
 
 function initializeLanguage() {
     
-    const selectedLanguage = localStorage.getItem('selectedLanguage');
-    
-    if (selectedLanguage) {
-        setLanguage(selectedLanguage);
-    }
-    document.getElementById("dropdownMenuLink").innerHTML = document.documentElement.lang.toUpperCase()
+    const storedLanguage = localStorage.getItem('selectedLanguage');
+    const selectedLanguage = storedLanguage || 'en'; // Default language is 'en' if not set
     setLanguage(selectedLanguage);
+
+    document.getElementById("dropdownMenuLink").innerHTML = document.documentElement.lang.toUpperCase()
 }
 
 document.querySelectorAll('.dropdown-item').forEach((item) => {
     item.addEventListener('click', (e) => {
         const selectedLanguage = e.target.textContent.toLowerCase();
         setLanguage(selectedLanguage);
+        document.getElementById("dropdownMenuLink").innerHTML = selectedLanguage.toUpperCase();
+
       
         
     });

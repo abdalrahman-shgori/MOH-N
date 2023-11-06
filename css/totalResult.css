@@ -19,7 +19,7 @@ body {
 }
 
 .imgRate1{
-    background-image: url(../assets/images/emptyBattery.svg);
+    background-image: url(../assets/images/1.svg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 92px;
@@ -28,11 +28,11 @@ body {
 }
 @keyframes change1 {
     100%{
-        background-image: url(../assets/images/emptyBattery.svg);
+        background-image: url(../assets/images/1.svg);
  
     }
     100%{
-        background-image: url(../assets/images/1.svg);
+        background-image: url(../assets/images/2.svg);
 
     }
     
@@ -374,11 +374,11 @@ html[lang="en"] .downloadCalendar {
     
     @keyframes change1 {
         100%{
-            background-image: url(../assets/images/emptyBattery.svg);
+            background-image: url(../assets/images/1.svg);
      
         }
         100%{
-            background-image: url(../assets/images/1.svg);
+            background-image: url(../assets/images/2.svg);
     
         }
         
