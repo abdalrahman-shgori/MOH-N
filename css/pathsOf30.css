@@ -92,7 +92,9 @@ overflow-x: auto;
 }
 @media (max-width: 768px) {
     .animate-on-scroll {
-        transform: translateX(10px); /* Adjust for smaller screens */
+        transform: none;
+        transition: none;
+        opacity: 1;
     }
 }
 /* Add a class to trigger the animation */
