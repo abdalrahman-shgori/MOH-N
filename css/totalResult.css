@@ -22,19 +22,18 @@ body {
     background-image: url(../assets/images/emptyBattery.svg);
     background-repeat: no-repeat;
     background-size: cover;
-  
+    height: 92px;
+    width: 176px;
     animation: change1 1s linear forwards;
 }
 @keyframes change1 {
-    from{
+    100%{
         background-image: url(../assets/images/emptyBattery.svg);
-        height: 92px;
-        width: 176px;
+ 
     }
-    to{
+    100%{
         background-image: url(../assets/images/1.svg);
-        height: 92px;
-        width: 176px;
+
     }
     
 }
@@ -210,7 +209,7 @@ body {
     margin-bottom: 55px;
     animation: anim 2s linear;
 }
-/* @keyframes anim {
+@keyframes anim {
     0%{
         scale: 1.2;
     }
@@ -223,7 +222,7 @@ body {
     100%{
         scale: 1;
     }
-} */
+}
 
 .userName {
     display: flex;
@@ -373,20 +372,22 @@ html[lang="en"] .downloadCalendar {
 
 @media screen and (max-width:767px) {
     
-
-     
     @keyframes change1 {
-        from{
+        100%{
             background-image: url(../assets/images/emptyBattery.svg);
-            height: 53px;
-            width: 101px;
+     
         }
-        to{
+        100%{
             background-image: url(../assets/images/1.svg);
-            height: 53px;
-            width: 101px;
+    
         }
         
+    }
+     
+    .imgRate1{
+     
+      width: 101px;
+      height: 53px;
     }
     .imgRate2{
 width: 101px;
