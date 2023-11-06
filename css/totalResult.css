@@ -375,12 +375,12 @@ html[lang="en"] .downloadCalendar {
     
 
     @keyframes change1 {
-        0%{
+        from{
             background-image: url(../assets/images/emptyBattery.svg);
             width: 101px;
      height: 53px;
         }
-        100%{
+        to{
             background-image: url(../assets/images/1.svg);
             width: 101px;
             height: 53px;
