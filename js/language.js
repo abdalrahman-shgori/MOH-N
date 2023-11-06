@@ -207,13 +207,13 @@ function setLanguage(language) {
 
     document.documentElement.lang = language;
     document.getElementById("dropdownMenuLink").innerHTML = language.toUpperCase();
-    localStorage.setItem('selectedLanguage', language);
 
-    // Update images based on language
-    const imageElements = {
-        'ar': ['beginner.svg', 'badia.svg', 'seelpy.svg', 'starting.svg', 'professional.svg'],
-        'en': ['beginnerEn.svg', 'willingEn.svg', 'sleepyEn.svg', 'startingEn.svg', 'professionalEn.svg']
-    };
+    if (language && (language === 'en' || language === 'ar')) {
+        localStorage.setItem('selectedLanguage', language);
+    } else {
+        // Default to 'en' if language is undefined or not 'en'/'ar'
+        localStorage.setItem('selectedLanguage', 'en');
+    }
 
     const images = {
         'imageElement': ['beginner.svg', 'beginnerEn.svg'],
@@ -234,6 +234,20 @@ function initializeLanguage() {
     document.getElementById("dropdownMenuLink").innerHTML = selectedLanguage.toUpperCase();
 }
 
+// Function to check and clear local storage if it exceeds a certain limit
+function clearLocalStorageIfExceedsLimit() {
+    const storage = window.localStorage;
+    const currentStorage = JSON.stringify(storage).length;
+
+    // Define the maximum allowed storage size (in bytes)
+    const MAX_ALLOWED_STORAGE = 5000000; // 5 MB as an example, adjust as needed
+
+    if (currentStorage > MAX_ALLOWED_STORAGE) {
+        storage.clear();
+        // Optionally, selectively remove data that is not crucial to retain
+    }
+}
+
 document.querySelectorAll('.dropdown-item').forEach((item) => {
     item.addEventListener('click', (e) => {
         const selectedLanguage = e.target.textContent.toLowerCase();
@@ -243,6 +257,8 @@ document.querySelectorAll('.dropdown-item').forEach((item) => {
 });
 
 initializeLanguage();
+clearLocalStorageIfExceedsLimit(); // Call this function at the appropriate time to manage storage size
+
 
 
 
