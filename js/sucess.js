@@ -3,7 +3,6 @@ window.onload = () => {
     function isIOS() {
         return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
     }
-    const downloadLink = document.getElementById('button');
 
     let events = [];
 
@@ -2965,11 +2964,13 @@ window.onload = () => {
                 },
             ]
         }
-        downloadLink.click();
+       
 
         document.getElementById('button').addEventListener('click', function () {
             let calContent = 'BEGIN:VCALENDAR\nVERSION:2.0\n';
+            const downloadLink = document.getElementById('button');
 
+            downloadLink.click();
             events.forEach((event, index) => {
                 calContent += `BEGIN:VEVENT
 DTSTAMP:${new Date().toISOString().replace(/[-:.]/g, '')}
