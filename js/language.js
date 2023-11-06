@@ -1,5 +1,48 @@
+class LanguageManager {
+    constructor(translations) {
+        this.translations = translations;
+        this.selectedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+    }
 
-const translations = {
+    setLanguage(language) {
+        this.selectedLanguage = language;
+        localStorage.setItem('selectedLanguage', language);
+        this.translateElements();
+    }
+
+    translateElements() {
+        const elements = document.querySelectorAll('[data-translate]');
+        elements.forEach((element) => {
+            const translationKey = element.getAttribute('data-translate');
+            element.textContent = this.translations[this.selectedLanguage][translationKey];
+        });
+
+        document.documentElement.lang = this.selectedLanguage;
+        document.getElementById("dropdownMenuLink").innerHTML = this.selectedLanguage.toUpperCase();
+        this.changeImagesLanguage();
+    }
+
+    changeImagesLanguage() {
+        const images = {
+            'imageElement': ['beginner.svg', 'beginnerEn.svg'],
+            'imageElement1': ['badia.svg', 'willingEn.svg'],
+            'imageElement2': ['seelpy.svg', 'sleepyEn.svg'],
+            'imageElement3': ['starting.svg', 'startingEn.svg'],
+            'imageElement4': ['professional.svg', 'professionalEn.svg']
+        };
+
+        for (let element in images) {
+            document.getElementById(element).src = `../assets/images/${images[element][this.selectedLanguage === 'en' ? 1 : 0]}`;
+        }
+    }
+
+    initializeLanguage() {
+        this.translateElements();
+    }
+}
+
+
+let translations = {
     en: {
         welcome: "Welcome to the MCQ Quiz",
         aboutWalk: "About Walking",
@@ -25,86 +68,77 @@ const translations = {
         idea8: "Use smart device applications to encourage you to do more. ",
         idea9: "Every time you go out for a walk: change places, change company, change the podcast you listen to, so you don’t get bored.",
         differenceBetweenWalking: "What is the difference between walking sport and normal walking?",
-        properWalking: "The right walking is approximately one and a half kilometers, walking quickly and not at a leisurely pace. Smart device applications can be used to calculate the distance traveled." ,
+        properWalking: "The right walking is approximately one and a half kilometers, walking quickly and not at a leisurely pace. Smart device applications can be used to calculate the distance traveled.",
         aboutWalking: "About Walking",
         walkPaths: "Walk30 Tracks ",
         walkingPersonalityTitle: "Your Walking Personality",
         walkingPersonalityDescription: "A test that measures a person’s level of walking and provides solutions to continue.",
-        walkingPersonalityBtnText: "Test now and find out your personality" ,
+        walkingPersonalityBtnText: "Test now and find out your personality",
         whoisPartners: "The Partners",
         walkDescription: "This test determines your level of walking. After completing it, you will get your result and the personality that expresses your level of walking. You can then download the awareness guide and add reminders appropriate to your personality on your mobile calendar.",
-        testPersonality:"Test Your Personality",
-        walk30:"Walking trend",
-        walk30nav:"walk30",
+        testPersonality: "Test Your Personality",
+        walk30: "Walking trend",
+        walk30nav: "walk30",
         namePlaceholder: "Name",
-        campagin:"A media campaign to raise awareness of walking behavior        ",
-        share:"Share #Walk30 ",
-        walkaround:"Walking field",
-        filed:"Field walking activities in 20 regions around the Kingdom",
-        link:"Register to attend the event ",
-        startchalleng:"Walking challenge",
-        compitition:"Achieve 8,000 steps a day and gain your health",
-        downloadapp:"Download Sehhaty App",
-        congra:`Congratulations`,
-        Unfortunately:`Unfortunately`,
-        professional:"You are a professional",
-        professionalFe:"You are a professional",
-
+        campagin: "A media campaign to raise awareness of walking behavior        ",
+        share: "Share #Walk30 ",
+        walkaround: "Walking field",
+        filed: "Field walking activities in 20 regions around the Kingdom",
+        link: "Register to attend the event ",
+        startchalleng: "Walking challenge",
+        compitition: "Achieve 8,000 steps a day and gain your health",
+        downloadapp: "Download Sehhaty App",
+        congra: `Congratulations`,
+        Unfortunately: `Unfortunately`,
+        professional: "You are a professional",
+        professionalFe: "You are a professional",
         youareDriven: "You are driven",
         youareDrivenFe: "You are driven",
-
         youareInitiator: "You are an initiator",
         youareInitiatorFe: "You are an initiator",
-
         youareIntending: "You are intending",
         youareIntendingFe: "You are intending",
-
         youhavePassiveBehavior: "You have passive behavior",
         youhavePassiveBehaviorFe: "You have passive behavior",
-
         yourCommitmentSetsAnExample: "Your commitment sets an example",
-
         youTakeOffLikeARocketAndKeepWalking: "You take off like a rocket, never stopping your walk",
         youTakeOffLikeARocketAndKeepWalkingFe: "You take off like a rocket, never stopping your walk",
-
         butThereAreAFewSteps: "But there are a few steps left to keep going",
         butThereAreAFewStepsFe: "But there are a few steps left to keep going",
-
         butYouNeedAStarting: "But you need a starting plan to make your behavior continuous",
         butYouNeedAStartingFe: "But you need a starting plan to make your behavior continuous",
-
-        andYouHaven:"In Walk",
-        andYouHavenFe:"In Walk",
+        andYouHaven: "In Walk",
+        andYouHavenFe: "In Walk",
         stage1: "Individuals at this stage are distinguished as role models for those around them. They have the determination and the ability to reach and continue achieving their goals. They are athletes and persistent in walking. Keep on what you're doing and be a role model for those around you.",
         stage2: "Individuals at this stage are characterized by their adaptability. They are enthusiastic about walking and committed to it. However, they now need to maintain it as a lifelong behavior. Keep on what you're doing and be a role model for those around you.",
         stage3: "Individuals at this stage are characterized by a strong will to make decisions and have already started walking, but they may need to turn this habit into a continuous behavior. You are on the right path, and you can achieve your goal!",
         stage4: "Individuals at this stage are distinguished by sufficient awareness and a strong will to start walking, but they may face any obstacle. That's why we've prepared a comprehensive plan and program to assist you.",
         stage5: "Individuals at this stage have a desire for change, but they easily come up with excuses. You need to confront those excuses with reasons that motivate you to reach your goal. Start now with the change, challenge yourself, and continue to maintain your health.",
-        next:"Next",
-        pdfDownloadText:"View the guide for your stage",
-        interName:"your name?",
-        calendarDownload:"Download reminders to your mobile calendar",
+        next: "Next",
+        pdfDownloadText: "View the guide for your stage",
+        interName: "your name?",
+        calendarDownload: "Download reminders to your mobile calendar",
 
-Launched:'Launched',
-Walk30isaninitiative:'Walk 30 is an initiative across the Kingdom, to raise awareness of walking behavior and promote public health as one of the goals of Vision 2030. It began in 2019 to coincide with the Ministry of Health declaring March 5 as National Walking Day.',
-Aim:"Aim",
-Toraisetherates:'To raise the rates of physical activity in general to the internationally recommended level(150 minutes per week), which is reflected in the increase in the average age from 74 years to 80 years.',
-Byaccessingthesite:'By accessing the site, you are our conscious partner. Start the test and know your walking personality',
-Whatisyourpersonality:"What is your personality? Start the test and find out",
-theResult:"The Result"
+        Launched: 'Launched',
+        Walk30isaninitiative: 'Walk 30 is an initiative across the Kingdom, to raise awareness of walking behavior and promote public health as one of the goals of Vision 2030. It began in 2019 to coincide with the Ministry of Health declaring March 5 as National Walking Day.',
+        Aim: "Aim",
+        Toraisetherates: 'To raise the rates of physical activity in general to the internationally recommended level(150 minutes per week), which is reflected in the increase in the average age from 74 years to 80 years.',
+        Byaccessingthesite: 'By accessing the site, you are our conscious partner. Start the test and know your walking personality',
+        Whatisyourpersonality: "What is your personality? Start the test and find out",
+        theResult: "The Result"
 
 
 
 
     },
     ar: {
-        Whatisyourpersonality:"وش شخصيتك ؟ ابدأ الاختبار واعرفها         ",
-        Byaccessingthesite:'بوصولك للموقع أنت شريكنا الواعي ، ابدأ الاختبار واعرف شخصيتك في المشي',
-        Toraisetherates:'الى رفع معدلات ممارسة النشاط البدني بشكل عام إلى الحد الموصَّى به عالميًّا(150 دقيقة اسبوعياً) والذي ينعكس على ارتفاع متوسط الاعمار مـــن ٧٤ عامًا إلى ٨٠ عامًا.',
-        Aim:'تــهدف',
-        Walk30isaninitiative:'مبادرة امش  30  ,عام 2019 ، تزامناً مع إعلان وزارة الصحة يوم 5 مارس يوماً وطنياً للمشي؛ للتوعية بسلوك المشي، وتعزيز الصحة العامة باعتبارها أحد مستهدفات الرؤيــة 2030. ',
-        Launched:'انطلقت',
-        interName:"اسمك؟",
+        Whatisyourpersonality: "وش شخصيتك ؟ ابدأ الاختبار واعرفها         ",
+        Byaccessingthesite: 'بوصولك للموقع أنت شريكنا الواعي ، ابدأ الاختبار واعرف شخصيتك في المشي',
+        Toraisetherates: 'الى رفع معدلات ممارسة النشاط البدني بشكل عام إلى الحد الموصَّى به عالميًّا(150 دقيقة اسبوعياً) والذي ينعكس على ارتفاع متوسط الاعمار مـــن ٧٤ عامًا إلى ٨٠ عامًا.',
+        Aim: 'تــهدف',
+        Walk30isaninitiative: 'مبادرة امش  30  ,عام 2019 ، تزامناً مع إعلان وزارة الصحة يوم 5 مارس يوماً وطنياً للمشي؛ للتوعية بسلوك المشي، وتعزيز الصحة العامة باعتبارها أحد مستهدفات الرؤيــة 2030. ',
+        Launched: 'انطلقت',
+        interName: "اسمك؟",
         welcome: "مرحبًا بك في اختبار الاختيار من متعدد",
         aboutWalk: "عن رياضة المشي",
         path: "مسارات امش 30",
@@ -137,130 +171,62 @@ theResult:"The Result"
         walkingPersonalityBtnText: "اختبر الآن واعرف شخصيتك",
         whoisPartners: "من هم شركاؤنا",
         walkDescription: "هذا الاختبار يحدد مستواك في ممارسة رياضة المشي، بعد الانتهاء منه ستحصل على نتيجتك والشخصية المعبرة عن مستواك في المشي  ، وتستطيع بعدها تحميل الدليل التوعوي واضافة التذكيرات المناسبة لشخصيتك على تقويم جوالك",
-        testPersonality:"اختبر شخصيتك",
-        walk30:"ترند المشي",
-        walk30nav:"امش 30",
+        testPersonality: "اختبر شخصيتك",
+        walk30: "ترند المشي",
+        walk30nav: "امش 30",
         namePlaceholder: ":اسمك",
-        campagin:"حملة إعلامية للتوعية بسلوك المشـي ",
-        share:"شاركنا على هاشتاغ #امشِ30",
-walkaround:"ميدان المشي",
-filed:"فعاليات ميدانية للمشي في 20 منطقة حول المملكة",
-link:"رابط التسجيل لحضور الفعالية",
-startchalleng:"تحدي المشي",
-compitition:"حقق 8000 خطوة في اليوم واكسب صحتك",
-downloadapp:"حمل تطبيق صحتي",
-congra:`تهانينا `,
-Unfortunately:`للأسف `,
-professional:"أنت محترف",
-professionalFe:"أنت محترفة",
-
-youareDriven: "أنت منطلق",
-youareDrivenFe: "أنت منطلقة",
-
-youareInitiator: "أنت بادي",
-youareInitiatorFe: "أنت بادية",
-
-youareIntending: "أنت ناوي",
-youareIntendingFe: "أنت ناوية",
-
-youhavePassiveBehavior: "أنت صاحب سلوك خامل",
-youhavePassiveBehaviorFe: "أنت صاحبة سلوك خامل",
-
-yourCommitmentSetsAnExample: "التزامك يضرب فيه المثل",
-youTakeOffLikeARocketAndKeepWalking: "انطلاقك مثل الصاروخ، لا تتوقف عن المشي",
-youTakeOffLikeARocketAndKeepWalkingFe: "انطلاقك مثل الصاروخ، لا تتوقفي عن المشي",
-
-butThereAreAFewSteps: "لكن تحتاج خطوات بسيطة وتكون مستمرًا",
-butThereAreAFewStepsFe: "لكن تحتاجين خطوات بسيطة وتكونين مستمرةً",
-
-butYouNeedAStarting: "لكن تحتاج خطةً للبدء ليصبح المشي  سلوكًا مستمراً",
-butYouNeedAStartingFe: "لكن تحتاجين خطةً للبدء ليصبح المشي  سلوكًا مستمراً",
-
-andYouHaven:"في المشي",
-andYouHavenFe:"في المشي",
-
-stage1: "يتميز الأشخاص في هذه المرحلة بأنهم قدوة لمن حولهم لديهم العزم والقدرة على الوصول والاستمرار على تحقيق أهدافهم فهم رياضيون ومثابرون على المشي. واصل على ما أنت عليه وكن قدوة لمن حولك.",
-stage2: "يتميز الأشخاص في هذه المرحلة بسهولة التكيف. فهم منطلقون بممارسة المشي ومستمرون عليه. ولكن عليهم الآن المحافظة عليه كسلوك حياة دائم. واصل على ما أنت عليه وكن قدوة لمن حولك.",
-stage3: "يتميز الأشخاص في هذه المرحلة بإرادة قوية في اتخاذ القرار وبدأوا بالفعل في ممارسة المشي، لكن قد يحتاجون إلى تحويل هذه العادة إلى سلوك مستمر. أنت على الطريق الصحيح، ويمكنك الوصول لهدفك!",
-stage4: "يتميز الأشخاص في هذه المرحلة ببوعي كافٍ وإرادة قوية للبدء بممارسة المشي، لكن قد يعوقهم أي سبب. لذلك جهزنا لك خطةً وبرنامجًا ماملاً لمساعدتك.",
-stage5: "الأشخاص في هذه المرحلة عندهم الرغبة في التغيير لكن من السهل عليهم اختلاق الأعذار. عليك مواجهة تلك الأعذار بأسباب تحفزك للوصول إلى هدفك. ابدأ الآن بالتغيير، وتحد نفسك، واستمر في الحفاظ على صحتك.",
-next:"التالي",
-pdfDownloadText:"للاطلاع على الدليل الخاص بمرحلتك",
-calendarDownload:"لتحميل التذكيرات على تقويم جوالك",
-theResult:'النتيجة'
-
-
-
-
-
-
+        campagin: "حملة إعلامية للتوعية بسلوك المشـي ",
+        share: "شاركنا على هاشتاغ #امشِ30",
+        walkaround: "ميدان المشي",
+        filed: "فعاليات ميدانية للمشي في 20 منطقة حول المملكة",
+        link: "رابط التسجيل لحضور الفعالية",
+        startchalleng: "تحدي المشي",
+        compitition: "حقق 8000 خطوة في اليوم واكسب صحتك",
+        downloadapp: "حمل تطبيق صحتي",
+        congra: `تهانينا `,
+        Unfortunately: `للأسف `,
+        professional: "أنت محترف",
+        professionalFe: "أنت محترفة",
+        youareDriven: "أنت منطلق",
+        youareDrivenFe: "أنت منطلقة",
+        youareInitiator: "أنت بادي",
+        youareInitiatorFe: "أنت بادية",
+        youareIntending: "أنت ناوي",
+        youareIntendingFe: "أنت ناوية",
+        youhavePassiveBehavior: "أنت صاحب سلوك خامل",
+        youhavePassiveBehaviorFe: "أنت صاحبة سلوك خامل",
+        yourCommitmentSetsAnExample: "التزامك يضرب فيه المثل",
+        youTakeOffLikeARocketAndKeepWalking: "انطلاقك مثل الصاروخ، لا تتوقف عن المشي",
+        youTakeOffLikeARocketAndKeepWalkingFe: "انطلاقك مثل الصاروخ، لا تتوقفي عن المشي",
+        butThereAreAFewSteps: "لكن تحتاج خطوات بسيطة وتكون مستمرًا",
+        butThereAreAFewStepsFe: "لكن تحتاجين خطوات بسيطة وتكونين مستمرةً",
+        butYouNeedAStarting: "لكن تحتاج خطةً للبدء ليصبح المشي  سلوكًا مستمراً",
+        butYouNeedAStartingFe: "لكن تحتاجين خطةً للبدء ليصبح المشي  سلوكًا مستمراً",
+        andYouHaven: "في المشي",
+        andYouHavenFe: "في المشي",
+        stage1: "يتميز الأشخاص في هذه المرحلة بأنهم قدوة لمن حولهم لديهم العزم والقدرة على الوصول والاستمرار على تحقيق أهدافهم فهم رياضيون ومثابرون على المشي. واصل على ما أنت عليه وكن قدوة لمن حولك.",
+        stage2: "يتميز الأشخاص في هذه المرحلة بسهولة التكيف. فهم منطلقون بممارسة المشي ومستمرون عليه. ولكن عليهم الآن المحافظة عليه كسلوك حياة دائم. واصل على ما أنت عليه وكن قدوة لمن حولك.",
+        stage3: "يتميز الأشخاص في هذه المرحلة بإرادة قوية في اتخاذ القرار وبدأوا بالفعل في ممارسة المشي، لكن قد يحتاجون إلى تحويل هذه العادة إلى سلوك مستمر. أنت على الطريق الصحيح، ويمكنك الوصول لهدفك!",
+        stage4: "يتميز الأشخاص في هذه المرحلة ببوعي كافٍ وإرادة قوية للبدء بممارسة المشي، لكن قد يعوقهم أي سبب. لذلك جهزنا لك خطةً وبرنامجًا ماملاً لمساعدتك.",
+        stage5: "الأشخاص في هذه المرحلة عندهم الرغبة في التغيير لكن من السهل عليهم اختلاق الأعذار. عليك مواجهة تلك الأعذار بأسباب تحفزك للوصول إلى هدفك. ابدأ الآن بالتغيير، وتحد نفسك، واستمر في الحفاظ على صحتك.",
+        next: "التالي",
+        pdfDownloadText: "للاطلاع على الدليل الخاص بمرحلتك",
+        calendarDownload: "لتحميل التذكيرات على تقويم جوالك",
+        theResult: 'النتيجة'
     },
 };
 
-// Function to set the language
-function setLanguage(language) {
-    const elements = document.querySelectorAll('[data-translate]');
-    elements.forEach((element) => {
-        const translationKey = element.getAttribute('data-translate');
-        element.textContent = translations[language][translationKey];
+const languageManager = new LanguageManager(translations);
+
+function initializeLanguageChange() {
+    document.querySelectorAll('.dropdown-item').forEach((item) => {
+        item.addEventListener('click', (e) => {
+            const selectedLanguage = e.target.textContent.toLowerCase();
+            languageManager.setLanguage(selectedLanguage);
+        });
     });
 
-    document.documentElement.lang = language;
-    document.getElementById("dropdownMenuLink").innerHTML = language.toUpperCase();
-
-    if (language && (language === 'en' || language === 'ar')) {
-        localStorage.setItem('selectedLanguage', language);
-    } else {
-        // Default to 'en' if language is undefined or not 'en'/'ar'
-        localStorage.setItem('selectedLanguage', 'en');
-    }
-
-    const images = {
-        'imageElement': ['beginner.svg', 'beginnerEn.svg'],
-        'imageElement1': ['badia.svg', 'willingEn.svg'],
-        'imageElement2': ['seelpy.svg', 'sleepyEn.svg'],
-        'imageElement3': ['starting.svg', 'startingEn.svg'],
-        'imageElement4': ['professional.svg', 'professionalEn.svg']
-    };
-
-    for (let element in images) {
-        document.getElementById(element).src = `../assets/images/${images[element][language === 'en' ? 1 : 0]}`;
-    }
+    languageManager.initializeLanguage();
 }
 
-function initializeLanguage() {
-    const selectedLanguage = localStorage.getItem('selectedLanguage') || 'en';
-    setLanguage(selectedLanguage);
-    document.getElementById("dropdownMenuLink").innerHTML = selectedLanguage.toUpperCase();
-}
-
-// Function to check and clear local storage if it exceeds a certain limit
-function clearLocalStorageIfExceedsLimit() {
-    const storage = window.localStorage;
-    const currentStorage = JSON.stringify(storage).length;
-
-    // Define the maximum allowed storage size (in bytes)
-    const MAX_ALLOWED_STORAGE = 5000000; // 5 MB as an example, adjust as needed
-
-    if (currentStorage > MAX_ALLOWED_STORAGE) {
-        storage.clear();
-        // Optionally, selectively remove data that is not crucial to retain
-    }
-}
-
-document.querySelectorAll('.dropdown-item').forEach((item) => {
-    item.addEventListener('click', (e) => {
-        const selectedLanguage = e.target.textContent.toLowerCase();
-        setLanguage(selectedLanguage);
-        document.getElementById("dropdownMenuLink").innerHTML = selectedLanguage.toUpperCase();
-    });
-});
-
-initializeLanguage();
-clearLocalStorageIfExceedsLimit(); // Call this function at the appropriate time to manage storage size
-
-
-
-
-
-
+initializeLanguageChange();
