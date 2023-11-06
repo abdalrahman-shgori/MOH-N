@@ -377,13 +377,13 @@ html[lang="en"] .downloadCalendar {
     @keyframes change1 {
         from{
             background-image: url(../assets/images/emptyBattery.svg);
-            width: 101px;
-     height: 53px;
+            min-width: 101px;
+     min-height: 53px;
         }
         to{
             background-image: url(../assets/images/1.svg);
-            width: 101px;
-            height: 53px;
+            min-width: 101px;
+            min-height: 53px;
 
         }
     }    
@@ -451,10 +451,10 @@ height: 53px;
         margin-top: 14px;
     }
 
-    .imgRate {
+    /* .imgRate {
         width: 101px;
         height: 53px;
-    }
+    } */
 
     .nameText {
         font-size: 19px;
