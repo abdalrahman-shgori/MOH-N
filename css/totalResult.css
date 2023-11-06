@@ -377,16 +377,18 @@ html[lang="en"] .downloadCalendar {
     @keyframes change1 {
         0%{
             background-image: url(../assets/images/emptyBattery.svg);
-            min-width: 101px;
-     min-height: 53px;
-     max-width: 101px;
+            min-width: 101px !important;
+     min-height: 53px !important;
+     max-height: 53px !important;
+     max-width: 101px !important;
 
         }
         100%{
             background-image: url(../assets/images/1.svg);
-            min-width: 101px;
-            max-width: 101px;
-            min-height: 53px;
+            min-width: 101px !important;
+            max-width: 101px !important;
+            min-height: 53px !important;
+            max-height: 53px !important;
 
         }
     }    
