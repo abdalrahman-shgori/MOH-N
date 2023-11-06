@@ -21,7 +21,7 @@ body {
 .imgRate1{
     background-image: url(../assets/images/emptyBattery.svg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: cover;
     height: 92px;
     width: 176px;
     animation: change1 1s linear forwards;
@@ -373,32 +373,11 @@ html[lang="en"] .downloadCalendar {
 @media screen and (max-width:767px) {
     
 
-    @keyframes change1 {
-        0%{
-            background-image: url(../assets/images/emptyBattery.svg);
-            min-width: 101px !important;
-     min-height: 53px !important;
-     max-height: 53px !important;
-     max-width: 101px !important;
-     background-repeat: no-repeat;
-     background-position: center;
-
-
-        }
-        100%{
-            background-image: url(../assets/images/1.svg);
-            min-width: 101px !important;
-            max-width: 101px !important;
-            min-height: 53px !important;
-            max-height: 53px !important;
-            background-repeat: no-repeat;
-            background-position: center;
-
-        }
-    }    
-    /* .imgRate1{
-width: 101px;
-height: 53px;
+     
+    .imgRate1{
+     
+      width: 101px;
+      height: 53px;
     }
     .imgRate2{
 width: 101px;
@@ -415,7 +394,7 @@ height: 53px;
     .imgRate5{
      width: 101px;
      height: 53px;   
-    } */
+    }
 
     .bgVector {
         background-image: url(../assets/images/resultbg.svg);
