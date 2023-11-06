@@ -230,7 +230,6 @@ html[lang="en"] .downloadCalendar {
         background-image: url(../assets/images/resultbg.svg);
         background-position: center calc(100% - 200px);
 
-
     }
     .bgVector:hover {
         transition: 1s;
@@ -249,7 +248,7 @@ html[lang="en"] .downloadCalendar {
     }
 
     .imgRateCharactar {
-        width: 70%;
+        width: 65%;
     }
 
     .RateCharacterImg {
@@ -309,7 +308,7 @@ html[lang="en"] .downloadCalendar {
     .descriptionText {
         font-size: 14px;
         line-height: 19.92px;
-        margin-bottom: 48px;
+        margin-bottom: 12px;
     }
 
     .addCalendarBtn {
