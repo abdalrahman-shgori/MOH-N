@@ -372,7 +372,22 @@ html[lang="en"] .downloadCalendar {
 }
 
 @media screen and (max-width:767px) {
-    .imgRate1{
+    
+
+    @keyframes change1 {
+        0%{
+            background-image: url(../assets/images/emptyBattery.svg);
+            width: 101px;
+     height: 53px;
+        }
+        100%{
+            background-image: url(../assets/images/1.svg);
+            width: 101px;
+            height: 53px;
+
+        }
+    }    
+    /* .imgRate1{
 width: 101px;
 height: 53px;
     }
@@ -391,7 +406,8 @@ height: 53px;
     .imgRate5{
      width: 101px;
      height: 53px;   
-    }
+    } */
+
     .bgVector {
         background-image: url(../assets/images/resultbg.svg);
         background-position: center calc(100% - 200px);
