@@ -94,13 +94,13 @@
         myArray.map(function (item, index) {
             const div = document.createElement("div");
             div.innerHTML = `
-            <div scrolls scrolls-anim="fade-right" scrolls-duration="800" class=" pathsCard container col-lg-12 mx-auto center-content ${index === myArray.length - 1 ? 'spaceCard' : ''}">
+            <div  class="animate-on-scroll pathsCard  col-lg-12 mx-auto center-content ${index === myArray.length - 1 ? 'spaceCard' : ''}">
                 
             <div class="PathsTexts">
                 <span class="howYouWork" id="wk">${item.title}</span>
                 <span class="PathsDescription" data-translate="walkingPersonalityDescription">${item.description}</span>
                 <div class="btnDirection"> 
-                   <a href="${item.link}"  target="_blank"><button class="pathsBtn" id="ww" data-translate="walkingPersonalityBtnText">${item.btnText}</button></a>
+                   <a href="${item.link}"  target="_blank"><button class="pathsBtn" data-translate="walkingPersonalityBtnText">${item.btnText}</button></a>
                 </div>
             </div>
             <div class="GroupImg">
@@ -137,7 +137,26 @@
 
 
     </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+<script>
+    // Select the elements you want to animate
+const elements = document.querySelectorAll('.animate-on-scroll');
 
+// Loop through each element and apply the Waypoint
+elements.forEach(element => {
+    new Waypoint({
+        element: element,
+        handler: function() {
+            // Apply your animation logic here
+            // For example, add a class to trigger CSS animations
+            this.element.classList.add('animate');
+            this.destroy(); // Ensure the animation triggers only once
+        },
+        offset: '50%' // Trigger the animation when the element is 50% visible
+    });
+});
+
+</script>
     <script>
         AOS.init();
     </script>

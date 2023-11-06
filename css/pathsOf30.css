@@ -81,10 +81,25 @@ overflow-x: auto;
     display: flex;
     margin-bottom: 36px;
     width: 100% !important;
-    transition: transform 0.3s; 
-
 }
 
+/* Initially, set the element's opacity to 0 and move it to the left */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateX(100px); /* Adjust as needed */
+    transition: opacity 0.5s ease, transform 0.9s ease;
+    
+}
+@media (max-width: 768px) {
+    .animate-on-scroll {
+        transform: translateX(10px); /* Adjust for smaller screens */
+    }
+}
+/* Add a class to trigger the animation */
+.animate-on-scroll.animate {
+    opacity: 1;
+    transform: translateX(0);
+}
 
 .spaceCard{
     margin-bottom: 91px;
@@ -93,7 +108,7 @@ overflow-x: auto;
     transform: scale(1.02);
 } */
 .PathsTexts {
-    padding-left: 60px;
+    padding-left: 24px;
     display: flex;
     flex-direction: column;
     text-align: right;
@@ -102,7 +117,10 @@ overflow-x: auto;
 
 html[lang="en"] .PathsTexts {
     text-align: left;
+    padding-right: 24px;
     padding-left: 0px;
+
+
 
 }
 
@@ -179,14 +197,18 @@ html[lang="en"] .center-content{
     justify-content: left;
 }
 .pathsImg{
-    padding: 0px 60px 0px 60px;
+    padding: 0px 50px 0px 50px;
+    width: 242px;
+    height: 192px;
 
 }
 html[lang="en"] .pathsImg{
     transform: scaleX(-1);
 }
 .pathsImg2{
-    padding: 0px 60px 0px 60px;
+    padding: 0px 50px 0px 50px;
+    width: 242px;
+    height: 192px;
 
 }
 
