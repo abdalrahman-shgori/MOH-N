@@ -1,8 +1,4 @@
-function myFunction() {
-  document.getElementById("dropdownMenuLink").innerHTML = "ar";
-
+function myFunction(event, language) {
+  document.getElementById("current-language").innerText = event.target.innerText;
+  document.getElementById("current-language").setAttribute("data-lang", language);
 }
-function myFunction1() {
-  document.getElementById("dropdownMenuLink").innerHTML = "en";
-}
-

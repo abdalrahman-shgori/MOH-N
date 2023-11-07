@@ -5,11 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.text())
         .then(navHTML => {
             document.getElementById("navbar-container").innerHTML = navHTML;
-
             const script = document.createElement("script");
             script.src = "./js/language.js";
             head.appendChild(script);
-
         })
         .catch(error => {
             console.error("Error fetching navigation bar:", error);
@@ -23,8 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
             const script = document.createElement("script");
             script.src = "./js/language.js";
             head.appendChild(script);
-            console.log("abd")
-
         })
         .catch(error => {
             console.error("Error fetching navigation bar:", error);

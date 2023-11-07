@@ -14,9 +14,7 @@
 
   <title>Document</title>
   <link rel="stylesheet" href="../css/nav.css">
-  <style>
-    /* Your custom styles */
-  </style>
+
 </head>
 
 <body>
@@ -31,12 +29,10 @@
 >
         </p>
   
-            <div id="languageDropdown" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a onclick="myFunction()" style="cursor: pointer;" id="current-language" class="dropdown-item lang-shortcut slide-in-1">AR</a>
-  
-              <a onclick="myFunction1()" style="cursor: pointer;" class="dropdown-item lang-shortcut slide-in-2">EN</a>
-  
-            </div>
+        <div id="languageDropdown" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a onclick="myFunction(event, 'ar')" style="cursor: pointer;" id="current-language" class="dropdown-item lang-shortcut slide-in-1">AR</a>
+          <a onclick="myFunction(event, 'en')" style="cursor: pointer;" class="dropdown-item lang-shortcut slide-in-2">EN</a>
+        </div>
         </div>
         <div class="btn-group dropdown show "id="menuDropdown">
           <button type="button" class="dropdown-style  dropdown-toggle-split" data-bs-toggle="dropdown"
