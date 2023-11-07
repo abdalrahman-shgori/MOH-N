@@ -227,13 +227,7 @@ function setLanguage(language) {
         imageElement3.src='../assets/images/startingEn.svg'
         imageElement4.src='../assets/images/professionalEn.svg'
     }
-    else{
-        imageElement.src = '../assets/images/beginner.svg'; 
-        imageElement1.src='../assets/images/badia.svg'
-        imageElement2.src='../assets/images/seelpy.svg'
-        imageElement3.src='../assets/images/starting.svg'
-        imageElement4.src='../assets/images/professional.svg'
-    }
+   
 }
 
 
