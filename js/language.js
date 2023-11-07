@@ -237,7 +237,7 @@ function setLanguage(language) {
 function initializeLanguage() {
     
     const storedLanguage = localStorage.getItem('selectedLanguage');
-    const selectedLanguage = storedLanguage || 'en'; // Default language is 'en' if not set
+    const selectedLanguage = storedLanguage || 'en-US'; 
     setLanguage(selectedLanguage);
 
     document.getElementById("dropdownMenuLink").innerHTML = document.documentElement.lang.toUpperCase()

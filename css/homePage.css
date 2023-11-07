@@ -223,6 +223,7 @@ html[lang="en"] input[type="text"] {
 
 }
 
+
 .div2 {
     grid-area: 1 / 2 / 2 / 3;
     display: flex;
@@ -414,3 +415,29 @@ height: 220px;
 
 
 }
+@media screen and (max-width:361px) {
+  img{
+    width: 115px;
+    height: 100px;
+  }
+  .imgs {
+    height: 260px;
+    width: 280px;
+    bottom: 20px;
+    left: 0px;
+
+}
+}
+@media screen and (max-width:330px) {
+    img{
+      width: 96px;
+      height: 100px;
+    }
+    .imgs {
+      height: 212px;
+      width: 230px;
+      bottom: 20px;
+      left: 0px;
+  
+  }
+  }
