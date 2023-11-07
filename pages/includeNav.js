@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
 
 
-        fetch("./pages/footer.html")
+        fetch("./footer.html")
         .then(response => response.text())
         .then(navHTML => {
             document.getElementById("footer").innerHTML = navHTML;
