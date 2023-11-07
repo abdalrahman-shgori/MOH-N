@@ -47,22 +47,22 @@
         downloadapp:"Download Sehhaty App",
         congra:`Congratulations`,
         Unfortunately:`Unfortunately`,
-        professional:"You are a professional",
-        professionalFe:"You are a professional",
+        professional:"You are a Professional",
+        professionalFe:"You are a Professional",
 
-        youareDriven: "You are driven",
-        youareDrivenFe: "You are driven",
+        youareDriven: "You are Driven",
+        youareDrivenFe: "You are Driven",
 
-        youareInitiator: "You are an initiator",
-        youareInitiatorFe: "You are an initiator",
+        youareInitiator: "You are an Initiator",
+        youareInitiatorFe: "You are an Initiator",
 
-        youareIntending: "You are intending",
-        youareIntendingFe: "You are intending",
+        youareIntending: "You are Intending",
+        youareIntendingFe: "You are Intending",
 
-        youhavePassiveBehavior: "You have passive behavior",
-        youhavePassiveBehaviorFe: "You have passive behavior",
+        youhavePassiveBehavior: "You have passive Behavior",
+        youhavePassiveBehaviorFe: "You have passive Behavior",
 
-        yourCommitmentSetsAnExample: "Your commitment sets an example",
+        yourCommitmentSetsAnExample: "Your commitment sets an Example",
 
         youTakeOffLikeARocketAndKeepWalking: "You take off like a rocket, never stopping your walk",
         youTakeOffLikeARocketAndKeepWalkingFe: "You take off like a rocket, never stopping your walk",
@@ -136,7 +136,7 @@ theResult:"The Result"
         walkingPersonalityDescription: "اختبار يقيس مستوى الشخص في ممارسة المشي ، ويقدم حلول للستمرار .",
         walkingPersonalityBtnText: "اختبر الآن واعرف شخصيتك",
         whoisPartners: "من هم شركاؤنا",
-        walkDescription: "هذا الاختبار يحدد مستواك في ممارسة رياضة المشي، بعد الانتهاء منه ستحصل على نتيجتك والشخصية المعبرة عن مستواك في المشي  ، وتستطيع بعدها تحميل الدليل التوعوي واضافة التذكيرات المناسبة لشخصيتك على تقويم جوالك",
+        walkDescription: "هذا الاختبار يحدد مستواك في ممارسة رياضة المشي، بعد الانتهاء منه ستحصل على نتيجتك والشخصية المعبرة عن مستواك في المشي وتستطيع بعدها تحميل الدليل التوعوي واضافة التذكيرات المناسبة لشخصيتك على تقويم جوالك",
         testPersonality:"اختبر شخصيتك",
         walk30:"ترند المشي",
         walk30nav:"امش 30",

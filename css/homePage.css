@@ -53,7 +53,7 @@ body {
 .WalkSportText {
     font-size: 36px;
     font-weight: 300;
-    line-height: 38px;
+    line-height: 66px;
     color: #333333;
     text-align: center !important;
     direction: rtl;
@@ -363,7 +363,7 @@ height: 220px;
         padding-left: 36px;
         padding-right: 36px;
         font-size: 16px;
-        line-height: 19px;
+        line-height: 27px;
     }
 
     .parents {
