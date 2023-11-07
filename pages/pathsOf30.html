@@ -89,8 +89,6 @@
         localStorage.setItem('selectedLanguage', currentLanguage);
         const outputElement = document.getElementById("output");
         const myArray = currentLanguage === "en" ? myArrayEn : myArrayAr;
-
-        console.log("abd abda abd", currentLanguage)
         myArray.map(function (item, index) {
             const div = document.createElement("div");
             div.innerHTML = `
