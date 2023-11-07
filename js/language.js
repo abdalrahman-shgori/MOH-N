@@ -82,7 +82,7 @@
         stage5: "Individuals at this stage have a desire for change, but they easily come up with excuses. You need to confront those excuses with reasons that motivate you to reach your goal. Start now with the change, challenge yourself, and continue to maintain your health.",
         next:"Next",
         pdfDownloadText:"View the guide for your stage",
-        interName:"your name?",
+        interName:"YOUR NAME?",
         calendarDownload:"Download reminders to your mobile calendar",
 
 Launched:'Launched',

@@ -138,20 +138,17 @@
     </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
 <script>
-    // Select the elements you want to animate
 const elements = document.querySelectorAll('.animate-on-scroll');
 
-// Loop through each element and apply the Waypoint
 elements.forEach(element => {
     new Waypoint({
         element: element,
         handler: function() {
-            // Apply your animation logic here
-            // For example, add a class to trigger CSS animations
             this.element.classList.add('animate');
-            this.destroy(); // Ensure the animation triggers only once
+            this.destroy(); 
+            
         },
-        offset: '50%' // Trigger the animation when the element is 50% visible
+        offset: '70%' 
     });
 });
 
