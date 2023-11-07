@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("footer").innerHTML = navHTML;
 
             const script = document.createElement("script");
-            script.src = "../js/language.js";
+            script.src = "./js/language.js";
             head.appendChild(script);
             console.log("abd")
 
