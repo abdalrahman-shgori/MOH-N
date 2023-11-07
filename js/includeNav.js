@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(navHTML => {
             document.getElementById("navbar-container").innerHTML = navHTML;
             const script = document.createElement("script");
-            script.src = "./js/language.js";
+            script.src = "../js/language.js";
             head.appendChild(script);
 
         })
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("footer").innerHTML = navHTML;
 
             const script = document.createElement("script");
-            script.src = "./js/language.js";
+            script.src = "../js/language.js";
             head.appendChild(script);
         })
         .catch(error => {
