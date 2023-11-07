@@ -1,5 +1,5 @@
 
-const translations = {
+   const translations = {
     en: {
         welcome: "Welcome to the MCQ Quiz",
         aboutWalk: "About Walking",
@@ -195,7 +195,7 @@ theResult:'النتيجة'
 
 
     },
-};
+    };
 
 function setLanguage(language) {
     
@@ -204,7 +204,7 @@ function setLanguage(language) {
         const translationKey = element.getAttribute('data-translate');
         element.textContent = translations[language][translationKey];
     });
-
+  
     document.documentElement.lang = language;
     document.getElementById("dropdownMenuLink").innerHTML =language.toUpperCase()
 
