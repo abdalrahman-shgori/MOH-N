@@ -110,14 +110,18 @@
 
     </div>
     <div id="footer" style="position: relative;"></div>
-<script>
-            function getCurrentLanguage() {
+    <script>
+        function getCurrentLanguage() {
             return localStorage.getItem('selectedLanguage');
         }
-
+    
         const currentLanguage = getCurrentLanguage() || document.documentElement.lang;
-        getCurrentLanguage()
-</script>
+        localStorage.setItem('selectedLanguage', currentLanguage);
+    
+        const language = getCurrentLanguage();
+        console.log("Current Language:", language);
+    </script>
+    
     <script src="./js/includeNav2.js"></script>
     <script src="./js/nav.js"></script>
     <script>
