@@ -83,10 +83,9 @@ overflow-x: auto;
     width: 100% !important;
 }
 
-/* Initially, set the element's opacity to 0 and move it to the left */
 .animate-on-scroll {
     opacity: 0;
-    transform: translateX(100px); /* Adjust as needed */
+    transform: translateX(100px); 
     transition: opacity 0.5s ease, transform 0.9s ease;
     
 }
@@ -97,7 +96,6 @@ overflow-x: auto;
         opacity: 1;
     }
 }
-/* Add a class to trigger the animation */
 .animate-on-scroll.animate {
     opacity: 1;
     transform: translateX(0);
@@ -106,9 +104,7 @@ overflow-x: auto;
 .spaceCard{
     margin-bottom: 91px;
 }
-/* .pathsCard:hover{
-    transform: scale(1.02);
-} */
+
 .PathsTexts {
     padding-left: 24px;
     display: flex;

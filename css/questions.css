@@ -70,6 +70,8 @@ html[lang="en"] .progres {
   height: 16.21px;
   border-radius: 2px;
   display: flex;
+  transition: 0.4s linear;
+
 }
 
 .questionsLogo {
@@ -79,6 +81,7 @@ html[lang="en"] .progres {
   margin-top: 135px;
   margin-bottom: 134px;
 }
+
 
 .questionsCards {
   margin-top: 106px;
@@ -156,6 +159,17 @@ html[lang="en"] .questionNumber {
   height: auto;
   direction: rtl;
   padding-right: 24px;
+  opacity: 0;
+  animation: opa 0.8s linear forwards ;
+}
+@keyframes opa {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+  
 }
 
 html[lang='en'] .radios {
@@ -173,6 +187,8 @@ html[lang='en'] .radios {
   padding-right: 24px;
   padding-left: 10px;
   height: auto;
+  animation: opa 0.8s linear forwards ;
+
 }
 
 html[lang='en'] .checkboxes {
@@ -185,6 +201,7 @@ html[lang='en'] .checkboxes {
   display: flex;
   flex-direction: column;
   gap: 93px;
+
 }
 
 .radioGroup {}
