@@ -209,8 +209,10 @@ function setLanguage(language) {
     document.getElementById("dropdownMenuLink").innerHTML =language.toUpperCase()
 
     localStorage.setItem('selectedLanguage', language);
+    const theLang=  localStorage.getItem('selectedLanguage', language);
+
     if(language == '' || language == null || language == undefined){
-        localStorage.setItem('selectedLanguage','en')
+        theLang='en'
     }
     const imageElement = document.getElementById('imageElement');
     const imageElement1 = document.getElementById('imageElement1');
