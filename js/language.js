@@ -86,7 +86,7 @@
         calendarDownload:"Download reminders to your mobile calendar",
 
 Launched:'Launched',
-Walk30isaninitiative:'Walk 30 is an initiative across the Kingdom, to raise awareness of walking behavior and promote public health as one of the goals of Vision 2030. It began in 2019 to coincide with the Ministry of Health declaring March 5 as National Walking Day.',
+Walk30isaninitiative:'Walk 30 initiative, 2019, coinciding with the Ministry of Health declaring March 5 as National Walking Day; To raise awareness of walking behavior and promote public health as one of the goals of Vision 2030.',
 Aim:"Aim",
 Toraisetherates:'To raise the rates of physical activity in general to the internationally recommended level(150 minutes per week), which is reflected in the increase in the average age from 74 years to 80 years.',
 Byaccessingthesite:'By accessing the site, you are our conscious partner. Start the test and know your walking personality',
