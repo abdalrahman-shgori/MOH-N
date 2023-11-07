@@ -75,7 +75,9 @@
             return localStorage.getItem('selectedLanguage');
         }
     
-        const currentLanguage = getCurrentLanguage();
+        const currentLanguage = getCurrentLanguage() || document.documentElement.lang;
+        localStorage.setItem('selectedLanguage', currentLanguage);
+
         if (currentLanguage === 'ar') {
             const weContainer = document.querySelector(".fadeAnimation");            
             weContainer.setAttribute('data-aos', 'fade-left');

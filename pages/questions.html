@@ -86,6 +86,17 @@
         <div style="margin-bottom: 0px !important;" id="footer"></div> <!-- Set margin-bottom to 0 -->
     </div>
 </div>
+<script>
+    function getCurrentLanguage() {
+        return localStorage.getItem('selectedLanguage');
+    }
+
+    const currentLanguage = getCurrentLanguage() || document.documentElement.lang;
+    localStorage.setItem('selectedLanguage', currentLanguage);
+
+    const language = getCurrentLanguage();
+    console.log("Current Language:", language);
+</script>
 <script src="../js/scrolls.js"></script>
     <script src="../js/includeNav.js"></script>
     <script src="../js/nav.js"></script>

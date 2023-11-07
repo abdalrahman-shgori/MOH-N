@@ -118,13 +118,16 @@
 
 
     </script>
+    
        <script>
         function getCurrentLanguage() {
             return localStorage.getItem('selectedLanguage');
         }
     
-        const currentLanguage = getCurrentLanguage();
+        const currentLanguage = getCurrentLanguage() || document.documentElement.lang;
         const imageElement = document.getElementById('imageElement');
+        localStorage.setItem('selectedLanguage', currentLanguage);
+
 
         if (currentLanguage === 'ar') {
             imageElement.src = '../assets/images/badia.svg';

@@ -150,7 +150,17 @@
     `;
         resultsContainer.innerHTML = html;
     </script>
+  <script>
+    function getCurrentLanguage() {
+        return localStorage.getItem('selectedLanguage');
+    }
 
+    const currentLanguage = getCurrentLanguage() || document.documentElement.lang;
+    localStorage.setItem('selectedLanguage', currentLanguage);
+
+    const language = getCurrentLanguage();
+    console.log("Current Language:", language);
+</script>
 <script src="../js/footerLang.js"></script>
 <script src="../js/nav.js"></script>
 </body>
