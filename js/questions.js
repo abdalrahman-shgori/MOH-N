@@ -60,7 +60,7 @@ const questions = [
             { text: "I have nothing to stop me from walking", value: 0 },
             { text: "There is no suitable place", value: 0 },
             { text: "I do not have time", value: 0 },
-            { text: "pver", value: 0 }
+            { text: "Other", value: 0 }
 
         ],
     },
@@ -69,8 +69,8 @@ const questions = [
         answers: [
             { text: "Maintain a healthy weight", value: 0 },
             { text: "Improve fitness and mood", value: 0 },
-            { texT: "Control or prevent chronic disease", value: 0 },
-            { text: "over", value: 0 }
+            { text: "Control or prevent chronic disease", value: 0 },
+            { text: "Over", value: 0 }
         ],
     },
     {

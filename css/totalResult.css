@@ -331,11 +331,27 @@ html[lang='en'] .descriptionText {
     min-height: 36px;
     text-decoration: none !important;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     width: 358px;
     font-size: 16px;
+    padding-right: 24px;
+
 }
+
+html[lang="en"] .addCalendarBtn{
+    justify-content: left;
+    padding-left: 24px;
+    padding-right: 0px;
+
+}
+html[lang="en"] .downloadPdfBtn{
+text-align: left;
+padding-left: 24px;
+padding-right: 0px;
+
+}
+
 
 .downloadPdfBtn {
     background: #008056;
@@ -345,6 +361,9 @@ html[lang='en'] .descriptionText {
     min-height: 36px;
     width: 358px;
     font-size: 16px;
+    text-align: right;
+    padding-right: 24px;
+
 }
 
 .downloadCalendar {

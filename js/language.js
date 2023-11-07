@@ -47,22 +47,22 @@
         downloadapp:"Download Sehhaty App",
         congra:`Congratulations`,
         Unfortunately:`Unfortunately`,
-        professional:"You are a Professional",
-        professionalFe:"You are a Professional",
+        professional:"You Are A Professional",
+        professionalFe:"You Are A Professional",
 
-        youareDriven: "You are Driven",
-        youareDrivenFe: "You are Driven",
+        youareDriven: "You Are Driven",
+        youareDrivenFe: "You Are Driven",
 
-        youareInitiator: "You are an Initiator",
-        youareInitiatorFe: "You are an Initiator",
+        youareInitiator: "You Are An Initiator",
+        youareInitiatorFe: "You Are An Initiator",
 
-        youareIntending: "You are Intending",
-        youareIntendingFe: "You are Intending",
+        youareIntending: "You Are Intending",
+        youareIntendingFe: "You Are Intending",
 
-        youhavePassiveBehavior: "You have passive Behavior",
-        youhavePassiveBehaviorFe: "You have passive Behavior",
+        youhavePassiveBehavior: "You Have Passive Behavior",
+        youhavePassiveBehaviorFe: "You Have Passive Behavior",
 
-        yourCommitmentSetsAnExample: "Your commitment sets an Example",
+        yourCommitmentSetsAnExample: "Your Commitment Sets An Example",
 
         youTakeOffLikeARocketAndKeepWalking: "You take off like a rocket, never stopping your walk",
         youTakeOffLikeARocketAndKeepWalkingFe: "You take off like a rocket, never stopping your walk",
