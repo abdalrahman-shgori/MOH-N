@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
     const head = document.head;
 
-    fetch("nav.html")
+    fetch("../pages/nav.html")
         .then(response => response.text())
         .then(navHTML => {
             document.getElementById("navbar-container").innerHTML = navHTML;
             const script = document.createElement("script");
-            script.src = "language.js";
+            script.src = "./js/language.js";
             head.appendChild(script);
 
         })
@@ -16,13 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
         
 
 
-        fetch("footer.html")
+        fetch("../pages/footer.html")
         .then(response => response.text())
         .then(navHTML => {
             document.getElementById("footer").innerHTML = navHTML;
 
             const script = document.createElement("script");
-            script.src = "language.js";
+            script.src = "./js/language.js";
             head.appendChild(script);
         })
         .catch(error => {
