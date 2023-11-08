@@ -1,5 +1,6 @@
 body {
     background-color: #FFFFFF !important;
+    overflow-x: hidden;
 }
 
 a {
@@ -81,38 +82,34 @@ html[lang="en"] .PathsText {
 
 .pathsCard {
     padding: 36px 60px 36px 60px;
+    overflow-x: auto;
     background-color: #FFFFFF;
     border-radius: 16px;
     box-shadow: 2px 2px 22px 0px hsla(0, 0%, 20%, 0.12);
     display: flex;
     margin-bottom: 36px;
     width: 100% !important;
+
+}
+
+.w3-animate-right0 {
     opacity: 0;
-    
-}
-.pathsCard.w3-animate-right{
-    opacity: 1;
+    animation: animateright 0.5s linear 0s forwards !important;
 }
 
-/* .animate-on-scroll {
+.w3-animate-right1{
     opacity: 0;
-    transform: translateX(100px);
-    transition: opacity 0.5s ease, transform 0.9s ease;
-
-} */
-
-/* @media (max-width: 768px) {
-    .animate-on-scroll {
-        opacity: 0;
-        transform: translateX(15px);
-        transition: opacity 1s ease, transform 0.5s ease;
-    }
-} */
-
-.animate-on-scroll.animate {
-    opacity: 1;
-    transform: translateX(0);
+    animation: animateright 0.5s linear 0.5s forwards !important;
 }
+.w3-animate-right2{
+    opacity: 0;
+    animation: animateright 0.5s linear 1s forwards !important; 
+}
+.w3-animate-right3{
+    opacity: 0;
+    animation: animateright 0.5s linear 1.5s forwards !important;
+}
+
 
 .spaceCard {
     margin-bottom: 91px;

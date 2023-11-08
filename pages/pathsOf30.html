@@ -94,7 +94,7 @@
         myArray.map(function (item, index) {
             const div = document.createElement("div");
             div.innerHTML = `
-            <div  class=" pathsCard  col-lg-12 mx-auto center-content ${index === myArray.length - 1 ? 'spaceCard' : ''}">
+            <div class=" pathsCard col-lg-12 mx-auto center-content ${index === myArray.length - 1 ? 'spaceCard' : ''} w3-animate-right${index}">
                 
             <div class="PathsTexts">
                 <span class="howYouWork" id="wk">${item.title}</span>
@@ -134,6 +134,9 @@
         });
     </script>
     <script src="../js/scrolls.js">
+    </script>
+    <script>
+        // Get references to the animated elements
 
 
     </script>
@@ -141,16 +144,16 @@
 <script>
 const elements = document.querySelectorAll('.pathsCard');
 
-elements.forEach(element => {
-    new Waypoint({
-        element: element,
-        handler: function() {
-            this.element.classList.add('w3-animate-right');
-            this.destroy(); 
-        },
-        offset: '70%' 
-    });
-});
+// elements.forEach(element => {
+//     new Waypoint({
+//         element: element,
+//         handler: function() {
+//             this.element.classList.add('w3-animate-right');
+//             this.destroy(); 
+//         },
+//         offset: '70%' 
+//     });
+// });
 
 </script>
     <script>
