@@ -92,7 +92,7 @@ overflow-x: auto;
 @media (max-width: 768px) {
     .animate-on-scroll {
         opacity: 0;
-        transform: translateX(10px); 
+        transform: translateX(15px); 
         transition: opacity 1s ease, transform 0.5s ease;
     }
 }
