@@ -2994,7 +2994,7 @@ END:VEVENT\n`;
 
         function initClient() {
             gapi.client.init({
-                clientId: '831010665054-18pkq0jo07jcl72r3kg1lupei18fc8hl.apps.googleusercontent.com',
+                clientId: '694045244622-uhbhcn24cnofarf2pkb21q4ci4tub49d.apps.googleusercontent.com',
                 discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"],
                 scope: 'https://www.googleapis.com/auth/calendar',
                 cookiepolicy: 'single_host_origin',

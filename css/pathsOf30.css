@@ -93,7 +93,7 @@ overflow-x: auto;
     .animate-on-scroll {
         opacity: 0;
         transform: translateX(10px); 
-        transition: opacity 0.5s ease, transform 0.9s ease;
+        transition: opacity 1s ease, transform 0.5s ease;
     }
 }
 .animate-on-scroll.animate {
