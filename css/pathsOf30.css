@@ -1,6 +1,5 @@
 body {
     background-color: #FFFFFF !important;
-    overflow-x: hidden;
 }
 
 a {
@@ -82,7 +81,6 @@ html[lang="en"] .PathsText {
 
 .pathsCard {
     padding: 36px 60px 36px 60px;
-    overflow-x: auto;
     background-color: #FFFFFF;
     border-radius: 16px;
     box-shadow: 2px 2px 22px 0px hsla(0, 0%, 20%, 0.12);
@@ -103,13 +101,13 @@ html[lang="en"] .PathsText {
 
 } */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .animate-on-scroll {
         opacity: 0;
         transform: translateX(15px);
         transition: opacity 1s ease, transform 0.5s ease;
     }
-}
+} */
 
 .animate-on-scroll.animate {
     opacity: 1;
@@ -259,29 +257,7 @@ html[lang="en"] .center-content {
         margin-top: 24px;
     }
 
-    .bgVector {
-        background-image: url(../assets/images/vectorMobile.svg);
-        padding-top: 102px;
-        background-position: center calc(100% + 60px);
-
-
-    }
-
-    .bgVector:hover {
-        transition: 4s;
-        animation: walk 2s linear;
-
-    }
-
-    @keyframes walk {
-        from {
-            background-position: 0 calc(100% + 60px);
-        }
-
-        to {
-            background-position: 100% calc(100% + 60px);
-        }
-    }
+  
 
     .PathsText {
         font-size: 24px;
@@ -497,4 +473,29 @@ html[lang="en"] .center-content {
         width: 150px;
     }
 
+}
+@media screen and (max-width:480px) {
+    .bgVector {
+        background-image: url(../assets/images/vectorMobile.svg);
+        padding-top: 102px;
+        background-position: center calc(100% + 60px);
+
+
+    }
+
+    .bgVector:hover {
+        transition: 4s;
+        animation: walk 2s linear;
+
+    }
+
+    @keyframes walk {
+        from {
+            background-position: 0 calc(100% + 60px);
+        }
+
+        to {
+            background-position: 100% calc(100% + 60px);
+        }
+    }
 }
