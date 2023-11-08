@@ -25,6 +25,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
     <title>PathsOf30</title>
@@ -93,7 +94,7 @@
         myArray.map(function (item, index) {
             const div = document.createElement("div");
             div.innerHTML = `
-            <div  class="animate-on-scroll pathsCard  col-lg-12 mx-auto center-content ${index === myArray.length - 1 ? 'spaceCard' : ''}">
+            <div  class=" pathsCard  col-lg-12 mx-auto center-content ${index === myArray.length - 1 ? 'spaceCard' : ''}">
                 
             <div class="PathsTexts">
                 <span class="howYouWork" id="wk">${item.title}</span>
@@ -138,13 +139,13 @@
     </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
 <script>
-const elements = document.querySelectorAll('.animate-on-scroll');
+const elements = document.querySelectorAll('.pathsCard');
 
 elements.forEach(element => {
     new Waypoint({
         element: element,
         handler: function() {
-            this.element.classList.add('animate');
+            this.element.classList.add('w3-animate-right');
             this.destroy(); 
         },
         offset: '70%' 

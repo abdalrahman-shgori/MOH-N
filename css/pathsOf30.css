@@ -89,14 +89,19 @@ html[lang="en"] .PathsText {
     display: flex;
     margin-bottom: 36px;
     width: 100% !important;
+    opacity: 0;
+    
+}
+.pathsCard.w3-animate-right{
+    opacity: 1;
 }
 
-.animate-on-scroll {
+/* .animate-on-scroll {
     opacity: 0;
     transform: translateX(100px);
     transition: opacity 0.5s ease, transform 0.9s ease;
 
-}
+} */
 
 @media (max-width: 768px) {
     .animate-on-scroll {
