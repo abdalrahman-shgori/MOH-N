@@ -529,7 +529,6 @@ html[lang="en"] .downloadCalendar {
 
 @media screen and (max-width:300px) {
     .imgRateCharactar {
-        /* height: 220px !important; */
         width: 85%;
     }
 

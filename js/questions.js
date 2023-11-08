@@ -292,19 +292,8 @@ function loadQuestion(index) {
 
         }
     }
-
-    // Assuming you have the correct value in currentQuestionIndex
-    // Ensure you're checking it correctly and it reflects the intended value
-
-
-
-
-
-
 }
 progressElements[0].style.opacity = '100%';
-
-
 function nextQuestion() {
 
     console.log("the current index number", currentQuestionIndex)

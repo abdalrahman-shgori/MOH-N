@@ -1,48 +1,54 @@
-
 body {
     background-color: #FFFFFF !important;
     overflow-x: hidden;
 }
-a{
+
+a {
     text-decoration: none !important;
 }
-.bgVector{
+
+.bgVector {
     background-image: url(../assets/images/Background.svg);
     background-repeat: no-repeat;
-    background-position: center calc(100% + 200px);  
+    background-position: center calc(100% + 200px);
     position: relative;
-    transition: background-position 1s; 
- padding-top: 250px;
- width: 100%;
+    transition: background-position 1s;
+    padding-top: 250px;
+    width: 100%;
 
- } 
+}
 
- .bgVector:hover {
+.bgVector:hover {
     transition: 4s;
     animation: walk 1s linear;
-    
-  }
-  
-  @keyframes walk {
+
+}
+
+@keyframes walk {
     from {
-        background-position:0 calc(100% + 200px) ; 
+        background-position: 0 calc(100% + 200px);
     }
+
     to {
-        background-position:100% calc(100% + 200px) ; 
+        background-position: 100% calc(100% + 200px);
     }
-  } 
+}
+
 @font-face {
     font-family: 'GE SS Unique Bold';
     src: url('../GE\ SS\ Unique\ Light.otf');
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: 'GE SS Unique Light';
     src: url('../GE\ SS\ Unique\ Bold.otf');
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: 'EnLanguage';
     src: url('../HelveticaNeue.ttc');
-  }
+}
+
 .PathsText {
     color: #008056;
     text-align: center;
@@ -50,20 +56,22 @@ a{
     font-weight: 700;
     line-height: 49px;
     margin-bottom: 33px;
-        font-family: 'GE SS Unique Light' ;
-        position: relative;
-        bottom: 100px;
-
-}
-html[lang="en"] .PathsText{
-        font-family: 'EnLanguage' !important;
-        font-weight:bold !important;
+    font-family: 'GE SS Unique Light';
+    position: relative;
+    bottom: 100px;
 
 }
 
-.group-Cards{
+html[lang="en"] .PathsText {
+    font-family: 'EnLanguage' !important;
+    font-weight: bold !important;
+
+}
+
+.group-Cards {
     padding-bottom: 194px;
 }
+
 .paths {
     display: flex;
     flex-direction: column;
@@ -73,8 +81,8 @@ html[lang="en"] .PathsText{
 }
 
 .pathsCard {
-padding: 36px 60px 36px 60px;
-overflow-x: auto;
+    padding: 36px 60px 36px 60px;
+    overflow-x: auto;
     background-color: #FFFFFF;
     border-radius: 16px;
     box-shadow: 2px 2px 22px 0px hsla(0, 0%, 20%, 0.12);
@@ -85,23 +93,25 @@ overflow-x: auto;
 
 .animate-on-scroll {
     opacity: 0;
-    transform: translateX(100px); 
+    transform: translateX(100px);
     transition: opacity 0.5s ease, transform 0.9s ease;
-    
+
 }
+
 @media (max-width: 768px) {
     .animate-on-scroll {
         opacity: 0;
-        transform: translateX(15px); 
+        transform: translateX(15px);
         transition: opacity 1s ease, transform 0.5s ease;
     }
 }
+
 .animate-on-scroll.animate {
     opacity: 1;
     transform: translateX(0);
 }
 
-.spaceCard{
+.spaceCard {
     margin-bottom: 91px;
 }
 
@@ -130,10 +140,11 @@ html[lang="en"] .PathsTexts {
     text-align: justified;
     font-family: 'GE SS Unique Light' !important;
     color: #333333;
-    
+
 }
-html[lang='en'] .howYouWork{
-font-family:'EnLanguage' !important ;
+
+html[lang='en'] .howYouWork {
+    font-family: 'EnLanguage' !important;
 }
 
 
@@ -150,7 +161,7 @@ font-family:'EnLanguage' !important ;
 }
 
 html[lang="en"] .PathsDescription {
-    font-family:'EnLanguage'  ;
+    font-family: 'EnLanguage';
     text-align: left;
     direction: ltr;
 
@@ -171,19 +182,22 @@ html[lang="en"] .PathsDescription {
     align-items: center;
     justify-content: center;
 }
-.btnDirection{
+
+.btnDirection {
     display: flex;
     justify-content: right;
 }
-html[lang="en"] .pathsBtn{
+
+html[lang="en"] .pathsBtn {
     font-family: 'EnLanguage';
     font-size: 20px;
-    
+
 }
-html[lang="en"] .btnDirection{
+
+html[lang="en"] .btnDirection {
     font-family: 'EnLanguage';
     justify-content: left;
-    
+
 }
 
 .center-content {
@@ -191,19 +205,23 @@ html[lang="en"] .btnDirection{
     justify-content: right;
     align-items: center;
 }
-html[lang="en"] .center-content{
+
+html[lang="en"] .center-content {
     justify-content: left;
 }
-.pathsImg{
+
+.pathsImg {
     padding: 0px 50px 0px 50px;
     width: 242px;
     height: 192px;
 
 }
-html[lang="en"] .pathsImg{
+
+html[lang="en"] .pathsImg {
     transform: scaleX(-1);
 }
-.pathsImg2{
+
+.pathsImg2 {
     padding: 0px 50px 0px 50px;
     width: 242px;
     height: 192px;
@@ -211,33 +229,35 @@ html[lang="en"] .pathsImg{
 }
 
 
-html[lang = "en"] .center-content{
+html[lang="en"] .center-content {
     direction: rtl;
 }
 
 @media screen and (max-width:967px) {
-    .pathsCard{
-    }
-   
+    .pathsCard {}
+
 }
+
 @media screen and (max-width:767px) {
-    .group-Cards{
+    .group-Cards {
         padding-bottom: 90px;
     }
-    .pathsCard{
+
+    .pathsCard {
         padding: 24px 26px 24px 26px;
         margin-bottom: 16px;
     }
-    .ss{
-        
-    }
-    .paths{
+
+    .ss {}
+
+    .paths {
         margin-top: 24px;
     }
-    .bgVector{
+
+    .bgVector {
         background-image: url(../assets/images/vectorMobile.svg);
         padding-top: 102px;
-        background-position:center calc(100% + 60px);
+        background-position: center calc(100% + 60px);
 
 
     }
@@ -245,19 +265,20 @@ html[lang = "en"] .center-content{
     .bgVector:hover {
         transition: 4s;
         animation: walk 2s linear;
-        
-      }
-      
-      @keyframes walk {
+
+    }
+
+    @keyframes walk {
         from {
-            background-position:0 calc(100% + 60px) ; 
+            background-position: 0 calc(100% + 60px);
         }
+
         to {
-            background-position:100% calc(100% + 60px) ; 
+            background-position: 100% calc(100% + 60px);
         }
-      } 
-   
-    .PathsText{
+    }
+
+    .PathsText {
         font-size: 24px;
         line-height: 29px;
         gap: 8px;
@@ -266,18 +287,21 @@ html[lang = "en"] .center-content{
 
 
     }
-    html[lang='en'] .PathsText{
+
+    html[lang='en'] .PathsText {
         font-weight: 700 !important;
     }
-    .PathsTexts{
+
+    .PathsTexts {
         line-height: 29px;
         gap: 8px;
         padding-left: 0px;
-        
+
     }
+
     .howYouWork {
         font-size: 18px;
-         line-height: 24px;
+        line-height: 24px;
 
 
     }
@@ -286,7 +310,7 @@ html[lang = "en"] .center-content{
         font-size: 16px;
         line-height: 19px;
         width: 100% !important;
-        
+
     }
 
     .pathsBtn {
@@ -296,10 +320,12 @@ html[lang = "en"] .center-content{
         padding: 4px 10px 4px 10px;
 
     }
-    html[lang='en'] .pathsBtn{
+
+    html[lang='en'] .pathsBtn {
         font-size: 14px;
     }
-    html[lang='en'] .PathsDescription{
+
+    html[lang='en'] .PathsDescription {
         font-size: 14px;
     }
 
@@ -308,16 +334,19 @@ html[lang = "en"] .center-content{
         height: 105px;
         padding: 10px 26px 10px 34px;
 
-        
+
     }
-    html[lang='en'] .pathsImg{
+
+    html[lang='en'] .pathsImg {
         padding: 10px 26px 10px 34px;
 
     }
-    html[lang='en'] .pathsImg2{
+
+    html[lang='en'] .pathsImg2 {
         padding: 10px 34px 10px 26px;
 
     }
+
     .pathsImg2 {
         width: 124px;
         height: 105px;
@@ -330,115 +359,137 @@ html[lang = "en"] .center-content{
         justify-content: center;
         align-items: center;
     }
-    .spaceCard{
-        margin-bottom: 41px ;
+
+    .spaceCard {
+        margin-bottom: 41px;
     }
 
 }
+
 @media screen and (max-width:400px) {
-    .pathsBtn{
+    .pathsBtn {
         font-size: 12px;
         padding: 4px 4px 4px 4px;
 
     }
-    html[lang='en'] .pathsBtn{
+
+    html[lang='en'] .pathsBtn {
         font-size: 12px;
         padding: 4px 4px 4px 4px;
     }
-    html[lang='en'] .PathsDescription{
+
+    html[lang='en'] .PathsDescription {
         font-size: 12px;
     }
+
     .pathsImg {
         width: 100px;
         height: 100px;
         padding: 10px 10px 10px 26px;
 
     }
-    html[lang='en'] .pathsImg{
-        padding: 10px 10px 10px 26px;        
+
+    html[lang='en'] .pathsImg {
+        padding: 10px 10px 10px 26px;
     }
-    html[lang='en'] .pathsImg2{
-        padding: 10px 26px 10px 10px;        
+
+    html[lang='en'] .pathsImg2 {
+        padding: 10px 26px 10px 10px;
     }
+
     .pathsImg2 {
         width: 100px;
         height: 100px;
         padding: 10px 10px 10px 26px;
     }
-    
 
-    .howYouWork{
+
+    .howYouWork {
         font-size: 16px;
     }
-    .PathsDescription{
+
+    .PathsDescription {
         font-size: 14px;
     }
-    .pathsBtn{
+
+    .pathsBtn {
         font-size: 14px;
     }
 }
+
 @media screen and (max-width:375px) {
-    .pathsBtn{
+    .pathsBtn {
         width: 200px;
     }
-    
+
 }
+
 @media screen and (max-width:360px) {
-    .pathsBtn{
+    .pathsBtn {
         width: 180px;
     }
-    
+
 }
+
 @media screen and (max-width:335px) {
-    .pathsBtn{
+    .pathsBtn {
         width: 160px;
         font-size: 12px;
     }
-    .PathsDescription{
+
+    .PathsDescription {
         font-size: 12px;
     }
-    
+
 }
+
 @media screen and (max-width:315px) {
-    .pathsBtn{
+    .pathsBtn {
         font-size: 10px;
         padding: 0px 0px 0px 0px;
 
     }
-    .howYouWork{
+
+    .howYouWork {
         font-size: 12px;
     }
-    .PathsDescription{
+
+    .PathsDescription {
         font-size: 10px;
     }
+
     .pathsImg {
         width: 80px;
         height: 80px;
         padding: 0px 10px 0px 10px;
 
     }
+
     .pathsImg2 {
         width: 80px;
         height: 80px;
         padding: 0px 10px 0px 10px;
 
     }
-    html[lang='en'] .pathsBtn{
+
+    html[lang='en'] .pathsBtn {
         font-size: 8px;
     }
-    html[lang='en'] .PathsDescription{
+
+    html[lang='en'] .PathsDescription {
         font-size: 10px;
     }
-    html[lang='en'] .howYouWork{
+
+    html[lang='en'] .howYouWork {
         font-size: 12px;
     }
-    
-    
+
+
 }
 
 @media screen and (max-width:290px) {
-    .pathsBtn{
+    .pathsBtn {
         width: 150px;
     }
-    
+
 }

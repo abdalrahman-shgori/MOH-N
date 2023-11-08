@@ -1,6 +1,4 @@
-
-
- body {
+body {
     background-color: #FFFFFF !important;
     overflow-x: hidden !important;
 }
@@ -19,46 +17,50 @@
     font-family: 'EnLanguage';
     src: url('../HelveticaNeue.ttc');
 }
-.theVector{
+
+.theVector {
     background-image: url(../assets/images/Background.svg);
     background-repeat: no-repeat;
     background-position: center;
-    height:545px;
+    height: 545px;
     width: 100%;
     position: relative;
-    transition: background-position 1s; 
+    transition: background-position 1s;
 
 }
+
 .theVector:hover {
     transition: 1s;
     background-position: 100% 0;
-    animation: walk 1s  linear;
+    animation: walk 1s linear;
 }
 
 @keyframes walk {
     from {
-        background-position:0 0 ;
+        background-position: 0 0;
     }
+
     to {
-        background-position:100% 0 ; 
+        background-position: 100% 0;
     }
 }
 
 
- .QuestionWalk{
+.QuestionWalk {
     padding-top: 248px;
     font-family: 'GE SS Unique Light';
-color:  rgba(0, 128, 86, 1);
-font-size: 43px;
-font-weight: 700;
-line-height: 54px;
-letter-spacing: 0em;
-text-align: center;
-padding-left: 24px;
-padding-right: 24px;
+    color: rgba(0, 128, 86, 1);
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
 
- }
- .QuestionWalk2{
+}
+
+.QuestionWalk2 {
     padding-top: 100px;
     font-family: 'GE SS Unique Light' !important;
     font-size: 39px;
@@ -68,60 +70,65 @@ padding-right: 24px;
     text-align: center;
     color: #4BBEA5;
     padding-left: 24px;
-padding-right: 24px;
+    padding-right: 24px;
 
- }
- html[lang="en"] .QuestionWalk{
+}
+
+html[lang="en"] .QuestionWalk {
     font-family: 'EnLanguage';
 
- }
- html[lang="en"] .QuestionWalk2{
+}
+
+html[lang="en"] .QuestionWalk2 {
     font-family: 'EnLanguage';
 
- }
- .textDescription{
+}
+
+.textDescription {
     font-family: 'GE SS Unique Bold' !important;
-font-size: 34px;
-font-weight: 300;
-line-height: 67px;
-letter-spacing: 0em;
-text-align: center;
-color: #000000;
-padding-left: 150px;
-padding-right: 150px;
-direction: rtl;
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 67px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #000000;
+    padding-left: 150px;
+    padding-right: 150px;
+    direction: rtl;
 
- }
- html[lang="en"] .textDescription{
+}
+
+html[lang="en"] .textDescription {
     direction: ltr;
     font-family: 'EnLanguage';
 
- }
+}
 
- .grid-group{
+.grid-group {
     display: grid;
-        justify-content: center;
+    justify-content: center;
     grid-template-columns: auto auto auto;
     grid-column-gap: 140px;
     grid-row-gap: 50px;
     padding-top: 60px;
     padding-bottom: 152px;
-    padding-right: 122px;   
-    padding-left: 122px; 
- }
- .grid-group2{
+    padding-right: 122px;
+    padding-left: 122px;
+}
+
+.grid-group2 {
     display: grid;
-        justify-content: center;
+    justify-content: center;
     grid-template-columns: auto auto auto;
     grid-column-gap: 140px;
     grid-row-gap: 50px;
     padding-top: 60px;
     padding-bottom: 152px;
-    padding-right: 122px;   
-    padding-left: 122px; 
- }
+    padding-right: 122px;
+    padding-left: 122px;
+}
 
- .theBox{
+.theBox {
     padding-top: 59px;
     background-color: #FFFFFF;
     box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.11);
@@ -129,179 +136,202 @@ direction: rtl;
     height: 316px;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     border-radius: 25px;
-    transition: 1s; 
- }
- .theBox2{
+    transition: 1s;
+}
+
+.theBox2 {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     border-radius: 25px;
-    transition: 1s; 
- }
- .theBox:hover{
+    transition: 1s;
+}
+
+.theBox:hover {
     background-color: #EEC718;
     transition: 1s;
- }
- .theBoxImgs{
+}
+
+.theBoxImgs {
     padding-bottom: 17px;
     transition: 1s;
- }
- .theBoxImgs2{
+}
+
+.theBoxImgs2 {
     padding-bottom: 17px;
     transition: 1s;
- }
- .theBox2:nth-of-type(1) .theBoxImgs2 {
+}
+
+.theBox2:nth-of-type(1) .theBoxImgs2 {
     padding-bottom: 30px;
 }
 
 
- .theBox:hover .theBoxImgs{
+.theBox:hover .theBoxImgs {
     transition: 1s;
     transform: rotate(-17.44deg);
- }
+}
 
- .theBoxTexts{
+.theBoxTexts {
     font-family: 'GE SS Unique Bold';
-font-size: 28px;
-font-weight: 300;
-line-height: 35px;
-letter-spacing: 0em;
-text-align: center;
-color: #000000;
-direction: rtl; 
- }
- .theBoxTexts2{
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #000000;
+    direction: rtl;
+}
+
+.theBoxTexts2 {
     font-family: 'GE SS Unique Bold';
-font-size: 28px;
-font-weight: 300;
-line-height: 45px;
-letter-spacing: 0em;
-text-align: center;
-color: #000000;
-direction: rtl;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #000000;
+    direction: rtl;
 
-    
- }
- html[lang="en"] .theBoxTexts{
-    direction: ltr;
-        font-family: 'EnLanguage';
- }
- html[lang="en"] .theBoxTexts2{
-    direction: ltr;
-        font-family: 'EnLanguage';
- }
 
- .ideasToWalk{
+}
+
+html[lang="en"] .theBoxTexts {
+    direction: ltr;
+    font-family: 'EnLanguage';
+}
+
+html[lang="en"] .theBoxTexts2 {
+    direction: ltr;
+    font-family: 'EnLanguage';
+}
+
+.ideasToWalk {
     font-family: 'GE SS Unique Light';
 
-font-size: 40px;
-font-weight: 700;
-line-height: 50px;
-letter-spacing: 0em;
-text-align: center;
-padding-left: 24px;
-padding-right: 24px;
-color: #008056;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    color: #008056;
 
- }
+}
 
 
- @media screen and (max-width : 1300px) {
-    .grid-group{
+@media screen and (max-width : 1300px) {
+    .grid-group {
         grid-column-gap: 40px;
     }
-    .grid-group2{
+
+    .grid-group2 {
         grid-column-gap: 40px;
     }
 }
+
 @media screen and (max-width : 1084px) {
-    .ideasToWalk{
+    .ideasToWalk {
         margin-top: 68px;
 
     }
-    .grid-group{
-        grid-template-columns:auto auto;
+
+    .grid-group {
+        grid-template-columns: auto auto;
     }
-    .grid-group2{
-        grid-template-columns:auto auto;
+
+    .grid-group2 {
+        grid-template-columns: auto auto;
     }
+
     .theVector:hover {
-        background-position: 100% 0; 
+        background-position: 100% 0;
         animation: walk 14s infinite linear;
     }
 }
+
 @media screen and (max-width:828px) {
-    .textDescription{
+    .textDescription {
         padding-left: 75px;
         padding-right: 75px;
     }
 }
- @media screen and (max-width: 676px) {
-    .theBox{
+
+@media screen and (max-width: 676px) {
+    .theBox {
         width: 131px;
         height: 131px;
     }
-    .textDescription{
+
+    .textDescription {
         font-size: 20px;
         line-height: 45px;
         padding-left: 34px;
         padding-right: 34px;
     }
-    .QuestionWalk{
+
+    .QuestionWalk {
         padding-top: 86px;
         font-size: 24px;
         line-height: 40px;
         padding-left: 38px;
         padding-right: 38px;
     }
-    .QuestionWalk2{
+
+    .QuestionWalk2 {
         padding-top: 100px;
 
         font-size: 24px;
         line-height: 40px;
 
     }
-    .ideasToWalk{
+
+    .ideasToWalk {
         font-size: 24px;
         line-height: 29px;
         margin-top: 0px;
     }
-    .theBoxTexts{
+
+    .theBoxTexts {
         font-size: 11px;
         line-height: 13.7px;
         padding-left: 4.6px;
         padding-right: 4.6px;
     }
-    .theBoxTexts2{
+
+    .theBoxTexts2 {
         font-size: 13px;
         line-height: 24px;
         padding-left: 4.6px;
         padding-right: 4.6px;
     }
- 
-    .theBox{
+
+    .theBox {
         width: 131px;
         height: 131px;
         padding-top: 31px;
 
     }
-    .theBox2{
+
+    .theBox2 {
         padding-top: 31px;
         width: 178px;
         height: 100px;
     }
-   
-    .grid-group{
-        grid-template-columns: auto auto ;
+
+    .grid-group {
+        grid-template-columns: auto auto;
         grid-column-gap: 13px;
         grid-row-gap: 16px;
         padding-bottom: 0px;
         padding-top: 12px;
     }
-    .grid-group2{
-        grid-template-columns: auto auto ;
+
+    .grid-group2 {
+        grid-template-columns: auto auto;
         grid-column-gap: 13px;
         grid-row-gap: 64px;
         padding-bottom: 0px;
@@ -309,87 +339,100 @@ color: #008056;
         padding-left: 0px !important;
         padding-right: 0px !important;
     }
-   
-  
-    .theBoxImgs{
+
+
+    .theBoxImgs {
         width: 25px;
         height: 40px;
     }
-    .theBoxImgs2{
-       
+
+    .theBoxImgs2 {
+
         padding-bottom: 14px;
         height: 55px;
         width: 55px;
     }
+
     .theBox2:nth-of-type(1) .theBoxImgs2 {
         padding-bottom: 14px;
     }
+
     .theBox2:nth-of-type(2) .theBoxImgs2 {
         padding-bottom: 14px;
         height: 55px;
         width: 55px;
     }
-    
-    html[lang='en'] .theBox2:last-child{
+
+    html[lang='en'] .theBox2:last-child {
         margin-top: 50px;
     }
-    
-    .theVector{
+
+    .theVector {
         height: 350px;
     }
-   
 
- }
- @media screen and (max-width: 430px) {
-    .theBox2:nth-child(even){
+
+}
+
+@media screen and (max-width: 430px) {
+    .theBox2:nth-child(even) {
         padding-right: 24px;
-           
+
     }
-    .theBox2:nth-child(odd){
+
+    .theBox2:nth-child(odd) {
         padding-left: 24px;
     }
+
     .theVector {
         background-image: url(../assets/images/walkingmobilevector.svg);
         height: 478px;
         background-position: center calc(100% - 100px);
     }
-    
+
     html[lang='en'] .theVector {
         height: 540px;
     }
-    
+
     .theVector:hover {
-        animation: walk 2s infinite linear ;
+        animation: walk 2s infinite linear;
     }
-    
+
     @keyframes walk {
         0% {
             background-position: 0 calc(100% - 100px);
         }
+
         100% {
             background-position: 100% calc(100% - 100px);
         }
     }
- @media screen and (max-width:295px) {
-    .theVector{
-        height: 600px;
+
+    @media screen and (max-width:295px) {
+        .theVector {
+            height: 600px;
+        }
+
+        html[lang="en"] .theVector {
+            height: 650px;
+        }
+
+        .grid-group {
+            grid-template-columns: auto;
+        }
+
+        .grid-group2 {
+            grid-template-columns: auto;
+        }
+
+        .theBox2:nth-child(even) {
+
+            padding-right: 0px !important;
+        }
+
+        .theBox2:nth-child(odd) {
+
+            padding-left: 0px !important;
+        }
     }
-    html[lang="en"] .theVector{
-        height: 650px;
-    }
-    .grid-group{
-        grid-template-columns: auto;
-    }
-    .grid-group2{
-        grid-template-columns: auto;
-    }
-    .theBox2:nth-child(even){
-           
-        padding-right: 0px !important;
-    }
-    .theBox2:nth-child(odd){
-           
-        padding-left: 0px !important;
-    }
- }
 }

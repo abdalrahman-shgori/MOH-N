@@ -46,7 +46,7 @@ body {
 
     to {
         background-position: 100% calc(100% - 50px);
-        
+
     }
 }
 
@@ -152,7 +152,7 @@ input[type="text"] {
     width: 50%;
     height: 94px;
     border: 1px solid #8F8E8E;
-font-size: 36px;
+    font-size: 36px;
     padding: 10px;
     padding-right: 40px;
 }
@@ -201,7 +201,7 @@ html[lang="en"] input[type="text"] {
     letter-spacing: 0em;
     text-align: center;
     color: #008056;
- 
+
 }
 
 .parents {
@@ -269,47 +269,55 @@ html[lang='en'] .div5 {
     bottom: 26px;
     z-index: -1;
 }
+
 @media screen and (max-width:1200px) {
-    img{
-width: 350px;
-height: 315px;
+    img {
+        width: 350px;
+        height: 315px;
     }
-    .WalkSportText{
+
+    .WalkSportText {
         padding-left: 80px;
         padding-right: 80px;
     }
 }
+
 @media screen and (max-width:1100px) {
     .whatYour {
-       
+
         padding-left: 37px !important;
         padding-right: 37px !important;
     }
-    .WalkSportText{
+
+    .WalkSportText {
         padding-left: 40px;
         padding-right: 40px;
     }
-    img{
-width: 300px;
-height: 280px;
+
+    img {
+        width: 300px;
+        height: 280px;
     }
 }
+
 @media screen and (max-width:890px) {
     .whatYour {
-       
+
         padding-left: 37px !important;
         padding-right: 37px !important;
     }
-    img{
-width: 250px;
-height: 220px;
+
+    img {
+        width: 250px;
+        height: 220px;
     }
 }
 
 @media (max-width: 767px) {
-    input[type="text"]{
+    input[type="text"] {
         font-size: 16px;
     }
+
     .bgVector {
         background-image: url('');
 
@@ -415,29 +423,33 @@ height: 220px;
 
 
 }
-@media screen and (max-width:361px) {
-  img{
-    width: 115px;
-    height: 100px;
-  }
-  .imgs {
-    height: 260px;
-    width: 280px;
-    bottom: 20px;
-    left: 0px;
 
-}
-}
-@media screen and (max-width:330px) {
-    img{
-      width: 96px;
-      height: 100px;
+@media screen and (max-width:361px) {
+    img {
+        width: 115px;
+        height: 100px;
     }
+
     .imgs {
-      height: 212px;
-      width: 230px;
-      bottom: 20px;
-      left: 0px;
-  
-  }
-  }
+        height: 260px;
+        width: 280px;
+        bottom: 20px;
+        left: 0px;
+
+    }
+}
+
+@media screen and (max-width:330px) {
+    img {
+        width: 96px;
+        height: 100px;
+    }
+
+    .imgs {
+        height: 212px;
+        width: 230px;
+        bottom: 20px;
+        left: 0px;
+
+    }
+}

@@ -61,7 +61,6 @@
                     </p>
                 </div>
                 <div>
-
                     <div class="vector">
                         <div class="text-on-image">
                             <div class="mx">
@@ -82,46 +81,33 @@
                             بوصولك للموقع أنت شريكنا الواعي ، ابدأ الاختبار واعرف شخصيتك في المشي
 
                         </p>
-
                         </p>
-
                         <div class="center-btn">
                             <button onclick="handle()" class="startBtn-new" data-translate="start">أخــتبر
                                 شخصيتك</button>
 
                         </div>
-
-
                     </div>
-
                 </div>
-
             </div>
             <div>
-
             </div>
-
         </div>
-
-
     </div>
-
-
-
     </div>
     <div id="footer" style="position: relative;"></div>
     <script>
         function getCurrentLanguage() {
             return localStorage.getItem('selectedLanguage');
         }
-    
+
         const currentLanguage = getCurrentLanguage() || document.documentElement.lang;
         localStorage.setItem('selectedLanguage', currentLanguage);
-    
+
         const language = getCurrentLanguage();
         console.log("Current Language:", language);
     </script>
-    
+
     <script src="./js/includeNav2.js"></script>
     <script src="./js/nav.js"></script>
     <script>
@@ -148,17 +134,7 @@
         }
         handleImg();
         window.onresize = handleImg;
-
-
     </script>
-
-
-
-
-
-
-
-
 </body>
 
 </html>

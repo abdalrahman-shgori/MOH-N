@@ -35,14 +35,14 @@
 <body>
     <div id="navbar-container"></div>
     <div id="total" class="totalResult bgVector">
-        
+
     </div>
     <div id="footer"></div>
     <script src="../js/sucess.js"></script>
 
     <script>
         const totalValue = localStorage.getItem('totalValue');
-        console.log("wkeekeke",totalValue)
+        console.log("wkeekeke", totalValue)
         const theName = localStorage.getItem('userName');
         console.log('Total Value:', totalValue);
         console.log('name:', theName);
@@ -52,14 +52,14 @@
     </script>
     <script>
         const resultsContainer = document.getElementById('total');
-        const theGender=localStorage.getItem('firstQuestionAnswer')
+        const theGender = localStorage.getItem('firstQuestionAnswer')
         let html = `
         <div>
             <div class="RateImg">
-                ${totalValue >= 30 ?'<div class="imgRate5"></div>' :
-                totalValue >= 18 ?'<div class="imgRate4"></div>' :
-                    totalValue >= 6 ?'<div class="imgRate3"></div>' :
-                        totalValue >= 2 ?'<div class="imgRate2"></div>' :
+                ${totalValue >= 30 ? '<div class="imgRate5"></div>' :
+                totalValue >= 18 ? '<div class="imgRate4"></div>' :
+                    totalValue >= 6 ? '<div class="imgRate3"></div>' :
+                        totalValue >= 2 ? '<div class="imgRate2"></div>' :
                             totalValue < 2 ? '<div class="imgRate1"></div>' : ''
             }
             </div>
@@ -69,47 +69,45 @@
                 </div>
                 <div class="rate">
                     ${totalValue >= 30 && (theGender === 'male' || theGender === 'ذكر') ? '<p class="rateText" data-translate="professional">أنت محترف</p>' :
-    totalValue >= 30 ? '<p class="rateText" data-translate="professionalFe">أنت محترفة</p>' :
-    totalValue >= 18 && (theGender === 'male' || theGender === 'ذكر') ? '<p class="rateText" data-translate="youareDriven">أنت منطلق </p>' :
-    totalValue >= 18 ? '<p class="rateText" data-translate="youareDrivenFe">أنت منطلقة </p>' :
-    totalValue >= 6 && (theGender === 'male' || theGender === 'ذكر') ? '<p class="rateText" data-translate="youareInitiator"> أنت بادي</p>' :
-    totalValue >= 6 ? '<p class="rateText" data-translate="youareInitiatorFe"> أنت بادية</p>' :
-    totalValue >= 2 && (theGender === 'male' || theGender === 'ذكر') ? '<p class="rateText" data-translate="youareIntending">أنت ناوي </p>' :
-    totalValue >= 2 ? '<p class="rateText" data-translate="youareIntendingFe">أنت ناوية </p>' :
-    totalValue < 2 && (theGender === 'male' || theGender === 'ذكر') ? '<p class="rateText" data-translate="youhavePassiveBehavior">أنت صاحب سلوك خامل </p>' :
-    totalValue < 2 ? '<p class="rateText" data-translate="youhavePassiveBehaviorFe">أنت صاحبة سلوك خامل </p>' : ''
-}</div>
+                totalValue >= 30 ? '<p class="rateText" data-translate="professionalFe">أنت محترفة</p>' :
+                    totalValue >= 18 && (theGender === 'male' || theGender === 'ذكر') ? '<p class="rateText" data-translate="youareDriven">أنت منطلق </p>' :
+                        totalValue >= 18 ? '<p class="rateText" data-translate="youareDrivenFe">أنت منطلقة </p>' :
+                            totalValue >= 6 && (theGender === 'male' || theGender === 'ذكر') ? '<p class="rateText" data-translate="youareInitiator"> أنت بادي</p>' :
+                                totalValue >= 6 ? '<p class="rateText" data-translate="youareInitiatorFe"> أنت بادية</p>' :
+                                    totalValue >= 2 && (theGender === 'male' || theGender === 'ذكر') ? '<p class="rateText" data-translate="youareIntending">أنت ناوي </p>' :
+                                        totalValue >= 2 ? '<p class="rateText" data-translate="youareIntendingFe">أنت ناوية </p>' :
+                                            totalValue < 2 && (theGender === 'male' || theGender === 'ذكر') ? '<p class="rateText" data-translate="youhavePassiveBehavior">أنت صاحب سلوك خامل </p>' :
+                                                totalValue < 2 ? '<p class="rateText" data-translate="youhavePassiveBehaviorFe">أنت صاحبة سلوك خامل </p>' : ''
+            }</div>
 
 <div class="rates">
-    ${
-        totalValue >= 30 ? '<p class="titleText" data-translate="yourCommitmentSetsAnExample">التزامك يضرب فيه المثل</p>' :
-        totalValue >= 18 && (theGender === 'male' || theGender === 'ذكر') ? '<p class="titleText" data-translate="youTakeOffLikeARocketAndKeepWalking">انطلاقك مثل الصاروخ لا تتوقف عن المشي</p>' :
-        totalValue >= 18 ? '<p class="titleText" data-translate="youTakeOffLikeARocketAndKeepWalkingFe">انطلاقك مثل الصاروخ لا تتوقفي عن المشي</p>' :
-        totalValue >= 6 && (theGender === 'male' || theGender === 'ذكر') ? '<p class="titleText" data-translate="butThereAreAFewSteps">لكن تحتاج خطوات بسيطة وتكون مستمرًا </p>' :
-        totalValue >= 6 ? '<p class="titleText" data-translate="butThereAreAFewStepsFe">لكن تحتاجين خطوات بسيطة وتكونين مستمرةً</p>' :
-        totalValue >= 2 && (theGender === 'male' || theGender === 'ذكر') ? '<p class="titleText" data-translate="butYouNeedAStarting">لكن تحتاج خطةً للبدء ليصبح المشي سلوكًا مستمراً</p>' :
-        totalValue >= 2 ? '<p class="titleText" data-translate="butYouNeedAStartingFe">لكن تحتاج خطةً للبدء ليصبح المشي سلوكًا مستمراً</p>' :
+    ${totalValue >= 30 ? '<p class="titleText" data-translate="yourCommitmentSetsAnExample">التزامك يضرب فيه المثل</p>' :
+                totalValue >= 18 && (theGender === 'male' || theGender === 'ذكر') ? '<p class="titleText" data-translate="youTakeOffLikeARocketAndKeepWalking">انطلاقك مثل الصاروخ لا تتوقف عن المشي</p>' :
+                    totalValue >= 18 ? '<p class="titleText" data-translate="youTakeOffLikeARocketAndKeepWalkingFe">انطلاقك مثل الصاروخ لا تتوقفي عن المشي</p>' :
+                        totalValue >= 6 && (theGender === 'male' || theGender === 'ذكر') ? '<p class="titleText" data-translate="butThereAreAFewSteps">لكن تحتاج خطوات بسيطة وتكون مستمرًا </p>' :
+                            totalValue >= 6 ? '<p class="titleText" data-translate="butThereAreAFewStepsFe">لكن تحتاجين خطوات بسيطة وتكونين مستمرةً</p>' :
+                                totalValue >= 2 && (theGender === 'male' || theGender === 'ذكر') ? '<p class="titleText" data-translate="butYouNeedAStarting">لكن تحتاج خطةً للبدء ليصبح المشي سلوكًا مستمراً</p>' :
+                                    totalValue >= 2 ? '<p class="titleText" data-translate="butYouNeedAStartingFe">لكن تحتاج خطةً للبدء ليصبح المشي سلوكًا مستمراً</p>' :
 
-        totalValue < 2 && (theGender === 'male' || theGender === 'ذكر') ? '<p class="titleText" data-translate="andYouHaven">في المشي </p>' :
-        totalValue < 2 ? '<p class="titleText" data-translate="andYouHavenFe">في المشي' :
-        ''
-    }
+                                        totalValue < 2 && (theGender === 'male' || theGender === 'ذكر') ? '<p class="titleText" data-translate="andYouHaven">في المشي </p>' :
+                                            totalValue < 2 ? '<p class="titleText" data-translate="andYouHavenFe">في المشي' :
+                                                ''
+            }
 </div>
 
                 <div class="RateCharacterImg">
-    ${
-        totalValue >= 30 && (theGender === 'male' || theGender === 'ذكر') ? '<img class="imgRateCharactar" src="../assets/images/character1.svg"/>' :
-        totalValue >= 30 ? '<img class="imgRateCharactar" src="../assets/images/professionalFemale.svg"/>' :
-        totalValue >= 18 && (theGender === 'male' || theGender === 'ذكر') ? '<img class="imgRateCharactar" src="../assets/images/character2.svg"/>' :
-        totalValue >= 18 ? '<img class="imgRateCharactar" src="../assets/images/startingFemale.svg"/>' :
-        totalValue >= 6 && (theGender === 'male' || theGender === 'ذكر') ? '<img class="imgRateCharactar" src="../assets/images/character3.svg"/>' :
-        totalValue >= 6 ? '<img class="imgRateCharactar" src="../assets/images/willingFemale.svg"/>' :
-        totalValue >= 2 && (theGender === 'male' || theGender === 'ذكر') ? '<img class="imgRateCharactar" src="../assets/images/character4.svg"/>' :
-        totalValue >= 2 ? '<img class="imgRateCharactar" src="../assets/images/beginnerFemale.svg"/>' :
-        totalValue < 2 && (theGender === 'male' || theGender === 'ذكر') ? '<img class="imgRateCharactar" src="../assets/images/character5.svg"/>' :
-        totalValue < 2 ? '<img class="imgRateCharactar" src="../assets/images/sleepyFemale.svg"/>' :
-        ''
-    }
+    ${totalValue >= 30 && (theGender === 'male' || theGender === 'ذكر') ? '<img class="imgRateCharactar" src="../assets/images/character1.svg"/>' :
+                totalValue >= 30 ? '<img class="imgRateCharactar" src="../assets/images/professionalFemale.svg"/>' :
+                    totalValue >= 18 && (theGender === 'male' || theGender === 'ذكر') ? '<img class="imgRateCharactar" src="../assets/images/character2.svg"/>' :
+                        totalValue >= 18 ? '<img class="imgRateCharactar" src="../assets/images/startingFemale.svg"/>' :
+                            totalValue >= 6 && (theGender === 'male' || theGender === 'ذكر') ? '<img class="imgRateCharactar" src="../assets/images/character3.svg"/>' :
+                                totalValue >= 6 ? '<img class="imgRateCharactar" src="../assets/images/willingFemale.svg"/>' :
+                                    totalValue >= 2 && (theGender === 'male' || theGender === 'ذكر') ? '<img class="imgRateCharactar" src="../assets/images/character4.svg"/>' :
+                                        totalValue >= 2 ? '<img class="imgRateCharactar" src="../assets/images/beginnerFemale.svg"/>' :
+                                            totalValue < 2 && (theGender === 'male' || theGender === 'ذكر') ? '<img class="imgRateCharactar" src="../assets/images/character5.svg"/>' :
+                                                totalValue < 2 ? '<img class="imgRateCharactar" src="../assets/images/sleepyFemale.svg"/>' :
+                                                    ''
+            }
 </div>
 
                 
@@ -152,19 +150,19 @@
     `;
         resultsContainer.innerHTML = html;
     </script>
-  <script>
-    function getCurrentLanguage() {
-        return localStorage.getItem('selectedLanguage');
-    }
+    <script>
+        function getCurrentLanguage() {
+            return localStorage.getItem('selectedLanguage');
+        }
 
-    const currentLanguage = getCurrentLanguage() || document.documentElement.lang;
-    localStorage.setItem('selectedLanguage', currentLanguage);
+        const currentLanguage = getCurrentLanguage() || document.documentElement.lang;
+        localStorage.setItem('selectedLanguage', currentLanguage);
 
-    const language = getCurrentLanguage();
-    console.log("Current Language:", language);
-</script>
-<script src="../js/footerLang.js"></script>
-<script src="../js/nav.js"></script>
+        const language = getCurrentLanguage();
+        console.log("Current Language:", language);
+    </script>
+    <script src="../js/footerLang.js"></script>
+    <script src="../js/nav.js"></script>
 </body>
 
 </html>

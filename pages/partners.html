@@ -32,7 +32,6 @@
     <div id="navbar-container"></div>
     <div  class="bgVector">
         <div style="position: relative">
-            <!-- <img id="feet3Small" src="../assets/images/feet3.svg" style="position: absolute;"></img> -->
             <div class="PartnersTextImg" >
                 <div class="whoPartners" >
                     <p class="whoPartnerText" data-translate="whoisPartners" data-aos="fade-down"  data-aos-duration="1000">من هم شركاؤنا</p>
@@ -44,7 +43,6 @@
                     <div class="div3" data-aos="fade-right"  data-aos-duration="1000"><img src="../assets/images/gsk.svg"></img></div>
                 </div>
             </div>
-            <!-- <img id="feet4Small" style="position: absolute;"></img> -->
         </div>
     </div>
   
@@ -52,23 +50,6 @@
 
     <script src="../js/includeNav.js"></script>
     <script src="../js/nav.js"></script>
-    <!-- <script>
-        function adjustLayout() {
-            if (window.innerWidth < 767) {
-                document.getElementById("feet3Small").style.display = "none";
-                document.getElementById("feet4Small").style.display = "none";
-
-            } else {
-                document.getElementById("feet4Small").src = "../assets/images/feet4.svg";
-                document.getElementById("feet4Small").style.right = "0";
-                document.getElementById("feet4Small").style.bottom = "0";
-
-                document.getElementById("feet3Small").style.display = "block";
-            }
-        }
-        adjustLayout();
-        window.onresize = adjustLayout;
-    </script> -->
      <script>
         function getCurrentLanguage() {
             return localStorage.getItem('selectedLanguage');
@@ -87,26 +68,6 @@
             weContainer.setAttribute('data-aos', 'fade-right');
         }
     </script>
-   <!-- <script>
-    function imgAnimation() {
-        if (window.innerWidth < 997) {
-            document.querySelector('.div2').setAttribute('data-aos', 'fade-left');
-            document.querySelector('.div3').setAttribute('data-aos', 'fade-right');
-            document.querySelector('.div4').setAttribute('data-aos', 'fade-left');
-        } else {
-            // You might want to reset the data-aos attribute if the condition is not met
-            document.querySelector('.div2').setAttribute('data-aos', 'fade-left');
-            document.querySelector('.div3').setAttribute('data-aos', 'fade-right');
-            document.querySelector('.div4').setAttribute('data-aos', 'fade-left');
-
-        }
-    }
-
-    imgAnimation();
-
-    window.onresize = imgAnimation;
-
-</script> -->
 <script>
         AOS.init();
 

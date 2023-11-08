@@ -3,9 +3,6 @@
     font-family: 'footer';
     src: url('../Gurmukhi\ MN.ttc');
 }
-.footer{
-
-}
 .fff{
   background-image: url(../assets/images/foot.svg);
   width: 100%;
@@ -17,8 +14,7 @@
   justify-content: center;
   align-items: flex-nd; 
 padding-top: 200px;
-margin: 0 auto; /* Center the footer container horizontally */
-
+margin: 0 auto; 
   
 }
 .footer-group{
@@ -64,9 +60,6 @@ margin: 0 auto; /* Center the footer container horizontally */
           margin-top:8px;
           gap: 4px;
       }
-      /* .textStyle:nth-child(2) {
-          border-right: none;
-        } */
         .footer-group{
             justify-content: center !important;
           align-items: center !important;
@@ -86,7 +79,6 @@ margin: 0 auto; /* Center the footer container horizontally */
       .fff{
         background-image: url(../assets/images/footerMobile.svg);
         padding-top: 200px;
-        /* height: 240px; */
         background-size: cover !important;
       }
         .textStyle{
@@ -96,9 +88,6 @@ margin: 0 auto; /* Center the footer container horizontally */
             height: 21px;
             gap: 4px;
         }
-        /* .textStyle:nth-child(2) {
-            border-right: none;
-          } */
           .footer-group{
             justify-content: center !important;
             align-items: center !important;
@@ -114,41 +103,6 @@ margin: 0 auto; /* Center the footer container horizontally */
           }
         
     }
-    /* @media screen and (max-width:378px) {
-        .textStyle{
-            font-size: 12px;
-        }
-        .textStyle:nth-child(2) {
-            border-right: none;
-          }
-        
-          .imk{
-            max-width: 18px !important;
-          }
-          .linkTexts{
-            top: 2px !important;
-          }
-        
-    } */
-    /* @media screen and (max-width:280px) {
-        .textStyle{
-            font-size: 10px;
-        }
-        .textStyle:nth-child(2) {
-            border-right: none;
-          }
-          .imo{
-            gap: 2px !important;
-          }
-        
-          .imk{
-            max-width: 12px !important;
-          }
-          .linkTexts{
-            top: 2px !important;
-          }
-        
-    } */
     .textStyle:last-child {
         border-right: none;
       }
