@@ -70,7 +70,7 @@ const questions = [
             { text: "Maintain a healthy weight", value: 0 },
             { text: "Improve fitness and mood", value: 0 },
             { text: "Control or prevent chronic disease", value: 0 },
-            { text: "Over", value: 0 }
+            { text: "Other", value: 0 }
         ],
     },
     {
