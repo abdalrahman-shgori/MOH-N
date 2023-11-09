@@ -233,10 +233,6 @@ html[lang="en"] .center-content {
     direction: rtl;
 }
 
-@media screen and (max-width:967px) {
-    .pathsCard {}
-
-}
 
 @media screen and (max-width:767px) {
     .group-Cards {
@@ -247,8 +243,6 @@ html[lang="en"] .center-content {
         padding: 24px 26px 24px 26px;
         margin-bottom: 16px;
     }
-
-    .ss {}
 
     .paths {
         margin-top: 24px;

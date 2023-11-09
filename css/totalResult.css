@@ -379,9 +379,6 @@ html[lang="en"] .downloadCalendar {
     font-family: 'EnLanguage';
 
 }
-
-.imgRateCharactar {}
-
 @media screen and (max-width:992px) {
     .descriptionTextGroup {
         padding-left: 60px;

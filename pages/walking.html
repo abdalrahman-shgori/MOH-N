@@ -167,22 +167,17 @@
                 </div>
             </div>
             <div id="footer" class="walkingFooter"></div>
-
         </div>
-
-
     </div>
 
     <script>
         function getCurrentLanguage() {
             return localStorage.getItem('selectedLanguage');
         }
-
         const currentLanguage = getCurrentLanguage() || document.documentElement.lang;
         localStorage.setItem('selectedLanguage', currentLanguage);
-
         const language = getCurrentLanguage();
-        console.log("Current Language:", language);
+        // console.log("Current Language:", language);
     </script>
     <script src="../js/includeNav.js"></script>
     <script src="../js/nav.js"></script>

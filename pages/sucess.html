@@ -42,10 +42,10 @@
 
     <script>
         const totalValue = localStorage.getItem('totalValue');
-        console.log("wkeekeke", totalValue)
+        // console.log("totVal", totalValue)
         const theName = localStorage.getItem('userName');
-        console.log('Total Value:', totalValue);
-        console.log('name:', theName);
+        // console.log('Total Value:', totalValue);
+        // console.log('name:', theName);
 
         // localStorage.removeItem('totalValue');
         document.getElementById("total").innerHTML = (`Your Total value is ${totalValue}`)
@@ -159,7 +159,7 @@
         localStorage.setItem('selectedLanguage', currentLanguage);
 
         const language = getCurrentLanguage();
-        console.log("Current Language:", language);
+        // console.log("Current Language:", language);
     </script>
     <script src="../js/footerLang.js"></script>
     <script src="../js/nav.js"></script>

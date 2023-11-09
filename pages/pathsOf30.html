@@ -87,7 +87,7 @@
         }
 
         const currentLanguage = getCurrentLanguage() || document.documentElement.lang;
-        console.log("shadi shdaidiii",document.documentElement.lang)
+        // console.log("lang",document.documentElement.lang)
         localStorage.setItem('selectedLanguage', currentLanguage);
         const outputElement = document.getElementById("output");
         const myArray = currentLanguage === "en" ? myArrayEn : myArrayAr;
@@ -95,7 +95,6 @@
             const div = document.createElement("div");
             div.innerHTML = `
             <div class=" pathsCard col-lg-12 mx-auto center-content ${index === myArray.length - 1 ? 'spaceCard' : ''} w3-animate-right${index}">
-                
             <div class="PathsTexts">
                 <span class="howYouWork" id="wk">${item.title}</span>
                 <span class="PathsDescription" data-translate="walkingPersonalityDescription">${item.description}</span>
@@ -135,15 +134,9 @@
     </script>
     <script src="../js/scrolls.js">
     </script>
-    <script>
-        // Get references to the animated elements
-
-
-    </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
 <script>
 const elements = document.querySelectorAll('.pathsCard');
-
 // elements.forEach(element => {
 //     new Waypoint({
 //         element: element,
@@ -154,7 +147,6 @@ const elements = document.querySelectorAll('.pathsCard');
 //         offset: '70%' 
 //     });
 // });
-
 </script>
     <script>
         AOS.init();

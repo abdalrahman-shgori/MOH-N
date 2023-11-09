@@ -191,6 +191,8 @@ const translations = {
     },
 };
 
+
+
 function setLanguage(language) {
 
     const elements = document.querySelectorAll('[data-translate]');
@@ -253,6 +255,7 @@ document.querySelectorAll('.dropdown-item').forEach((item) => {
 });
 
 initializeLanguage();
+setInterval(initializeLanguage, 1000);
 
 
 

@@ -100,14 +100,10 @@
         function getCurrentLanguage() {
             return localStorage.getItem('selectedLanguage');
         }
-
         const currentLanguage = getCurrentLanguage() || document.documentElement.lang;
         localStorage.setItem('selectedLanguage', currentLanguage);
-
         const language = getCurrentLanguage();
-        console.log("Current Language:", language);
     </script>
-
     <script src="./js/includeNav2.js"></script>
     <script src="./js/nav.js"></script>
     <script>
@@ -124,12 +120,10 @@
             if (window.innerWidth < 458) {
                 document.getElementById('mobile-vector').src = "./assets/images/mobileVector.svg"
                 document.getElementById('mobile-vector2').src = "./assets/images/mobileVector2.svg"
-
             }
             else {
                 document.getElementById('mobile-vector').src = "./assets/images/firstVector.svg"
                 document.getElementById('mobile-vector2').src = "./assets/images/secVector.svg"
-
             }
         }
         handleImg();

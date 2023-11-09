@@ -181,7 +181,7 @@ function loadQuestion(index) {
 
         if (lg !== newLang) {
             lg = newLang;
-            console.log("Language changed to " + lg);
+            // console.log("Language changed to " + lg);
             loadQuestion(currentQuestionIndex);
         }
     }, 0);
@@ -192,7 +192,7 @@ function loadQuestion(index) {
         console.log(questionsAr.length, index + 1)
         if (lg === 'ar') {
             const answers = questionsAr[index].answers;
-            console.log("abd abd", answers.length)
+            // console.log("abd abd", answers.length)
             let html = `
         <div>
             <p class="questionNumber">${questionsAr[index].question}</p>
@@ -226,7 +226,7 @@ function loadQuestion(index) {
         }
         if (lg === 'en') {
             const answers = questions[index].answers;
-            console.log("abd abd", answers.length)
+            // console.log("abd abd", answers.length)
             let html = `
         <div>
             <p class="questionNumber">${questions[index].question}</p>
@@ -296,7 +296,7 @@ function loadQuestion(index) {
 progressElements[0].style.opacity = '100%';
 function nextQuestion() {
 
-    console.log("the current index number", currentQuestionIndex)
+    // console.log("the current index number", currentQuestionIndex)
 
     const selectedAnswers = document.querySelectorAll('input[name="answer"]:checked');
 
@@ -311,19 +311,19 @@ function nextQuestion() {
                 selectedAnswerTexts.push(label.textContent.trim());
             }
         });
-        console.log("Selected Answer Texts:", selectedAnswerTexts);
+        // console.log("Selected Answer Texts:", selectedAnswerTexts);
 
         // selectedAnswers.forEach((selectedAnswer) => {
         //     answerValue += parseInt(selectedAnswer.value);
         // });
         selectedAnswerValues.push(answerValue);
         totalValue += answerValue;
-        console.log(`Question ${currentQuestionIndex + 1}: Selected Answer Value ${answerValue}`);
-        console.log(`Total Value So Far: ${totalValue}`);
+        // console.log(`Question ${currentQuestionIndex + 1}: Selected Answer Value ${answerValue}`);
+        // console.log(`Total Value So Far: ${totalValue}`);
         localStorage.setItem('totalValue', totalValue);
         savedIndex.push(currentQuestionIndex);
         localStorage.setItem('questionsIndexes', JSON.stringify(savedIndex));
-        console.log("1212121", savedIndex)
+        // console.log("1212121", savedIndex)
 
 
         if (selectedAnswers.length > 0) {
@@ -335,7 +335,7 @@ function nextQuestion() {
             }
         }
 
-        console.log("the gender", localStorage.getItem('firstQuestionAnswer'))
+        // console.log("the gender", localStorage.getItem('firstQuestionAnswer'))
         if (currentQuestionIndex === 1 && selectedAnswers[0].value === "10") {
             currentQuestionIndex = 3;
         }
@@ -419,7 +419,7 @@ function prev() {
     if (currentQuestionIndex > 0) {
         const lastAnswerValue = selectedAnswerValues.pop();
         totalValue -= lastAnswerValue;
-        console.log("new total", totalValue)
+        // console.log("new total", totalValue)
 
     }
 
@@ -441,10 +441,10 @@ function prev() {
             // Load the previous question
             loadQuestion(currentQuestionIndex);
         } else {
-            console.log("No previous index in the array.");
+            // console.log("No previous index in the array.");
         }
     } else {
-        console.log("No saved indexes found in localStorage.");
+        // console.log("No saved indexes found in localStorage.");
     }
 
     if (currentQuestionIndex < 10) {
@@ -452,7 +452,7 @@ function prev() {
     }
     currentIndex--;
     localStorage.setItem('questionsIndex', prev);
-    console.log("ababababa", currentQuestionIndex)
+    // console.log("currentIndex", currentQuestionIndex)
 }
 
 loadQuestion(currentQuestionIndex);
