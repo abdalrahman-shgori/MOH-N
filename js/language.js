@@ -255,7 +255,7 @@ document.querySelectorAll('.dropdown-item').forEach((item) => {
 });
 
 initializeLanguage();
-setInterval(initializeLanguage, 1000);
+
 
 
 

@@ -3,3 +3,5 @@ function myFunction(event, language) {
   document.getElementById("current-language").setAttribute("data-lang", language);
   
 }
+
+setInterval(myFunction, 1000);
