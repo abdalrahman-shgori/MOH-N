@@ -103,7 +103,7 @@
         const currentLanguage = getCurrentLanguage() || document.documentElement.lang;
         localStorage.setItem('selectedLanguage', currentLanguage);
         const language = getCurrentLanguage();
-        setInterval(getCurrentLanguage, 1000);
+        setInterval(localStorage.getItem('selectedLanguage'), 1000);
 
     </script>
     <script src="./js/includeNav2.js"></script>
