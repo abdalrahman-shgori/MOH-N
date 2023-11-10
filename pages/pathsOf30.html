@@ -2,6 +2,8 @@
 <html lang="ar">
 
 <head>
+    <link rel="icon" href="../assets/images/logoSA.svg" type="image/x-icon">
+
     <link rel="stylesheet" href="../css/pathsOf30.css">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
@@ -71,14 +73,14 @@
             { title: "Your Personality in Walking", description: "A test that measures your level of walking practice and provides solutions for continuity", img: "../assets/images/animateWalking.svg", btnText: "Take the test now and discover your personality", link: "./homePage.html", id: 0 },
             { title: "Walk 30", description: "A creative campaign to raise awareness about walking behavior", img: "../assets/images/runPath30.svg", btnText: "Share with us the hashtag #Walk30",link:"https://x.com/livewellmoh/status/1721881961214714351?s=46&t=_ghK4CIDrwM33CLN-BShtA", id: 1 },
             { title: "Walk around the kingdom", description: "A field walking track event in 20 regions around the Kingdom, in which the community participates", img: "../assets/images/maps.svg", btnText: "Walk around the kingdom", link: "https://walk.online-link.net/ar/Request/OpenReg?utm_source=Social+media&utm_medium=MOH&utm_campaign=Walk+30", id: 2 },
-            { title: "Start the challenge", description: "A competition to walk 8,000 steps a day via the Sihati app", img: "../assets/images/goal.svg", btnText: "Download the Sehaty app", link: "https://apps.apple.com/us/app/%D8%B5%D8%AD%D8%AA%D9%8A-sehhaty/id1459266578", id: 3 },
+            { title: "Start the challenge", description: "A competition to walk 8,000 steps a day via the Sihati app", img: "../assets/images/goal3.svg", btnText: "Download the Sehaty app", link: "https://apps.apple.com/us/app/%D8%B5%D8%AD%D8%AA%D9%8A-sehhaty/id1459266578", id: 3 },
         ];
 
         const myArrayAr = [
             { title: "شخصيتك في المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/animateWalking.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك", link: "./homePage.html", id: 0 },
             { title: "ترند المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/runPath30.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك",link:"https://x.com/livewellmoh/status/1721881961214714351?s=46&t=_ghK4CIDrwM33CLN-BShtA", id: 1 },
             { title: "ميدان المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/maps.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك", link: "https://walk.online-link.net/ar/Request/OpenReg?utm_source=Social+media&utm_medium=MOH&utm_campaign=Walk+30", id: 2 },
-            { title: "تحدي المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/goal.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك", link: "https://apps.apple.com/us/app/%D8%B5%D8%AD%D8%AA%D9%8A-sehhaty/id1459266578", id: 3 },
+            { title: "تحدي المشي", description: "اختبار يقيس مستوى ممارستك للمشي ويقدم حلاً للمتابعة", img: "../assets/images/goal3.svg", btnText: "قم بالاختبار الآن واكتشف شخصيتك", link: "https://apps.apple.com/us/app/%D8%B5%D8%AD%D8%AA%D9%8A-sehhaty/id1459266578", id: 3 },
         ];
 
 
@@ -103,7 +105,7 @@
                 </div>
             </div>
             <div class="GroupImg">
-                <img  class="${item.id === 0 ? 'pathsImg' : 'pathsImg2'}" src="${item.img}" alt="Image description">
+                <img  class="${item.id === 0 ? 'pathsImg' : item.id===3 ? 'pathsImg3' : 'pathsImg2'}" src="${item.img}" alt="Image description">
             </div>
         </div>
   `;

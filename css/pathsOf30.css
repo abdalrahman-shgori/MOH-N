@@ -227,6 +227,13 @@ html[lang="en"] .pathsImg {
     height: 192px;
 
 }
+.pathsImg3 {
+    padding: 0px 0px 0px 0px;
+    width: 242px;
+    height: 192px;
+
+}
+
 
 
 html[lang="en"] .center-content {
@@ -318,11 +325,21 @@ html[lang="en"] .center-content {
         padding: 10px 34px 10px 26px;
 
     }
+    html[lang='en'] .pathsImg3 {
+        padding: 10px 16px 10px 14px;
+
+    }
 
     .pathsImg2 {
         width: 124px;
         height: 105px;
         padding: 10px 26px 10px 34px;
+
+    }
+    .pathsImg3 {
+        width: 124px;
+        height: 105px;
+        padding: 10px 16px 10px 14px;
 
     }
 
@@ -368,12 +385,22 @@ html[lang="en"] .center-content {
     html[lang='en'] .pathsImg2 {
         padding: 10px 26px 10px 10px;
     }
+    html[lang='en'] .pathsImg3 {
+        padding: 10px 2px 10px 2px;
+    }
+
 
     .pathsImg2 {
         width: 100px;
         height: 100px;
         padding: 10px 10px 10px 26px;
     }
+    .pathsImg3 {
+        width: 100px;
+        height: 100px;
+        padding: 10px 2px 10px 2px;
+    }
+
 
 
     .howYouWork {
@@ -443,7 +470,12 @@ html[lang="en"] .center-content {
         padding: 0px 10px 0px 10px;
 
     }
+    .pathsImg3 {
+        width: 80px;
+        height: 80px;
+        padding: 0px 0px 0px 0px;
 
+    }
     html[lang='en'] .pathsBtn {
         font-size: 8px;
     }

@@ -204,7 +204,9 @@ html[lang='en'] .whoPartnerText {
     grid-area: 1 / 2 / 2 / 3;
   }
 
-
+.SportCityImg{
+  width: 160px;
+}
 
   .div3 {
     grid-area: 2/ 1 / 3 / 3;
