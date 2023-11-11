@@ -170,7 +170,7 @@ let savedIndex = []
 let totalValue = 0;
 const progressElements = document.querySelectorAll('.progress1');
 const increaseButton = document.getElementById('increaseButton');
-const decreaseButton = document.getElementById('decreaseButton');
+// const decreaseButton = document.getElementById('decreaseButton');
 let currentIndex = 0;
 const selectedAnswerValues = [];
 
@@ -460,6 +460,6 @@ function increaseProgress() {
     if (currentIndex < progressElements.length) {
     }
 }
-decreaseButton.addEventListener('click', decreaseProgress);
+// decreaseButton.addEventListener('click', decreaseProgress);
 
 

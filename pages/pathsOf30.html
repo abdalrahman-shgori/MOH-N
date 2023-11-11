@@ -3,7 +3,6 @@
 
 <head>
     <link rel="icon" href="../assets/images/logoSA.svg" type="image/x-icon">
-
     <link rel="stylesheet" href="../css/pathsOf30.css">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
@@ -17,7 +16,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -55,20 +53,6 @@
     <script src="../js/includeNav.js"></script>
     <script src="../js/nav.js"></script>
     <script>
-        
-        function img() {
-            if (window.innerWidth < 767) {
-                document.getElementById("img").src = "../assets/images/ringsSmall.svg"
-            }
-            else {
-                document.getElementById("img").src = "../assets/images/rings.svg"
-
-            }
-
-        }
-        img()
-        window.onresize = img
-
         const myArrayEn = [
             { title: "Your Personality in Walking", description: "A test that measures your level of walking practice and provides solutions for continuity", img: "../assets/images/animateWalking.svg", btnText: "Take the test now and discover your personality", link: "./homePage.html", id: 0 },
             { title: "Walk 30", description: "A creative campaign to raise awareness about walking behavior", img: "../assets/images/runPath30.svg", btnText: "Share with us the hashtag #Walk30",link:"https://x.com/livewellmoh/status/1721881961214714351?s=46&t=_ghK4CIDrwM33CLN-BShtA", id: 1 },
@@ -134,25 +118,13 @@
 
         });
     </script>
-    <script src="../js/scrolls.js">
     </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
 <script>
 const elements = document.querySelectorAll('.pathsCard');
-// elements.forEach(element => {
-//     new Waypoint({
-//         element: element,
-//         handler: function() {
-//             this.element.classList.add('w3-animate-right');
-//             this.destroy(); 
-//         },
-//         offset: '70%' 
-//     });
-// });
 </script>
     <script>
         AOS.init();
     </script>
 </body>
 
-</html
+</html>
