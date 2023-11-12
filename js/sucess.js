@@ -2967,7 +2967,7 @@ window.onload = () => {
        
 
         document.getElementById('button').addEventListener('click', function () {
-            let calContent = 'BEGIN:VCALENDAR\nVERSION:2.0\n';
+            let calContent = 'BEGIN:VCALENDAR\nVERSION:2.0\nCALSCALE:GREGORIAN\n';
             const downloadLink = document.getElementById('button');
 
             downloadLink.click();
@@ -2979,6 +2979,11 @@ DTEND:${event.end}
 SUMMARY:${event.title}
 DESCRIPTION:${event.description}
 LOCATION:${event.location}
+BEGIN:VALARM
+TRIGGER:PT0M
+DESCRIPTION:Reminder
+ACTION:DISPLAY
+END:VALARM
 END:VEVENT\n`;
             });
 
