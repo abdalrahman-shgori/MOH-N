@@ -1316,7 +1316,7 @@ window.onload = () => {
             ];
         }
 
-        else if (totalValue >= 6 && totalValue <= 12) {
+        else if (totalValue >= 6 && totalValue <= 14) {
             events = [
 
                 {
