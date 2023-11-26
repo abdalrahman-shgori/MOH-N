@@ -12,7 +12,7 @@
         function incrementNumber() {
             // Send an HTTP request to the server to increment the number
             var xhr = new XMLHttpRequest();
-            xhr.open('POST', 'increment.php', true);
+            xhr.open('POST', 'https://abdalrahman-shgori.github.io/MOH-N/increment.php', true);
             xhr.onreadystatechange = function () {
                 if (xhr.readyState === XMLHttpRequest.DONE) {
                     if (xhr.status === 200) {
