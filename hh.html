@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment Number</title>
+</head>
+<body>
+    <button onclick="incrementNumber()">Increment Number</button>
+
+    <script>
+        function incrementNumber() {
+            // Send an HTTP request to the server to increment the number
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'increment.php', true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        console.log('Number incremented successfully.');
+                    } else {
+                        console.error('Error incrementing number:', xhr.statusText);
+                    }
+                }
+            };
+            xhr.send();
+        }
+    </script>
+</body>
+</html>
