@@ -66,7 +66,10 @@
     <script src="../js/includeNav.js"></script>
     <script src="../js/nav.js"></script>
     <script>
-        
+        function incrementNumber() {
+            // Send an HTTP request to the server to increment the number
+           
+        }
     </script>
     <script>
         if (window.innerWidth < 767) {
@@ -109,8 +112,22 @@
                 if (document.getElementById("nameInput").value === "") {
                    showToast("Please inter your name")
                 } else {
+                    var xhr = new XMLHttpRequest();
+            xhr.open('POST', '../increment.php', true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        console.log('Number incremented successfully.');
+                    } else {
+                        console.error('Error incrementing number:', xhr.statusText);
+                    }
+                }
+            };
+            xhr.send();
                     localStorage.setItem('userName', nameInput);
                     window.location.href = "./questions.html";
+                 
+
                 }
             }
         }
