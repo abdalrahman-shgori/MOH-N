@@ -1,6 +1,5 @@
 <?php
-header("Access-Control-Allow-Origin: https://abdalrahman-shgori.github.io/MOH-N");
-header("Access-Control-Allow-Methods: POST");
+
 $filename = 'customer.txt';
 
 // Read the current content of the file
