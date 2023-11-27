@@ -10,19 +10,29 @@
 
     <script>
         function incrementNumber() {
-            // Send an HTTP request to the server to increment the number
-            var xhr = new XMLHttpRequest();
-            xhr.open('POST', 'increment.php', true);
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === XMLHttpRequest.DONE) {
-                    if (xhr.status === 200) {
-                        console.log('Number incremented successfully.');
-                    } else {
-                        console.error('Error incrementing number:', xhr.statusText);
-                    }
+            fetch('https://abdalrahman-shgori.github.io/MOH-N/increment.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
                 }
-            };
-            xhr.send();
+                // Check if the response body is not empty
+                if (response.status !== 204) {
+                    return response.json();
+                }
+                // If the response is empty, return an empty object
+                return {};
+            })
+            .then(data => {
+                console.log('Number incremented successfully:', data);
+            })
+            .catch(error => {
+                console.error('Error incrementing number:', error);
+            });
         }
     </script>
 </body>
